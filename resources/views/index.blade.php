@@ -18,12 +18,15 @@
 <body>
     @include("header")
     <main>
-        @section("banner")
+        <section>
+            @include('components.banner')
+        </section>
 
-        @endsection
-        @section("about")
+        <section>
+            @include("components.about")
+        </section>
 
-        @endsection
+
         @section("numbers")
 
         @endsection
@@ -32,6 +35,7 @@
 
         @endsection
     </main>
+    @include('components.footer')
 </body>
 
 </html>

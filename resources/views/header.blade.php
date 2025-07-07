@@ -12,16 +12,23 @@
   <div class="headerContent">
     <div class="headerBurgerContainer">
       @if($isOpen)
-      <i class="ph ph-x" style="font-size: 32px" class="burger"></i>
+      <div class="burger">
+      <i class="ph ph-x" style="font-size: 32px"></i>
+      </div>
     @else
-      <i class="ph ph-list" style="font-size: 32px" class="burger"></i>
+      <div class="burger">
+
+      <i class="ph ph-list" style="font-size: 32px"></i>
+      </div>
     @endif
-      <x-picture-tag src="{{ asset('assets/LogoDark.svg') }}" alt="Logo" :lazy="false" class="Logo" />
+      <x-picture-tag src="{{ asset('assets/LogoDark.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+      <x-picture-tag src="{{ asset('assets/MobileLogo.svg') }}" alt="mobLogo" class="mobileLogo" />
+
     </div>
 
-    <a href="{{ request()->fullUrlWithQuery(['menu' => 'open']) }}" class="buttonSelect">
-      Вироби <i class="ph ph-caret-down"></i>
-    </a>
+    <button class="buttonSelect">
+      Вироби <i class="ph ph-caret-down" style="font-size: 20px ;"></i>
+    </button>
 
     <nav>
       <ul>
