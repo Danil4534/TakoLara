@@ -1,0 +1,27 @@
+.secondaryBtn {
+    width: 141px;
+    height: 48px;
+    border-radius: 999px;
+    gap: 10px;
+    border: 2px solid var(--primary-deep-blue);
+    font-family: var(--font-family-Bold);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background: none;
+    color: var(--primary-deep-blue);
+}
+
+
+@media (max-width:1024px) {
+    .btnConnect {
+        display: none;
+    }
+
+    .btnSupport {
+        border: 2px solid var(--primary-dark-navy);
+        color: var(--primary-dark-navy);
+    }
+}
