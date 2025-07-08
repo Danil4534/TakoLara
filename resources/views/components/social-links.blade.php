@@ -19,11 +19,10 @@
 
 @endphp
 
-<div class="socialLinks">
+<ul class="socialLinks">
     @foreach ($socialLinks as $socialLink)
-        <div>
-            <i class="{{ $socialLink['icon'] }}"></i>
-        </div>
+        <li>
+            <i class="{{ $socialLink['icon'] }}" style="font-size:{{$content['size'] ?? ''  }}"></i>
+        </li>
     @endforeach
-
-</div>
+</ul>

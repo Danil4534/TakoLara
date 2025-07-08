@@ -2,8 +2,15 @@
 @import "header.css";
 @import "primaryBtn.css";
 @import "secondaryBtn.css";
-
-
+@import "socialLinks.css";
+@import "footer.css";
+@import "about.css";
+@import "banner.css";
+@import "numbers.css";
+@import "partners.css";
+@import "ourProducts.css";
+@import 'details.css';
+@import 'response.css';
 
 :root {
     --primary-deep-blue: #0f5ebb;
@@ -13,7 +20,7 @@
     --secondary-warm-yellow: #ffe46e;
     --neutral-white: #ffffff;
     --neutral-light-gray: #f6f7f9;
-    --neutral-medium-gray: rgba(102, 102, 102, 1);
+    --neutral-medium-gray: rgba(107, 107, 107, 1);
     --neutral-medium-gray-second: rgba(208, 208, 208, 1);
     --neutral-dark-gray: #6b6b6b;
     --systems-error: #d32f2f;
@@ -52,7 +59,7 @@
 
 @font-face {
     font-family: "e-Ukraine-Regular";
-    src: url("./fonts/e-Ukraine-Regular.otf") format("opentype");
+    src: url("/fonts/e-Ukraine-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -68,4 +75,30 @@
 @font-face {
     font-family: "e-UkraineHead-Regular";
     src: url("/fonts/e-UkraineHead-Regular.woff2") format("woff2");
+}
+
+main {
+    padding: 80px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--neutral-light-gray);
+
+
+}
+
+main section {
+    border-radius: 16px;
+}
+
+footer {
+    width: 100%;
+    padding: 0 8px 8px;
+    background-color: var(--neutral-light-gray);
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding-top: 56px;
+    }
 }

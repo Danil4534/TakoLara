@@ -10,6 +10,7 @@
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
     <link rel="stylesheet" href="{{ asset("css/app.css") }}">
 
     <title>Tako</title>
@@ -19,23 +20,30 @@
     @include("header")
     <main>
         <section>
-            @include('components.banner')
+            @include('banner')
         </section>
-
         <section>
-            @include("components.about")
+            @include("about")
         </section>
-
-
-        @section("numbers")
-
-        @endsection
-
-        @section("work")
-
-        @endsection
+        <section>
+            @include("partners")
+        </section>
+        <section>
+            @include("numbers")
+        </section>
+        <section>
+            @include("ourProducts")
+        </section>
+        <section>
+            @include("details")
+        </section>
+        <section>
+            @include('responses')
+        </section>
     </main>
-    @include('components.footer')
+    <footer>
+        @include('footer')
+    </footer>
 </body>
 
 </html>

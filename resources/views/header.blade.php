@@ -41,20 +41,20 @@
     </nav>
 
     <div class="headerBtns">
-      @include("secondaryBtn", [
+      @include("components.secondaryBtn", [
       "content" => [
       "text" => "Зв'язатися",
       "class" => "btnConnect",
       ]
   ])
-      @include("secondaryBtn", [
+      @include("components.secondaryBtn", [
       "content" => [
       "text" => "Підтримати",
       "class" => "btnSupport",
       ]
   ])
 
-      @include("primaryBtn", [
+      @include("components.primaryBtn", [
       "content" => [
       "icon" => "ph ph-backpack",
       "text" => "Передзамовлення",
