@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" href="">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
@@ -12,38 +11,46 @@
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
     <link rel="stylesheet" href="{{ asset("css/app.css") }}">
-
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Tako</title>
 </head>
 
 <body>
-    @include("header")
+    @include("components.header")
     <main>
         <section>
-            @include('banner')
+            @include('components.banner')
+        </section>
+        <section id="about">
+            @include("components.about")
+        </section>
+        <section id="partners">
+            @include("components.partners")
+        </section>
+        <section id="">
+            @include("components.numbers")
+        </section>
+        <section id="">
+            @include("components.howWork")
+        </section>
+        <section id="ourProducts">
+            @include("components.ourProducts")
+        </section>
+        <section id="responses">
+            @include('components.responses')
         </section>
         <section>
-            @include("about")
+            @include('components.media')
         </section>
         <section>
-            @include("partners")
+            @include("components.details")
         </section>
-        <section>
-            @include("numbers")
-        </section>
-        <section>
-            @include("ourProducts")
-        </section>
-        <section>
-            @include("details")
-        </section>
-        <section>
-            @include('responses')
-        </section>
+
     </main>
     <footer>
-        @include('footer')
+        @include('components.footer')
     </footer>
+
 </body>
 
 </html>

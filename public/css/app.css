@@ -11,6 +11,10 @@
 @import "ourProducts.css";
 @import 'details.css';
 @import 'response.css';
+@import 'media.css';
+@import 'howWork.css';
+@import 'checkoutForm.css';
+@import 'checkout.css';
 
 :root {
     --primary-deep-blue: #0f5ebb;
@@ -39,6 +43,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -83,13 +88,9 @@ main {
     flex-direction: column;
     gap: 8px;
     background-color: var(--neutral-light-gray);
-
-
 }
 
-main section {
-    border-radius: 16px;
-}
+
 
 footer {
     width: 100%;

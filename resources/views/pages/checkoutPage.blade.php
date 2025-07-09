@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" href="{{ asset("css/app.css") }}">
+</head>
+
+<body>
+    @include("components.header")
+    <main>
+        <section class="box">
+            <h1 class="checkoutTitle">Оформити замовлення</h1>
+        </section>
+        <section>
+            @include("components.checkoutForm")
+        </section>
+    </main>
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <p>
+            © 2025 TAKO. All rights reserved
+        </p>
+    </div>
+</footer>
+
+</html>

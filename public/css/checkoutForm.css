@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+form .formLeftSide {
+    width: calc(100% - 595px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+}
+
+form .formRightSide {
+    width: 595px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+}
+
+form h6 {
+    font-family: var(--font-family-Light);
+    font-weight: 300;
+    font-style: Light;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 1.5%;
+    vertical-align: middle;
+    color: rgba(28, 47, 67, 1);
+
+}

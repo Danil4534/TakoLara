@@ -21,7 +21,7 @@ class PictureTag extends Component
 
     public function render()
     {
-        return view('components.picture-tag');
+        return view('ui.picture-tag');
     }
 
     public function webpSrc()

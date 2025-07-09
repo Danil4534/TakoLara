@@ -3,8 +3,8 @@
   $links = [
     ['title' => "Про нас", "anchor" => "#about"],
     ['title' => "Як ми працюємо", "anchor" => "#about"],
-    ['title' => "Партнери", "anchor" => "#about"],
-    ['title' => "Відгуки", "anchor" => "#about"],
+    ['title' => "Партнери", "anchor" => "#partners"],
+    ['title' => "Відгуки", "anchor" => "#responses"],
   ];
 @endphp
 
@@ -41,20 +41,20 @@
     </nav>
 
     <div class="headerBtns">
-      @include("components.secondaryBtn", [
+      @include("ui.secondaryBtn", [
       "content" => [
       "text" => "Зв'язатися",
       "class" => "btnConnect",
       ]
   ])
-      @include("components.secondaryBtn", [
+      @include("ui.secondaryBtn", [
       "content" => [
       "text" => "Підтримати",
       "class" => "btnSupport",
       ]
   ])
 
-      @include("components.primaryBtn", [
+      @include("ui.primaryBtn", [
       "content" => [
       "icon" => "ph ph-backpack",
       "text" => "Передзамовлення",

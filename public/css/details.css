@@ -66,5 +66,13 @@
 .leftSideDetails .detailsInput label {
     position: absolute;
     top: -50%;
+}
 
+.detailsInput .iconCopy {
+
+    position: absolute;
+    font-size: 20px;
+    right: 2px;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

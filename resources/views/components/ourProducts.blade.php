@@ -22,15 +22,15 @@
                     <h4>{{ $product['title'] }}</h4>
                     <p>{{ $product['subtitle'] }}</p>
                 </div>
-                @include("components.secondaryBtn", [
+                @include("ui.secondaryBtn", [
                     "content" => [
                         'text' => "Переглянути",
                         'class' => "cardBtn",
-                        'icon' => "ph-bold ph-arrow-up-right",
+                        'iconRight' => "ph-bold ph-arrow-up-right icon",
                         'styles' => 'font-size: 28px'
                     ]
                 ])
-                                                            </li>
+                     </li>
         @endforeach
     </ul>
 

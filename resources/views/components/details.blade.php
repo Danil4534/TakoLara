@@ -16,6 +16,7 @@
                 <div class="detailsInput">
                     <label for="data">{{ $item['label'] }}</label>
                     <input type="text" value="{{ $item['value'] ?? '' }}" id="data" name="detail">
+                    <i class="ph ph-copy-simple iconCopy"></i>
                 </div>
             @endforeach
         </div>
