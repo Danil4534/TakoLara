@@ -32,4 +32,9 @@ class NavController extends Controller
         return view("pages.radioSetPage");
     }
 
+    public function getDronesPage()
+    {
+        return view("pages.dronesPage");
+    }
+
 }

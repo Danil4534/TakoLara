@@ -8,3 +8,4 @@ Route::get('/checkout', [NavController::class, 'getCheckout']);
 Route::get('/weapon', [NavController::class, 'getWeaponPage']);
 Route::get('/medkits', [NavController::class, 'getMedkitsPage']);
 Route::get('/radioset', [NavController::class, 'getRadioSetPage']);
+Route::get('/drones', [NavController::class, 'getDronesPage']);

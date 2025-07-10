@@ -17,6 +17,17 @@
     @include("components.header")
     <main>
         <section>
+            @include ("components.banner", [
+                'content' => [
+                    'banner' => "assets/radiosetBg.svg",
+                    'class' => "weaponBg",
+                    'bannerTitle' => 'Для рацій',
+                    'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                    "btnActive" => false,
+                    "subtitleActive" => true
+                ]
+            ])</section>
+        <section>
             @include("components.about")
         </section>
         <section>

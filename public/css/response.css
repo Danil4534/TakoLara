@@ -25,13 +25,10 @@
 
 }
 
-
-
 .socialLinksSize {
     width: 72px;
     height: 72px;
 }
-
 
 .responsesContainer .responsesHeader .subtitle {
     display: flex;
@@ -100,7 +97,7 @@
 }
 
 .btnPrev {
-    width: 360px;
+    min-width: 360px;
     height: 72px;
     display: flex;
     justify-content: space-between;
@@ -119,7 +116,7 @@
 }
 
 .btnNext {
-    width: calc(100% - 392px);
+    width: 100% !important;
     height: 72px;
     background-color: var(--primary-deep-blue);
     color: var(--neutral-white);
