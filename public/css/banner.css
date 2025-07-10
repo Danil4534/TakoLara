@@ -1,26 +1,3 @@
-.banner {
-    max-width: 100%;
-    height: 920px;
-    position: relative;
-}
-
-.banner .droneBg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.banner .bannerContainer {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    align-items: end;
-    padding: 48px 182px;
-    bottom: 0;
-}
-
 .bannerContent h1 {
     width: 789px;
     font-family: var(--font-family-RegularHead);
@@ -78,4 +55,55 @@
 .bannerBtn:hover .bannerBtnArrowIcon {
     opacity: 0;
     transition: 0.3s ease-in-out;
+}
+
+.bannerSubtitle {
+    margin-top: 24px;
+    font-family: var(--font-family-Thin);
+    font-weight: 300;
+    font-style: Light;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1.6%;
+    vertical-align: middle;
+    color: var(--neutral-white);
+    max-width: 789px;
+
+}
+
+.weaponBg {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    position: relative;
+}
+
+.weaponBg img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 16px;
+    filter: saturate(2) contrast(1.3);
+}
+
+.weaponBg h1 {
+    font-size: 56px;
+}
+
+.droneBg {
+    position: relative;
+}
+
+.droneBg img {
+    width: 100%;
+    height: 920px;
+    object-fit: cover;
+    border-radius: 16px;
+    filter: saturate(2) contrast(1.3);
+}
+
+.bannerContainer {
+    position: absolute;
+    bottom: 48px;
+    left: 181px;
 }

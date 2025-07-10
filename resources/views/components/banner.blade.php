@@ -1,13 +1,20 @@
-<div class="banner">
-    <x-picture-tag src="{{ asset('assets/drone.svg') }}" alt="Logo" :lazy="true" class="droneBg" />
+<div class="{{ $content['class'] ?? '' }}">
+    <x-picture-tag :src="asset($content['banner'] ?? '')" alt="Logo" :lazy="true" />
     <div class="bannerContainer">
         <div class="bannerContent">
-            <h1>Texнології у тилу - сила на передовій</h1>
-            <button class="bannerBtn">
-                <span>Підтримати TAKO</span>
-                <i class="ph ph-arrow-up-right bannerBtnArrowIcon" style="font-size:28px"
-                    class="bannerBtnHouseIcon"></i>
-            </button>
+            <h1>{{ $content['bannerTitle'] ?? '' }}</h1>
+            @if (!empty($content['subtitle']))
+                @if ($content['subtitleActive'] === true)
+                    <p class="bannerSubtitle">{{ $content['subtitle'] }}</p>
+                @endif
+            @endif
+
+            @if (!empty($content['btnActive']) && $content['btnActive'] === true)
+                <button class="bannerBtn">
+                    <span>Підтримати TAKO</span>
+                    <i class="ph ph-arrow-up-right bannerBtnArrowIcon" style="font-size: 28px;"></i>
+                </button>
+            @endif
         </div>
     </div>
 </div>

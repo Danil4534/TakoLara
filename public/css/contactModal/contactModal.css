@@ -43,3 +43,30 @@
     text-decoration: none;
     border-radius: 5px;
 }
+
+
+.modal-content h4 {
+    font-family: var(--font-family-Regular);
+    font-weight: 300;
+    font-style: Light;
+    font-size: 36px;
+
+    line-height: 120%;
+    letter-spacing: 1.35%;
+    vertical-align: middle;
+    color: rgba(28, 47, 67, 1);
+}
+
+.modal-content p {
+    margin-top: 16px;
+    font-family: var(--font-family-Light);
+    font-weight: 300;
+    font-style: Light;
+    font-size: 16px;
+
+    line-height: 140%;
+    letter-spacing: 1.6%;
+    vertical-align: middle;
+    max-width: 405px;
+    color: rgba(107, 107, 107, 1);
+}

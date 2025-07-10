@@ -19,7 +19,16 @@
     @include("components.header")
     <main>
         <section>
-            @include('components.banner')
+            @include('components.banner', [
+                'content' => [
+                    'banner' => "assets/drone.svg",
+                    'class' => "droneBg",
+                    'bannerTitle' => 'Технології у тилу - сила на передовій',
+                    'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                    "btnActive" => true,
+                    "subtitleActive" => false
+                ]
+            ])
         </section>
         <section id="about">
             @include("components.about")

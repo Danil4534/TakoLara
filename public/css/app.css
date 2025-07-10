@@ -15,7 +15,7 @@
 @import 'howWork.css';
 @import 'checkoutForm.css';
 @import 'checkout.css';
-
+@import 'input/input.css';
 @import "contactModal/contactModal.css";
 
 :root {

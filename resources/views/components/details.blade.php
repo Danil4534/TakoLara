@@ -13,11 +13,7 @@
         </h5>
         <div class="detailsWrapper">
             @foreach ($details as $item)
-                <div class="detailsInput">
-                    <label for="data">{{ $item['label'] }}</label>
-                    <input type="text" value="{{ $item['value'] ?? '' }}" id="data" name="detail">
-                    <i class="ph ph-copy-simple iconCopy"></i>
-                </div>
+                @include("ui.input", ["content" => ["label" => $item["label"], "value" => $item['value'], "icon" => "ph ph-copy"]])
             @endforeach
         </div>
 

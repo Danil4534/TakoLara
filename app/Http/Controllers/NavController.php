@@ -17,4 +17,19 @@ class NavController extends Controller
         return view("pages.checkoutPage");
     }
 
+    public function getWeaponPage()
+    {
+        return view("pages.weaponPage");
+    }
+
+    public function getMedkitsPage()
+    {
+        return view("pages.medkitsPage");
+    }
+
+    public function getRadioSetPage()
+    {
+        return view("pages.radioSetPage");
+    }
+
 }
