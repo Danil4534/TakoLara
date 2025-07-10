@@ -45,12 +45,14 @@
       "content" => [
       "text" => "Зв'язатися",
       "class" => "btnConnect",
+      "modal" => "#contactModal"
       ]
   ])
       @include("ui.secondaryBtn", [
       "content" => [
       "text" => "Підтримати",
       "class" => "btnSupport",
+
       ]
   ])
 

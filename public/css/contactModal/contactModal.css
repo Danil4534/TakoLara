@@ -1,0 +1,45 @@
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 47, 67, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal:target {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 32px;
+    width: 672px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+}
+
+.open-modal-btn {
+    padding: 10px 15px;
+    background-color: #3490dc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

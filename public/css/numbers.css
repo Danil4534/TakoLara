@@ -249,31 +249,7 @@
     opacity: 1;
 }
 
-.bannerBtn:hover {
-    cursor: pointer;
-    background: var(--secondary-light-blue);
-}
 
-.bannerBtn:hover span {
-    transform: translateX(calc(100% - 50%));
-    transition: 0.3s ease-in-out;
-}
-
-.bannerBtn:hover .bannerBtnHouseIcon {
-    opacity: 1;
-}
-
-.bannerBtn:hover .bannerBtnArrowIcon {
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-
-
-
-
-
-/* Базовые стили уже предоставлены ранее */
 
 @media (max-width: 1442px) {
     .numbersContainer {

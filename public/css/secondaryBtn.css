@@ -12,6 +12,10 @@
     vertical-align: middle;
     background: none;
     color: var(--primary-deep-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .secondaryBtn:hover {

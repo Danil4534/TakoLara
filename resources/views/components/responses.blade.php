@@ -17,7 +17,7 @@
             @for ($i = 0; $i < 11; $i++)
                 <div class="slider__item">
                     <div class="slider__info">
-                        <h2>This is a card</h2>
+                        <!-- <h2>This is a card</h2> -->
                     </div>
                 </div>
             @endfor

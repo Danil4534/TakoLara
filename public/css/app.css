@@ -16,6 +16,8 @@
 @import 'checkoutForm.css';
 @import 'checkout.css';
 
+@import "contactModal/contactModal.css";
+
 :root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;

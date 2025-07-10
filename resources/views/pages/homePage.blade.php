@@ -52,5 +52,7 @@
     </footer>
 
 </body>
+@include('modal.contactModal')
+@include('modal.cartModal')
 
 </html>
