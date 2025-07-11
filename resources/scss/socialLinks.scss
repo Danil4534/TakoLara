@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
-
 }
 
 .socialLinks li {
@@ -15,7 +14,6 @@
     color: var(--neutral-white);
     background-color: var(--primary-deep-blue);
     transition: background 0.3s ease;
-
 }
 
 .socialLinks li:hover {

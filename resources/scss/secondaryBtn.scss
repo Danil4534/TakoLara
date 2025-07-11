@@ -16,20 +16,19 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-}
-
-.secondaryBtn:hover {
-    cursor: pointer;
-    color: var(--neutral-white);
-    transition: background .3s ease;
-    background: var(--primary-deep-blue);
+    &:hover {
+        cursor: pointer;
+        color: var(--neutral-white);
+        transition: background 0.3s ease;
+        background: var(--primary-deep-blue);
+    }
 }
 
 .btnConnect {
     width: 141px;
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .btnConnect {
         display: none;
     }

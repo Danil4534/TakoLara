@@ -7,49 +7,42 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
-
-}
-
-.aboutContainer h1 {
-    width: 30%;
-    font-family: var(--font-family-Light) !important;
-    font-weight: 300;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: 1.25%;
-    vertical-align: middle;
-    color: var(--primary-dark-navy);
-}
-
-.aboutContainer ul {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    list-style: none;
-}
-
-.aboutContainer ul li {
-    font-family: var(--font-family-Light);
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 1.6%;
-    text-align: justify;
-    overflow-wrap: break-word;
-    color: var(--primary-dark-navy);
-}
-
-.aboutContainer ul span {
-    font-family: var(--font-family-Light);
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 1.6%;
-    text-align: justify;
-
-    color: var(--neutral-dark-gray);
-
+    h1 {
+        width: 30%;
+        font-family: var(--font-family-Light) !important;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 120%;
+        letter-spacing: 1.25%;
+        vertical-align: middle;
+        color: var(--primary-dark-navy);
+    }
+    ul {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        list-style: none;
+        li {
+            font-family: var(--font-family-Light);
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1.6%;
+            text-align: justify;
+            overflow-wrap: break-word;
+            color: var(--primary-dark-navy);
+        }
+        span {
+            font-family: var(--font-family-Light);
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1.6%;
+            text-align: justify;
+            color: var(--neutral-dark-gray);
+        }
+    }
 }
 
 @media (max-width: 1442px) {

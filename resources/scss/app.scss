@@ -1,25 +1,24 @@
-@import "header.css";
-@import "header.css";
-@import "primaryBtn.css";
-@import "secondaryBtn.css";
-@import "socialLinks.css";
-@import "footer.css";
-@import "about.css";
-@import "banner.css";
-@import "numbers.css";
-@import "partners.css";
-@import "ourProducts.css";
-@import 'details.css';
-@import 'response.css';
-@import 'media.css';
-@import 'howWork.css';
-@import 'checkoutForm.css';
-@import 'checkout.css';
-@import 'input/input.css';
-@import 'gratitude.css';
-@import "contactModal/contactModal.css";
-@import 'filter/filter.css';
-@import'products.css';
+@import "./header.scss";
+@import "./primaryBtn.scss";
+@import "./secondaryBtn.scss";
+@import "./socialLinks.scss";
+@import "./footer.scss";
+@import "./about.scss";
+@import "./banner.scss";
+@import "./numbers.scss";
+@import "./partners.scss";
+@import "./ourProducts.scss";
+@import "./details.scss";
+@import "./response.scss";
+@import "./media.scss";
+@import "./howWork.scss";
+@import "./checkoutForm.scss";
+@import "./checkout.scss";
+@import "./input/input.scss";
+@import "./gratitude.scss";
+@import "./contactModal/contactModal.scss";
+@import "./filter/filter.scss";
+@import "./products.scss";
 
 :root {
     --primary-deep-blue: #0f5ebb;
@@ -50,7 +49,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 
 @font-face {
     font-family: "e-Ukraine-Bold";
@@ -94,8 +92,6 @@ main {
     gap: 8px;
     background-color: var(--neutral-light-gray);
 }
-
-
 
 footer {
     width: 100%;
