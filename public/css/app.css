@@ -18,6 +18,8 @@
 @import 'input/input.css';
 @import 'gratitude.css';
 @import "contactModal/contactModal.css";
+@import 'filter/filter.css';
+@import'products.css';
 
 :root {
     --primary-deep-blue: #0f5ebb;

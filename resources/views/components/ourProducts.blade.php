@@ -12,9 +12,9 @@
 
 
 <div class="ourProductsContainer">
-    <h1>Наші вироби</h1>
+    <h1>{{ $content['title'] }}</h1>
     <hr />
-    <ul class="productCards">
+    <ul class="productCards {{ $content['class'] ?? "" }}">
         @foreach ($products as $product)
             <li class="productCard">
                 <x-picture-tag src="{{ $product['picture'] }}" />
@@ -30,7 +30,7 @@
                         'styles' => 'font-size: 28px'
                     ]
                 ])
-                     </li>
+                                     </li>
         @endforeach
     </ul>
 

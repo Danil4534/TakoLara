@@ -43,7 +43,7 @@
             @include("components.howWork")
         </section>
         <section id="ourProducts">
-            @include("components.ourProducts")
+            @include("components.ourProducts",['content'=>['title'=>"Наші вироби"]])
         </section>
         <section id="responses">
             @include('components.responses')

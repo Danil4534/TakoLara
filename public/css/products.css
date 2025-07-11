@@ -1,0 +1,22 @@
+.productsContainer {
+    width: 100%;
+    height: auto;
+    padding: 132px 157px;
+    background-color: var(--neutral-white);
+    border-radius: 16px;
+}
+
+.filtersContainer {
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.productsContainer hr {
+    margin: 24px 0;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: rgba(208, 208, 208, 1);
+}

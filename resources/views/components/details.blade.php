@@ -16,7 +16,12 @@
                 @include("ui.input", ["content" => ["label" => $item["label"], "value" => $item['value'], "icon" => "ph ph-copy"]])
             @endforeach
         </div>
-
     </div>
-    <div></div>
+    <div class="rightSideDetails">
+        <h1>
+            Наближуй перемогу разом з нами
+        </h1>
+        <x-picture-tag src="{{ asset('assets/Qr_code.svg') }}" alt="Logo" :lazy="true" />
+        <button>Задонатити ТА-КО</button>
+    </div>
 </div>

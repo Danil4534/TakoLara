@@ -27,10 +27,16 @@
                     "subtitleActive" => true
                 ]
             ])
-        </section>
+                </section>
         <section>
             @include("components.about")
+        </section> 
+         <section>
+            @include('components.products')
         </section>
+            <section>
+        @include('components.ourProducts', ['content' => ["title" => "Iнші категорії", "class" => 'cardsGrid']])
+    </section>
         <section>
             @include('components.details')
         </section>

@@ -63,7 +63,7 @@
 }
 
 .ourProductsContainer .cardContent p {
-    font-family: var(--font-family-Thin);
+    font-family: var(--font-family-Light);
     font-weight: 300;
     font-style: Light;
     font-size: 16px;
@@ -71,7 +71,7 @@
     letter-spacing: 1.6%;
     text-align: left;
     vertical-align: middle;
-    color: var(--neutral-medium-gray);
+    color: rgba(107, 107, 107, 1);
     margin-top: 16px;
 
 }
@@ -101,6 +101,7 @@
     justify-content: center;
     align-items: center;
     font-family: var(--font-family-Light);
+
     left: 32px;
     top: 50%;
     transform: translate(0, -50%);
@@ -124,4 +125,13 @@
 
 .ourProductsContainer ul .cardBtn:hover .icon {
     display: none;
+}
+
+.ourProductsContainer .cardsGrid {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
 }
