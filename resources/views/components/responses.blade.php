@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardsPerPage = 2;
     const cardWidth = cards[0].offsetWidth;
-    const gap = 16; 
+    const gap = 32; 
     const scrollStep = (cardWidth + gap) * cardsPerPage;
 
     let currentPage = 0;
