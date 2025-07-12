@@ -30,7 +30,7 @@
                         'styles' => 'font-size: 28px'
                     ]
                 ])
-                                     </li>
+                                             </li>
         @endforeach
     </ul>
 

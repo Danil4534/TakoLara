@@ -1,109 +1,121 @@
-.bannerContent h1 {
-    width: 789px;
-    font-family: var(--font-family-RegularHead);
-    color: var(--neutral-white);
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 120%;
-    letter-spacing: 1.2%;
-    vertical-align: middle;
-
-}
-
-.bannerContainer .bannerBtn {
-    width: 554px;
-    height: 72px;
-    margin-top: 48px;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 24px;
-    padding-left: 32px;
-    background: var(--primary-deep-blue);
-    border: none;
-    font-family: var(--font-family-Thin);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: var(--neutral-white);
-
-}
-
-.bannerBtn {
-    position: relative;
-
-}
-
-.bannerBtn:hover {
-    cursor: pointer;
-    background: var(--secondary-light-blue);
-}
-
-.bannerBtn:hover span {
-    position: absolute;
-    transform: translate(-50% -50%);
-    transition: 0.3s ease-in-out;
-}
-
-.bannerBtn:hover .bannerBtnHouseIcon {
-    opacity: 1;
-}
-
-.bannerBtn:hover .bannerBtnArrowIcon {
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.bannerSubtitle {
-    margin-top: 24px;
-    font-family: var(--font-family-Thin);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 1.6%;
-    vertical-align: middle;
-    color: var(--neutral-white);
-    max-width: 789px;
-
-}
-
-.weaponBg {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    position: relative;
-}
-
-.weaponBg img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 16px;
-    filter: saturate(2) contrast(1.3);
-}
-
-.weaponBg h1 {
-    font-size: 56px;
-}
-
 .droneBg {
     position: relative;
-}
-
-.droneBg img {
     width: 100%;
-    height: 920px;
-    object-fit: cover;
-    border-radius: 16px;
-    filter: contrast(1.3);
+    height: 562px;
+    img {
+        width: 359px;
+        height: 562px;
+        background: rgba(28, 47, 67, 0.5);
+        object-fit: cover;
+        border-radius: 16px;
+        mix-blend-mode: Soft light;
+    }
+    .bannerContainer {
+        position: absolute;
+        bottom: 24px;
+        width: 100%;
+        padding: 0 16px;
+        .bannerContent {
+            width: 100%;
+            h1 {
+                width: 100%;
+                font-family: var(--font-family-Light);
+                color: var(--neutral-white);
+                font-size: 36px;
+
+                font-weight: 300;
+                line-height: 120%;
+                letter-spacing: 1.35%;
+                vertical-align: middle;
+            }
+            .bannerBtn {
+                width: 100% !important;
+                height: 56px;
+                margin-top: 48px;
+                border-radius: 999px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 24px;
+                padding-left: 32px;
+                background: var(--primary-deep-blue);
+                border: none;
+                font-family: var(--font-family-Thin);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 120%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: var(--neutral-white);
+            }
+        }
+    }
 }
 
-.bannerContainer {
-    position: absolute;
-    bottom: 48px;
-    left: 181px;
-}
+// .bannerBtn {
+//     position: relative;
+// }
+
+// .bannerBtn:hover {
+//     cursor: pointer;
+//     background: var(--secondary-light-blue);
+// }
+
+// .bannerBtn:hover span {
+//     position: absolute;
+//     transform: translate(-50% -50%);
+//     transition: 0.3s ease-in-out;
+// }
+
+// .bannerBtn:hover .bannerBtnHouseIcon {
+//     opacity: 1;
+// }
+
+// .bannerBtn:hover .bannerBtnArrowIcon {
+//     opacity: 0;
+//     transition: 0.3s ease-in-out;
+// }
+
+// .bannerSubtitle {
+//     margin-top: 24px;
+//     font-family: var(--font-family-Thin);
+//     font-weight: 300;
+//     font-style: Light;
+//     font-size: 16px;
+//     line-height: 140%;
+//     letter-spacing: 1.6%;
+//     vertical-align: middle;
+//     color: var(--neutral-white);
+//     max-width: 789px;
+// }
+
+// .weaponBg {
+//     width: 100%;
+//     height: 420px;
+//     object-fit: cover;
+//     position: relative;
+// }
+
+// .weaponBg img {
+//     width: 100%;
+//     height: 420px;
+//     object-fit: cover;
+//     border-radius: 16px;
+//     filter: saturate(2) contrast(1.3);
+// }
+
+// .weaponBg h1 {
+//     font-size: 56px;
+// }
+
+// .droneBg {
+//     position: relative;
+// }
+
+// .droneBg img {
+//     width: 100%;
+//     height: 920px;
+//     object-fit: cover;
+//     border-radius: 16px;
+//     filter: contrast(1.3);
+// }

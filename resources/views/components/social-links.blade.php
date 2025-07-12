@@ -21,8 +21,8 @@
 
 <ul class="socialLinks">
     @foreach ($socialLinks as $socialLink)
-        <li style="{{ $content['styles'] ?? "" }}">
-            <i class="{{ $socialLink['icon'] }}" style="font-size:{{$content['size'] ?? ''  }}"></i>
+        <li style="{{ $content['class'] ?? "" }}">
+            <i class="{{ $socialLink['icon'] }} {{ $content['classIcon'] ?? ""}}"></i>
         </li>
     @endforeach
 </ul>

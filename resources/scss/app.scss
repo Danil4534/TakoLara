@@ -1,24 +1,24 @@
-@import "./header.scss";
-@import "./primaryBtn.scss";
-@import "./secondaryBtn.scss";
-@import "./socialLinks.scss";
-@import "./footer.scss";
-@import "./about.scss";
-@import "./banner.scss";
-@import "./numbers.scss";
-@import "./partners.scss";
-@import "./ourProducts.scss";
-@import "./details.scss";
-@import "./response.scss";
-@import "./media.scss";
-@import "./howWork.scss";
-@import "./checkoutForm.scss";
-@import "./checkout.scss";
-@import "./input/input.scss";
-@import "./gratitude.scss";
-@import "./contactModal/contactModal.scss";
-@import "./filter/filter.scss";
-@import "./products.scss";
+@use "./header.scss";
+@use "./primaryBtn.scss";
+@use "./secondaryBtn.scss";
+@use "./socialLinks.scss";
+@use "./footer.scss";
+@use "./about.scss";
+@use "./banner.scss";
+@use "./numbers.scss";
+@use "./partners.scss";
+@use "./ourProducts.scss";
+@use "./details.scss";
+@use "./response.scss";
+@use "./media.scss";
+@use "./howWork.scss";
+@use "./checkoutForm.scss";
+@use "./checkout.scss";
+@use "./input/input.scss";
+@use "./gratitude.scss";
+@use "./contactModal/contactModal.scss";
+@use "./filter/filter.scss";
+@use "./products.scss";
 
 :root {
     --primary-deep-blue: #0f5ebb;
@@ -52,37 +52,37 @@
 
 @font-face {
     font-family: "e-Ukraine-Bold";
-    src: url("/fonts/e-Ukraine-Bold.otf") format("opentype");
+    src: url("../../public/fonts/e-Ukraine-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "e-Ukraine-Light";
-    src: url("/fonts/e-Ukraine-Light.otf") format("opentype");
+    src: url("../../public/fonts/e-Ukraine-Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: "e-Ukraine-Medium";
-    src: url("/fonts/e-Ukraine-Medium.otf") format("opentype");
+    src: url("../../public/fonts/e-Ukraine-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: "e-Ukraine-Regular";
-    src: url("/fonts/e-Ukraine-Regular.otf") format("opentype");
+    src: url("../../public/fonts/e-Ukraine-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "e-Ukraine-Thin";
-    src: url("/fonts/e-Ukraine-Thin.otf") format("opentype");
+    src: url("../../public/fonts/e-Ukraine-Thin.otf") format("opentype");
 }
 
 @font-face {
     font-family: "e-Ukraine-UltraLight";
-    src: url("/fonts/e-Ukraine-UltraLight.otf") format("opentype");
+    src: url("../../public/fonts/e-Ukraine-UltraLight.otf") format("opentype");
 }
 
 @font-face {
     font-family: "e-UkraineHead-Regular";
-    src: url("/fonts/e-UkraineHead-Regular.woff2") format("woff2");
+    src: url("../../public/fonts/e-UkraineHead-Regular.woff2") format("woff2");
 }
 
 main {

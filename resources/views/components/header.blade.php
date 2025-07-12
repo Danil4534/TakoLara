@@ -11,19 +11,11 @@
 <header class="header">
   <div class="headerContent">
     <div class="headerBurgerContainer">
-      @if($isOpen)
       <div class="burger">
-      <i class="ph ph-x" style="font-size: 32px"></i>
+        <i class="ph ph-list" style="font-size: 32px"></i>
       </div>
-    @else
-      <div class="burger">
-
-      <i class="ph ph-list" style="font-size: 32px"></i>
-      </div>
-    @endif
       <x-picture-tag src="{{ asset('assets/LogoDark.svg') }}" alt="Logo" :lazy="true" class="Logo" />
       <x-picture-tag src="{{ asset('assets/MobileLogo.svg') }}" alt="mobLogo" class="mobileLogo" />
-
     </div>
 
     <button class="buttonSelect">
@@ -64,8 +56,9 @@
       "styles" => "font-size: 20px",
       "count" => 9
       ]
-  ])    </div>
+  ])    
   </div>
+</div>
 
   <div>
     <x-header-menu :isOpen="$isOpen" />

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RadioSet</title>
-    <link rel="stylesheet" href="{{ asset("css/app.css") }}">
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css"

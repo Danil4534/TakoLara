@@ -19,6 +19,7 @@
 
 <div class="aboutContainer">
     <h1>Про нас</h1>
+    <hr />
     <ul>
         @foreach ($aboutItems as $item)
             <li>
