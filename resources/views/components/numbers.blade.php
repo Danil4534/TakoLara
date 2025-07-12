@@ -8,38 +8,41 @@
     </div>
     <hr />
     <div class="statisticBoxUp">
-        <div class="boxUp">
-            <div class="yellowBox">
-                <div class=" blueBox"></div>
-            </div>
-        </div>
-        <div class="boxUp">
-            <div class="boxContent">
-                <h1>
-                    10 043<span>од</span>
-                </h1>
-                <p>Виробів відправлено</p>
-            </div>
-            <x-picture-tag src="{{ asset('assets/item.svg') }}" alt="Logo" :lazy="true" class="item" />
-        </div>
+        <div class="boxWrapper">
 
-        <div class="boxUp">
-            <div class="boxContent">
-                <h1>
-                    432 100<span>грн</span>
-                </h1>
-                <p>Витрачено на виготовлення</p>
+            <div class="boxUp">
+                <div class="yellowBox">
+                    <div class=" blueBox"></div>
+                </div>
             </div>
-            <x-picture-tag src="{{ asset('assets/printersvg.svg') }}" alt="Logo" :lazy="true" class="item" />
-        </div>
-        <div class="boxUp">
-            <div class="boxContent">
-                <h1>
-                    173 213<span>грн</span>
-                </h1>
-                <p>Отримано донатами</p>
+            <div class="boxUp">
+                <div class="boxContent">
+                    <h1>
+                        10 043<span>од</span>
+                    </h1>
+                    <p>Виробів відправлено</p>
+                </div>
+                <x-picture-tag src="{{ asset('assets/item.svg') }}" alt="Logo" :lazy="true" class="item" />
             </div>
-            <x-picture-tag src="{{ asset('assets/GlassCan.svg') }}" alt="Logo" :lazy="true" class="item" />
+
+            <div class="boxUp">
+                <div class="boxContent">
+                    <h1>
+                        432 100<span>грн</span>
+                    </h1>
+                    <p>Витрачено на виготовлення</p>
+                </div>
+                <x-picture-tag src="{{ asset('assets/printersvg.svg') }}" alt="Logo" :lazy="true" class="item" />
+            </div>
+            <div class="boxUp">
+                <div class="boxContent">
+                    <h1>
+                        173 213<span>грн</span>
+                    </h1>
+                    <p>Отримано донатами</p>
+                </div>
+                <x-picture-tag src="{{ asset('assets/GlassCan.svg') }}" alt="Logo" :lazy="true" class="item" />
+            </div>
         </div>
     </div>
     <div class=" statisticBoxDown">

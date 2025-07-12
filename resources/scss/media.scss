@@ -140,3 +140,105 @@
     font-size: 56px;
     color: rgba(28, 47, 67, 1);
 }
+
+@media screen and (min-width: 768px) {
+    .mediaContainer {
+        width: 100%;
+        height: auto;
+        background: var(--neutral-white);
+        border-radius: 8px;
+        padding: 64px 24px;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 300;
+            font-style: Light;
+            font-size: 36px;
+            line-height: 120%;
+            letter-spacing: 1.35%;
+            vertical-align: middle;
+            color: rgba(28, 47, 67, 1);
+            font-family: var(--font-family-Light) !important;
+        }
+        hr {
+            margin-top: 24px;
+            border: none;
+            height: 1px;
+            background-color: rgba(208, 208, 208, 1);
+        }
+        .mediaVideo {
+            margin-top: 32px;
+            width: 100%;
+            display: flex;
+            .videoPrev {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+            .videoPrev img {
+                width: 352px;
+                height: 292px;
+                border-radius: 8px;
+                object-fit: cover;
+                transition: 0.3s ease;
+                &:hover {
+                    transition: 0.3s ease;
+                    transform: scale(1.2);
+                    filter: blur(2px);
+                }
+                button {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 999px;
+                    background-color: var(--primary-deep-blue);
+                    color: var(--neutral-white);
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 28px;
+                    transition: 0.3s ease-in;
+                }
+            }
+            .videoInfo {
+                width: 100%;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border-radius: 8px;
+                border: 2px solid rgba(208, 208, 208, 1);
+                h4 {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 22px;
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                    color: var(--primary-dark-navy);
+                }
+                .videoDate {
+                    p {
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 16px !important;
+
+                        line-height: 140%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
+                    i {
+                        font-size: 48px;
+                    }
+                }
+            }
+        }
+    }
+}

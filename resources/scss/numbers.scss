@@ -101,6 +101,11 @@
                 }
             }
         }
+        .boxWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
         .boxUp:nth-child(2) {
             background: var(--primary-dark-navy);
             .boxContent {
@@ -242,7 +247,7 @@
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 64px 16px;
+        padding: 64px 24px;
         display: flex;
         flex-direction: column;
         hr {
@@ -252,6 +257,23 @@
             margin-top: 24px;
             background: rgba(208, 208, 208, 1);
         }
+        .boxWrapper {
+            width: 100%;
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            .boxUp:nth-child(1),
+            .boxUp:nth-child(2) {
+                height: 272px;
+                width: 100%;
+            }
+            .boxUp:nth-child(3),
+            .boxUp:nth-child(4) {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
         .numbersTitle {
             width: 100%;
             display: flex;
@@ -331,16 +353,16 @@
                 background: var(--primary-deep-blue);
                 padding: 12px;
                 .yellowBox {
-                    width: 40px;
-                    height: 40px;
+                    width: 60px;
+                    height: 60px;
                     background: rgba(255, 215, 25, 1);
                     position: relative;
                     .blueBox {
                         position: absolute;
                         right: 0;
                         bottom: 0;
-                        width: 20px;
-                        height: 20px;
+                        width: 30px;
+                        height: 30px;
                         background: var(--primary-deep-blue);
                     }
                 }
@@ -352,15 +374,20 @@
                     bottom: 24px;
                     z-index: 20;
                     h1 {
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 48px;
+                        line-height: 120%;
+                        letter-spacing: 1.3%;
+                        vertical-align: bottom;
                         color: var(--neutral-white);
                         span {
                             font-weight: 300;
                             font-style: Light;
-                            font-size: 20px;
-
-                            line-height: 24px;
+                            font-size: 22px;
+                            line-height: 120%;
                             letter-spacing: 1.6%;
-                            vertical-align: middle;
+                            vertical-align: bottom;
                         }
                     }
                     p {
@@ -377,10 +404,10 @@
                 img {
                     z-index: 1;
                     position: absolute;
-                    width: 400px;
-                    height: 400px;
-                    top: -139px;
-                    right: -70px;
+                    width: 442px;
+                    height: 442px;
+                    top: -106px;
+                    right: -50px;
                     mix-blend-mode: Luminosity;
                 }
             }
@@ -413,7 +440,7 @@
         }
         .statisticBoxDown {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             margin-top: 16px;
             gap: 16px;
             .boxDown {
