@@ -5,15 +5,7 @@
             "anchor" => ""
         ],
         [
-            "text" => "Для зброї",
-            "anchor" => ""
-        ],
-        [
             "text" => "Про нас",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Медицина",
             "anchor" => ""
         ],
         [
@@ -21,15 +13,7 @@
             "anchor" => ""
         ],
         [
-            "text" => "Для рацій",
-            "anchor" => ""
-        ],
-        [
             "text" => "Партнери",
-            "anchor" => ""
-        ],
-        [
-            "text" => "РЕБ / РЕР",
             "anchor" => ""
         ],
         [
@@ -37,11 +21,27 @@
             "anchor" => ""
         ],
         [
-            "text" => "Для дронів",
+            "text" => "ЗМІ про нас",
             "anchor" => ""
         ],
         [
-            "text" => "ЗМІ про нас",
+            "text" => "Для зброї",
+            "anchor" => ""
+        ],
+        [
+            "text" => "Медицина",
+            "anchor" => ""
+        ],
+        [
+            "text" => "Для рацій",
+            "anchor" => ""
+        ],
+        [
+            "text" => "РЕБ / РЕР",
+            "anchor" => ""
+        ],
+        [
+            "text" => "Для дронів",
             "anchor" => ""
         ]
     ];
@@ -71,9 +71,9 @@
                     ]
                 ])
                                     <button>
-                    <i class="ph ph-envelope"></i>
-                    example@mail.com
-      </button>
+                <i class="ph ph-envelope"></i>
+                example@mail.com
+            </button>
           </div>
         </div>
     </div>

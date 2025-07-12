@@ -2,78 +2,123 @@
     width: 100%;
     background-color: var(--neutral-white);
     border-radius: 16px;
-    padding: 132px 181px;
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-}
-
-.gratitudeHeader {
-    width: 437px !important;
+    padding: 64px 16px;
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
+    .gratitudeHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        h1 {
+            font-family: var(--font-family-Light);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 36px;
+            line-height: 120%;
+            letter-spacing: 1.35%;
+            vertical-align: middle;
+            color: var(--primary-dark-navy);
+        }
+        p {
+            font-family: var(--font-family-Light);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 1.6%;
+            text-align: justify;
+            vertical-align: middle;
+            color: rgba(107, 107, 107, 1);
+        }
+        hr {
+            height: 1px;
+            border: none;
+            background-color: rgba(208, 208, 208, 1);
+        }
+    }
+    .slider {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 16px;
+        .slider__content {
+            display: flex;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            gap: 16px;
+            scroll-snap-type: mandatory;
+            .slider__item2 {
+                flex: 0 0 auto;
+                width: 155.5px;
+                height: 220px;
+                background: #f0f0f0;
+                padding: 20px;
+                border-radius: 8px;
+            }
+        }
+        .slider__nav {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            .btnPrev {
+                min-width: 125px;
+                height: 48px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-.gratitudeHeader h1 {
-    font-family: var(--font-family-RegularHead);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: 1.25%;
-    vertical-align: middle;
-    color: var(--primary-dark-navy);
-
-}
-
-.gratitudeHeader hr {
-    height: 1px;
-    border: none;
-    background-color: rgba(208, 208, 208, 1);
-}
-
-.gratitudeHeader p {
-
-    font-family: var(--font-family-Light);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 20px;
-
-    line-height: 24px;
-    letter-spacing: 1.6%;
-    color: rgba(107, 107, 107, 1);
-    vertical-align: middle;
-
-}
-
-.gratitudeRightSide {
-    width: calc(100% - 470px);
-    display: flex;
-    justify-content: start;
-
-}
-
-.gratitudeRightSide .slider {
-    margin: 0;
-}
-
-.slider__item2 {
-    flex: 0 0 auto;
-    width: 336.36px;
-    height: 492px;
-    background: #f0f0f0;
-    border-radius: 8px;
-}
-
-.slider__nav {
-    gap: 32px;
-}
-
-.gratitudeRightSide .slider__nav .btnNext {
-    width: 100%;
-}
-
-.gratitudeRightSide .slider__nav .btnPrev {
-    min-width: 336px;
+                position: relative;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                transition: 0.3s ease;
+                font-family: var(--font-family-RegularHead);
+                .icon {
+                    font-size: 20px;
+                    left: 20px;
+                }
+            }
+            .btnNext {
+                width: 100% !important;
+                height: 48px;
+                background-color: var(--primary-deep-blue);
+                color: var(--neutral-white);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: 0.3s ease;
+                position: relative;
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                font-family: var(--font-family-Medium);
+                .icon {
+                    font-size: 20px;
+                }
+            }
+        }
+        .slider_bottom_nav {
+            width: 100%;
+            height: 7px;
+            display: flex;
+            gap: 8px;
+            margin-top: 24px;
+            .slider__nav_item2 {
+                width: 100%;
+                height: 100%;
+                border-radius: 999px;
+                background-color: rgba(208, 208, 208, 1);
+                &.active {
+                    transition: 0.3s background-color ease;
+                    background-color: rgba(90, 155, 239, 1);
+                }
+            }
+        }
+    }
 }

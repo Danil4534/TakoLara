@@ -1,80 +1,140 @@
+@php
+    $sliderContent =[
+    ['img'=>"", "content"=>"1"],   
+    ['img'=>"", "content"=>"2"],
+    ['img'=>"", "content"=>"3"],
+    ['img'=>"", "content"=>"4"],
+     ['img'=>"", "content"=>"5"],
+      ['img'=>"", "content"=>"6"],
+       ['img'=>"", "content"=>"7"],
+        ['img'=>"", "content"=>"8"],
+    ]
+
+@endphp
+
+
 <div class="gratitudeContainer">
     <div class="gratitudeHeader">
         <h1>
             Подяки
         </h1>
-        <hr />
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         </p>
+        <hr />
     </div>
     <div class="gratitudeRightSide">
-        <div class="slider">
-            <div class="slider__content" id="sliderContent2">
-                @for ($i = 0; $i < 10; $i++)
-                    <div class="slider__item2">
-                        <div class="slider__info">
-                            <!-- <h2>This is a card</h2> -->
-                        </div>
+       <div class="slider">
+        <div class="slider__content" id="sliderContent2">
+           @foreach ($sliderContent as $item )
+           <div class="slider__item2">
+                    <div class="slider__info">
+                        {{ $item['content'] }}
                     </div>
-                @endfor
-            </div>
-            <div class="slider__nav">
-                @include("ui.secondaryBtn", [
-                    "content" => [
-                        "text" => "Назад",
-                        "class" => "btnPrev",
-                        "id" => "prevBtn2",
-                        "styles" => "font-size: 28px",
-                        "iconLeft" => "ph ph-caret-left icon"
-                    ]
-                ]) 
-                  @include("ui.secondaryBtn", [
-                    "content" => [
-                        "text" => "Вперед",
-                        "class" => "btnNext",
-                        "id" => "nextBtn2",
-                        "styles" => "font-size: 28px ",
-                        "iconRight" => "ph ph-caret-right icon"
-                    ]
-                ])
-                
-            </div>
+                </div>
+           @endforeach
         </div>
+
+        <div class="slider__nav">
+            @include("ui.secondaryBtn", [
+                "content" => [
+                    "text" => "Назад",
+                    "class" => "btnPrev",
+                    "id" => "prevBtn2",
+                    "iconLeft" => "ph ph-caret-left icon"
+                ]
+            ]) 
+              @include("ui.secondaryBtn", [
+                "content" => [
+                    "text" => "Вперед",
+                    "class" => "btnNext",
+                    "id" => "nextBtn2",
+           
+                    "iconRight" => "ph ph-caret-right icon"
+                ]
+            ])
+            
+        </div>
+        <div class="slider_bottom_nav"> 
+         @for ($i = 0; $i < ceil(count($sliderContent) / 2); $i++)
+             <div class="slider__nav_item2"></div>
+        @endfor
+            
+        </div>
+    </div>
     </div>
 </div>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const slider = document.getElementById("sliderContent2");
-        const prevBtn = document.getElementById("prevBtn2");
-        const nextBtn = document.getElementById("nextBtn2");
-        const card = slider.querySelector(".slider__item2");
-       
-        function updateButtons() {
-           const scrollLeft =slider.scrollLeft ; 
-            const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-            prevBtn.disabled = scrollLeft <= 0;
-            nextBtn.disabled = scrollLeft >= maxScrollLeft - 1;
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.getElementById("sliderContent2");
+    const prevBtn = document.getElementById("prevBtn2");
+    const nextBtn = document.getElementById("nextBtn2");
+    const cards = slider.querySelectorAll(".slider__item2");
+    const navDots = document.querySelectorAll(".slider__nav_item2");
+
+    const cardsPerPage = 2;
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 16; 
+    const scrollStep = (cardWidth + gap) * cardsPerPage;
+
+    let currentPage = 0;
+
+
+    function updateActiveDot(index) {
+        navDots.forEach(dot => dot.classList.remove("active"));
+        if (navDots[index]) {
+            navDots[index].classList.add("active");
         }
+    }
 
-        prevBtn.addEventListener("click", () => {
-            const cardWidth =  card.offsetWidth + 35;
 
-            slider.scrollBy({
-                left: -cardWidth,
-                behavior: 'smooth'
+    function updateButtons() {
+        const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
+        prevBtn.disabled = currentPage <= 0;
+        nextBtn.disabled = currentPage >= maxPage;
+    }
+
+
+    prevBtn.addEventListener("click", () => {
+        if (currentPage > 0) {
+            currentPage--;
+            slider.scrollTo({
+                left: scrollStep * currentPage,
+                behavior: "smooth"
             });
-        });
-
-        nextBtn.addEventListener("click", () => {
-             const cardWidth =  card.offsetWidth + 30;
-            slider.scrollBy({
-                left: cardWidth,
-                behavior: 'smooth'
-            });
-        });
-
-        slider.addEventListener("scroll", updateButtons);
-        updateButtons();
+            updateActiveDot(currentPage);
+            updateButtons();
+        }
     });
+
+
+    nextBtn.addEventListener("click", () => {
+        const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
+        if (currentPage < maxPage) {
+            currentPage++;
+            slider.scrollTo({
+                left: scrollStep * currentPage,
+                behavior: "smooth"
+            });
+            updateActiveDot(currentPage);
+            updateButtons();
+        }
+    });
+
+
+    navDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            currentPage = index;
+            slider.scrollTo({
+                left: scrollStep * index,
+                behavior: "smooth"
+            });
+            updateActiveDot(index);
+            updateButtons();
+        });
+    });
+
+    updateActiveDot(currentPage);
+    updateButtons();
+});
 </script>

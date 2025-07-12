@@ -9,6 +9,11 @@
     <hr />
     <div class="statisticBoxUp">
         <div class="boxUp">
+            <div class="yellowBox">
+                <div class=" blueBox"></div>
+            </div>
+        </div>
+        <div class="boxUp">
             <div class="boxContent">
                 <h1>
                     10 043<span>од</span>
@@ -17,11 +22,7 @@
             </div>
             <x-picture-tag src="{{ asset('assets/item.svg') }}" alt="Logo" :lazy="true" class="item" />
         </div>
-        <div class="boxUp">
-            <div class="yellowBox">
-                <div class=" blueBox"></div>
-            </div>
-        </div>
+
         <div class="boxUp">
             <div class="boxContent">
                 <h1>
@@ -42,7 +43,7 @@
         </div>
     </div>
     <div class=" statisticBoxDown">
-        <div class=" boxDown">
+        <div class="boxDown">
             <div class=" boxContent">
                 <h1>
                     730<span>км</span>
@@ -67,7 +68,7 @@
             </div>
         </div>
     </div>
-    <button class=" bannerBtn">
+    <button class="bannerBtn">
         <span>Збільшити цифри</span>
-        <i class="ph ph-arrow-up-right bannerBtnArrowIcon" style="font-size:28px"></i> </button>
+        <i class="ph ph-arrow-up-right bannerBtnArrowIcon"></i> </button>
 </div>

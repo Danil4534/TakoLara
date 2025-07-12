@@ -36,17 +36,27 @@
         <section id="partners">
             @include("components.partners")
         </section>
-    <!-- <section id="">
+    <section id="">
             @include("components.numbers")
-        </section> -->
+        </section>
          <section id="ourProducts">
             @include("components.ourProducts", ['content' => ['title' => "Наші вироби"]])
         </section>
         <section id="responses">
             @include('components.responses')
         </section>
+        <section>
+                @include("components.gratitude")
+        </section>
+         <section>
+            @include('components.media')
+        </section>   <section>
+            @include('components.details')
+        </section>
     </main>
-
+ <footer>
+        @include('components.footer')
+    </footer>
 
 </body>
 @include('modal.contactModal')

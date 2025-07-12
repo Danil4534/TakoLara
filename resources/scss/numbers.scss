@@ -37,201 +37,202 @@
             letter-spacing: 1.6%;
             text-align: justify;
             vertical-align: middle;
+            color: rgba(107, 107, 107, 1);
         }
     }
     .statisticBoxUp {
         margin-top: 32px;
         display: flex;
         flex-direction: column;
+        gap: 16px;
         .boxUp {
             width: 100%;
-            height: 200px;
+            height: 172px;
             padding: 24px;
             position: relative;
+            overflow: hidden;
             border-radius: 8px;
             background-color: var(--neutral-light-gray);
+            h1 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 36px;
+                color: rgba(28, 47, 67, 1);
+                line-height: 120%;
+                letter-spacing: 1.35%;
+                vertical-align: middle;
+                span {
+                    font-size: 22px;
+                }
+            }
+            .boxContent {
+                position: absolute;
+                bottom: 24px;
+                z-index: 20;
+                p {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 14px;
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    text-align: justify;
+                    vertical-align: middle;
+                    color: rgba(107, 107, 107, 1);
+                }
+            }
+        }
+        .boxUp:nth-child(1) {
+            background: var(--primary-deep-blue);
+            padding: 12px;
+            .yellowBox {
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 215, 25, 1);
+                position: relative;
+                .blueBox {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: var(--primary-deep-blue);
+                }
+            }
+        }
+        .boxUp:nth-child(2) {
+            background: var(--primary-dark-navy);
+            .boxContent {
+                position: absolute;
+                bottom: 24px;
+                z-index: 20;
+                h1 {
+                    color: var(--neutral-white);
+                    span {
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 20px;
+
+                        line-height: 24px;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
+                }
+                p {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 12px;
+                    color: rgba(208, 208, 208, 1);
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                }
+            }
+            img {
+                z-index: 1;
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                top: -139px;
+                right: -70px;
+                mix-blend-mode: Luminosity;
+            }
+        }
+        .boxUp:nth-child(3) {
+            .boxDown {
+                position: relative;
+            }
+            img {
+                position: absolute;
+                top: -40px;
+                right: -107px;
+                width: 263px;
+                height: 263px;
+                mix-blend-mode: Darken;
+            }
+        }
+        .boxUp:nth-child(4) {
+            .boxDown {
+                position: relative;
+            }
+            img {
+                position: absolute;
+                top: 0px;
+                right: -36px;
+                width: 222px;
+                height: 222px;
+                mix-blend-mode: Darken;
+            }
         }
     }
-}
+    .statisticBoxDown {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 16px;
+        .boxDown {
+            width: 100%;
+            height: 172px;
+            border-radius: 8px;
+            background-color: var(--neutral-light-gray);
+            padding: 24px;
+            position: relative;
+            .boxContent {
+                position: absolute;
+                bottom: 24px;
+                z-index: 20;
+                h1 {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 36px;
+                    line-height: 120%;
+                    letter-spacing: 1.35%;
+                    vertical-align: middle;
+                    color: rgba(28, 47, 67, 1);
+                    span {
+                        font-size: 22px;
+                    }
+                }
+                p {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 12px;
+                    color: rgba(107, 107, 107, 1);
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .bannerBtn {
+        width: 100%;
+        height: 56px;
+        background: var(--primary-deep-blue);
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+        padding-left: 28px;
+        padding-right: 16px;
+        border-radius: 999px;
+        font-family: var(--font-family-Medium);
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
 
-.numbersContainer .numbersContainer p {
-    font-family: var(--font-family-Light);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 1.6%;
-    vertical-align: middle;
-    color: var(--neutral-medium-gray);
-}
+        line-height: 120%;
+        letter-spacing: 0%;
+        vertical-align: middle;
 
-.numbersTitle p {
-    font-family: var(--font-family-Light);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 1.6%;
-    text-align: justify;
-    vertical-align: middle;
-    color: var(--neutral-dark-gray);
-}
-
-.numbersContainer .boxUp .yellowBox {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 215, 25, 1);
-}
-
-.numbersContainer .boxUp .blueBox {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background-color: var(--primary-deep-blue);
-}
-
-.numbersContainer .boxUp .boxContent {
-    position: absolute;
-    bottom: 24px;
-    z-index: 997;
-}
-
-.numbersContainer .boxUp .boxContent h1 {
-    font-family: var(--font-family-RegularHead);
-    font-weight: 300;
-    font-size: 72px;
-    line-height: 120%;
-    letter-spacing: 1.2%;
-    vertical-align: middle;
-    margin-bottom: 8px;
-}
-
-.numbersContainer .boxUp .boxContent h1 span {
-    font-size: 20px;
-}
-
-.numbersContainer .boxDown {
-    width: 100%;
-    height: 320px;
-    border-radius: 8px;
-    background-color: var(--neutral-light-gray);
-    padding: 24px;
-    position: relative;
-}
-
-.numbersContainer .boxDown .boxContent {
-    position: absolute;
-    bottom: 24px;
-}
-
-.numbersContainer .boxDown .boxContent h1 {
-    font-family: var(--font-family-RegularHead);
-    font-weight: 300;
-    font-size: 72px;
-    line-height: 120%;
-    letter-spacing: 1.2%;
-    vertical-align: middle;
-    margin-bottom: 8px;
-}
-
-.numbersContainer .boxDown .boxContent h1 span {
-    font-size: 20px;
-}
-
-.numbersContainer .statisticBoxDown {
-    display: flex;
-    gap: 32px;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(1) {
-    background-color: var(--primary-dark-navy);
-    overflow: hidden;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(1) h1 {
-    color: var(--neutral-white);
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(1) .item {
-    position: absolute;
-    top: 0px;
-    right: 0;
-    z-index: 1;
-    width: 600px;
-    transform: rotate(0deg);
-    opacity: 0.6;
-    mix-blend-mode: Luminosity;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(2) {
-    background-color: var(--primary-deep-blue);
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(3) {
-    height: 320px;
-    overflow: hidden;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(3) .item {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(3) .item img {
-    width: 537px;
-    height: 537px !important;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(4) {
-    height: 320px;
-    overflow: hidden;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(4) .item {
-    position: absolute;
-    top: 0;
-    width: 435px;
-    right: 37px;
-}
-
-.numbersContainer .statisticBoxUp > div:nth-child(4) .item img {
-    width: 435px !important;
-    height: 435px !important;
-}
-
-/* Banner Button */
-.bannerBtn {
-    height: 72px;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 24px;
-    padding-left: 32px;
-    background: var(--primary-deep-blue);
-    border: none;
-    font-family: var(--font-family-Thin);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: var(--neutral-white);
-}
-
-.bannerBtn span {
-    transition: transform 0.3s ease-in-out;
-}
-
-.bannerBtn .bannerBtnHouseIcon {
-    opacity: 0;
-}
-
-.bannerBtn .bannerBtnArrowIcon {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
+        color: var(--neutral-white);
+        i {
+            font-size: 24px;
+        }
+    }
 }

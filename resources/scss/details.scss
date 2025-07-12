@@ -2,78 +2,87 @@
     width: 100%;
     height: 100%;
     background: var(--neutral-white);
-    border-radius: 16px;
-    padding: 32px 181px;
-    display: flex;
-    gap: 32px;
-
-}
-
-.detailsContainer .rightSideDetails {
-    width: 100%;
-    height: 485px;
     border-radius: 8px;
-    background-color: var(--primary-deep-blue);
+    padding: 16px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
     gap: 32px;
+    .rightSideDetails {
+        width: 100%;
+        height: 164px;
+        border-radius: 8px;
+        background-image: url("../../public/assets/Qr_Bg.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+        gap: 12px;
+        position: relative;
+        .yellowBox {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+        }
 
+        h1 {
+            margin-top: 18px;
+            width: 263px;
+            font-family: var(--font-family-Light);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1.6%;
+            text-align: center;
+            vertical-align: middle;
+            color: var(--neutral-white);
+        }
+        .qr_code {
+            display: none;
+        }
+        button {
+            width: 100%;
+            height: 48px !important;
+            border-radius: 999px;
+            background-color: rgba(255, 215, 25, 1);
+            font-family: var(--font-family-Bold);
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: rgba(28, 47, 67, 1);
+            border: none;
+        }
+    }
+    .leftSideDetails {
+        width: 100%;
+        h5 {
+            font-family: var(--font-family-Light);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1.6%;
+            color: rgba(23, 24, 26, 1);
+        }
+        .detailsInput {
+            width: 100%;
+            height: 48px;
+            border: 2px solid rgba(208, 208, 208, 1);
+            border-radius: 8px;
+            position: relative;
+        }
+    }
 }
-
-.detailsContainer .rightSideDetails h1 {
-    font-family: var(--font-family-Thin);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 24px;
-
-    line-height: 120%;
-    letter-spacing: 1.5%;
-    text-align: center;
-    vertical-align: middle;
-    color: var(--neutral-white);
-
-}
-
-.detailsContainer .rightSideDetails button {
-
-    width: 203px;
-    height: 48px;
-    border-radius: 999px;
-    background-color: rgba(255, 215, 25, 1);
-
-    font-family: var(--font-family-Thin);
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 14px;
-
-    line-height: 120%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: rgba(28, 47, 67, 1);
-    border: none;
-
-
-}
-
-
-
 
 .detailsContainer .rightSideDetails button :hover {
     cursor: pointer;
     background: var();
-}
-
-.detailsContainer .leftSideDetails h5 {
-    font-family: var(--font-family-Regular);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 28px;
-    line-height: 120%;
-    letter-spacing: 1.4%;
-    color: rgba(23, 24, 26, 1);
-
 }
 
 .leftSideDetails .detailsWrapper {
@@ -83,14 +92,6 @@
     margin-top: 61px;
 }
 
-.leftSideDetails .detailsInput {
-    width: 587px;
-    height: 48px;
-    border: 2px solid rgba(208, 208, 208, 1);
-    border-radius: 8px;
-    position: relative;
-}
-
 .leftSideDetails .detailsInput label {
     font-family: var(--font-family-Regular);
     font-weight: 400;
@@ -98,7 +99,6 @@
     line-height: 120%;
     letter-spacing: 1.4%;
     color: rgba(107, 107, 107, 1);
-
 }
 
 .leftSideDetails .detailsInput input {
@@ -115,11 +115,10 @@
     letter-spacing: 1.6%;
     outline: none;
     caret-color: transparent;
-
 }
 
 .leftSideDetails .detailsInput:hover {
-    transition: .3s ease;
+    transition: 0.3s ease;
     border: 2px solid rgba(107, 107, 107, 1);
 }
 
@@ -129,7 +128,6 @@
 }
 
 .detailsInput .iconCopy {
-
     position: absolute;
     font-size: 20px;
     right: 2px;
