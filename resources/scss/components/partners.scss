@@ -437,6 +437,25 @@
                 flex-direction: column;
                 align-items: center;
                 position: relative;
+                transition: 0.3s ease;
+
+                img {
+                    transition: 0.3s ease;
+                }
+
+                &:hover:not(li:first-child) {
+                    transition: 0.3s ease;
+                    background: rgb(246, 247, 249);
+                    img {
+                        transition: 0.3s ease;
+                        transform: scale(1.1);
+                    }
+                    a {
+                        background: rgb(246, 247, 249);
+                        color: var(--secondary-light-blue);
+                        border-bottom: 2px solid var(--secondary-light-blue);
+                    }
+                }
                 h1 {
                     font-weight: 300;
                     font-style: Light;
@@ -445,9 +464,34 @@
                     letter-spacing: 1.25%;
                     vertical-align: middle;
                 }
+
                 &:nth-child(2) {
                     margin: 0 !important;
                     height: 420px !important;
+
+                    .link {
+                        width: calc(100% - 48px) !important;
+                        height: 56px !important;
+                        background: var(--neutral-white);
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-decoration: none;
+                        bottom: 16px !important;
+                        font-family: var(--font-family-Light);
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 16px !important;
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                        padding: 0px !important;
+                        color: rgba(15, 94, 187, 1);
+                        i {
+                            font-size: 24px !important;
+                        }
+                    }
                     img {
                         margin: 0 !important;
                         width: 200px !important;
@@ -514,6 +558,9 @@
                 }
             }
             li:nth-child(1) {
+                a {
+                    height: 56px;
+                }
                 img {
                     width: 64px;
                     height: 64px;
