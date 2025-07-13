@@ -56,10 +56,10 @@
     </main>
  <footer>
         @include('components.footer')
-    </footer>
+    </footer >
 
 </body>
 @include('modal.contactModal')
 @include('modal.cartModal')
-
+@include("modal.headerModal")
 </html>

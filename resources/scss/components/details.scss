@@ -3,7 +3,7 @@
     height: 100%;
     background: var(--neutral-white);
     border-radius: 8px;
-    padding: 16px;
+    padding: 24px !important;
     display: flex;
     flex-direction: column-reverse;
     gap: 32px;
@@ -182,7 +182,10 @@
                 text-align: center;
                 vertical-align: middle;
                 color: var(--neutral-white);
-                margin-top: 40px;
+                margin-top: 0;
+                display: flex;
+                margin-top: 16px;
+                align-items: center;
             }
             .qr_code {
                 margin: 32px 0;
@@ -191,7 +194,7 @@
             }
             button {
                 width: 195px;
-                height: 48px !important;
+                height: 40px !important;
                 border-radius: 999px;
                 background-color: rgba(255, 215, 25, 1);
                 font-family: var(--font-family-Bold);

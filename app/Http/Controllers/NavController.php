@@ -37,4 +37,8 @@ class NavController extends Controller
         return view("pages.dronesPage");
     }
 
+    public function getSupportPage()
+    {
+        return view("pages.supportPage");
+    }
 }

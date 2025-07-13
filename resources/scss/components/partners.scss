@@ -12,6 +12,9 @@
         display: flex;
         flex-direction: column;
         list-style: none;
+        .partnersMob {
+            display: none;
+        }
         li {
             width: 100%;
             hr {
@@ -134,19 +137,6 @@
                 }
             }
         }
-        // li:not(li:nth-child(1), li:nth-child(0)) {
-        //     width: 100%;
-        //     height: 110px;
-        //     border: 1px solid rgba(208, 208, 208, 1);
-        //     border-radius: 8px;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     overflow: hidden;
-        //     position: relative;
-        //     padding: 0 24px;
-        //     transition: 0.3s ease-in-out;
-        // }
     }
 }
 
@@ -165,6 +155,9 @@
             display: flex;
             flex-direction: column;
             list-style: none;
+            .partnersMob {
+                display: none;
+            }
             li {
                 width: 100%;
                 hr {
@@ -290,6 +283,118 @@
                         height: 354px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .partnersContainer {
+        width: 100%;
+        height: 100%;
+        background: var(--neutral-white);
+        padding: 64px 16px;
+        border-radius: 8px;
+        display: flex !important;
+        flex-direction: row;
+        ul {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            gap: 32px;
+            list-style: none;
+            .partnersMob {
+                display: flex;
+            }
+            li:first-child {
+                border: none;
+                justify-content: start;
+                hr {
+                    display: none;
+                }
+            }
+            li {
+                border: 1px solid rgba(208, 208, 208, 1);
+                border-radius: 8px;
+                width: 100% !important;
+                height: 300px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                &:nth-child(2) {
+                    margin: 0 !important;
+                    height: 300px !important;
+                    img {
+                        margin: 0 !important;
+                        width: 200px !important;
+                    }
+                }
+                &:nth-child(3) {
+                    margin: 0 !important;
+                    height: 300px !important;
+                    img {
+                        margin: 0 !important;
+                        width: 100px !important;
+                    }
+                }
+                &:nth-child(5) {
+                    margin: 0 !important;
+                    height: 300px !important;
+                    img {
+                        margin: 0 !important;
+                        width: 200px !important;
+                    }
+                }
+                &:nth-child(6) {
+                    margin: 0 !important;
+                    height: 300px !important;
+                    img {
+                        margin: 0 !important;
+                        width: 200px !important;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                a {
+                    width: calc(100% - 24px);
+                    height: 40px;
+                    background: var(--neutral-white);
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-decoration: none;
+                    bottom: 4px;
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 12px;
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                    color: rgba(15, 94, 187, 1);
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+            li:nth-child(1) {
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+
+            .mobileGridForPartners {
+                display: none;
             }
         }
     }

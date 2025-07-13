@@ -27,7 +27,7 @@
                     "subtitleActive" => true
                 ]
             ])
-                                    </section>
+                                                </section>
         <section>
             @include("components.about")
         </section>
@@ -38,6 +38,8 @@
         @include('components.ourProducts', ['content' => ["title" => "Iнші категорії", "class" => 'cardsGrid']])
     </section>
         <section>
+
+
             @include('components.details')
         </section>
     </main>
@@ -46,4 +48,5 @@
     @include('components.footer')
 </footer>
 
+@include("modal.headerModal")
 </html>

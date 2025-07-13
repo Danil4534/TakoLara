@@ -1,4 +1,4 @@
-<!--@php
+@php
     $links = [
         [
             "text" => "Головна",
@@ -46,26 +46,33 @@
 @endphp
 
 <div id="hidden_header_nav" class="headerNav">
+
     <div class="header_nav_container" id="hidden_header_nav_content">
-        <i class="ph ph-x close-btn" id="closeContactBtn"></i>
-        <h1>Передзамовлення</h1>
-        @foreach ($products as $product)
-            <a href={{ $product['anchor'] }}>{{ $product['text'] }}
-                <i class="ph ph-arrow-up-right iconLink"></i>
-            </a>
-        @endforeach
-        @include("ui.secondaryBtn", [
-            "content" => [
-                "id" => "btnConnect",
-                'text' => "Переглянути категорії",
-                'class' => "cardBtn",
-                'styles' => 'font-size: 28px',
-                "modal" => "#contactModal"
-            ]
-        ])
-            <div class="forSolders">
-                <p><span>🪖</span> Для військових — безкоштовно</p>
-            </div>
-    
+        <div class="nav_content_box">
+            <h1>Вироби</h1>
+            @foreach ($products as $product)
+                <a href={{ $product['anchor'] }}>{{ $product['text'] }}
+                    <i class="ph ph-arrow-up-right iconLink"></i>
+                </a>
+            @endforeach
+        </div>
+        <div class="nav_content_box">
+            @foreach ($links as $link)
+                <a href="">{{ $link['text'] }}</a>
+
+            @endforeach
+        </div>
+        <div class="nav_content_box">
+            @include("components.social-links")
+            @include("ui.secondaryBtn", [
+                "content" => [
+                    "id" => "btnConnect",
+                    'text' => "Зв'язатися",
+                    'class' => "cardBtn",
+                    'styles' => 'font-size: 28px',
+                    "modal" => "#contactModal"
+                ]
+            ])
+        </div>
     </div>
-</div> --!>
+</div>

@@ -1,24 +1,25 @@
-@use "./header.scss";
-@use "./primaryBtn.scss";
-@use "./secondaryBtn.scss";
-@use "./socialLinks.scss";
-@use "./footer.scss";
-@use "./about.scss";
-@use "./banner.scss";
-@use "./numbers.scss";
-@use "./partners.scss";
-@use "./ourProducts.scss";
-@use "./details.scss";
-@use "./response.scss";
-@use "./media.scss";
-@use "./howWork.scss";
-@use "./checkoutForm.scss";
-@use "./checkout.scss";
+@use "./components/header.scss";
+@use "./components/primaryBtn.scss";
+@use "./components/secondaryBtn.scss";
+@use "./components/socialLinks.scss";
+@use "./components/footer.scss";
+@use "./components/about.scss";
+@use "./components/banner.scss";
+@use "./components/numbers.scss";
+@use "./components/partners.scss";
+@use "./components/ourProducts.scss";
+@use "./components/details.scss";
+@use "./components/response.scss";
+@use "./components/media.scss";
+@use "./components/howWork.scss";
+@use "./components/checkoutForm.scss";
+@use "./components/checkout.scss";
 @use "./input/input.scss";
-@use "./gratitude.scss";
-@use "./contactModal/contactModal.scss";
+@use "./components/gratitude.scss";
+@use "./modal/contactModal.scss";
+@use "./modal/headerModal.scss";
 @use "./filter/filter.scss";
-@use "./products.scss";
+@use "./components/products.scss";
 
 :root {
     --primary-deep-blue: #0f5ebb;
@@ -38,9 +39,9 @@
     --font-family-Light: "e-Ukraine-Light";
     --font-family-Medium: "e-Ukraine-Medium";
     --font-family-Regular: "e-Ukraine-Regular";
+    --font-family-RegularHead: "e-Ukraine-RegularHead";
     --font-family-Thin: "e-Ukraine-Thin";
     --font-family-UltraLight: "e-UkraineHead-UltraLight";
-    --font-family-RegularHead: "e-UkraineHead-Regular";
 }
 
 * {
@@ -53,6 +54,10 @@
 @font-face {
     font-family: "e-Ukraine-Bold";
     src: url("../../public/fonts/e-Ukraine-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "e-Ukraine-RegularHead";
+    src: url("../../public/fonts/e-UkraineHead-Regular.otf") format("opentype");
 }
 
 @font-face {

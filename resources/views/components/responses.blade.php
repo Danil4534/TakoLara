@@ -75,8 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = document.getElementById("nextBtn");
     const cards = slider.querySelectorAll(".slider__item");
     const navDots = document.querySelectorAll(".slider__nav_item");
+    
 
-    const cardsPerPage = 2;
+    const cardsPerPage = 3;
     const cardWidth = cards[0].offsetWidth;
     const gap = 32; 
     const scrollStep = (cardWidth + gap) * cardsPerPage;

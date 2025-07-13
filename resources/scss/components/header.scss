@@ -24,6 +24,15 @@
             gap: 16px;
             .burger {
                 display: block;
+                &.disabled {
+                    display: none;
+                }
+            }
+            .closeBurger {
+                display: none;
+                &.active {
+                    display: block;
+                }
             }
             .Logo {
                 display: none;
