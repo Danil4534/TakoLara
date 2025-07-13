@@ -56,7 +56,7 @@
     "content" => [
     "icon" => "ph ph-backpack",
     "text" => "Передзамовлення",
-    "class" => "btnConnect",
+    "class" => "btnPreOrder",
     "styles" => "font-size: 20px",
     "count" => 9
     ]

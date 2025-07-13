@@ -83,7 +83,7 @@
         <ul class="linksDesktop">
 @foreach ($secondLinks as $link)
                         <li>
-    <!-- <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a> -->
+    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
             </li>
 @endforeach
                                 </ul>
