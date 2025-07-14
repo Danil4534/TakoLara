@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\NavController;
+use App\Http\Controllers\ContactFormController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [NavController::class, 'getHomePage'])->name('home.page');
@@ -10,3 +11,4 @@ Route::get('/medkits', [NavController::class, 'getMedkitsPage'])->name('medkits.
 Route::get('/radioset', [NavController::class, 'getRadioSetPage']);
 Route::get('/drones', [NavController::class, 'getDronesPage'])->name('drones.page');
 Route::get('/support', [NavController::class, 'getSupportPage'])->name('support.page');
+Route::post('/contactForm', [ContactFormController::class, 'submitContactDataPost'])->name('contactFormSubmit');

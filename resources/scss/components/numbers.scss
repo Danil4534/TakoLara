@@ -262,6 +262,7 @@
             display: grid !important;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
+
             .boxUp:nth-child(1),
             .boxUp:nth-child(2) {
                 height: 272px;
@@ -730,7 +731,7 @@
         .statisticBoxDown {
             display: flex;
             flex-direction: row;
-            margin-top: 16px;
+            margin-top: 32px;
             gap: 32px;
             .boxDown {
                 width: 100%;
@@ -758,6 +759,7 @@
                         }
                     }
                     p {
+                        width: 390px;
                         font-family: var(--font-family-Light);
                         font-weight: 300;
                         font-style: Light;
