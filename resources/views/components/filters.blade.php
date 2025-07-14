@@ -56,16 +56,16 @@
 
 @endphp
 
-
-@foreach ($filters as $index => $item)
-
-    <label for="contact-{{ $index }}" class="{{ $item['active'] ? 'radioLabel active' : 'radioLabel' }}"
-        onclick="handleMethodToConnect({{ $item['id'] }})">
-        <input type="radio" id="contact-{{ $index }}" name="contact" value="{{ $item['title'] }}" @if ($item['active'])
-        checked @endif readonly class="radioInput" />
-        {{ $item['title'] }}
-    </label>
-@endforeach
+<div class="filters">
+    @foreach ($filters as $index => $item)
+        <label for="contact-{{ $index }}" class="{{ $item['active'] ? 'radioLabel active' : 'radioLabel' }}"
+            onclick="handleMethodToConnect({{ $item['id'] }})">
+            <input type="radio" id="contact-{{ $index }}" name="contact" value="{{ $item['title'] }}" @if ($item['active'])
+            checked @endif readonly class="radioInput" />
+            {{ $item['title'] }}
+        </label>
+    @endforeach
+</div>
 
 <script>
     function handleMethodToConnect(selectedIndex) {

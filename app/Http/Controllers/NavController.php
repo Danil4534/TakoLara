@@ -41,4 +41,9 @@ class NavController extends Controller
     {
         return view("pages.supportPage");
     }
+
+    public function getRebPage()
+    {
+        return view("pages.rebPage");
+    }
 }

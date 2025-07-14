@@ -51,6 +51,64 @@
         }
     }
 }
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        z-index: 999;
+        height: 56px;
+        .headerContent {
+            width: 100%;
+            display: flex;
+            background-color: rgba(246, 247, 249, 1);
+            border-bottom: 1px solid var(--neutral-light-grey);
+            padding: 8px 16px;
+            align-items: center;
+            justify-content: space-between;
+            .buttonSelect {
+                display: none;
+            }
+            .btnConnect {
+                display: none;
+            }
+            nav {
+                display: none;
+            }
+            .headerBurgerContainer {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                .burger {
+                    display: block;
+                    &.disabled {
+                        display: none;
+                    }
+                }
+                .closeBurger {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }
+                .Logo {
+                    display: none;
+                }
+                .mobileLogo {
+                    display: block;
+                }
+            }
+            .headerBtns {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .btnSupport {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1440px) {
     .header {
@@ -139,6 +197,9 @@
                 gap: 8px;
                 .btnSupport {
                     height: 48px;
+                }
+                .btnConnect {
+                    display: block;
                 }
                 .btnPreOrder {
                     .btnContent {

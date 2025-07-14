@@ -7,7 +7,7 @@
 @use "./components/banner.scss";
 @use "./components/numbers.scss";
 @use "./components/partners.scss";
-@use "./components/ourProducts.scss";
+@use "./components/ourCategories.scss";
 @use "./components/details.scss";
 @use "./components/response.scss";
 @use "./components/media.scss";
@@ -20,8 +20,7 @@
 @use "./modal/headerModal.scss";
 @use "./filter/filter.scss";
 @use "./components/products.scss";
-
-:root {
+:root  {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: #1c2f43;

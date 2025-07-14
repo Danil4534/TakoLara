@@ -40,7 +40,7 @@
             @include("components.numbers")
         </section>
          <section id="ourProducts">
-            @include("components.ourProducts", ['content' => ['title' => "Наші вироби"]])
+            @include("components.categories", ['content' => ['title' => "Наші вироби"]])
         </section>
         <section id="responses">
             @include('components.responses')
