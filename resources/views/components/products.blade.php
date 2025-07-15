@@ -8,7 +8,7 @@
             "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами різних виробників'],
             "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
             "cost" => 10,
-            "count" => 1345
+            "count" => "1 345"
         ],
         [
             "img" => [""],
@@ -18,18 +18,7 @@
             "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами різних виробників'],
             "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
             "cost" => 10,
-            "count" => 1345
-        ],
-
-        [
-            "img" => [""],
-            "title" => "Пристрій швидкого спорядження набоїв",
-            "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
-            "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при низькій/високій температурі) ",
-            "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами різних виробників'],
-            "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
-            "cost" => 10,
-            "count" => 1345
+            "count" => "1 345"
         ],
 
         [
@@ -40,7 +29,7 @@
             "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами різних виробників'],
             "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
             "cost" => 10,
-            "count" => 1345
+            "count" => "1 345"
         ],
 
         [
@@ -51,7 +40,18 @@
             "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами різних виробників'],
             "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
             "cost" => 10,
-            "count" => 1345
+            "count" => "1 345"
+        ],
+
+        [
+            "img" => [""],
+            "title" => "Пристрій швидкого спорядження набоїв",
+            "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
+            "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при низькій/високій температурі) ",
+            "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами різних виробників'],
+            "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
+            "cost" => 10,
+            "count" => "1 345"
         ],
 
         [
@@ -76,45 +76,60 @@
     <hr />
     <ul>
         @foreach ($products as $product)
-            <li>
+            <li class="card">
                 <div class="productContent">
-                    <div class="productData">
-                        <h1>{{ $product['title'] }}</h1>
-
-                        <div class="productCharacter">
-                            @foreach ($product['characteristics'] as $character)
-                                <span>{{ $character }}</span>
-                            @endforeach
-                        </div>
-                        <p class="productSubtitle">{{ $product['subtitle'] }}</p>
-                        <input type="checkbox" id="toggleDetails{{ $loop->index }}" class="toggleCheckbox" hidden>
-                        <label for="toggleDetails{{ $loop->index }}" class="toggleLabel">Більше</label>
-                        <div class="productDetails">
-                            <ol class="toggleContent">
-                                @foreach ($product['details'] as $details)
-                                    <li>{{ $details }}</li>
-                                @endforeach
-                            </ol>
+                    <div class="slider">
+                        <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                        <div class="slider_bottom">
+                            <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                            <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                            <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
                         </div>
                     </div>
-
-                    <div class="productCostCount">
-                        <div class="costCountUp">
-
-                            <div class="cost">
-                                <p>
-                                    {{ $product['count'] }} <span>од.</span>
-                                </p>
-                                <span>передано</span>
+                    <div class="productDataWrapper">
+                        <div class="productData">
+                            <h1>{{ $product['title'] }}</h1>
+                            <div class="productCharacter">
+                                @foreach ($product['characteristics'] as $character)
+                                    <span>{{ $character }}</span>
+                                @endforeach
                             </div>
-                            <div class="count">
-                                <p>
-                                    {{ $product['cost'] }},00 <span>грн</span>
-                                </p>
-                                <span>собівартість за од.</span>
+                            <div class="productDetailsWrap">
+                                <p class="productSubtitle">{{ $product['subtitle'] }}</p>
+                                <input type="checkbox" id="toggleDetails{{ $loop->index }}" class="toggleCheckbox" hidden>
+                                <label for="toggleDetails{{ $loop->index }}" class="toggleLabel">Більше</label>
+                                <div class="productDetails">
+                                    <ol class="toggleContent">
+                                        @foreach ($product['details'] as $details)
+                                            <li>{{ $details }}</li>
+                                        @endforeach
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="productBenefits">
+                                @foreach ($product['benefits'] as $benefit)
+                                    <p>{{ $benefit }}</p>
+                                @endforeach
                             </div>
                         </div>
-                        <button>Замовити <i class="ph ph-plus"></i></button>
+
+                        <div class="productCostCount">
+                            <div class="costCountUp">
+                                <div class="cost">
+                                    <p>
+                                        {{ $product['count'] }} <span class="SI">од.</span>
+                                    </p>
+                                    <span>передано</span>
+                                </div>
+                                <div class="count">
+                                    <p>
+                                        {{ $product['cost'] }},00 <span class="SI">грн</span>
+                                    </p>
+                                    <span>собівартість за од.</span>
+                                </div>
+                            </div>
+                            <button>Замовити <i class="ph ph-plus"></i></button>
+                        </div>
                     </div>
                 </div>
             </li>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -19,24 +20,24 @@
         <section>
             @include ("components.banner", [
                 'content' => [
-                    'banner' => "assets/medkitBg.svg",
-                    'class' => "weaponBg",
-                    'bannerTitle' => 'Медицина',
+                    'banner' => "assets/rebBG.svg",
+                    'class' => "droneBg",
+                    'bannerTitle' => 'РЕБ / РЕР',
                     'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
                     "btnActive" => false,
                     "subtitleActive" => true
                 ]
             ])
-                    </section>
-        <section>
+                        </section>
+   <section id="about">
             @include("components.about")
-        </section> 
+        </section>
          <section>
             @include('components.products')
         </section>
-            <section>
-        @include('components.ourProducts', ['content' => ["title" => "Iнші категорії", "class" => 'cardsGrid']])
-    </section>
+    <section id="ourProducts">
+            @include("components.categories", ['content' => ['title' => "Інші категорії"]])
+        </section>
         <section>
             @include('components.details')
         </section>

@@ -1,0 +1,34 @@
+.weaponBg {
+    height: 420px !important;
+
+    img {
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .scrollCards {
+        width: 100%;
+        display: flex !important;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .productCard {
+            &:nth-child(even) {
+                .productCardHeader {
+                    .leftSideUpBox {
+                        background: white !important;
+
+                        span {
+                            background: white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

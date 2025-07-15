@@ -20,7 +20,7 @@
             @include ("components.banner", [
                 'content' => [
                     'banner' => "assets/weaponBanner.svg",
-                    'class' => "droneBg",
+                    'class' => "droneBg weaponBg",
                     'bannerTitle' => 'Для зброї',
                     'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
                     "btnActive" => false,
@@ -38,10 +38,6 @@
             @include("components.categories", ['content' => ['title' => "Інші категорії"]])
         </section>
         <section>
-
-
-
-
 
             @include('components.details')
         </section>

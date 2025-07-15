@@ -20,6 +20,8 @@
 @use "./modal/headerModal.scss";
 @use "./filter/filter.scss";
 @use "./components/products.scss";
+@use "./pages/weaponPage.scss";
+@use "./pages/supportPage.scss";
 :root  {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
