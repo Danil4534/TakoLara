@@ -45,5 +45,7 @@
 <footer>
     @include('components.footer')
 </footer>
-
+@include('modal.contactModal')
+@include('modal.cartModal')
+@include("modal.headerModal")
 </html>

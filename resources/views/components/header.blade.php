@@ -54,6 +54,7 @@
 ])
 @include("ui.primaryBtn", [
     "content" => [
+    "id" => 'btnPreOrder',
     "icon" => "ph ph-backpack",
     "text" => "Передзамовлення",
     "class" => "btnPreOrder",

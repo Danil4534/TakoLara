@@ -32,5 +32,8 @@
         </p>
     </div>
 </footer>
+@include('modal.contactModal')
+@include('modal.cartModal')
+@include("modal.headerModal")
 
 </html>

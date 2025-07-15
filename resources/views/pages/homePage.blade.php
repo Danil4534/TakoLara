@@ -60,6 +60,7 @@
 
 </body>
 @include('modal.contactModal')
-@include('modal.cartModal')
+@include('modal.preOrderModal')
 @include("modal.headerModal")
+
 </html>

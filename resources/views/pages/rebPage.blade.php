@@ -41,11 +41,14 @@
         <section>
             @include('components.details')
         </section>
+
     </main>
-</body>@include('modal.contactModal')
-@include('modal.cartModal')
+</body>
+
 <footer>
     @include('components.footer')
 </footer>
-
+@include('modal.contactModal')
+@include('modal.cartModal')
+@include("modal.headerModal")
 </html>

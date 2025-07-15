@@ -1,4 +1,4 @@
-<button class="primaryBtn">
+<button class="primaryBtn" id="{{ $content['id'] ?? '' }}">
     @if (!empty($content['icon']))
         <i class="{{ $content['icon'] }}" style="{{ $content['styles'] }}"></i>
     @endif

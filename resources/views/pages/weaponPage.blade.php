@@ -39,6 +39,7 @@
         </section>
         <section>
 
+
             @include('components.details')
         </section>
     </main>
@@ -48,4 +49,5 @@
 </footer>
 
 @include("modal.headerModal")
+@include('modal.contactModal')
 </html>
