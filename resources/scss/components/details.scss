@@ -327,3 +327,97 @@
         }
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .detailsContainer {
+        width: 100%;
+        height: 100%;
+        background: var(--neutral-white);
+        border-radius: 8px;
+        padding: 32px 181px !important;
+        display: flex;
+        flex-direction: row !important;
+        gap: 56px;
+        .rightSideDetails {
+            min-width: 900px !important;
+            height: 485px;
+            border-radius: 8px;
+            background-image: url("../../public/assets/Qr_Bg.svg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            padding: 24px;
+            gap: 0px !important;
+            position: relative;
+            .yellowBox {
+                position: absolute;
+                left: 24px;
+                top: 24px;
+                img {
+                    width: 60px !important;
+                    height: 60px !important;
+                }
+            }
+
+            h1 {
+                height: 62px;
+                width: auto;
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 1.6%;
+                text-align: center;
+                vertical-align: middle;
+                color: var(--neutral-white);
+                margin-top: 0;
+                display: flex;
+                margin-top: 16px;
+                align-items: center;
+            }
+            .qr_code {
+                margin: 32px 0;
+                display: block;
+                width: 200px;
+            }
+            button {
+                width: 195px;
+                height: 40px !important;
+                border-radius: 999px;
+                background-color: rgba(255, 215, 25, 1);
+                font-family: var(--font-family-Bold);
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: rgba(28, 47, 67, 1);
+                border: none;
+            }
+        }
+        .leftSideDetails {
+            width: 100%;
+            h5 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 28px;
+                line-height: 24px;
+                letter-spacing: 1.6%;
+                color: rgba(23, 24, 26, 1);
+            }
+            .detailsInput {
+                width: 100%;
+                height: 48px;
+                border: 2px solid rgba(208, 208, 208, 1);
+                border-radius: 8px;
+                position: relative;
+            }
+        }
+    }
+}

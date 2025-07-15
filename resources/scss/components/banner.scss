@@ -167,3 +167,54 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .droneBg {
+        position: relative;
+        width: 100%;
+        height: 720px;
+        img {
+            width: 100%;
+            height: 720px;
+            object-fit: cover;
+            border-radius: 16px;
+            mix-blend-mode: Soft light;
+        }
+        .bannerContainer {
+            position: absolute;
+            bottom: 24px;
+            width: 100%;
+            padding: 0 181px;
+            .bannerContent {
+                width: 100%;
+                h1 {
+                    width: 789px;
+                    font-family: var(--font-family-RegularHead);
+                    font-size: 72px;
+                    line-height: 120%;
+                    letter-spacing: 1.2%;
+                    vertical-align: middle;
+                }
+                .bannerBtn {
+                    width: 554px !important;
+                    height: 72px;
+                    margin-top: 48px;
+                    border-radius: 999px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-right: 24px;
+                    padding-left: 32px;
+                    background: var(--primary-deep-blue);
+                    border: none;
+                    font-family: var(--font-family-Thin);
+                    font-size: 16px;
+                    line-height: 120%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    color: var(--neutral-white);
+                }
+            }
+        }
+    }
+}

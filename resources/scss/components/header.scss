@@ -210,3 +210,104 @@
         }
     }
 }
+@media screen and (min-width: 1920px) {
+    .header {
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        z-index: 999;
+        height: 56px;
+        .headerContent {
+            width: 100%;
+            display: flex;
+            background-color: rgba(246, 247, 249, 1);
+            border-bottom: 1px solid var(--neutral-light-grey);
+            padding: 16px 189px;
+            align-items: center;
+
+            .buttonSelect {
+                margin-left: 32px;
+                margin-right: 24px;
+                display: block;
+                min-width: 136px !important;
+                height: 48px !important;
+                border-radius: 999px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                background-color: rgba(15, 94, 187, 1);
+                font-family: var(--font-family-Bold);
+                color: rgba(255, 255, 255, 1);
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+            }
+            nav {
+                width: 100%;
+                display: block;
+                margin-right: 61px;
+                ul {
+                    display: flex;
+                    gap: 24px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        a {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 14px;
+                            text-decoration: none;
+                            color: rgba(28, 47, 67, 1);
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .headerBurgerContainer {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                .burger {
+                    display: none;
+                    &.disabled {
+                        display: none;
+                    }
+                }
+                .closeBurger {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }
+                .Logo {
+                    display: block;
+                }
+                .mobileLogo {
+                    display: none;
+                }
+            }
+            .headerBtns {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .btnSupport {
+                    height: 48px;
+                }
+                .btnConnect {
+                    display: block;
+                }
+                .btnPreOrder {
+                    .btnContent {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
