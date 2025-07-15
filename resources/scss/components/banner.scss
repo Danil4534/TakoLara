@@ -45,8 +45,8 @@
                 margin-top: 48px;
                 border-radius: 999px;
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
+                align-items: center;
                 padding-right: 24px;
                 padding-left: 32px;
                 background: var(--primary-deep-blue);
@@ -58,6 +58,35 @@
                 letter-spacing: 0%;
                 vertical-align: middle;
                 color: var(--neutral-white);
+                transition: 0.3s ease;
+                position: relative;
+                .bannerBtnArrowIcon {
+                    position: absolute;
+                    right: 24px;
+                }
+                p {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: var(--font-family-Light);
+                    left: 32px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    transition: left 0.3s ease, transform 0.3s ease;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background: var(--secondary-light-blue);
+                    .bannerBtnArrowIcon {
+                        display: none;
+                    }
+                }
+                &:hover p {
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: var(--neutral-white);
+                }
             }
         }
     }

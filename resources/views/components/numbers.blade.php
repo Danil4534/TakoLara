@@ -72,6 +72,7 @@
         </div>
     </div>
     <button class="bannerBtn">
-        <span>Збільшити цифри</span>
-        <i class="ph ph-arrow-up-right bannerBtnArrowIcon"></i> </button>
+        <p>Збільшити цифри</p>
+        <i class="ph ph-arrow-up-right bannerBtnArrowIcon"></i>
+    </button>
 </div>

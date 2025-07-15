@@ -11,7 +11,7 @@
 
             @if (!empty($content['btnActive']) && $content['btnActive'] === true)
                 <button class="bannerBtn" onclick="window.location.href='{{ route('support.page') }}'">
-                    <span>Підтримати TAKO</span>
+                    <p>Підтримати TAKO</p>
                     <i class="ph ph-arrow-up-right bannerBtnArrowIcon" style="font-size: 28px;"></i>
                 </button>
             @endif
