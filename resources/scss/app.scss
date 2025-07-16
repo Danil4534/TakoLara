@@ -23,7 +23,8 @@
 @use "./pages/weaponPage.scss";
 @use "./pages/supportPage.scss";
 @use "./modal/preOrderModal.scss";
-:root {
+@use "./pages/successPage.scss";
+:root  {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: #1c2f43;

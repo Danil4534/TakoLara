@@ -13,3 +13,4 @@ Route::get('/drones', [NavController::class, 'getDronesPage'])->name('drones.pag
 Route::get('/support', [NavController::class, 'getSupportPage'])->name('support.page');
 Route::post('/contactForm', [ContactFormController::class, 'submitContactDataPost'])->name('contactFormSubmit');
 Route::get('/reb', [NavController::class, 'getRebPage'])->name('reb.page');
+Route::get('/success', [NavController::class, 'getSuccessPage'])->name('success.page');

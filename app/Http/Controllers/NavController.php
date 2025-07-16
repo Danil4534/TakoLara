@@ -46,4 +46,9 @@ class NavController extends Controller
     {
         return view("pages.rebPage");
     }
+
+    public function getSuccessPage()
+    {
+        return view("pages.successPage");
+    }
 }
