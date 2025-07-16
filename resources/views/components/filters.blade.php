@@ -57,7 +57,7 @@
 @endphp
 
 <div class="filters">
-    @foreach ($filters as $index => $item)
+    @foreach (!empty($typeOfContact)? $typeOfContact:$filters as $index => $item)
         <label for="contact-{{ $index }}" class="{{ $item['active'] ? 'radioLabel active' : 'radioLabel' }}"
             onclick="handleMethodToConnect({{ $item['id'] }})">
             <input type="radio" id="contact-{{ $index }}" name="contact" value="{{ $item['title'] }}" @if ($item['active'])

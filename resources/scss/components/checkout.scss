@@ -1,22 +1,40 @@
-footer .footerContainer p {
-    font-family: var(--font-family-Thin);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: rgba(208, 208, 208, 1);
+main {
+    padding-bottom: 100px !important;
 }
+.checkoutBoxContainer {
+    background: var(--neutral-white);
+    border-radius: 16px;
+    padding: 32px 16px;
+    h1 {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        vertical-align: middle;
+        color: rgba(28, 47, 67, 1);
+    }
+}
+footer {
+    padding: 0 8px;
+    .footerCheckoutContainer {
+        width: 100%;
+        height: 56px;
+        padding: 19.5px 24px;
+        background: rgba(28, 47, 67, 1);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        p {
+            font-family: var(--font-family-Thin);
 
-.checkoutTitle {
-    font-family: var(--font-family-RegularHead);
-    font-weight: 300;
-    font-style: Light;
-    font-size: 56px;
-    margin-top: 40px;
-    line-height: 120%;
-    letter-spacing: 1.25%;
-    vertical-align: middle;
-    color: rgba(34, 37, 43, 1);
+            font-style: Light;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: rgba(208, 208, 208, 1);
+        }
+    }
 }

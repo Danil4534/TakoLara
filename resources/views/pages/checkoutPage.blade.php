@@ -16,24 +16,20 @@
 <body>
     @include("components.header")
     <main>
-        <section class="box">
-            <h1 class="checkoutTitle">Оформити замовлення</h1>
-        </section>
         <section>
             @include("components.checkoutForm")
         </section>
     </main>
 </body>
-
 <footer>
-    <div class="footerContainer">
+    <div class="footerCheckoutContainer">
         <p>
             © 2025 TAKO. All rights reserved
         </p>
     </div>
 </footer>
 @include('modal.contactModal')
-@include('modal.cartModal')
+@include('modal.preOrderModal')
 @include("modal.headerModal")
 
 </html>
