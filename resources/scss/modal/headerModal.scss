@@ -15,7 +15,7 @@
         overflow: hidden;
         padding: 8px;
         transition: 0.3s ease;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--neutral-white);
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -33,7 +33,7 @@
                 font-family: var(--font-family-Regular);
                 font-weight: 400;
                 font-size: 12px;
-                color: rgba(208, 208, 208, 1);
+                color: var(--neutral-medium-gray-second);
                 line-height: 120%;
                 letter-spacing: 1.4%;
                 text-transform: uppercase;
@@ -59,7 +59,7 @@
                 line-height: 140%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
                 &:last-child {
                     border: none;
                 }
@@ -85,7 +85,7 @@
                 line-height: 120%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
                 &:last-child {
                     border: none;
                 }
@@ -140,7 +140,7 @@
             overflow: hidden;
             padding: 8px;
             transition: 0.3s ease;
-            background-color: rgba(255, 255, 255, 1);
+            background-color: var(--neutral-white);
             display: flex;
             flex-direction: column;
             gap: 8px;
@@ -157,7 +157,7 @@
                     font-family: var(--font-family-Regular);
                     font-weight: 400;
                     font-size: 12px;
-                    color: rgba(208, 208, 208, 1);
+                    color: var(--neutral-medium-gray-second);
                     line-height: 120%;
                     letter-spacing: 1.4%;
                     text-transform: uppercase;
@@ -183,7 +183,7 @@
                     line-height: 140%;
                     letter-spacing: 1.6%;
                     vertical-align: middle;
-                    color: rgba(28, 47, 67, 1);
+                    color: var(--primary-dark-navy);
                     &:last-child {
                         border: none;
                     }
@@ -209,7 +209,7 @@
                     line-height: 120%;
                     letter-spacing: 1.6%;
                     vertical-align: middle;
-                    color: rgba(107, 107, 107, 1);
+                    color: var(--neutral-medium-gray);
                     &:last-child {
                         border: none;
                     }

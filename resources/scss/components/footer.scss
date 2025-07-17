@@ -16,11 +16,10 @@
         margin-top: 56px;
         p {
             margin-top: 32px;
-
+            color: var(--neutral-medium-gray-second);
             font-weight: 300;
             font-style: Light;
             font-size: 14px;
-
             line-height: 17px;
             font-family: var(--font-family-Thin);
             letter-spacing: 0%;
@@ -30,7 +29,7 @@
             width: 100%;
             border: none;
             height: 1px;
-            background-color: rgba(107, 107, 107, 1);
+            background-color: var(--neutral-medium-gray);
         }
     }
     .footerSlogan {
@@ -173,7 +172,7 @@
                 width: 100%;
                 border: none;
                 height: 1px;
-                background-color: rgba(107, 107, 107, 1);
+                background-color: var(--neutral-medium-gray);
             }
         }
         .footerSlogan {

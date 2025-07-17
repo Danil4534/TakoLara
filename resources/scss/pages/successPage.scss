@@ -1,5 +1,5 @@
 .headerContent {
-    background: rgba(255, 255, 255, 1) !important;
+    background: var(--neutral-white) !important;
 }
 .successContent {
     height: calc(100vh - 56px);
@@ -22,7 +22,7 @@
             letter-spacing: 1.4%;
             text-align: center;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
         }
         p {
             font-family: var(--font-family-Light);
@@ -33,7 +33,7 @@
             letter-spacing: 1.6%;
             text-align: center;
             vertical-align: middle;
-            color: rgba(107, 107, 107, 1);
+            color: var(--neutral-medium-gray);
         }
     }
     .btnSection {
@@ -120,7 +120,7 @@
                 letter-spacing: 1.4%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 width: 672px;
@@ -132,7 +132,7 @@
                 letter-spacing: 1.6%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
             }
         }
         .btnSection {
@@ -208,7 +208,7 @@
                 letter-spacing: 1.4%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 width: 672px;
@@ -220,7 +220,7 @@
                 letter-spacing: 1.6%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
             }
         }
         .btnSection {
@@ -293,7 +293,7 @@
                 letter-spacing: 1.4%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 width: 672px;
@@ -305,7 +305,7 @@
                 letter-spacing: 1.6%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
             }
         }
         .btnSection {
@@ -380,7 +380,7 @@
                 letter-spacing: 1.4%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 width: 672px;
@@ -392,7 +392,7 @@
                 letter-spacing: 1.6%;
                 text-align: center;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
             }
         }
         .btnSection {

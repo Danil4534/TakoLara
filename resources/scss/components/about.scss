@@ -10,7 +10,7 @@
     hr {
         border: none;
         height: 1px;
-        background: rgba(208, 208, 208, 1);
+        background: var(--neutral-medium-gray-second);
     }
     h1 {
         font-family: var(--font-family-Light);
@@ -62,7 +62,7 @@
             display: none;
             border: none;
             height: 1px;
-            background: rgba(208, 208, 208, 1);
+            background: var(--neutral-medium-gray-second);
         }
         h1 {
             min-width: 274px !important;
@@ -118,7 +118,7 @@
             display: none;
             border: none;
             height: 1px;
-            background: rgba(208, 208, 208, 1);
+            background: var(--neutral-medium-gray-second);
         }
         h1 {
             min-width: 437px !important;
@@ -174,7 +174,7 @@
             display: none;
             border: none;
             height: 1px;
-            background: rgba(208, 208, 208, 1);
+            background: var(--neutral-medium-gray-second);
         }
         h1 {
             min-width: 437px !important;

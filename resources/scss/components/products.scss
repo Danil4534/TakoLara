@@ -49,7 +49,7 @@
         width: 100%;
         height: 1px;
         border: none;
-        background-color: rgba(208, 208, 208, 1);
+        background-color: var(--neutral-medium-gray-second);
     }
     ul {
         width: 100%;
@@ -96,7 +96,7 @@
                         line-height: 120%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
-                        color: rgba(107, 107, 107, 1);
+                        color: var(--neutral-medium-gray);
                         transition: max-height 0.3s ease, padding 0.3s ease;
                         padding-top: 0;
                         padding-bottom: 0;
@@ -139,7 +139,7 @@
                     line-height: 120%;
                     letter-spacing: 1.6%;
                     vertical-align: middle;
-                    color: rgba(107, 107, 107, 1);
+                    color: var(--neutral-medium-gray);
                 }
                 .productBenefits {
                     display: flex;
@@ -158,7 +158,7 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
 
-                        color: rgba(107, 107, 107, 1);
+                        color: var(--neutral-medium-gray);
                         background: var(--neutral-white);
                     }
                 }
@@ -169,7 +169,7 @@
                     line-height: 24px;
                     letter-spacing: 1.6%;
                     vertical-align: middle;
-                    color: rgba(28, 47, 67, 1);
+                    color: var(--primary-dark-navy);
                 }
                 .productCostCount {
                     width: 100%;
@@ -195,7 +195,7 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
-                            color: rgba(107, 107, 107, 1);
+                            color: var(--neutral-medium-gray);
                         }
                         p {
                             margin-top: 4px;
@@ -214,7 +214,7 @@
                                 line-height: 24px;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
-                                color: rgba(28, 47, 67, 1);
+                                color: var(--primary-dark-navy);
                             }
                         }
                     }
@@ -232,7 +232,7 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
-                            color: rgba(107, 107, 107, 1);
+                            color: var(--neutral-medium-gray);
                         }
                         p {
                             margin-top: 4px;
@@ -251,7 +251,7 @@
                                 line-height: 24px;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
-                                color: rgba(28, 47, 67, 1);
+                                color: var(--primary-dark-navy);
                             }
                         }
                     }
@@ -310,7 +310,7 @@
             width: 100%;
             height: 1px;
             border: none;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
         ul {
             width: 100%;
@@ -368,7 +368,7 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
-                            color: rgba(107, 107, 107, 1);
+                            color: var(--neutral-medium-gray);
                             transition: max-height 0.3s ease, padding 0.3s ease;
                             padding-top: 0;
                             padding-bottom: 0;
@@ -427,7 +427,7 @@
                         line-height: 120%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
-                        color: rgba(107, 107, 107, 1);
+                        color: var(--neutral-medium-gray);
                     }
                     .productBenefits {
                         display: flex;
@@ -447,7 +447,7 @@
                             letter-spacing: 1.6%;
                             vertical-align: middle;
 
-                            color: rgba(107, 107, 107, 1);
+                            color: var(--neutral-medium-gray);
                             background: var(--neutral-white);
                         }
                     }
@@ -458,7 +458,7 @@
                         line-height: 24px;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
-                        color: rgba(28, 47, 67, 1);
+                        color: var(--primary-dark-navy);
                     }
                     .productCostCount {
                         width: 100%;
@@ -505,7 +505,7 @@
                                 line-height: 120%;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
-                                color: rgba(107, 107, 107, 1);
+                                color: var(--neutral-medium-gray);
                             }
                         }
                         .count {
@@ -541,7 +541,7 @@
                                 line-height: 120%;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
-                                color: rgba(107, 107, 107, 1);
+                                color: var(--neutral-medium-gray);
                             }
                         }
                     }
@@ -600,7 +600,7 @@
             width: 100%;
             height: 1px;
             border: none;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
         ul {
             width: 100%;
@@ -660,7 +660,7 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
-                            color: rgba(107, 107, 107, 1);
+                            color: var(--neutral-medium-gray);
                             transition: max-height 0.3s ease, padding 0.3s ease;
                             padding-top: 0;
                             padding-bottom: 0;
@@ -681,7 +681,7 @@
                             line-height: 24px;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
-                            color: rgba(28, 47, 67, 1);
+                            color: var(--primary-dark-navy);
                         }
                     }
                     .productCharacter {
@@ -713,7 +713,7 @@
                         line-height: 120%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
-                        color: rgba(107, 107, 107, 1);
+                        color: var(--neutral-medium-gray);
                     }
                     .productDetailsWrap {
                         width: 604px;
@@ -737,7 +737,7 @@
                             letter-spacing: 1.6%;
                             vertical-align: middle;
 
-                            color: rgba(107, 107, 107, 1);
+                            color: var(--neutral-medium-gray);
                             background: var(--neutral-white);
                         }
                     }
@@ -748,7 +748,7 @@
                         line-height: 24px;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
-                        color: rgba(28, 47, 67, 1);
+                        color: var(--primary-dark-navy);
                     }
                     .productCostCount {
                         width: 100%;
@@ -798,7 +798,7 @@
                                 line-height: 120%;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
-                                color: rgba(107, 107, 107, 1);
+                                color: var(--neutral-medium-gray);
                             }
                         }
                         .count {
@@ -834,7 +834,7 @@
                                 line-height: 120%;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
-                                color: rgba(107, 107, 107, 1);
+                                color: var(--neutral-medium-gray);
                             }
                         }
                     }
@@ -893,7 +893,7 @@
             width: 100%;
             height: 1px;
             border: none;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
         ul {
             width: 100%;
@@ -953,10 +953,12 @@
                         }
                         .productCostCount {
                             width: 100%;
-                            border-right: 1px solid rgba(208, 208, 208, 1);
+                            border-right: 1px solid
+                                var(--neutral-medium-gray-second);
                             gap: 16px;
                             .costCountUp {
-                                border-right: 1px solid rgba(208, 208, 208, 1);
+                                border-right: 1px solid
+                                    var(--neutral-medium-gray-second);
                             }
                         }
                     }
@@ -993,7 +995,7 @@
             width: 100%;
             height: 1px;
             border: none;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
         ul {
             width: 100%;
@@ -1053,10 +1055,12 @@
                         }
                         .productCostCount {
                             width: 100%;
-                            border-right: 1px solid rgba(208, 208, 208, 1);
+                            border-right: 1px solid
+                                var(--neutral-medium-gray-second);
                             gap: 16px;
                             .costCountUp {
-                                border-right: 1px solid rgba(208, 208, 208, 1);
+                                border-right: 1px solid
+                                    var(--neutral-medium-gray-second);
                             }
                         }
                     }

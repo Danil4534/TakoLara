@@ -14,7 +14,7 @@
         line-height: 120%;
         letter-spacing: 1.35%;
         vertical-align: middle;
-        color: rgba(28, 47, 67, 1);
+        color: var(--primary-dark-navy);
         font-family: var(--font-family-Light) !important;
     }
     .productCards {
@@ -29,7 +29,7 @@
         margin: 32px 0px;
         border: none;
         height: 1px;
-        background-color: rgba(208, 208, 208, 1);
+        background-color: var(--neutral-medium-gray-second);
     }
     ul .productCard img {
         border-radius: 8px;
@@ -92,7 +92,7 @@
             line-height: 120%;
             letter-spacing: 1.5%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
         }
         p {
             font-family: var(--font-family-Light);
@@ -102,7 +102,7 @@
             line-height: 120%;
             letter-spacing: 1.6%;
             vertical-align: middle;
-            color: rgba(107, 107, 107, 1);
+            color: var(--neutral-medium-gray);
             margin-top: 16px;
         }
     }
@@ -182,7 +182,7 @@
             line-height: 120%;
             letter-spacing: 1.35%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
         .productCards {
@@ -198,7 +198,7 @@
             margin: 32px 0px;
             border: none;
             height: 1px;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
         ul .productCard img {
             width: 100% !important;
@@ -219,7 +219,7 @@
                 line-height: 120%;
                 letter-spacing: 1.5%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 font-family: var(--font-family-Light);
@@ -229,7 +229,7 @@
                 line-height: 120%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
                 margin-top: 16px;
             }
         }
@@ -287,7 +287,7 @@
             line-height: 120%;
             letter-spacing: 1.35%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
         .productCards {
@@ -302,7 +302,7 @@
             margin: 32px 0px;
             border: none;
             height: 1px;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
         ul .productCard img {
             object-fit: fill;
@@ -324,7 +324,7 @@
                 line-height: 120%;
                 letter-spacing: 1.5%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 font-family: var(--font-family-Light);
@@ -334,7 +334,7 @@
                 line-height: 120%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
                 margin-top: 16px;
                 height: 83px;
             }
@@ -392,7 +392,7 @@
             line-height: 120%;
             letter-spacing: 1.35%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
         .productCards {
@@ -407,9 +407,9 @@
             margin: 32px 0px;
             border: none;
             height: 1px;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
-        ul .productCard img {
+        ul .productCard .productCardHeader img {
             object-fit: fill;
             width: 100% !important;
             height: 232px !important;
@@ -429,7 +429,7 @@
                 line-height: 120%;
                 letter-spacing: 1.5%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 font-family: var(--font-family-Light);
@@ -439,7 +439,7 @@
                 line-height: 140%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
                 margin-top: 16px;
                 height: 88px;
             }
@@ -497,7 +497,7 @@
             line-height: 120%;
             letter-spacing: 1.35%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
         .productCards {
@@ -512,9 +512,9 @@
             margin: 32px 0px;
             border: none;
             height: 1px;
-            background-color: rgba(208, 208, 208, 1);
+            background-color: var(--neutral-medium-gray-second);
         }
-        ul .productCard img {
+        ul .productCard .productCardHeader img {
             object-fit: fill;
             width: 100% !important;
             height: 232px !important;
@@ -534,7 +534,7 @@
                 line-height: 120%;
                 letter-spacing: 1.5%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 font-family: var(--font-family-Light);
@@ -544,7 +544,7 @@
                 line-height: 140%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
                 margin-top: 16px;
                 height: 88px;
             }

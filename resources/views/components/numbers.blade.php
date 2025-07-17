@@ -12,13 +12,14 @@
 
             <div class="boxUp">
                 <div class="yellowBox">
-                    <div class=" blueBox"></div>
+                    <div class="blueBox"></div>
                 </div>
             </div>
+
             <div class="boxUp">
                 <div class="boxContent">
-                    <h1>
-                        10 043<span>од</span>
+                    <h1 class="animateNumber" data-value="10043">
+                        0<span>од</span>
                     </h1>
                     <p>Виробів відправлено</p>
                 </div>
@@ -27,17 +28,18 @@
 
             <div class="boxUp">
                 <div class="boxContent">
-                    <h1>
-                        432 100<span>грн</span>
+                    <h1 class="animateNumber" data-value="432100">
+                        0<span>грн</span>
                     </h1>
                     <p>Витрачено на виготовлення</p>
                 </div>
                 <x-picture-tag src="{{ asset('assets/printersvg.svg') }}" alt="Logo" :lazy="true" class="item" />
             </div>
+
             <div class="boxUp">
                 <div class="boxContent">
-                    <h1>
-                        173 213<span>грн</span>
+                    <h1 class="animateNumber" data-value="173213">
+                        0<span>грн</span>
                     </h1>
                     <p>Отримано донатами</p>
                 </div>
@@ -45,32 +47,36 @@
             </div>
         </div>
     </div>
-    <div class=" statisticBoxDown">
+
+    <div class="statisticBoxDown">
         <div class="boxDown">
-            <div class=" boxContent">
-                <h1>
-                    730<span>км</span>
+            <div class="boxContent">
+                <h1 class="animateNumber" data-value="730">
+                    0<span>км</span>
                 </h1>
                 <p>Пластикової нитки перетворено на допомогу</p>
             </div>
         </div>
+
         <div class="boxDown">
             <div class="boxContent">
-                <h1>
-                    90 000<span>од</span>
+                <h1 class="animateNumber" data-value="90000">
+                    0<span>од</span>
                 </h1>
                 <p>Посилок відправлено</p>
             </div>
         </div>
+
         <div class="boxDown">
             <div class="boxContent">
-                <h1>
-                    8 760<span>год</span>
+                <h1 class="animateNumber" data-value="8760">
+                    0<span>год</span>
                 </h1>
                 <p>Людської праці вкладено (і це лише початок!)</p>
             </div>
         </div>
     </div>
+
     <button class="bannerBtn">
         <p>Збільшити цифри</p>
         <i class="ph ph-arrow-up-right bannerBtnArrowIcon"></i>

@@ -55,7 +55,7 @@
             line-height: 120%;
             letter-spacing: 0%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
             border: none;
         }
     }
@@ -73,7 +73,7 @@
         .detailsInput {
             width: 100%;
             height: 48px;
-            border: 2px solid rgba(208, 208, 208, 1);
+            border: 2px solid var(--neutral-medium-gray-second);
             border-radius: 8px;
             position: relative;
         }
@@ -103,7 +103,7 @@
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 1.4%;
-    color: rgba(107, 107, 107, 1);
+    color: var(--neutral-medium-gray);
 }
 
 .leftSideDetails .detailsInput input {
@@ -124,7 +124,7 @@
 
 .leftSideDetails .detailsInput:hover {
     transition: 0.3s ease;
-    border: 2px solid rgba(107, 107, 107, 1);
+    border: 2px solid var(--neutral-medium-gray);
 }
 
 .leftSideDetails .detailsInput label {
@@ -208,7 +208,7 @@
                 line-height: 120%;
                 letter-spacing: 0%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
                 border: none;
             }
         }
@@ -218,7 +218,7 @@
                 font-family: var(--font-family-Light);
                 font-weight: 300;
                 font-style: Light;
-                font-size: 20px;
+                font-size: 28px;
                 line-height: 24px;
                 letter-spacing: 1.6%;
                 color: rgba(23, 24, 26, 1);
@@ -226,7 +226,7 @@
             .detailsInput {
                 width: 100%;
                 height: 48px;
-                border: 2px solid rgba(208, 208, 208, 1);
+                border: 2px solid var(--neutral-medium-gray-second);
                 border-radius: 8px;
                 position: relative;
             }
@@ -302,7 +302,7 @@
                 line-height: 120%;
                 letter-spacing: 0%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
                 border: none;
             }
         }
@@ -320,7 +320,7 @@
             .detailsInput {
                 width: 100%;
                 height: 48px;
-                border: 2px solid rgba(208, 208, 208, 1);
+                border: 2px solid var(--neutral-medium-gray-second);
                 border-radius: 8px;
                 position: relative;
             }
@@ -396,7 +396,7 @@
                 line-height: 120%;
                 letter-spacing: 0%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
                 border: none;
             }
         }
@@ -414,7 +414,7 @@
             .detailsInput {
                 width: 100%;
                 height: 48px;
-                border: 2px solid rgba(208, 208, 208, 1);
+                border: 2px solid var(--neutral-medium-gray-second);
                 border-radius: 8px;
                 position: relative;
             }

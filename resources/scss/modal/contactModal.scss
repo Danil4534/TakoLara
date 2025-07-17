@@ -31,7 +31,7 @@
             line-height: 120%;
             letter-spacing: 1.4%;
             vertical-align: middle;
-            color: rgba(28, 47, 67, 1);
+            color: var(--primary-dark-navy);
         }
         p {
             margin-top: 12px;
@@ -42,7 +42,7 @@
             width: 315px;
             line-height: 120%;
             letter-spacing: 1.6%;
-            color: rgba(107, 107, 107, 1);
+            color: var(--neutral-medium-gray);
             vertical-align: middle;
         }
         .close-btn {
@@ -51,7 +51,7 @@
             top: 32px;
             text-decoration: none;
             font-size: 32px;
-            color: rgba(107, 107, 107, 1);
+            color: var(--neutral-medium-gray);
             cursor: pointer;
         }
 
@@ -134,7 +134,7 @@
                 line-height: 120%;
                 letter-spacing: 1.4%;
                 vertical-align: middle;
-                color: rgba(28, 47, 67, 1);
+                color: var(--primary-dark-navy);
             }
             p {
                 margin-top: 12px;
@@ -145,7 +145,7 @@
                 width: 405px;
                 line-height: 120%;
                 letter-spacing: 1.6%;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
                 vertical-align: middle;
             }
             .close-btn {
@@ -154,7 +154,7 @@
                 top: 32px;
                 text-decoration: none;
                 font-size: 32px;
-                color: rgba(107, 107, 107, 1);
+                color: var(--neutral-medium-gray);
             }
 
             form {
@@ -184,6 +184,385 @@
                 .inputContainer {
                     input {
                         height: 48px;
+                        padding: 0 16px;
+                        &::placeholder {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                        }
+                    }
+                    textarea {
+                        padding: 16px;
+                        height: 132px;
+                        &::placeholder {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                        }
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 999px;
+                    background-color: var(--primary-deep-blue);
+                    border: none;
+                    font-family: var(--font-family-Bold);
+                    font-size: 14px;
+                    line-height: 120%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    color: var(--neutral-white);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .modal {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(28, 47, 67, 0.3);
+        transition: all 0.3s ease;
+        &.active {
+            transition: 0.3s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            width: 632px !important;
+            height: auto !important;
+            background-color: #fff;
+            padding: 32px;
+            width: 100%;
+            height: 100vh;
+            border-radius: 8px;
+            position: relative;
+            h4 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 36px;
+                line-height: 120%;
+                letter-spacing: 1.4%;
+                vertical-align: middle;
+                color: var(--primary-dark-navy);
+            }
+            p {
+                margin-top: 16px;
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 16px;
+                width: 405px;
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                color: var(--neutral-medium-gray);
+                vertical-align: middle;
+            }
+            .close-btn {
+                position: absolute;
+                right: 32px;
+                top: 32px;
+                text-decoration: none;
+                font-size: 32px;
+                color: var(--neutral-medium-gray);
+            }
+
+            form {
+                margin-top: 32px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .userData {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 32px;
+                    .inputContainer {
+                        label {
+                            font-family: var(--font-family-Regular);
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.4%;
+                        }
+                        input {
+                            height: 48px;
+                            padding: 0 16px;
+                        }
+                    }
+                }
+                .inputContainer {
+                    input {
+                        height: 48px !important;
+                        padding: 0 16px;
+                        &::placeholder {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                        }
+                    }
+                    textarea {
+                        padding: 16px;
+                        height: 132px;
+                        &::placeholder {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                        }
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 999px;
+                    background-color: var(--primary-deep-blue);
+                    border: none;
+                    font-family: var(--font-family-Bold);
+                    font-size: 14px;
+                    line-height: 120%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    color: var(--neutral-white);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .modal {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(28, 47, 67, 0.3);
+        transition: all 0.3s ease;
+        &.active {
+            transition: 0.3s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            width: 672px !important;
+            height: auto !important;
+            background-color: #fff;
+            padding: 32px;
+            width: 100%;
+            height: 100vh;
+            border-radius: 8px;
+            position: relative;
+            h4 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 36px;
+                line-height: 120%;
+                letter-spacing: 1.4%;
+                vertical-align: middle;
+                color: var(--primary-dark-navy);
+            }
+            p {
+                margin-top: 16px;
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 16px;
+                width: 405px;
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                color: var(--neutral-medium-gray);
+                vertical-align: middle;
+            }
+            .close-btn {
+                position: absolute;
+                right: 32px;
+                top: 32px;
+                text-decoration: none;
+                font-size: 32px;
+                color: var(--neutral-medium-gray);
+            }
+
+            form {
+                margin-top: 32px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .userData {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 32px;
+                    .inputContainer {
+                        label {
+                            font-family: var(--font-family-Regular);
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.4%;
+                        }
+                        input {
+                            height: 48px;
+                            padding: 0 16px;
+                        }
+                    }
+                }
+                .inputContainer {
+                    input {
+                        height: 48px !important;
+                        padding: 0 16px;
+                        &::placeholder {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                        }
+                    }
+                    textarea {
+                        padding: 16px;
+                        height: 132px;
+                        &::placeholder {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                        }
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 999px;
+                    background-color: var(--primary-deep-blue);
+                    border: none;
+                    font-family: var(--font-family-Bold);
+                    font-size: 14px;
+                    line-height: 120%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    color: var(--neutral-white);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .modal {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(28, 47, 67, 0.3);
+        transition: all 0.3s ease;
+        &.active {
+            transition: 0.3s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            width: 672px !important;
+            height: 751px !important;
+            height: auto !important;
+            background-color: #fff;
+            padding: 32px;
+            width: 100%;
+            height: 100vh;
+            border-radius: 8px;
+            position: relative;
+            h4 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 36px;
+                line-height: 120%;
+                letter-spacing: 1.4%;
+                vertical-align: middle;
+                color: var(--primary-dark-navy);
+            }
+            p {
+                margin-top: 16px;
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 16px;
+                width: 405px;
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                color: var(--neutral-medium-gray);
+                vertical-align: middle;
+            }
+            .close-btn {
+                position: absolute;
+                right: 32px;
+                top: 32px;
+                text-decoration: none;
+                font-size: 32px;
+                color: var(--neutral-medium-gray);
+            }
+
+            form {
+                margin-top: 32px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .userData {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 32px;
+                    .inputContainer {
+                        label {
+                            font-family: var(--font-family-Regular);
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.4%;
+                        }
+                        input {
+                            height: 48px;
+                            padding: 0 16px;
+                        }
+                    }
+                }
+                .inputContainer {
+                    input {
+                        height: 48px !important;
                         padding: 0 16px;
                         &::placeholder {
                             font-family: var(--font-family-Light);

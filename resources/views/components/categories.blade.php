@@ -22,14 +22,12 @@
             <li class="productCard">
                 <div class="productCardHeader">
                     <div class="leftSideUpBox">
-                        <span class=""></span>
+                        <span></span>
                     </div>
                     <x-picture-tag src="{{ $product['picture'] }}" />
                 </div>
                 <div class="cardContent">
-
                     <h4>{{ $product['title'] }}</h4>
-
                     <p>{{ $product['subtitle'] }}</p>
                 </div>
                 @include("ui.secondaryBtn", [
@@ -41,7 +39,7 @@
                         'route' => $product['route']
                     ]
                 ])
-                                                                                                                                                    </li>
+                                                                                                                                                        </li>
         @endforeach
     </ul>
 

@@ -42,13 +42,13 @@
                     "name" => "name"
                 ]
             ])
-                                                                                                                                                                                                                                                        @include("ui.input", [
-                                                                                                                                                                                                                                                            'content' => [
-                                                                                                                                                                                                                                                                "label" => "Ім'я",
-                                                                                                                                                                                                                                                                "placeholder" => "Введіть ім'я",
-                                                                                                                                                                                                                                                                "name" => "name"
-                                                                                                                                                                                                                                                            ]
-                                                                                                                                                                                                                                                        ])
+                                                                                                                                                                                                                                                                @include("ui.input", [
+                                                                                                                                                                                                                                                                    'content' => [
+                                                                                                                                                                                                                                                                        "label" => "Ім'я",
+                                                                                                                                                                                                                                                                        "placeholder" => "Введіть ім'я",
+                                                                                                                                                                                                                                                                        "name" => "name"
+                                                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                                                ])
 @include("ui.input", [
     'content' => [
         "label" => "По батькові",
@@ -62,9 +62,9 @@
         "name" => "name"
     ]
 ])
-                                                                                                                
-                                                                       </div><div class="userData box">
-                                                                                                        <h6>Доставка</h6>
+                                                                                                                        
+                                                                               </div><div class="userData box">
+                                                                                                                <h6>Доставка</h6>
                                                             @include("ui.input", [
                                                                 'content' => [
                                                                     "label" => "Місто / Населений пункт",
