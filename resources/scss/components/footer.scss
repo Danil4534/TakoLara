@@ -628,7 +628,7 @@
         }
         .footerSlogan {
             width: 458px;
-            margin-right: 168px;
+            margin-right: 251px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -651,17 +651,19 @@
             }
         }
         .linksWrapper {
+            width: 100%;
             display: flex;
             flex-direction: row;
-            gap: 0px;
+
             margin-top: 0px;
             .socialLinksBox {
+                width: 100%;
                 display: flex;
-                margin-left: 72px;
+                align-items: end;
                 flex-direction: column;
                 gap: 24px;
                 button {
-                    width: 100%;
+                    width: 240px;
                     height: 48px;
                     border-radius: 999px;
                     outline: none;
@@ -707,6 +709,9 @@
                 }
                 li:nth-child(7) {
                     margin-top: 56px;
+                }
+                &:nth-child(1) {
+                    margin-right: 32px;
                 }
             }
         }
