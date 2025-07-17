@@ -1,4 +1,4 @@
-<div class="{{ $content['class'] ?? '' }}">
+<div class="{{ $content['class'] ?? '' }} {{ Route::currentRouteName() !== 'home.page' ? "bannerForPages" : "" }}">
     <x-picture-tag :src="asset($content['banner'] ?? '')" alt="Logo" :lazy="true" />
     <div class="bannerContainer">
         <div class="bannerContent">

@@ -24,11 +24,12 @@
 @use "./pages/supportPage.scss";
 @use "./modal/preOrderModal.scss";
 @use "./pages/successPage.scss";
+@use "./modal/successModal.scss";
 @use "./modal/categoriesModal.scss";
-:root  {
+:root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
-    --primary-dark-navy: #1c2f43;
+    --primary-dark-navy: rgba(28, 47, 67, 1);
     --secondary-light-blue: #5a9bef;
     --secondary-warm-yellow: #ffe46e;
     --neutral-white: #ffffff;

@@ -14,16 +14,13 @@
             display: flex;
             flex-wrap: nowrap;
             gap: 16px;
-
             overflow-x: auto;
             width: max-content;
             scrollbar-width: none;
             -ms-overflow-style: none;
-
             &::-webkit-scrollbar {
                 display: none;
             }
-
             .radioLabel {
                 white-space: nowrap;
                 width: auto;
@@ -273,8 +270,14 @@
                     line-height: 120%;
                     letter-spacing: 0%;
                     vertical-align: middle;
+                    transition: background 0.3s ease;
                     i {
                         font-size: 20px;
+                    }
+                    &:hover {
+                        transition: background 0.3s ease;
+                        cursor: pointer;
+                        background: var(--secondary-light-blue);
                     }
                 }
             }
@@ -564,6 +567,11 @@
                         vertical-align: middle;
                         i {
                             font-size: 20px;
+                        }
+                        &:hover {
+                            transition: background 0.3s ease;
+                            cursor: pointer;
+                            background: var(--secondary-light-blue);
                         }
                     }
                 }
@@ -857,6 +865,11 @@
                         vertical-align: middle;
                         i {
                             font-size: 20px;
+                        }
+                        &:hover {
+                            transition: background 0.3s ease;
+                            cursor: pointer;
+                            background: var(--secondary-light-blue);
                         }
                     }
                 }

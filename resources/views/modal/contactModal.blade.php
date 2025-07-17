@@ -3,7 +3,7 @@
         <i class="ph ph-x close-btn" id="closeContactBtn"></i>
         <h4>Зв'язатися</h4>
         <p>Залиште своє запитання або повідомлення у формі нижче.</p>
-        <form action="{{ route('contactFormSubmit') }}" method="POST" class="contactForm">
+        <form class="contactForm">
             @csrf
             <div class="userData">
                 @include("ui.input", [
@@ -13,13 +13,13 @@
                         "name" => "name"
                     ]
                 ])
-                @include("ui.input", [
-                    'content' => [
-                        "label" => "Номер телефону",
-                        "placeholder" => "+380",
-                        "name" => "phoneNumber"
-                    ]
-                ])
+                    @include("ui.input", [
+                        'content' => [
+                            "label" => "Номер телефону",
+                            "placeholder" => "+380",
+                            "name" => "phoneNumber"
+                        ]
+                    ])
             </div>
            @include("ui.input", [
             'content' => [
@@ -44,8 +44,8 @@
             ]
         ])
 
-            <button type="submit">Надіслати</button>
-        </form>
+    </form>
+    <button id="contactBtnSubmit">Надіслати</button>
 
     </div>
 </div>

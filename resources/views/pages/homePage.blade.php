@@ -63,4 +63,5 @@
 @include('modal.contactModal')
 @include('modal.preOrderModal')
 @include("modal.headerModal")
+@include('modal.successModal')
 </html>

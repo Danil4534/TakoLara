@@ -2,7 +2,7 @@
     width: 100%;
     padding: 0;
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     height: 56px;
     .headerContent {
         width: 100%;
@@ -17,6 +17,12 @@
         }
         .buttonSelectClose {
             display: none;
+        }
+        .buttonSelectOpen.activeBtn {
+            display: flex;
+        }
+        .buttonSelectClose.activeBtn {
+            display: flex;
         }
         nav {
             display: none;
@@ -56,6 +62,7 @@
         }
     }
 }
+
 @media screen and (min-width: 1024px) {
     .header {
         width: 100%;
@@ -73,6 +80,15 @@
             justify-content: space-between;
             .btnConnect {
                 display: none;
+            }
+            .buttonSelectOpen {
+                display: none;
+            }
+            .buttonSelectOpen.activeBtn {
+                display: flex;
+            }
+            .buttonSelectClose.activeBtn {
+                display: flex;
             }
             nav {
                 display: none;
@@ -111,6 +127,18 @@
         }
     }
 }
+@media screen and (max-width: 1440px) {
+    .header {
+        .headerContent {
+            .buttonSelectOpen {
+                display: none !important;
+            }
+            .buttonSelectClose {
+                display: none !important;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1440px) {
     .header {
@@ -144,8 +172,21 @@
                 font-style: Bold;
                 font-size: 14px;
                 line-height: 120%;
+                transition: background 0.3s ease;
                 letter-spacing: 0%;
+                &:hover {
+                    transition: background 0.3s ease;
+                    background: var(--secondary-light-blue);
+                    cursor: pointer;
+                }
             }
+            .buttonSelectOpen.activeBtn {
+                display: flex;
+            }
+            .buttonSelectClose.activeBtn {
+                display: flex;
+            }
+
             .buttonSelectClose {
                 margin-left: 32px;
                 margin-right: 24px;
@@ -164,6 +205,12 @@
                 font-size: 14px;
                 line-height: 120%;
                 letter-spacing: 0%;
+                transition: background 0.3s ease;
+                &:hover {
+                    transition: background 0.3s ease;
+                    background: var(--secondary-light-blue);
+                    cursor: pointer;
+                }
             }
             nav {
                 display: block;

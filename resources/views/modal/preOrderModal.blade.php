@@ -1,7 +1,3 @@
-@php
-
-@endphp
-
 <div id="hidden_preOrder" class="preOrder">
     <div class="header_preOrder_container" id="hidden_preOrder_content">
         <i class="ph ph-x close-btn" id="closePreOrderBtn"></i>

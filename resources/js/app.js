@@ -13,21 +13,42 @@ document.addEventListener("DOMContentLoaded", function () {
   const categoriesModal = document.querySelector('#categoriesModal')
   const categoriesModalContent = document.querySelector('#categoriesModalContent')
 
+
+  const successBtn = document.querySelector('#contactBtnSubmit')
+  const successModal = document.querySelector('#successModal')
+  const successModalContent = document.querySelector('#successModalContent')
+  const successModalClose = document.querySelectorAll('#closeSuccessModal')
+
+  successBtn?.addEventListener('click', ()=>{
+    successModal.classList.add('active')
+    successModalContent.classList.add('active')
+    modalContact.classList.remove('active')
+  })
+  successModalClose.forEach((element)=>{
+    element.addEventListener('click',()=>{
+    successModal.classList.remove('active')
+    successModalContent.classList.remove('active')
+    modalContact.classList.remove('active')
+    })
+  })
+
  categoriesBtnOpen.forEach((openBtn, index) => {
   openBtn.addEventListener('click', () => {
-    openBtn.style.display = "none";
+    openBtn.classList.remove('activeBtn')
+    openBtn.style.display="none"
     const closeBtn = categoriesBtnClose[index];
-    closeBtn.style.display = "flex";
+    closeBtn.classList.add('activeBtn')
     categoriesModal.classList.add("active");
     categoriesModalContent.classList.add("active")
   });
 });
 
 categoriesBtnClose.forEach((closeBtn, index) => {
-  closeBtn.addEventListener('click', () => {
-    closeBtn.style.display = "none";
+  closeBtn.addEventListener('click', () => { 
+    closeBtn.classList.remove('activeBtn')
     const openBtn = categoriesBtnOpen[index];
-    openBtn.style.display = "flex";
+openBtn.style.display="flex"
+    openBtn.classList.add('activeBtn')
     categoriesModal.classList.remove("active");
     categoriesModalContent.classList.remove("active")
   });

@@ -37,13 +37,20 @@
     <section id="ourProducts">
             @include("components.categories", ['content' => ['title' => "Інші категорії"]])
         </section>
+
         <section>
             @include('components.details')
         </section>
+
     </main>
+
     <footer>
         @include('components.footer')
     </footer>
 </body>
-
+@include('modal.categoriesModal')
+@include('modal.contactModal')
+@include('modal.preOrderModal')
+@include("modal.headerModal")
+@include('modal.successModal')
 </html>

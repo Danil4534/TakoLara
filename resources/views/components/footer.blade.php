@@ -66,37 +66,37 @@
                         "classIcon" => "icon"
                     ]
                 ])
-    <button>
-    <i class="ph ph-envelope icon"></i>
-        example@mail.com
-    </button>
-                        </div>
-    </div>
-                <div class="linksWrapper">
-    <ul class="linksDesktop">
-@foreach ($links as $link)
-        <li>
-    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
-                        </li>
-@endforeach
-                </ul>
-        <ul class="linksDesktop">
-@foreach ($secondLinks as $link)
-                        <li>
-    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
-            </li>
-@endforeach
-                                </ul>
-                                        <div class="socialLinksBox">
-                                            @include("components.social-links", [
-                                                'content' => [
-                                                    "size" => "20px"
-                                                ]
-                                            ])
                     <button>
-                        <i class="ph ph-envelope"></i>
-                example@mail.com
-    </button>
+                <i class="ph ph-envelope icon"></i>
+            example@mail.com
+                </button>
+        </div>
+</div>
+        <div class="linksWrapper">
+    <ul class="linksDesktop">
+                @foreach ($links as $link)
+                    <li>
+                    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
+                        </li>
+                @endforeach
+            </ul>
+    <ul class="linksDesktop">
+                @foreach ($secondLinks as $link)
+                    <li>
+                    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
+                            </li>
+                @endforeach
+                            </ul>
+                                <div class="socialLinksBox">
+                                @include("components.social-links", [
+                                    'content' => [
+                                        "size" => "20px"
+                                    ]
+                                ])
+                <button>
+                <i class="ph ph-envelope"></i>
+        example@mail.com
+</button>
 </div>
 </div>
 </div>

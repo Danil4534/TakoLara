@@ -43,11 +43,17 @@
             @include('components.details')
         </section>
     </main>
+
 </body>
+
+
 <footer>
     @include('components.footer')
 </footer>
 
-@include("modal.headerModal")
+@include('modal.categoriesModal')
 @include('modal.contactModal')
+@include('modal.preOrderModal')
+@include("modal.headerModal")
+@include('modal.successModal')
 </html>

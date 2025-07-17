@@ -44,12 +44,16 @@
 
 
     </main>
+
 </body>
+
 
 <footer>
     @include('components.footer')
 </footer>
+@include('modal.categoriesModal')
 @include('modal.contactModal')
-@include('modal.cartModal')
+@include('modal.preOrderModal')
 @include("modal.headerModal")
+@include('modal.successModal')
 </html>

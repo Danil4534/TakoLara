@@ -127,6 +127,34 @@
                             height: 172px;
                             border-radius: 8px;
                         }
+                        .leftSideUpBox {
+                            width: 60px;
+                            height: 30px;
+                            border-radius: 2px 2px 2px 0px;
+                            background: rgba(255, 215, 25, 1);
+                            position: absolute;
+                            top: 16px;
+                            left: 16px;
+                            span {
+                                position: absolute;
+                                top: 100%;
+                                width: 30px;
+                                height: 30px;
+                                background: rgba(255, 215, 25, 1);
+                                border-radius: 0px 0px 2px 2px;
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        .productCardHeader {
+                            .leftSideUpBox {
+                                background: white;
+
+                                span {
+                                    background: white;
+                                }
+                            }
+                        }
                     }
                     .cardContent {
                         width: 100%;

@@ -28,7 +28,7 @@
                     "subtitleActive" => true
                 ]
             ])
-                                                                        </section>
+                                                                                    </section>
         <section>
             @include("components.about")
         </section> 
@@ -40,13 +40,16 @@
     </section>
         <section>
             @include('components.details')
+
         </section>
+
     </main>
 </body>
 <footer>
     @include('components.footer')
-</footer>
+</footer>@include('modal.categoriesModal')
 @include('modal.contactModal')
 @include('modal.preOrderModal')
 @include("modal.headerModal")
+@include('modal.successModal')
 </html>
