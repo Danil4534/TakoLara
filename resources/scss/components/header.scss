@@ -12,7 +12,10 @@
         padding: 8px 16px;
         align-items: center;
         justify-content: space-between;
-        .buttonSelect {
+        .buttonSelectOpen {
+            display: none;
+        }
+        .buttonSelectClose {
             display: none;
         }
         nav {
@@ -68,9 +71,6 @@
             padding: 8px 16px;
             align-items: center;
             justify-content: space-between;
-            .buttonSelect {
-                display: none;
-            }
             .btnConnect {
                 display: none;
             }
@@ -127,14 +127,32 @@
             padding: 16px 32px;
             align-items: center;
             justify-content: start;
-            .buttonSelect {
+            .buttonSelectOpen {
                 margin-left: 32px;
                 margin-right: 24px;
-                display: block;
-                width: 136px;
+                flex: 0 0 136px !important;
                 height: 48px !important;
                 border-radius: 999px;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                background-color: rgba(15, 94, 187, 1);
+                font-family: var(--font-family-Bold);
+                color: var(--neutral-white);
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+            }
+            .buttonSelectClose {
+                margin-left: 32px;
+                margin-right: 24px;
+                flex: 0 0 136px !important;
+                height: 48px !important;
+                border-radius: 999px;
+                display: none;
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
@@ -230,11 +248,29 @@
             .buttonSelect {
                 margin-left: 32px;
                 margin-right: 24px;
-                display: block;
+                display: none;
                 min-width: 136px !important;
                 height: 48px !important;
                 border-radius: 999px;
-                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                background-color: rgba(15, 94, 187, 1);
+                font-family: var(--font-family-Bold);
+                color: var(--neutral-white);
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+            }
+            .buttonSelectClose {
+                display: none;
+                margin-left: 32px;
+                margin-right: 24px;
+                width: 136px !important;
+                height: 48px !important;
+                border-radius: 999px;
                 justify-content: center;
                 align-items: center;
                 gap: 8px;

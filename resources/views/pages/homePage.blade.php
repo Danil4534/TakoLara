@@ -59,8 +59,8 @@
     </footer >
 
 </body>
+@include('modal.categoriesModal')
 @include('modal.contactModal')
 @include('modal.preOrderModal')
 @include("modal.headerModal")
-
 </html>

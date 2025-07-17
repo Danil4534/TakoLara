@@ -1,0 +1,180 @@
+.categoriesModal {
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    height: 0;
+    background-color: rgba(28, 47, 67, 0.3);
+    transition: 0.3s ease;
+    .categoriesModalContent {
+        margin-top: 80px;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        padding: 32px 181px !important;
+        background: #fff;
+        transition: 0.3s ease;
+        .categories {
+            width: 100% !important;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap !important;
+            gap: 32px;
+            li {
+                width: 320px;
+                list-style: none;
+                .productCardHeader {
+                    width: 100%;
+                    height: 172px;
+                    position: relative;
+                    img {
+                        object-fit: cover;
+                        width: 320px;
+                        height: 172px;
+                        border-radius: 8px;
+                    }
+                }
+                .cardContent {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 76px;
+                    border-bottom: 2px solid var(--);
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 24px;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 2px solid
+                            var(--neutral-medium-gray-second);
+                        font-family: var(--font-family-Light);
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                        color: var(--primary-dark-navy);
+                        &:hover {
+                            cursor: pointer;
+                            border-color: var(--secondary-light-blue);
+                        }
+                        i {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        &.active {
+            transition: 0.3s ease;
+            height: 100%;
+            visibility: visible;
+        }
+    }
+    &.active {
+        transition: 0.3s ease;
+        opacity: 1;
+        z-index: 998;
+        height: 100vh;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .categoriesModal {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(28, 47, 67, 0.3);
+        transition: all 0.3s ease;
+        .categoriesModalContent {
+            margin-top: 80px;
+            width: 100%;
+            height: 0px;
+            padding: 32px;
+            background: #fff;
+            .categories {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+                li {
+                    width: 360px !important;
+                    list-style: none;
+                    .productCardHeader {
+                        width: 100%;
+                        height: 172px;
+                        position: relative;
+                        img {
+                            object-fit: cover;
+                            width: 360px;
+                            height: 172px;
+                            border-radius: 8px;
+                        }
+                    }
+                    .cardContent {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 76px;
+                        border-bottom: 2px solid var(--);
+                        button {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 24px;
+                            background: transparent;
+                            border: none;
+                            border-bottom: 2px solid
+                                var(--neutral-medium-gray-second);
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 20px;
+                            line-height: 24px;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                            color: var(--primary-dark-navy);
+                            &:hover {
+                                cursor: pointer;
+                                border-color: var(--secondary-light-blue);
+                            }
+                            i {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                height: auto;
+            }
+        }
+        &.active {
+            transition: 0.3s ease;
+            opacity: 1;
+            z-index: 998;
+            height: 100vh;
+            visibility: visible;
+        }
+    }
+}

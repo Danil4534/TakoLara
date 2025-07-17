@@ -53,7 +53,6 @@
                     "text" => "Вперед",
                     "class" => "btnNext",
                     "id" => "nextBtn",
-           
                     "iconRight" => "ph ph-caret-right icon"
                 ]
             ])

@@ -106,6 +106,14 @@
                     font-size: 20px;
                     left: 20px;
                 }
+                &:hover {
+                    border-color: var(--primary-deep-blue);
+                    background-color: var(--primary-deep-blue);
+                    p {
+                        right: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
             }
             .btnNext {
                 width: 100% !important;
@@ -125,6 +133,15 @@
                 font-family: var(--font-family-Medium);
                 .icon {
                     font-size: 20px;
+                }
+                &:hover {
+                    border-color: var(--secondary-light-blue);
+                    background-color: var(--secondary-light-blue);
+                    p {
+                        left: 50%;
+
+                        transform: translate(-50%, -50%);
+                    }
                 }
             }
         }

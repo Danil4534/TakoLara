@@ -8,7 +8,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalPreOrder = document.querySelector("#hidden_preOrder");
   const modalPreOrderContent = document.querySelector("#hidden_preOrder_content")
   const closeModalPreOrder= document.querySelector('#closePreOrderBtn');
- console.log(openPreOrderBtn)
+  const categoriesBtnOpen = document.querySelectorAll("#buttonSelectOpen")
+  const categoriesBtnClose = document.querySelectorAll("#buttonSelectClose")
+  const categoriesModal = document.querySelector('#categoriesModal')
+  const categoriesModalContent = document.querySelector('#categoriesModalContent')
+
+ categoriesBtnOpen.forEach((openBtn, index) => {
+  openBtn.addEventListener('click', () => {
+    openBtn.style.display = "none";
+    const closeBtn = categoriesBtnClose[index];
+    closeBtn.style.display = "flex";
+    categoriesModal.classList.add("active");
+    categoriesModalContent.classList.add("active")
+  });
+});
+
+categoriesBtnClose.forEach((closeBtn, index) => {
+  closeBtn.addEventListener('click', () => {
+    closeBtn.style.display = "none";
+    const openBtn = categoriesBtnOpen[index];
+    openBtn.style.display = "flex";
+    categoriesModal.classList.remove("active");
+    categoriesModalContent.classList.remove("active")
+  });
+});
+
   const burgerBtn = document.querySelector("#burger");
   const headerModalNav = document.querySelector("#hidden_header_nav");
   const headerContent = document.querySelector("#hidden_header_nav_content");

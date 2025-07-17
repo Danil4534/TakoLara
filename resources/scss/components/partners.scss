@@ -178,7 +178,6 @@
         border-radius: 8px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
         ul {
             width: 100%;
             display: flex;
@@ -523,7 +522,7 @@
                     }
                     img {
                         margin: 0 !important;
-                        width: 200px !important;
+                        width: 240px !important;
                     }
                 }
                 &:nth-child(3) {
@@ -633,8 +632,8 @@
             li {
                 border: 1px solid var(--neutral-medium-gray-second);
                 border-radius: 8px;
-                width: 100% !important;
-                height: 420px !important;
+                width: 492px !important;
+                height: 492px !important;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
@@ -671,7 +670,7 @@
 
                 &:nth-child(2) {
                     margin: 0 !important;
-                    height: 420px !important;
+                    height: 492px !important;
 
                     .link {
                         width: calc(100% - 48px) !important;
@@ -698,12 +697,12 @@
                     }
                     img {
                         margin: 0 !important;
-                        width: 200px !important;
+                        width: 240px !important;
                     }
                 }
                 &:nth-child(3) {
                     margin: 0 !important;
-                    height: 420px !important;
+                    height: 492px !important;
                     img {
                         margin: 0 !important;
                         width: 140px !important;
@@ -713,12 +712,12 @@
                     img {
                         width: 479.8125305175781px;
                         height: 720px;
-                        margin-top: 70px;
+                        margin-top: 0px;
                     }
                 }
                 &:nth-child(5) {
                     margin: 0 !important;
-                    height: 420px !important;
+                    height: 492px !important;
 
                     img {
                         margin: 0 !important;
@@ -727,7 +726,7 @@
                 }
                 &:nth-child(6) {
                     margin: 0 !important;
-                    height: 420px !important;
+                    height: 492px !important;
                     img {
                         margin: 0 !important;
                         width: 240px !important;

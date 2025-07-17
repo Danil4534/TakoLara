@@ -24,7 +24,8 @@
 @use "./pages/supportPage.scss";
 @use "./modal/preOrderModal.scss";
 @use "./pages/successPage.scss";
-:root {
+@use "./modal/categoriesModal.scss";
+:root  {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: #1c2f43;
