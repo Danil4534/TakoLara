@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\NavController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [NavController::class, 'getHomePage'])->name('home.page');
@@ -14,3 +15,4 @@ Route::get('/support', [NavController::class, 'getSupportPage'])->name('support.
 Route::post('/contactForm', [ContactFormController::class, 'submitContactDataPost'])->name('contactFormSubmit');
 Route::get('/reb', [NavController::class, 'getRebPage'])->name('reb.page');
 Route::get('/success', [NavController::class, 'getSuccessPage'])->name('success.page');
+Route::post('/addToCart',[ProductController::class,'addToCard'])->name('addProduct.to.cart');
