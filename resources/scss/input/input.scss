@@ -12,7 +12,11 @@
         letter-spacing: 1.4%;
         color: var(--neutral-medium-gray);
     }
+    .fillCopyIcon {
+        display: none;
+    }
     input {
+        cursor: default;
         width: 100%;
         border: 2px solid var(--neutral-medium-gray-second);
         height: 100%;
@@ -22,7 +26,7 @@
         padding: 0 8px;
         font-weight: 300;
         font-style: Light;
-
+        caret-color: transparent;
         line-height: 120%;
         letter-spacing: 1.6%;
         outline: none;
@@ -30,10 +34,20 @@
         color: var(--neutral-medium-gray);
 
         &:hover {
-            transition: 0.3s ease;
-            border: 2px solid var(--neutral-medium-gray);
+            border-color: var(--neutral-medium-gray);
+        }
+        .copyIcon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%, -50%);
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
+
     textarea {
         width: 100%;
         border: 2px solid var(--neutral-medium-gray-second);
@@ -62,5 +76,13 @@
         right: 2px;
         top: 70%;
         transform: translate(-50%, -50%);
+
+        &:focus .fillCopyIcon {
+            display: block;
+        }
+    }
+
+    .active {
+        display: flex;
     }
 }
