@@ -14,7 +14,6 @@
         overflow-x: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
-
         &::-webkit-scrollbar {
             display: none;
         }
@@ -23,7 +22,6 @@
                 .productCardHeader {
                     .leftSideUpBox {
                         background: white !important;
-
                         span {
                             background: white !important;
                         }

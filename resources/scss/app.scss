@@ -25,8 +25,9 @@
 @use "./modal/preOrderModal.scss";
 @use "./pages/successPage.scss";
 @use "./modal/successModal.scss";
+@use "./pages/medkitPage.scss";
 @use "./modal/categoriesModal.scss";
-:root  {
+:root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: rgba(28, 47, 67, 1);

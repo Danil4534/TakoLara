@@ -28,7 +28,14 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-
+            .socialLinks {
+                li {
+                    background: transparent;
+                    border: 2px solid var(--primary-deep-blue);
+                    color: var(--primary-deep-blue);
+                    font-size: 20px;
+                }
+            }
             h1 {
                 font-family: var(--font-family-Regular);
                 font-weight: 400;

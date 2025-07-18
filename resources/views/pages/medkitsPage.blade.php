@@ -19,25 +19,26 @@
     <main>
         <section>
             @include ("components.banner", [
-                'content' => [
-                    'banner' => "assets/medkitBg.svg",
-                    'class' => "droneBg",
-                    'bannerTitle' => 'Медицина',
-                    'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                    "btnActive" => false,
-                    "subtitleActive" => true
-                ]
+            'content' => [
+            'banner' => "assets/medkitBg.svg",
+            'class' => "droneBg medkitBg",
+            'bannerTitle' => 'Медицина',
+            'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "btnActive" => false,
+            "subtitleActive" => true
+            ]
             ])
-                                                                                    </section>
+        </section>
         <section>
             @include("components.about")
-        </section> 
-         <section>
+        </section>
+        <section>
             @include('components.products')
         </section>
-            <section>
-        @include('components.categories', ['content' => ["title" => "Iнші категорії"]])
-    </section>
+        <section>
+            @include('components.categories', ['content' => ["title" => "Iнші категорії"]])
+        </section>
         <section>
             @include('components.details')
 
@@ -52,4 +53,5 @@
 @include('modal.preOrderModal')
 @include("modal.headerModal")
 @include('modal.successModal')
+
 </html>
