@@ -1,5 +1,5 @@
 import './bootstrap';
-
+import './slider'
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");
@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const categoriesBtnClose = document.querySelectorAll("#buttonSelectClose")
   const categoriesModal = document.querySelector('#categoriesModal')
   const categoriesModalContent = document.querySelector('#categoriesModalContent')
-
-
   const successBtn = document.querySelector('#contactBtnSubmit')
   const successModal = document.querySelector('#successModal')
   const successModalContent = document.querySelector('#successModalContent')
@@ -134,4 +132,7 @@ openPreOrderBtn.forEach(btn=>
         document.querySelectorAll(".animateNumber").forEach(el => {
             observer.observe(el);
         });
+
+
+
     });

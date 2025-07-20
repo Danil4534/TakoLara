@@ -64,69 +64,9 @@ $sliderContent = [
         @endfor
 
     </div>
-    </di v>
-    </di v>
+    </div>
+    </div>
 
-    <scr ipt>
-        document.addEventListener("DOMContentLoaded", () => {
-        const slider = document.getElementById("sliderContent");
-        const prevBtn = document.getElementById("prevBtn");
-        cons t nextBtn = document.getElementById("nextBtn");
-        cons t cards = slider.querySelectorAll(".slider__item");
-        const na vDots = document.querySelectorAll(".slider__nav_item");
-
-
-        const cardsPerPage = 3;
-        const cardWidth = cards[0].offsetWidth;
-        const gap = 32;
-        const scrollStep = (cardWidth + gap) * cardsPerPage;
-
-        let currentPage = 0;
-
-
-        function updateActiveDot(index) {
-        navDots.forEach(dot => dot.classList.remove("active"));
-        if (navDots[index]) {
-        navD ots[index].classList.add("active");
-        }
-        }
-
-
-        func tion updateButtons() {
-        cons t maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
-        prev Btn.disabled = currentPage <= 0; nextBtn.disabled=currentPage>= maxPage;
-            }
-
-
-            prev Btn.addEventListener("click", () => {
-            if (currentPage > 0) {
-            currentPage--;
-            slid er.scrollTo({
-            left: scrollStep * currentPage,
-            beha vior: "smooth"
-            });
-            upda teActiveDot(currentPage);
-            upda teButtons();
-            }
-            });
-
-
-            next Btn.addEventListener("click", () => {
-            cons t maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
-            if ( currentPage < maxPage) { curr entPage++; slid er.scrollTo({ left: scrollStep * currentPage,
-                behavior: "smooth" }); updateActiveDot(currentPage); updateButtons(); } }); navDots.forEach((dot,
-                index)=> {
-                dot.addEventListener("click", () => {
-                currentPage = index;
-                slider.scrollTo({
-                left: scrollStep * index,
-                behavior: "smooth"
-                });
-                updateActiveDot(index);
-                updateButtons();
-                });
-                });
-
-                updateActiveDot(currentPage);
-                updateButtons();
-                }); < /scr>
+    <script>
+      
+                </script>
