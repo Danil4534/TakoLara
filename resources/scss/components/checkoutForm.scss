@@ -1,31 +1,159 @@
+@mixin font-light {
+    font-family: var(--font-family-Light);
+    font-weight: 300;
+    font-style: Light;
+}
+
+@mixin font-Bold {
+    font-family: var(--font-family-Bold);
+    font-style: Bold;
+}
+
 .formContainer {
     margin-top: 8px;
+
     h1 {
-        font-family: var(--font-family-Light);
-        font-weight: 300;
-        font-style: Light;
+        @include font-light;
         font-size: 28px;
         line-height: 120%;
         letter-spacing: 1.4%;
         vertical-align: middle;
         color: var(--primary-dark-navy);
-        margin-bottom: 8px;
+        margin-bottom: 24px;
     }
+
     .box {
         padding: 16px;
         background: var(--neutral-white);
         padding-top: 32px;
         border-radius: 16px;
+
+        &:first-child {
+            margin-bottom: 8px;
+        }
+
+        .productBox {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .productCard {
+            width: 100%;
+            height: fit-content;
+            background: rgba(246, 247, 249, 1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            padding: 8px;
+            position: relative;
+            gap: 16px;
+
+            .productCardHeader {
+                display: flex;
+                gap: 16px;
+            }
+
+            .productCardBottom {
+                display: flex;
+                justify-content: space-between;
+
+                .counter {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    width: 128px;
+
+                    input {
+                        width: 64px;
+                        height: 36px;
+                        border-radius: 8px;
+                        outline: none;
+                        @include font-light;
+                        font-size: 14px;
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                        text-align: center;
+                        border: 1px solid rgba(208, 208, 208, 1);
+                    }
+
+                    i {
+                        font-size: 24px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .cost {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    text-align: end;
+                    @include font-light;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+
+                    span {
+                        @include font-light;
+                        font-size: 12px;
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
+
+                    p {
+                        @include font-light;
+                        font-size: 12px;
+                        color: rgba(107, 107, 107, 1);
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .trash {
+                position: absolute;
+                right: 8px;
+                top: 8px;
+                font-size: 24px;
+                color: var(--neutral-medium-gray) !important;
+            }
+
+            h3 {
+                flex-wrap: wrap;
+                @include font-light;
+                font-size: 14px;
+                color: rgba(28, 47, 67, 1);
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                vertical-align: middle;
+            }
+
+            img {
+                width: 116px;
+                border-radius: 8px;
+                border: 1px solid rgba(208, 208, 208, 1);
+            }
+        }
     }
+
     form[class="checkoutForm"] {
         display: flex;
         flex-direction: column !important;
         gap: 16px;
+
         .formLeftSide {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
+
         .box {
             padding: 16px;
             background: var(--neutral-white);
@@ -34,31 +162,34 @@
         }
 
         h6 {
-            font-family: var(--font-family-Light);
-            font-weight: 300;
-            font-style: Light;
+            @include font-light;
             font-size: 20px;
             color: var(--primary-dark-navy);
             line-height: 24px;
             letter-spacing: 1.6%;
             vertical-align: middle;
         }
+
         .userData {
             display: flex;
             flex-direction: column;
             gap: 24px;
+
             .title {
                 display: none;
             }
+
             .priceData {
                 hr {
                     display: none;
                 }
             }
+
             .inputsWrapper {
                 display: grid;
                 gap: 24px !important;
             }
+
             .error {
                 margin-top: 8px !important;
                 width: 100%;
@@ -71,22 +202,25 @@
                 justify-content: start;
                 align-items: center;
                 gap: 8px;
+
                 span {
+                    padding: 0 !important;
                     display: flex;
                     justify-content: start;
                     align-items: center;
                     width: auto;
                     color: red;
                     height: 100%;
-                    font-family: var(--font-family-Bold);
-                    font-style: Bold;
+                    @include font-Bold();
                     font-size: 14px;
                     line-height: 120%;
                     letter-spacing: 0%;
                 }
+
                 i {
                     font-size: 24px;
                 }
+
                 h6 {
                     font-family: var(--font-family-Regular);
                     font-weight: 400;
@@ -115,9 +249,9 @@
 
             .priceData {
                 width: 100%;
-                p {
-                    font-family: var(--font-family-Thin);
 
+                p {
+                    font-family: var(--font-family-Light);
                     font-style: Light;
                     font-size: 14px;
                     color: var(--neutral-medium-gray);
@@ -125,52 +259,162 @@
                     letter-spacing: 1.6%;
                     vertical-align: middle;
                 }
+
                 h6 {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 28px;
                     margin-bottom: 16px;
                     line-height: 120%;
                     letter-spacing: 1.4%;
                     vertical-align: middle;
+                    color: rgba(28, 47, 67, 1);
+
                     span {
                         font-family: var(--font-family-Light);
-
+                        color: rgba(28, 47, 67, 1) !important;
                         font-size: 16px;
-
                         line-height: 140%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
                 }
+
                 .forSolders {
                     width: 100%;
                     height: 40px;
                     display: flex;
                     align-items: center;
                     flex-direction: row;
-
                     padding: 0px 12px;
                     background: rgba(246, 247, 249, 1);
+
                     .icon {
                         margin-right: 16px;
                     }
+
                     p {
                         font-family: var(--font-family-Thin);
-
                         font-style: Light;
                         font-size: 14px;
                         color: var(--neutral-medium-gray);
                         line-height: 120%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
+
                         span {
                             color: var(--primary-dark-navy);
                         }
                     }
                 }
             }
+
+            .productCard {
+                display: none !important;
+                width: 100%;
+                height: fit-content;
+                background: rgba(246, 247, 249, 1);
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                position: relative;
+                gap: 16px;
+
+                .productCardHeader {
+                    height: 100%;
+                    display: flex;
+                    gap: 16px;
+                }
+
+                .productCardBottom {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .counter {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        width: 128px;
+
+                        input {
+                            width: 64px;
+                            height: 36px;
+                            border-radius: 8px;
+                            outline: none;
+                            @include font-light;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+
+                            text-align: center;
+                            border: 1px solid rgba(208, 208, 208, 1);
+                        }
+
+                        i {
+                            font-size: 24px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .cost {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        text-align: end;
+                        @include font-light;
+                        font-size: 16px;
+                        line-height: 140%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+
+                        span {
+                            @include font-light;
+                            font-size: 12px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                        }
+
+                        p {
+                            @include font-light;
+                            font-size: 12px;
+                            color: rgba(107, 107, 107, 1);
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                .trash {
+                    position: absolute;
+                    right: 8px;
+                    top: 8px;
+                    font-size: 24px;
+                    color: red;
+                }
+
+                h3 {
+                    flex-wrap: wrap;
+                    @include font-light;
+                    font-size: 14px;
+                    color: rgba(28, 47, 67, 1);
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                }
+
+                img {
+                    width: 116px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(208, 208, 208, 1);
+                }
+            }
+
             hr {
                 margin: 0 auto;
                 border: none;
@@ -178,11 +422,13 @@
                 background: var(--neutral-medium-gray-second);
                 width: 295px;
             }
+
             .btnSection {
                 width: 327px;
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+
                 .btnConfirm {
                     width: 100%;
                     height: 48px;
@@ -197,15 +443,15 @@
                     letter-spacing: 0%;
                     vertical-align: middle;
                 }
+
                 .btnCheckout {
                     width: 100%;
                     height: 48px;
                 }
             }
+
             span {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 12px;
                 color: var(--neutral-medium-gray);
                 line-height: 120%;
@@ -218,11 +464,13 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 16px;
+
                 label {
                     height: 40px;
                     width: fit-content;
                 }
             }
+
             .inputContainer {
                 input,
                 select {
@@ -232,19 +480,28 @@
         }
     }
 }
+
 .inputContainer {
-    input {
+    input,
+    select {
+        padding: 0 16px !important;
+        font-size: 14px !important;
         height: 40px !important;
     }
 }
 
 @media screen and (min-width: 768px) {
+    %font-light {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+    }
+
     .formContainer {
         margin-top: 8px;
+
         h1 {
-            font-family: var(--font-family-Light);
-            font-weight: 300;
-            font-style: Light;
+            @include font-light;
             font-size: 28px;
             line-height: 120%;
             letter-spacing: 1.4%;
@@ -252,42 +509,57 @@
             color: var(--primary-dark-navy);
             margin-bottom: 8px;
         }
+
+        .productCard {
+            height: 100%;
+
+            .productCardWrapper {
+                width: 100% !important;
+                height: auto !important;
+                display: flex;
+                flex-direction: column !important;
+                justify-content: space-between !important;
+            }
+        }
+
         .box {
             padding: 16px;
             background: var(--neutral-white);
             padding-top: 32px;
             border-radius: 16px;
         }
+
         form[class="checkoutForm"] {
             display: flex;
             flex-direction: column;
             gap: 16px;
+
             .box {
                 padding: 16px;
                 background: var(--neutral-white);
                 padding-top: 32px;
                 border-radius: 16px;
             }
+
             h6 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @extend %font-light;
                 font-size: 20px;
                 color: var(--primary-dark-navy);
                 line-height: 24px;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
             }
+
             .userData {
                 display: flex;
                 flex-direction: column;
-
                 gap: 24px;
+
                 .priceData {
                     width: 100%;
+
                     p {
                         font-family: var(--font-family-Thin);
-
                         font-style: Light;
                         font-size: 14px;
                         color: var(--neutral-medium-gray);
@@ -295,52 +567,55 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     h6 {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 28px;
                         margin-bottom: 16px;
                         line-height: 120%;
                         letter-spacing: 1.4%;
                         vertical-align: middle;
+
                         span {
                             font-family: var(--font-family-Light);
-
+                            padding: 0 !important;
                             font-size: 16px;
-
                             line-height: 140%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
                         }
                     }
+
                     .forSolders {
                         width: 100%;
                         height: 40px;
                         display: flex;
                         align-items: center;
                         flex-direction: row;
-
                         padding: 0px 12px;
                         background: rgba(246, 247, 249, 1);
+
                         .icon {
                             margin-right: 16px;
                         }
+
                         p {
                             font-family: var(--font-family-Thin);
-
                             font-style: Light;
                             font-size: 14px;
                             color: var(--neutral-medium-gray);
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
+
                             span {
+                                padding: 0 !important;
                                 color: var(--primary-dark-navy);
                             }
                         }
                     }
                 }
+
                 hr {
                     width: 100% !important;
                     border: none;
@@ -348,6 +623,7 @@
                     background: var(--neutral-medium-gray-second);
                     width: 295px;
                 }
+
                 .btnSection {
                     width: 100% !important;
                     display: flex;
@@ -368,15 +644,15 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                     }
+
                     .btnCheckout {
                         width: 100%;
                         height: 48px;
                     }
                 }
+
                 span {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @extend %font-light;
                     font-size: 12px;
                     color: var(--neutral-medium-gray);
                     line-height: 120%;
@@ -389,11 +665,13 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 16px;
+
                     label {
                         height: 40px;
                         width: fit-content;
                     }
                 }
+
                 .inputContainer {
                     input,
                     select {
@@ -403,6 +681,7 @@
             }
         }
     }
+
     .inputContainer {
         input {
             height: 40px !important;
@@ -412,7 +691,12 @@
 
 @media screen and (min-width: 1024px) {
     .formContainer {
+        .productCard {
+            display: none !important;
+        }
+
         margin-top: 8px;
+
         h1 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -424,27 +708,46 @@
             color: var(--primary-dark-navy);
             margin-bottom: 8px;
         }
+
         .box {
             padding: 32px;
             background: var(--neutral-white);
 
             border-radius: 16px;
         }
+
         form[class="checkoutForm"] {
             display: flex;
             flex-direction: row !important;
             gap: 8px;
+
             .formLeftSide {
                 min-width: 536px !important;
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
             }
+
+            .productCard {
+                height: 100%;
+                display: flex !important;
+                flex-direction: row !important;
+
+                .productCardWrapper {
+                    width: 100% !important;
+                    height: auto !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    justify-content: space-between !important;
+                }
+            }
+
             .box {
                 padding: 24px;
                 background: var(--neutral-white);
                 border-radius: 16px;
             }
+
             h6 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -455,23 +758,32 @@
                 letter-spacing: 1.6%;
                 vertical-align: middle;
             }
+
             .userData {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+
+                .productCard {
+                    display: flex !important;
+                }
+
                 .title {
                     display: block;
                 }
+
                 .inputsWrapper {
                     display: grid;
                     gap: 16px !important;
                 }
+
                 .priceData {
                     hr {
                         display: block;
                         margin-bottom: 32px;
                     }
                 }
+
                 .error {
                     margin-top: 8px !important;
                     width: 100%;
@@ -484,6 +796,7 @@
                     justify-content: start;
                     align-items: center;
                     gap: 8px;
+
                     span {
                         display: flex;
                         justify-content: start;
@@ -497,9 +810,11 @@
                         line-height: 120%;
                         letter-spacing: 0%;
                     }
+
                     i {
                         font-size: 24px;
                     }
+
                     h6 {
                         font-family: var(--font-family-Regular);
                         font-weight: 400;
@@ -528,6 +843,7 @@
 
                 .priceData {
                     width: 100%;
+
                     p {
                         font-family: var(--font-family-Thin);
 
@@ -538,6 +854,7 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     h6 {
                         font-family: var(--font-family-Light);
                         font-weight: 300;
@@ -547,6 +864,7 @@
                         line-height: 120%;
                         letter-spacing: 1.4%;
                         vertical-align: middle;
+
                         span {
                             font-family: var(--font-family-Light);
                             font-size: 16px;
@@ -555,6 +873,7 @@
                             vertical-align: middle;
                         }
                     }
+
                     .forSolders {
                         width: 100%;
                         height: 40px;
@@ -564,9 +883,11 @@
 
                         padding: 0px 12px;
                         background: rgba(246, 247, 249, 1);
+
                         .icon {
                             margin-right: 16px;
                         }
+
                         p {
                             font-family: var(--font-family-Thin);
 
@@ -576,12 +897,14 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
+
                             span {
                                 color: var(--primary-dark-navy);
                             }
                         }
                     }
                 }
+
                 hr {
                     margin: 0 auto;
                     border: none;
@@ -589,11 +912,13 @@
                     background: var(--neutral-medium-gray-second);
                     width: 295px;
                 }
+
                 .btnSection {
                     width: 327px;
                     display: flex;
                     flex-direction: column;
                     gap: 24px;
+
                     .btnConfirm {
                         width: 100%;
                         height: 48px;
@@ -608,11 +933,13 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                     }
+
                     .btnCheckout {
                         width: 100%;
                         height: 48px;
                     }
                 }
+
                 span {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -630,11 +957,13 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 16px;
+
                     label {
                         height: 40px;
                         width: fit-content;
                     }
                 }
+
                 .inputContainer {
                     input,
                     select {
@@ -644,6 +973,7 @@
             }
         }
     }
+
     .inputContainer {
         input {
             height: 40px !important;
@@ -654,6 +984,7 @@
 @media screen and (min-width: 1440px) {
     .formContainer {
         margin-top: 8px;
+
         h1 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -666,12 +997,14 @@
             color: var(--primary-dark-navy);
             margin-bottom: 8px;
         }
+
         .box {
             padding: 32px;
             background: var(--neutral-white);
             padding-top: 72px;
             border-radius: 16px;
         }
+
         form[class="checkoutForm"] {
             display: flex;
             flex-direction: row !important;
@@ -683,12 +1016,14 @@
                 flex-direction: column;
                 gap: 8px;
             }
+
             .box {
                 padding: 32px;
                 background: var(--neutral-white);
                 padding-top: 32px;
                 border-radius: 16px;
             }
+
             h6 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -699,24 +1034,60 @@
                 letter-spacing: 1.6%;
                 vertical-align: middle;
             }
+
             .userData {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+
+                .productBox {
+                    .productCard {
+                        height: 100%;
+                        display: flex !important;
+                        flex-direction: row !important;
+
+                        .productCardWrapper {
+                            width: 100% !important;
+                            height: auto !important;
+                            display: flex !important;
+                            flex-direction: column !important;
+                            justify-content: space-between !important;
+
+                            .productCardBottom {
+                                .cost {
+                                    display: flex;
+                                    justify-content: end;
+                                    text-align: end;
+                                    font-size: 16px !important;
+
+                                    span {
+                                        font-size: 12px !important;
+                                        color: var(--primary-dark-navy);
+                                        padding: 0 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .inputsWrapper {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 32px;
                 }
+
                 .title {
                     display: block;
                 }
+
                 .priceData {
                     hr {
                         display: block;
                         margin-bottom: 32px;
                     }
                 }
+
                 .error {
                     margin-top: 8px !important;
                     width: 100%;
@@ -729,6 +1100,7 @@
                     justify-content: start;
                     align-items: center;
                     gap: 8px;
+
                     span {
                         display: flex;
                         justify-content: start;
@@ -742,9 +1114,11 @@
                         line-height: 120%;
                         letter-spacing: 0%;
                     }
+
                     i {
                         font-size: 24px;
                     }
+
                     h6 {
                         font-family: var(--font-family-Regular);
                         font-weight: 400;
@@ -773,6 +1147,7 @@
 
                 .priceData {
                     width: 100%;
+
                     p {
                         font-family: var(--font-family-Thin);
 
@@ -783,6 +1158,7 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     h6 {
                         font-family: var(--font-family-Light);
                         font-weight: 300;
@@ -792,6 +1168,7 @@
                         line-height: 120%;
                         letter-spacing: 1.4%;
                         vertical-align: middle;
+
                         span {
                             font-family: var(--font-family-Light);
                             font-size: 16px;
@@ -800,6 +1177,7 @@
                             vertical-align: middle;
                         }
                     }
+
                     .forSolders {
                         width: 100%;
                         height: 40px;
@@ -809,9 +1187,11 @@
 
                         padding: 0px 12px;
                         background: rgba(246, 247, 249, 1);
+
                         .icon {
                             margin-right: 16px;
                         }
+
                         p {
                             font-family: var(--font-family-Thin);
 
@@ -821,12 +1201,14 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
+
                             span {
                                 color: var(--primary-dark-navy);
                             }
                         }
                     }
                 }
+
                 hr {
                     margin: 0 auto;
                     border: none;
@@ -834,11 +1216,13 @@
                     background: var(--neutral-medium-gray-second);
                     width: 295px;
                 }
+
                 .btnSection {
                     width: 327px;
                     display: flex;
                     flex-direction: column;
                     gap: 24px;
+
                     .btnConfirm {
                         width: 100%;
                         height: 48px;
@@ -853,11 +1237,13 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                     }
+
                     .btnCheckout {
                         width: 100%;
                         height: 48px;
                     }
                 }
+
                 span {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -875,11 +1261,13 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 16px;
+
                     label {
                         height: 40px;
                         width: fit-content;
                     }
                 }
+
                 .inputContainer {
                     input,
                     select {
@@ -889,6 +1277,7 @@
             }
         }
     }
+
     .inputContainer {
         input {
             height: 40px !important;
@@ -899,63 +1288,88 @@
 @media screen and (min-width: 1920px) {
     .formContainer {
         margin-top: 8px;
+
         h1 {
-            font-family: var(--font-family-Light);
-            font-weight: 300;
-            font-style: Light;
-            font-size: 56px;
-            leading-trim: NONE;
+            @include font-light;
+            font-size: 56px !important;
             line-height: 120%;
             letter-spacing: 1.25%;
             vertical-align: middle;
             color: var(--primary-dark-navy);
             margin-bottom: 8px;
         }
+
         .box {
             padding: 32px;
             background: var(--neutral-white);
             padding-top: 72px;
             border-radius: 16px;
         }
+
         form[class="checkoutForm"] {
             display: flex;
             flex-direction: row !important;
             gap: 8px;
 
+            .productCard {
+                height: 100%;
+                display: flex !important;
+                flex-direction: row !important;
+
+                img {
+                    width: 124px !important;
+                    height: 124px !important;
+                }
+
+                .productCardWrapper {
+                    padding-top: 16px;
+                    padding-bottom: 24px;
+                    width: 100% !important;
+                    height: auto !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    justify-content: space-between !important;
+                }
+            }
+
             .formLeftSide {
-                width: 100%;
+                width: calc(100% - 645px);
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
             }
+
             .box {
                 padding: 32px;
                 background: var(--neutral-white);
                 padding-top: 32px;
                 border-radius: 16px;
             }
+
             h6 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 24px;
                 color: var(--primary-dark-navy);
                 line-height: 24px;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
             }
+
             .userData {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+
                 .inputsWrapper {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    gap: 32px;
+                    gap: 32px !important;
                 }
+
                 .title {
                     display: block;
                 }
+
                 .priceData {
                     hr {
                         display: block;
@@ -975,7 +1389,9 @@
                     justify-content: start;
                     align-items: center;
                     gap: 8px;
+
                     span {
+                        padding: 0 !important;
                         display: flex;
                         justify-content: start;
                         align-items: center;
@@ -984,13 +1400,15 @@
                         height: 100%;
                         font-family: var(--font-family-Bold);
                         font-style: Bold;
-                        font-size: 14px;
+                        font-size: 14px !important;
                         line-height: 120%;
                         letter-spacing: 0%;
                     }
+
                     i {
                         font-size: 24px;
                     }
+
                     h6 {
                         font-family: var(--font-family-Regular);
                         font-weight: 400;
@@ -1019,6 +1437,7 @@
 
                 .priceData {
                     width: 100%;
+
                     p {
                         font-family: var(--font-family-Thin);
 
@@ -1029,23 +1448,24 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     h6 {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 28px;
                         margin-bottom: 16px;
                         line-height: 120%;
                         letter-spacing: 1.4%;
                         vertical-align: middle;
+
                         span {
-                            font-family: var(--font-family-Light);
+                            @include font-light;
                             font-size: 16px;
                             line-height: 140%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
                         }
                     }
+
                     .forSolders {
                         width: 100%;
                         height: 40px;
@@ -1055,24 +1475,26 @@
 
                         padding: 0px 12px;
                         background: rgba(246, 247, 249, 1);
+
                         .icon {
                             margin-right: 16px;
                         }
-                        p {
-                            font-family: var(--font-family-Thin);
 
-                            font-style: Light;
+                        p {
+                            @include font-light;
                             font-size: 14px;
                             color: var(--neutral-medium-gray);
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
+
                             span {
                                 color: var(--primary-dark-navy);
                             }
                         }
                     }
                 }
+
                 hr {
                     margin: 0 auto;
                     border: none;
@@ -1080,11 +1502,13 @@
                     background: var(--neutral-medium-gray-second);
                     width: 295px;
                 }
+
                 .btnSection {
                     width: 327px;
                     display: flex;
                     flex-direction: column;
                     gap: 24px;
+
                     .btnConfirm {
                         width: 100%;
                         height: 48px;
@@ -1099,15 +1523,15 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                     }
+
                     .btnCheckout {
                         width: 100%;
                         height: 48px;
                     }
                 }
+
                 span {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 12px;
                     color: var(--neutral-medium-gray);
                     line-height: 120%;
@@ -1121,11 +1545,13 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 16px;
+
                     label {
                         height: 40px;
                         width: fit-content;
                     }
                 }
+
                 .inputContainer {
                     input,
                     select {
@@ -1135,6 +1561,7 @@
             }
         }
     }
+
     .inputContainer {
         input {
             height: 40px !important;

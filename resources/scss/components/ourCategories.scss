@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 32;
+
     h1 {
         font-weight: 300;
         font-style: Light;
@@ -17,6 +18,7 @@
         color: var(--primary-dark-navy);
         font-family: var(--font-family-Light) !important;
     }
+
     .productCards {
         width: 100%;
         list-style: none;
@@ -25,15 +27,18 @@
         column-gap: 32px;
         row-gap: 52px;
     }
+
     hr {
         margin: 32px 0px;
         border: none;
         height: 1px;
         background-color: var(--neutral-medium-gray-second);
     }
+
     ul .productCard img {
         border-radius: 8px;
     }
+
     ul {
         .productCard {
             .productCardHeader {
@@ -94,6 +99,7 @@
             vertical-align: middle;
             color: var(--primary-dark-navy);
         }
+
         p {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -106,6 +112,7 @@
             margin-top: 16px;
         }
     }
+
     ul {
         .cardBtn {
             width: 100%;
@@ -123,6 +130,7 @@
             position: relative;
             transition: 0.3s ease;
             color: var(--primary-deep-blue);
+
             p {
                 position: absolute;
                 display: flex;
@@ -135,6 +143,7 @@
                 transition: left 0.3s ease, transform 0.3s ease;
             }
         }
+
         &:hover {
             transition: 0.3s ease;
         }
@@ -175,6 +184,7 @@
         display: flex;
         flex-direction: column;
         gap: 32;
+
         h1 {
             font-weight: 300;
             font-style: Light;
@@ -185,6 +195,7 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         .productCards {
             width: 100%;
             list-style: none;
@@ -194,23 +205,28 @@
             column-gap: 32px;
             row-gap: 52px;
         }
+
         hr {
             margin: 32px 0px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul .productCard img {
             width: 100% !important;
             height: 172px !important;
         }
+
         .productCard {
             height: 420px;
         }
+
         .cardContent {
             width: 100%;
             padding: 24px;
             padding-bottom: 33px;
+
             h4 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -221,6 +237,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -233,6 +250,7 @@
                 margin-top: 16px;
             }
         }
+
         ul {
             .cardBtn {
                 width: 100%;
@@ -250,6 +268,7 @@
                 position: relative;
                 transition: 0.3s ease;
                 color: var(--primary-deep-blue);
+
                 p {
                     position: absolute;
                     display: flex;
@@ -263,6 +282,7 @@
                     transition: left 0.3s ease, transform 0.3s ease;
                 }
             }
+
             &:hover {
                 transition: 0.3s ease;
             }
@@ -280,6 +300,7 @@
         display: flex;
         flex-direction: column;
         gap: 32;
+
         h1 {
             font-weight: 300;
             font-style: Light;
@@ -290,6 +311,7 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         .productCards {
             width: 100%;
             list-style: none;
@@ -298,24 +320,29 @@
             column-gap: 32px;
             row-gap: 40px;
         }
+
         hr {
             margin: 32px 0px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul .productCard img {
             object-fit: fill;
             width: 100% !important;
             height: 172px !important;
         }
+
         .productCard {
             height: 100%;
         }
+
         .cardContent {
             width: 100%;
             padding: 24px;
             padding-bottom: 33px;
+
             h4 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -326,6 +353,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -339,6 +367,7 @@
                 height: 83px;
             }
         }
+
         ul {
             .cardBtn {
                 width: 100%;
@@ -356,6 +385,7 @@
                 position: relative;
                 transition: 0.3s ease;
                 color: var(--primary-deep-blue);
+
                 p {
                     position: absolute;
                     display: flex;
@@ -369,12 +399,14 @@
                     transition: left 0.3s ease, transform 0.3s ease;
                 }
             }
+
             &:hover {
                 transition: 0.3s ease;
             }
         }
     }
 }
+
 @media screen and (min-width: 1440px) {
     .ourProductsContainer {
         width: 100%;
@@ -385,6 +417,7 @@
         display: flex;
         flex-direction: column;
         gap: 32;
+
         h1 {
             font-weight: 300;
             font-style: Light;
@@ -395,6 +428,7 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         .productCards {
             width: 100%;
             list-style: none;
@@ -403,24 +437,29 @@
             column-gap: 32px;
             row-gap: 64px;
         }
+
         hr {
             margin: 32px 0px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul .productCard .productCardHeader img {
             object-fit: fill;
             width: 100% !important;
             height: 232px !important;
         }
+
         .productCard {
             height: 100%;
         }
+
         .cardContent {
             width: 100%;
             padding: 24px;
             padding-bottom: 33px;
+
             h4 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -431,6 +470,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -444,6 +484,7 @@
                 height: 88px;
             }
         }
+
         ul {
             .cardBtn {
                 width: 100%;
@@ -461,6 +502,7 @@
                 position: relative;
                 transition: 0.3s ease;
                 color: var(--primary-deep-blue);
+
                 p {
                     position: absolute;
                     display: flex;
@@ -474,12 +516,14 @@
                     transition: left 0.3s ease, transform 0.3s ease;
                 }
             }
+
             &:hover {
                 transition: 0.3s ease;
             }
         }
     }
 }
+
 @media screen and (min-width: 1920px) {
     .ourProductsContainer {
         width: 100%;
@@ -490,6 +534,7 @@
         display: flex;
         flex-direction: column;
         gap: 32;
+
         h1 {
             font-weight: 300;
             font-style: Light;
@@ -500,6 +545,7 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         .productCards {
             width: 100%;
             list-style: none;
@@ -508,24 +554,29 @@
             column-gap: 32px;
             row-gap: 64px;
         }
+
         hr {
             margin: 32px 0px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul .productCard .productCardHeader img {
             object-fit: fill;
             width: 100% !important;
             height: 232px !important;
         }
+
         .productCard {
             height: 100%;
         }
+
         .cardContent {
             width: 100%;
             padding: 24px;
             padding-bottom: 33px;
+
             h4 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -536,6 +587,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -549,6 +601,7 @@
                 height: 88px;
             }
         }
+
         ul {
             .cardBtn {
                 width: 100%;
@@ -566,6 +619,7 @@
                 position: relative;
                 transition: 0.3s ease;
                 color: var(--primary-deep-blue);
+
                 p {
                     position: absolute;
                     display: flex;
@@ -579,6 +633,7 @@
                     transition: left 0.3s ease, transform 0.3s ease;
                 }
             }
+
             &:hover {
                 transition: 0.3s ease;
             }

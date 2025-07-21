@@ -58,9 +58,12 @@
                                 <span>собівартість за од.</span>
                             </div>
                         </div>
-
-                        <button>Замовити <i class="ph ph-plus"></i></button>
-
+                        
+                       <form action="{{ route('addProduct.to.cart') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="product" value="{{ base64_encode(json_encode($product)) }}">
+                         <button type="submit">Замовити <i class="ph ph-plus"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -18,8 +18,54 @@ $chooseProducts = session('chooseProducts');
             <div class="preOrderBottomBox">
                 @include("ui.secondaryBtn", [
                 "content" => [
-                "id" => "btnConnect",
                 'text' => "Переглянути категорії",
+                'class' => "preOrderBtn",
+                'styles' => 'font-size: 28px',
+                'route'=>'home.page'
+                ]
+                ])
+                <div class="forSolders">
+                    <p>🪖 Для військових — <span>безкоштовно</span></p>
+                </div>
+            </div>
+            @else
+            <div class="preOrderModalContent">
+                @foreach ((array) $chooseProducts as $product )
+                <div class="productCard">
+                    <div class="productCardWrapper">
+                        <div class="productCardHeader">
+                            <x-picture-tag src="{{ asset($product['img'] ?? '') }}" lazy="true"></x-picture-tag>
+                            <h3>{{ $product['title'] ?? '' }}</h3>
+                        </div>
+                        <div class="productCardBottom">
+                            <div class="counter" data-product-id="{{ $loop->index }}">
+                                <i class="ph ph-minus decrement"></i>
+                                <input type="text" class="count-input" value="{{ $product['cartCount'] ?? 1 }}" min="1">
+                                <i class="ph ph-plus increment"></i>
+                            </div>
+                            <div class="cost">
+                                <h3>
+                                    {{ $product['cost'] ?? '' }},00<span>грн</span>
+                                </h3>
+                                <p>
+                                    собівартість за од.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="POST" action="{{ route('remove.from.cart') }}">
+                        @csrf
+                        <input type="hidden" name="index" value="{{ $loop->index }}">
+                        <button type="submit"> <i class="ph ph-trash-simple trash"></i></button>
+                    </form>
+
+                </div>
+                @endforeach
+            </div>
+            <div class="preOrderBottomBox">
+                @include("ui.secondaryBtn", [
+                "content" => [
+                'text' => "Оформити",
                 'class' => "preOrderBtn",
                 'styles' => 'font-size: 28px',
                 'route'=>'checkout.page'
@@ -29,12 +75,30 @@ $chooseProducts = session('chooseProducts');
                     <p>🪖 Для військових — <span>безкоштовно</span></p>
                 </div>
             </div>
-            @else
-            @foreach ($chooseProducts as $product )
-       <div></div>
-            @endforeach
             @endif
         </div>
     </div>
 
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".productCard").forEach(card => {
+            const decrementBtn = card.querySelector(".decrement");
+            const incrementBtn = card.querySelector(".increment");
+            const input = card.querySelector(".count-input");
+
+            if (incrementBtn && decrementBtn && input) {
+                incrementBtn.addEventListener("click", () => {
+                    input.value = parseInt(input.value) + 1;
+                });
+
+                decrementBtn.addEventListener("click", () => {
+                    let value = parseInt(input.value);
+                    if (value > 1) {
+                        input.value = value - 1;
+                    }
+                });
+            }
+        });
+    });
+</script>

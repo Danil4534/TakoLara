@@ -1,5 +1,5 @@
 @php
-$isOpen = false;
+$chooseProducts = session('chooseProducts');
 $links = [
 ['title' => "Про нас", "anchor" => "#about"],
 ['title' => "Як ми працюємо", "anchor" => "#about"],
@@ -62,7 +62,8 @@ $links = [
             "text" => "Передзамовлення",
             "class" => "btnPreOrder",
             "styles" => "font-size: 20px",
-            "count" => 9
+            "count" => $chooseProducts?count($chooseProducts):0
+            
             ]
             ])
     </div>

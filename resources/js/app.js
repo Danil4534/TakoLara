@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const successModalContent = document.querySelector('#successModalContent')
   const successModalClose = document.querySelectorAll('#closeSuccessModal')
 
-  successBtn?.addEventListener('click', ()=>{
-    successModal.classList.add('active')
-    successModalContent.classList.add('active')
-    modalContact.classList.remove('active')
-  })
-  successModalClose.forEach((element)=>{
-    element.addEventListener('click',()=>{
-    successModal.classList.remove('active')
-    successModalContent.classList.remove('active')
-    modalContact.classList.remove('active')
-    })
-  })
+  // successBtn?.addEventListener('click', ()=>{
+  //   successModal.classList.add('active')
+  //   successModalContent.classList.add('active')
+  //   modalContact.classList.remove('active')
+  // })
+  // successModalClose.forEach((element)=>{
+  //   element.addEventListener('click',()=>{
+  //   successModal.classList.remove('active')
+  //   successModalContent.classList.remove('active')
+  //   modalContact.classList.remove('active')
+  //   })
+  // })
 
  categoriesBtnOpen.forEach((openBtn, index) => {
   openBtn.addEventListener('click', () => {
@@ -124,7 +124,7 @@ openPreOrderBtn.forEach(btn=>
                     const el = entry.target;
                     const target = parseInt(el.getAttribute("data-value"), 10);
                     animateNumber(el, 0, target, 1000);
-                    observer.unobserve(el);
+                    // observer.unobserve(el);
                 }
             });
         }, options);

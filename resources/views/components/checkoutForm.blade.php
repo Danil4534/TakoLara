@@ -27,12 +27,45 @@ $typeOfContact = [
 ],
 ];
 
-$chooseProducts = session('chooseProduct')
+$chooseProducts = session('chooseProducts');
 
 @endphp
 
 <div class="formContainer">
-    <h1 class="checkoutTitle box">Оформити замовлення</h1>
+    <div class=" box">
+        <h1 class="checkoutTitle">Оформити замовлення</h1>
+        <div class="productBox">
+
+            @foreach ((array) $chooseProducts as $product )
+            <div class="productCard">
+                <x-picture-tag src="{{ asset($product['img'] ?? '') }}" lazy="true"></x-picture-tag>
+                <div class="productCardWrapper">
+                    <div class="productCardHeader">
+                        <h3>{{ $product['title'] ?? '' }}</h3>
+                    </div>
+                    <div class="productCardBottom">
+                        <div class="counter" data-product-id="{{ $loop->index }}">
+                            <i class="ph ph-minus decrement"></i>
+                            <input type="text" class="count-input" value="{{ $product['quantity'] ?? 1 }}" min="1">
+                            <i class="ph ph-plus increment"></i>
+                        </div>
+                        <div class="cost">
+                            <h3>
+                                {{ $product['cost'] ?? '' }},00<span>грн</span>
+                            </h3>
+                            <p>
+                                собівартість за од.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <i class="ph ph-trash-simple trash"></i>
+            </div>
+            @endforeach
+        </div>
+    </div>
+
     <form action="{{  route('checkout.submit')}}" class="checkoutForm" method="POST">
         @csrf
         <div class="formLeftSide">
@@ -68,33 +101,33 @@ $chooseProducts = session('chooseProduct')
                     ]
                     ])
                 </div>
-    
+
             </div>
             <div class="userData box">
                 <h6>Доставка</h6>
-                  <div class="inputsWrapper">
-                @include("ui.input", [
-                'content' => [
-                "label" => "Місто / Населений пункт",
-                "placeholder" => "Введіть ",
-                "name" => "city",
-                "icon"=>"ph ph-magnifying-glass"
-              
-                ]
-                ])
-                @include("ui.input", [
-                'content' => [
-                "label" => "Номер відділення",
-                "placeholder" => "Введіть ім'я",
-                "name" => "firstname",
-                  'type'=>'select',    'options' => [
-                '1' => '557234',
-                '2' => '557234',
-                '3' => '557234',
-        ]
-                ]
-                ])
-            </div>
+                <div class="inputsWrapper">
+                    @include("ui.input", [
+                    'content' => [
+                    "label" => "Місто / Населений пункт",
+                    "placeholder" => "Введіть ",
+                    "name" => "city",
+                    "icon"=>"ph ph-magnifying-glass"
+
+                    ]
+                    ])
+                    @include("ui.input", [
+                    'content' => [
+                    "label" => "Номер відділення",
+                    "placeholder" => "Введіть ім'я",
+                    "name" => "firstname",
+                    'type'=>'select', 'options' => [
+                    '1' => 'Оберіть номер відділення НП',
+                    '2' => '557234',
+                    '3' => '557234',
+                    ]
+                    ]
+                    ])
+                </div>
 
             </div>
             <div class="userData box">
@@ -104,7 +137,8 @@ $chooseProducts = session('chooseProduct')
                 'content' => [
                 "label" => "Номер телефону",
                 "placeholder" => "+380 ",
-                "name" => "phone"
+                "name" => "phone",
+                "id" => "contactPhoneInput"
                 ]
                 ])
             </div>
@@ -112,10 +146,38 @@ $chooseProducts = session('chooseProduct')
 
         <div class="userData box">
             <h6 class="title">Передзамовлення</h6>
+            <div class="productBox">
+                @foreach ((array) $chooseProducts as $product )
+                <div class="productCard">
+                    <x-picture-tag src="{{ asset($product['img'] ?? '') }}" lazy="true"></x-picture-tag>
+                    <div class="productCardWrapper">
+                        <div class="productCardHeader">
+                            <h3>{{ $product['title'] ?? '' }}</h3>
+                        </div>
+                        <div class="productCardBottom">
+                            <div class="counter" data-product-id="{{ $loop->index }}">
+                                <i class="ph ph-minus decrement"></i>
+                                <input type="text" class="count-input" value="{{ $product['quantity'] ?? 1 }}" min="1">
+                                <i class="ph ph-plus increment"></i>
+                            </div>
+                            <div class="cost">
+                                <h3>
+                                    {{ $product['cost'] ?? '' }},00<span>грн</span>
+                                </h3>
+                                <p>
+                                    собівартість за од.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="ph ph-trash-simple trash"></i>
+                </div>
+                @endforeach
+            </div>
             <div class="priceData">
                 <hr>
                 <p>собівартість виробів:</p>
-                <h6>140,00 <span>грн</span></h6>
+                <h6>140,00<span>грн</span></h6>
                 <div class="forSolders">
                     <p><span class="icon">🪖</span> Для військових — <span>безкоштовно</span></p>
                 </div>
@@ -134,3 +196,30 @@ $chooseProducts = session('chooseProduct')
         </div>
     </form>
 </div>
+<script>
+    const contactOptions = [
+        "Номер телефону",
+        "Viber",
+        "Telegram",
+        "Whatsup",
+        "Signal"
+    ];
+
+    function handleMethodToConnect(selectedIndex) {
+        const labels = document.querySelectorAll('.radioLabel');
+        const phoneInputLabel = document.querySelector('label[for="contactPhoneInput"]');
+        const phoneInput = document.getElementById('contactPhoneInput');
+        labels.forEach((label, index) => {
+            const input = label.querySelector('input[type="radio"]');
+            if (index === selectedIndex) {
+                input.checked = true;
+                label.classList.add('active');
+                if (phoneInputLabel) phoneInputLabel.innerText = contactOptions[selectedIndex];
+                if (phoneInput) phoneInput.placeholder = contactOptions[selectedIndex] === "Номер телефону" ? "+380 " : contactOptions[selectedIndex];
+
+            } else {
+                label.classList.remove('active');
+            }
+        });
+    }
+</script>

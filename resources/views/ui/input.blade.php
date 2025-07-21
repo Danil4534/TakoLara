@@ -1,6 +1,5 @@
 <div class="inputContainer">
-    <label>{{ $content['label'] ?? '' }}</label>
-
+    <label for="{{ $content['id']??"" }}" id="labelInput" >{{ $content['label'] ?? '' }}</label>
     @if(($content['type'] ?? 'text') === 'select')
         <div class="selectWrapper">
             <select
@@ -21,7 +20,7 @@
     <div class="inputBox">
         <input
             type="{{ $content['type'] ?? 'text' }}"
-        
+            id="{{ $content['id'] ?? '' }}"
             name="{{ $content['name'] ?? '' }}"
             value="{{ $content['value'] ?? '' }}"
             placeholder="{{ $content['placeholder'] ?? '' }}"
@@ -34,7 +33,7 @@
     @error($content['name'] ?? '')
         <div class="error">
             <span><i class="ph ph-warning-circle"></i>Помилка!</span>
-            <h6>{{ $message }}</h6>
+            <h4>{{ $message }}</h4>
         </div>
     @enderror
 </div>

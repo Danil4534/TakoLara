@@ -17,32 +17,38 @@
         color: var(--primary-dark-navy);
         font-family: var(--font-family-Light) !important;
     }
+
     hr {
         margin-top: 24px;
         border: none;
         height: 1px;
         background-color: var(--neutral-medium-gray-second);
     }
+
     .mediaVideo {
         margin-top: 32px;
         width: 100%;
+
         .videoPrev {
             width: 100%;
             position: relative;
             overflow: hidden;
             border-radius: 8px;
         }
+
         .videoPrev img {
             width: 100%;
             height: 220px;
             border-radius: 8px;
             object-fit: cover;
             transition: 0.3s ease;
+
             &:hover {
                 transition: 0.3s ease;
                 transform: scale(1.2);
                 filter: blur(2px);
             }
+
             button {
                 position: absolute;
                 top: 50%;
@@ -61,6 +67,7 @@
                 transition: 0.3s ease-in;
             }
         }
+
         .videoInfo {
             width: 100%;
             padding: 24px 16px 16px 16px;
@@ -69,6 +76,7 @@
             justify-content: space-between;
             border-radius: 8px;
             border: 2px solid var(--neutral-medium-gray-second);
+
             h4 {
                 font-family: var(--font-family-Light);
 
@@ -161,33 +169,39 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         hr {
             margin-top: 24px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         .mediaVideo {
             margin-top: 32px;
             width: 100%;
             display: flex;
+
             .videoPrev {
                 width: 100%;
                 position: relative;
                 overflow: hidden;
                 border-radius: 8px;
             }
+
             .videoPrev img {
                 width: 100%;
                 height: 292px;
                 border-radius: 8px;
                 object-fit: cover;
                 transition: 0.3s ease;
+
                 &:hover {
                     transition: 0.3s ease;
                     transform: scale(1.2);
                     filter: blur(2px);
                 }
+
                 button {
                     position: absolute;
                     top: 50%;
@@ -206,6 +220,7 @@
                     transition: 0.3s ease-in;
                 }
             }
+
             .videoInfo {
                 width: 100%;
                 padding: 32px;
@@ -214,6 +229,7 @@
                 justify-content: space-between;
                 border-radius: 8px;
                 border: 2px solid var(--neutral-medium-gray-second);
+
                 h4 {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -224,6 +240,7 @@
                     vertical-align: middle;
                     color: var(--primary-dark-navy);
                 }
+
                 .videoDate {
                     p {
                         font-weight: 300;
@@ -234,6 +251,7 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     i {
                         font-size: 48px;
                     }
@@ -263,33 +281,39 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         hr {
             margin-top: 24px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         .mediaVideo {
             margin-top: 32px;
             width: 100%;
             display: flex;
+
             .videoPrev {
                 width: 100%;
                 position: relative;
                 overflow: hidden;
                 border-radius: 8px;
             }
+
             .videoPrev img {
                 width: 100%;
                 height: 292px;
                 border-radius: 8px;
                 object-fit: cover;
                 transition: 0.3s ease;
+
                 &:hover {
                     transition: 0.3s ease;
                     transform: scale(1.2);
                     filter: blur(2px);
                 }
+
                 button {
                     position: absolute;
                     top: 50%;
@@ -308,6 +332,7 @@
                     transition: 0.3s ease-in;
                 }
             }
+
             .videoInfo {
                 width: 100%;
                 padding: 32px;
@@ -316,6 +341,7 @@
                 justify-content: space-between;
                 border-radius: 8px;
                 border: 2px solid var(--neutral-medium-gray-second);
+
                 h4 {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -326,6 +352,7 @@
                     vertical-align: middle;
                     color: var(--primary-dark-navy);
                 }
+
                 .videoDate {
                     p {
                         font-weight: 300;
@@ -336,6 +363,7 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     i {
                         font-size: 48px;
                     }
@@ -365,33 +393,39 @@
             color: var(--primary-dark-navy);
             font-family: var(--font-family-Light) !important;
         }
+
         hr {
             margin-top: 24px;
             border: none;
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
+
         .mediaVideo {
             margin-top: 32px;
             width: 100%;
             display: flex;
+
             .videoPrev {
                 width: 100%;
                 position: relative;
                 overflow: hidden;
                 border-radius: 8px;
             }
+
             .videoPrev img {
                 width: 100%;
                 height: 392px;
                 border-radius: 8px;
                 object-fit: cover;
                 transition: 0.3s ease;
+
                 &:hover {
                     transition: 0.3s ease;
                     transform: scale(1.2);
                     filter: blur(2px);
                 }
+
                 button {
                     position: absolute;
                     top: 50%;
@@ -410,6 +444,7 @@
                     transition: 0.3s ease-in;
                 }
             }
+
             .videoInfo {
                 width: 100%;
                 padding: 32px;
@@ -418,6 +453,7 @@
                 justify-content: space-between;
                 border-radius: 8px;
                 border: 2px solid var(--neutral-medium-gray-second);
+
                 h4 {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -428,6 +464,7 @@
                     vertical-align: middle;
                     color: var(--primary-dark-navy);
                 }
+
                 .videoDate {
                     p {
                         font-weight: 300;
@@ -438,6 +475,7 @@
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                     }
+
                     i {
                         font-size: 48px;
                     }

@@ -1,9 +1,8 @@
-main {
-}
 .checkoutBoxContainer {
     background: var(--neutral-white);
     border-radius: 16px;
     padding: 32px 16px;
+
     h1 {
         font-family: var(--font-family-Light);
         font-weight: 300;
@@ -15,8 +14,10 @@ main {
         color: var(--primary-dark-navy);
     }
 }
+
 footer {
     padding: 0 8px;
+
     .footerCheckoutContainer {
         width: 100%;
         height: 56px;
@@ -25,6 +26,7 @@ footer {
         border-radius: 8px;
         display: flex;
         align-items: center;
+
         p {
             font-family: var(--font-family-Thin);
 

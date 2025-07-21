@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 32px;
+
     .rightSideDetails {
         width: 100%;
         height: 164px;
@@ -22,6 +23,7 @@
         padding: 12px;
         gap: 12px;
         position: relative;
+
         .yellowBox {
             position: absolute;
             left: 12px;
@@ -41,9 +43,11 @@
             vertical-align: middle;
             color: var(--neutral-white);
         }
+
         .qr_code {
             display: none;
         }
+
         button {
             width: 100%;
             height: 48px !important;
@@ -59,8 +63,10 @@
             border: none;
         }
     }
+
     .leftSideDetails {
         width: 100%;
+
         h5 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -70,6 +76,7 @@
             letter-spacing: 1.6%;
             color: rgba(23, 24, 26, 1);
         }
+
         .detailsInput {
             width: 100%;
             height: 48px;
@@ -90,8 +97,10 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 32px;
+
     input {
         height: 40px;
+
         i {
         }
     }
@@ -149,6 +158,7 @@
         display: flex;
         flex-direction: column;
         gap: 54px;
+
         .rightSideDetails {
             width: 100%;
             height: 372px;
@@ -164,10 +174,12 @@
             padding: 24px;
             gap: 0px !important;
             position: relative;
+
             .yellowBox {
                 position: absolute;
                 left: 24px;
                 top: 24px;
+
                 img {
                     width: 60px !important;
                     height: 60px !important;
@@ -191,11 +203,13 @@
                 margin-top: 16px;
                 align-items: center;
             }
+
             .qr_code {
                 margin: 32px 0;
                 display: block;
                 width: 140px;
             }
+
             button {
                 width: 195px;
                 height: 40px !important;
@@ -211,8 +225,10 @@
                 border: none;
             }
         }
+
         .leftSideDetails {
             width: 100%;
+
             h5 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -222,6 +238,7 @@
                 letter-spacing: 1.6%;
                 color: rgba(23, 24, 26, 1);
             }
+
             .detailsInput {
                 width: 100%;
                 height: 48px;
@@ -243,6 +260,7 @@
         display: flex;
         flex-direction: row !important;
         gap: 86px;
+
         .rightSideDetails {
             min-width: 725px !important;
             height: 372px;
@@ -258,10 +276,12 @@
             padding: 24px;
             gap: 0px !important;
             position: relative;
+
             .yellowBox {
                 position: absolute;
                 left: 24px;
                 top: 24px;
+
                 img {
                     width: 60px !important;
                     height: 60px !important;
@@ -285,11 +305,13 @@
                 margin-top: 16px;
                 align-items: center;
             }
+
             .qr_code {
                 margin: 32px 0;
                 display: block;
                 width: 140px;
             }
+
             button {
                 width: 195px;
                 height: 40px !important;
@@ -305,8 +327,10 @@
                 border: none;
             }
         }
+
         .leftSideDetails {
             width: 100%;
+
             h5 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -316,6 +340,7 @@
                 letter-spacing: 1.6%;
                 color: rgba(23, 24, 26, 1);
             }
+
             .detailsInput {
                 width: 100%;
                 height: 48px;
@@ -337,6 +362,7 @@
         display: flex;
         flex-direction: row !important;
         gap: 56px;
+
         .rightSideDetails {
             min-width: 900px !important;
             height: 485px;
@@ -352,10 +378,12 @@
             padding: 24px;
             gap: 0px !important;
             position: relative;
+
             .yellowBox {
                 position: absolute;
                 left: 24px;
                 top: 24px;
+
                 img {
                     width: 60px !important;
                     height: 60px !important;
@@ -379,11 +407,13 @@
                 margin-top: 16px;
                 align-items: center;
             }
+
             .qr_code {
                 margin: 32px 0;
                 display: block;
                 width: 200px;
             }
+
             button {
                 width: 195px;
                 height: 40px !important;
@@ -399,8 +429,10 @@
                 border: none;
             }
         }
+
         .leftSideDetails {
             width: 100%;
+
             h5 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -410,6 +442,7 @@
                 letter-spacing: 1.6%;
                 color: rgba(23, 24, 26, 1);
             }
+
             .detailsInput {
                 width: 100%;
                 height: 48px;

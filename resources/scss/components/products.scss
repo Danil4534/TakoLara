@@ -5,11 +5,13 @@
     padding: 64px 16px;
     border-radius: 8px;
     gap: 24px;
+
     .filtersContainer {
         width: 100%;
         overflow-x: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
+
         .filters {
             display: flex;
             flex-wrap: nowrap;
@@ -18,9 +20,11 @@
             width: max-content;
             scrollbar-width: none;
             -ms-overflow-style: none;
+
             &::-webkit-scrollbar {
                 display: none;
             }
+
             .radioLabel {
                 white-space: nowrap;
                 width: auto;
@@ -41,6 +45,7 @@
             }
         }
     }
+
     hr {
         margin: 24px 0px;
         width: 100%;
@@ -48,6 +53,7 @@
         border: none;
         background-color: var(--neutral-medium-gray-second);
     }
+
     ul {
         width: 100%;
         height: auto;
@@ -55,31 +61,38 @@
         flex-direction: column;
         gap: 24px;
         list-style: none;
+
         li {
             background: rgba(246, 247, 249, 1);
             border-radius: 16px;
+
             .productContent {
                 padding: 8px;
                 display: flex;
                 flex-direction: column;
+
                 .slider {
                     .slider_bottom {
                         display: none;
                     }
+
                     img {
                         width: 310px !important;
                     }
                 }
+
                 .productData {
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
                     padding: 16px;
                     padding-bottom: 24px;
+
                     .productDetails {
                         overflow: hidden;
                         padding-left: 16px;
                     }
+
                     .toggleCheckbox {
                         display: none;
                     }
@@ -108,10 +121,12 @@
                         padding-bottom: 8px;
                     }
                 }
+
                 .productCharacter {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 8px;
+
                     span {
                         padding: 7.5px 16px;
                         border-radius: 8px;
@@ -128,6 +143,7 @@
                         color: rgba(15, 94, 187, 1);
                     }
                 }
+
                 .productSubtitle {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -138,10 +154,12 @@
                     vertical-align: middle;
                     color: var(--neutral-medium-gray);
                 }
+
                 .productBenefits {
                     display: flex;
                     flex-direction: column;
                     gap: 8px;
+
                     p {
                         width: fit-content;
                         padding: 13px 8px;
@@ -159,6 +177,7 @@
                         background: var(--neutral-white);
                     }
                 }
+
                 h1 {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -168,22 +187,26 @@
                     vertical-align: middle;
                     color: var(--primary-dark-navy);
                 }
+
                 .productCostCount {
                     width: 100%;
                     padding: 16px;
                     height: auto;
                     background: var(--neutral-white);
                     border-radius: 16px;
+
                     .costCountUp {
                         display: flex;
                         gap: 16px;
                     }
+
                     .cost {
                         width: 100%;
                         display: flex;
                         align-items: center;
                         flex-direction: column;
                         justify-content: center;
+
                         span {
                             font-family: var(--font-family-Light);
                             font-weight: 300;
@@ -194,6 +217,7 @@
                             vertical-align: middle;
                             color: var(--neutral-medium-gray);
                         }
+
                         p {
                             margin-top: 4px;
                             font-family: var(--font-family-Light);
@@ -203,6 +227,7 @@
                             line-height: 24px;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
+
                             span[class="SI"] {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -215,12 +240,14 @@
                             }
                         }
                     }
+
                     .count {
                         width: 100%;
                         display: flex;
                         align-items: center;
                         flex-direction: column;
                         justify-content: center;
+
                         span {
                             font-family: var(--font-family-Light);
                             font-weight: 300;
@@ -231,6 +258,7 @@
                             vertical-align: middle;
                             color: var(--neutral-medium-gray);
                         }
+
                         p {
                             margin-top: 4px;
                             font-family: var(--font-family-Light);
@@ -240,6 +268,7 @@
                             line-height: 24px;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
+
                             span[class="SI"] {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -253,6 +282,7 @@
                         }
                     }
                 }
+
                 button {
                     margin-top: 16px;
                     width: 100%;
@@ -271,9 +301,11 @@
                     letter-spacing: 0%;
                     vertical-align: middle;
                     transition: background 0.3s ease;
+
                     i {
                         font-size: 20px;
                     }
+
                     &:hover {
                         transition: background 0.3s ease;
                         cursor: pointer;
@@ -293,9 +325,11 @@
         padding: 64px 16px;
         border-radius: 8px;
         gap: 24px;
+
         .filtersContainer {
             width: 100%;
             height: auto;
+
             .filters {
                 display: flex;
                 flex-wrap: wrap;
@@ -303,11 +337,13 @@
                 overflow-x: scroll;
                 overflow-y: hidden;
                 gap: 16px;
+
                 .radioLabel {
                     width: auto;
                 }
             }
         }
+
         hr {
             margin: 24px 0px;
             width: 100%;
@@ -315,6 +351,7 @@
             border: none;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul {
             width: 100%;
             height: auto;
@@ -322,30 +359,38 @@
             flex-direction: column;
             gap: 24px;
             list-style: none;
+
             li {
                 background: rgba(246, 247, 249, 1);
                 border-radius: 16px;
+
                 .productContent {
                     padding: 8px;
                     display: flex;
                     flex-direction: row !important;
+
                     .slider {
                         display: block;
+
                         .slider_bottom {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
+
                             img {
                                 width: 94px !important;
                             }
                         }
+
                         img {
                             width: 300px !important;
                         }
                     }
+
                     .productDataWrapper {
                         padding: 24px;
                     }
+
                     .productData {
                         display: flex;
                         flex-direction: column;
@@ -357,12 +402,15 @@
                             overflow: visible !important;
                             padding-left: 16px;
                         }
+
                         .toggleCheckbox {
                             display: none;
                         }
+
                         .toggleLabel {
                             display: none;
                         }
+
                         .toggleContent {
                             font-family: var(--font-family-Light);
                             font-weight: 300;
@@ -385,11 +433,14 @@
                             padding-bottom: 0;
                         }
                     }
+
                     .productDetailsWrap {
                         height: 229px;
+
                         .productSubtitle {
                             margin-bottom: 8px;
                         }
+
                         p,
                         li {
                             font-family: var(--font-family-Light);
@@ -402,10 +453,12 @@
                             vertical-align: middle;
                         }
                     }
+
                     .productCharacter {
                         display: flex;
                         flex-wrap: wrap;
                         gap: 8px;
+
                         span {
                             padding: 7.5px 16px;
                             border-radius: 8px;
@@ -422,6 +475,7 @@
                             color: rgba(15, 94, 187, 1);
                         }
                     }
+
                     .productSubtitle {
                         font-family: var(--font-family-Light);
                         font-weight: 300;
@@ -432,11 +486,13 @@
                         vertical-align: middle;
                         color: var(--neutral-medium-gray);
                     }
+
                     .productBenefits {
                         display: flex;
                         flex-direction: column;
                         gap: 8px;
                         margin-bottom: 48px;
+
                         p {
                             width: fit-content;
                             padding: 11px 12px 11px 8px;
@@ -454,6 +510,7 @@
                             background: var(--neutral-white);
                         }
                     }
+
                     h1 {
                         font-family: var(--font-family-Light);
                         font-weight: 300;
@@ -463,6 +520,7 @@
                         vertical-align: middle;
                         color: var(--primary-dark-navy);
                     }
+
                     .productCostCount {
                         width: 100%;
                         padding: 16px;
@@ -474,12 +532,14 @@
                             display: flex;
                             gap: 16px;
                         }
+
                         .cost {
                             width: 100%;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
                             justify-content: center;
+
                             p {
                                 margin-top: 4px;
                                 font-family: var(--font-family-Light);
@@ -489,6 +549,7 @@
                                 line-height: 24px;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
+
                                 span {
                                     font-family: var(--font-family-Light);
                                     font-weight: 300;
@@ -499,6 +560,7 @@
                                     vertical-align: middle;
                                 }
                             }
+
                             span {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -511,12 +573,14 @@
                                 color: var(--neutral-medium-gray);
                             }
                         }
+
                         .count {
                             width: 100%;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
                             justify-content: center;
+
                             p {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -526,6 +590,7 @@
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
                                 margin-top: 4px;
+
                                 span {
                                     font-family: var(--font-family-Light);
                                     font-weight: 300;
@@ -536,6 +601,7 @@
                                     vertical-align: middle;
                                 }
                             }
+
                             span {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -548,6 +614,7 @@
                             }
                         }
                     }
+
                     button {
                         margin-top: 16px;
                         width: 100%;
@@ -565,9 +632,11 @@
                         line-height: 120%;
                         letter-spacing: 0%;
                         vertical-align: middle;
+
                         i {
                             font-size: 20px;
                         }
+
                         &:hover {
                             transition: background 0.3s ease;
                             cursor: pointer;
@@ -588,9 +657,11 @@
         padding: 64px 16px;
         border-radius: 8px;
         gap: 24px;
+
         .filtersContainer {
             width: 100%;
             height: auto;
+
             .filters {
                 display: flex;
                 flex-wrap: wrap;
@@ -598,11 +669,13 @@
                 overflow-x: scroll;
                 overflow-y: hidden;
                 gap: 16px;
+
                 .radioLabel {
                     width: auto;
                 }
             }
         }
+
         hr {
             margin: 24px 0px;
             width: 100%;
@@ -610,6 +683,7 @@
             border: none;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul {
             width: 100%;
             height: auto;
@@ -617,44 +691,54 @@
             flex-direction: column;
             gap: 24px;
             list-style: none;
+
             li[class="card"] {
                 background: rgba(246, 247, 249, 1);
                 border-radius: 16px;
                 padding: 14px 24px 32px 8px;
+
                 .productContent {
                     padding: 0;
                     display: flex;
                     flex-direction: row !important;
+
                     .productDataWrapper {
                         padding-left: 24px;
                         padding-top: 18px;
                         padding-right: 0;
                         padding-bottom: 0px;
                     }
+
                     .slider {
                         display: block;
+
                         .slider_bottom {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
+
                             img {
                                 width: 94px !important;
                             }
                         }
+
                         img {
                             width: 300px !important;
                         }
                     }
+
                     .productData {
                         display: flex;
                         flex-direction: column;
                         gap: 16px;
                         padding: 0px;
                         padding-bottom: 0px;
+
                         .productDetails {
                             overflow: hidden;
                             padding-left: 16px;
                         }
+
                         .toggleCheckbox {
                             display: none;
                         }
@@ -682,6 +766,7 @@
                             padding-top: 8px;
                             padding-bottom: 8px;
                         }
+
                         h1 {
                             font-family: var(--font-family-Light);
                             font-weight: 300;
@@ -692,10 +777,12 @@
                             color: var(--primary-dark-navy);
                         }
                     }
+
                     .productCharacter {
                         display: flex;
                         flex-wrap: wrap;
                         gap: 8px;
+
                         span {
                             padding: 7.5px 16px;
                             border-radius: 8px;
@@ -712,6 +799,7 @@
                             color: rgba(15, 94, 187, 1);
                         }
                     }
+
                     .productSubtitle {
                         width: 604px;
                         font-family: var(--font-family-Light);
@@ -723,15 +811,18 @@
                         vertical-align: middle;
                         color: var(--neutral-medium-gray);
                     }
+
                     .productDetailsWrap {
                         width: 604px;
                         height: 144px;
                     }
+
                     .productBenefits {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
                         gap: 8px;
+
                         p {
                             width: fit-content;
                             padding: 13px 8px;
@@ -749,6 +840,7 @@
                             background: var(--neutral-white);
                         }
                     }
+
                     h1 {
                         font-family: var(--font-family-Light);
                         font-weight: 300;
@@ -758,6 +850,7 @@
                         vertical-align: middle;
                         color: var(--primary-dark-navy);
                     }
+
                     .productCostCount {
                         width: 100%;
                         padding: 16px;
@@ -772,12 +865,14 @@
                             display: flex;
                             gap: 16px;
                         }
+
                         .cost {
                             width: 100%;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
                             justify-content: center;
+
                             p {
                                 margin-top: 0px;
                                 font-family: var(--font-family-Light);
@@ -787,6 +882,7 @@
                                 line-height: 24px;
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
+
                                 span {
                                     font-family: var(--font-family-Light);
                                     font-weight: 300;
@@ -797,6 +893,7 @@
                                     vertical-align: middle;
                                 }
                             }
+
                             span {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -809,12 +906,14 @@
                                 color: var(--neutral-medium-gray);
                             }
                         }
+
                         .count {
                             width: 100%;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
                             justify-content: center;
+
                             p {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -824,6 +923,7 @@
                                 letter-spacing: 1.6%;
                                 vertical-align: middle;
                                 margin-top: 0px;
+
                                 span {
                                     font-family: var(--font-family-Light);
                                     font-weight: 300;
@@ -834,6 +934,7 @@
                                     vertical-align: middle;
                                 }
                             }
+
                             span {
                                 font-family: var(--font-family-Light);
                                 font-weight: 300;
@@ -846,6 +947,7 @@
                             }
                         }
                     }
+
                     button {
                         margin-top: 0px;
                         max-width: 200px !important;
@@ -863,9 +965,11 @@
                         line-height: 120%;
                         letter-spacing: 0%;
                         vertical-align: middle;
+
                         i {
                             font-size: 20px;
                         }
+
                         &:hover {
                             transition: background 0.3s ease;
                             cursor: pointer;
@@ -886,9 +990,11 @@
         padding: 64px 16px;
         border-radius: 8px;
         gap: 24px;
+
         .filtersContainer {
             width: 100%;
             height: auto;
+
             .filters {
                 display: flex;
                 flex-wrap: wrap;
@@ -896,11 +1002,13 @@
                 overflow-x: scroll;
                 overflow-y: hidden;
                 gap: 16px;
+
                 .radioLabel {
                     width: auto;
                 }
             }
         }
+
         hr {
             margin: 24px 0px;
             width: 100%;
@@ -908,6 +1016,7 @@
             border: none;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul {
             width: 100%;
             height: auto;
@@ -915,6 +1024,7 @@
             flex-direction: column;
             gap: 24px;
             list-style: none;
+
             li[class="card"] {
                 width: 100% !important;
                 background: rgba(246, 247, 249, 1);
@@ -922,25 +1032,31 @@
                 padding: 8px;
                 padding-left: 8px;
                 padding-right: 0px;
+
                 .productContent {
                     width: 100% !important;
                     padding: 0;
                     display: flex;
                     gap: 32px;
+
                     .slider {
                         display: block;
+
                         .slider_bottom {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
+
                             img {
                                 width: 140px !important;
                             }
                         }
+
                         img {
                             width: 430px !important;
                         }
                     }
+
                     .productDataWrapper {
                         width: calc(100% - 494px);
                         height: auto;
@@ -948,27 +1064,34 @@
                         flex-direction: column;
                         justify-content: space-between;
                         padding: 40px 0px 24px 0px;
+
                         .productData {
                             width: 100% !important;
+
                             h1 {
                                 font-size: 28px;
                             }
+
                             .productDetailsWrap {
-                                width: 100% !important ;
+                                width: 100% !important;
+
                                 p.productSubtitle {
                                     width: 100% !important;
                                     font-size: 16px;
                                 }
                             }
+
                             li {
                                 font-size: 16px;
                             }
                         }
+
                         .productCostCount {
                             width: 100%;
                             border-right: 1px solid
                                 var(--neutral-medium-gray-second);
                             gap: 16px;
+
                             .costCountUp {
                                 border-right: 1px solid
                                     var(--neutral-medium-gray-second);
@@ -980,6 +1103,7 @@
         }
     }
 }
+
 @media screen and (min-width: 1920px) {
     .productsContainer {
         width: 100%;
@@ -988,9 +1112,11 @@
         padding: 140px 181px;
         border-radius: 8px;
         gap: 24px;
+
         .filtersContainer {
             width: 100%;
             height: auto;
+
             .filters {
                 display: flex;
                 flex-wrap: wrap;
@@ -998,11 +1124,13 @@
                 overflow-x: scroll;
                 overflow-y: hidden;
                 gap: 16px;
+
                 .radioLabel {
                     width: auto;
                 }
             }
         }
+
         hr {
             margin: 24px 0px;
             width: 100%;
@@ -1010,6 +1138,7 @@
             border: none;
             background-color: var(--neutral-medium-gray-second);
         }
+
         ul {
             width: 100%;
             height: auto;
@@ -1017,6 +1146,7 @@
             flex-direction: column;
             gap: 24px;
             list-style: none;
+
             li[class="card"] {
                 width: 100% !important;
                 background: rgba(246, 247, 249, 1);
@@ -1024,25 +1154,31 @@
                 padding: 8px;
                 padding-left: 8px;
                 padding-right: 0px;
+
                 .productContent {
                     width: 100% !important;
                     padding: 0;
                     display: flex;
                     gap: 32px;
+
                     .slider {
                         display: block;
+
                         .slider_bottom {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
+
                             img {
                                 width: 140px !important;
                             }
                         }
+
                         img {
                             width: 430px !important;
                         }
                     }
+
                     .productDataWrapper {
                         width: calc(100% - 494px);
                         height: auto;
@@ -1050,27 +1186,34 @@
                         flex-direction: column;
                         justify-content: space-between;
                         padding: 40px 0px 24px 0px;
+
                         .productData {
                             width: 100% !important;
+
                             h1 {
                                 font-size: 28px;
                             }
+
                             .productDetailsWrap {
-                                width: 100% !important ;
+                                width: 100% !important;
+
                                 p.productSubtitle {
                                     width: 100% !important;
                                     font-size: 16px;
                                 }
                             }
+
                             li {
                                 font-size: 16px;
                             }
                         }
+
                         .productCostCount {
                             width: 100%;
                             border-right: 1px solid
                                 var(--neutral-medium-gray-second);
                             gap: 16px;
+
                             .costCountUp {
                                 border-right: 1px solid
                                     var(--neutral-medium-gray-second);

@@ -6,10 +6,12 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
     .gratitudeHeader {
         display: flex;
         flex-direction: column;
         gap: 32px;
+
         h1 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -20,6 +22,7 @@
             vertical-align: middle;
             color: var(--primary-dark-navy);
         }
+
         p {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -31,22 +34,26 @@
             vertical-align: middle;
             color: var(--neutral-medium-gray);
         }
+
         hr {
             height: 1px;
             border: none;
             background-color: var(--neutral-medium-gray-second);
         }
     }
+
     .slider {
         width: 100%;
         margin: 0 auto;
         margin-top: 16px;
+
         .slider__content {
             display: flex;
             overflow-x: hidden;
             scroll-behavior: smooth;
             gap: 16px;
             scroll-snap-type: mandatory;
+
             .slider__item2 {
                 flex: 0 0 auto;
                 width: 155.5px;
@@ -56,11 +63,13 @@
                 border-radius: 8px;
             }
         }
+
         .slider__nav {
             margin-top: 32px;
             display: flex;
             justify-content: space-between;
             gap: 16px;
+
             .btnPrev {
                 min-width: 125px;
                 height: 48px;
@@ -77,19 +86,23 @@
                 vertical-align: middle;
                 transition: 0.3s ease;
                 font-family: var(--font-family-RegularHead);
+
                 .icon {
                     font-size: 20px;
                     left: 20px;
                 }
+
                 &:hover {
                     border-color: var(--primary-deep-blue);
                     background-color: var(--primary-deep-blue);
+
                     p {
                         right: 30%;
                         transform: translate(-50%, -50%);
                     }
                 }
             }
+
             .btnNext {
                 width: 100% !important;
                 height: 48px;
@@ -106,12 +119,15 @@
                 letter-spacing: 0%;
                 vertical-align: middle;
                 font-family: var(--font-family-Medium);
+
                 .icon {
                     font-size: 20px;
                 }
+
                 &:hover {
                     border-color: var(--primary-deep-blue);
                     background-color: var(--secondary-light-blue);
+
                     p {
                         left: 50%;
                         transform: translate(-50%, -50%);
@@ -119,17 +135,20 @@
                 }
             }
         }
+
         .slider_bottom_nav {
             width: 100%;
             height: 7px;
             display: flex;
             gap: 8px;
             margin-top: 24px;
+
             .slider__nav_item2 {
                 width: 100%;
                 height: 100%;
                 border-radius: 999px;
                 background-color: var(--neutral-medium-gray-second);
+
                 &.active {
                     transition: 0.3s background-color ease;
                     background-color: var(--secondary-light-blue);
@@ -148,18 +167,22 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
+
         .gratitudeRightSide {
             width: 459px !important;
+
             .slider {
                 width: 100%;
                 margin: 0 auto;
                 margin-top: 16px;
+
                 .slider__content {
                     display: flex;
                     overflow-x: hidden;
                     scroll-behavior: smooth;
                     gap: 32px;
                     scroll-snap-type: mandatory;
+
                     .slider__item2 {
                         flex: 0 0 auto;
                         width: 214px;
@@ -169,11 +192,13 @@
                         border-radius: 8px;
                     }
                 }
+
                 .slider__nav {
                     margin-top: 32px;
                     display: flex;
                     justify-content: space-between;
                     gap: 16px;
+
                     .btnPrev {
                         min-width: 125px;
                         height: 48px;
@@ -190,11 +215,13 @@
                         vertical-align: middle;
                         transition: 0.3s ease;
                         font-family: var(--font-family-RegularHead);
+
                         .icon {
                             font-size: 20px;
                             left: 20px;
                         }
                     }
+
                     .btnNext {
                         width: 100% !important;
                         height: 48px;
@@ -211,22 +238,26 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                         font-family: var(--font-family-Medium);
+
                         .icon {
                             font-size: 20px;
                         }
                     }
                 }
+
                 .slider_bottom_nav {
                     width: 100%;
                     height: 7px;
                     display: flex;
                     gap: 8px;
                     margin-top: 24px;
+
                     .slider__nav_item2 {
                         width: 100%;
                         height: 100%;
                         border-radius: 999px;
                         background-color: var(--neutral-medium-gray-second);
+
                         &.active {
                             transition: 0.3s background-color ease;
                             background-color: var(--secondary-light-blue);
@@ -235,11 +266,13 @@
                 }
             }
         }
+
         .gratitudeHeader {
             min-width: 213px;
             display: flex;
             flex-direction: column;
             gap: 32px;
+
             h1 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -250,6 +283,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -261,11 +295,13 @@
                 vertical-align: middle;
                 color: var(--neutral-medium-gray);
             }
+
             hr {
                 height: 1px;
                 border: none;
                 background-color: var(--neutral-medium-gray-second);
             }
+
             hr:last-child {
                 display: none;
             }
@@ -282,18 +318,22 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
+
         .gratitudeRightSide {
             width: 715px !important;
+
             .slider {
                 width: 100%;
                 margin: 0 auto;
                 margin-top: 16px;
+
                 .slider__content {
                     display: flex;
                     overflow-x: hidden;
                     scroll-behavior: smooth;
                     gap: 32px;
                     scroll-snap-type: mandatory;
+
                     .slider__item2 {
                         flex: 0 0 auto;
                         width: 217px;
@@ -303,11 +343,13 @@
                         border-radius: 8px;
                     }
                 }
+
                 .slider__nav {
                     margin-top: 32px;
                     display: flex;
                     justify-content: space-between;
                     gap: 32px;
+
                     .btnPrev {
                         min-width: 125px;
                         height: 48px;
@@ -324,11 +366,13 @@
                         vertical-align: middle;
                         transition: 0.3s ease;
                         font-family: var(--font-family-RegularHead);
+
                         .icon {
                             font-size: 20px;
                             left: 20px;
                         }
                     }
+
                     .btnNext {
                         width: 100% !important;
                         height: 48px;
@@ -345,22 +389,26 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                         font-family: var(--font-family-Medium);
+
                         .icon {
                             font-size: 20px;
                         }
                     }
                 }
+
                 .slider_bottom_nav {
                     width: 100%;
                     height: 7px;
                     display: flex;
                     gap: 8px;
                     margin-top: 24px;
+
                     .slider__nav_item2 {
                         width: 100%;
                         height: 100%;
                         border-radius: 999px;
                         background-color: var(--neutral-medium-gray-second);
+
                         &.active {
                             transition: 0.3s background-color ease;
                             background-color: var(--secondary-light-blue);
@@ -369,11 +417,13 @@
                 }
             }
         }
+
         .gratitudeHeader {
             min-width: 213px;
             display: flex;
             flex-direction: column;
             gap: 32px;
+
             h1 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -384,6 +434,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -395,11 +446,13 @@
                 vertical-align: middle;
                 color: var(--neutral-medium-gray);
             }
+
             hr {
                 height: 1px;
                 border: none;
                 background-color: var(--neutral-medium-gray-second);
             }
+
             hr:last-child {
                 display: none;
             }
@@ -416,18 +469,22 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
+
         .gratitudeRightSide {
             width: 907px !important;
+
             .slider {
                 width: 100%;
                 margin: 0 auto;
                 margin-top: 16px;
+
                 .slider__content {
                     display: flex;
                     overflow-x: hidden;
                     scroll-behavior: smooth;
                     gap: 32px;
                     scroll-snap-type: mandatory;
+
                     .slider__item2 {
                         flex: 0 0 auto;
                         width: 281px;
@@ -437,11 +494,13 @@
                         border-radius: 8px;
                     }
                 }
+
                 .slider__nav {
                     margin-top: 32px;
                     display: flex;
                     justify-content: space-between;
                     gap: 32px;
+
                     .btnPrev {
                         min-width: 281px;
                         height: 72px;
@@ -458,11 +517,13 @@
                         vertical-align: middle;
                         transition: 0.3s ease;
                         font-family: var(--font-family-RegularHead);
+
                         .icon {
                             font-size: 20px;
                             left: 20px;
                         }
                     }
+
                     .btnNext {
                         width: 100% !important;
                         height: 72px;
@@ -479,11 +540,13 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                         font-family: var(--font-family-Medium);
+
                         .icon {
                             font-size: 20px;
                         }
                     }
                 }
+
                 .slider_bottom_nav {
                     width: 100%;
                     height: 7px;
@@ -491,11 +554,13 @@
                     gap: 8px;
                     margin-top: 32px;
                     padding: 0 53px;
+
                     .slider__nav_item2 {
                         width: 100%;
                         height: 100%;
                         border-radius: 999px;
                         background-color: var(--neutral-medium-gray-second);
+
                         &.active {
                             transition: 0.3s background-color ease;
                             background-color: var(--secondary-light-blue);
@@ -504,11 +569,13 @@
                 }
             }
         }
+
         .gratitudeHeader {
             min-width: 213px;
             display: flex;
             flex-direction: column;
             gap: 32px;
+
             h1 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -519,6 +586,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -530,11 +598,13 @@
                 vertical-align: middle;
                 color: var(--neutral-medium-gray);
             }
+
             hr {
                 height: 1px;
                 border: none;
                 background-color: var(--neutral-medium-gray-second);
             }
+
             hr:last-child {
                 display: none;
             }
@@ -551,18 +621,22 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
+
         .gratitudeRightSide {
             width: 907px !important;
+
             .slider {
                 width: 100%;
                 margin: 0 auto;
                 margin-top: 16px;
+
                 .slider__content {
                     display: flex;
                     overflow-x: hidden;
                     scroll-behavior: smooth;
                     gap: 32px;
                     scroll-snap-type: mandatory;
+
                     .slider__item2 {
                         flex: 0 0 auto;
                         width: 281px;
@@ -572,11 +646,13 @@
                         border-radius: 8px;
                     }
                 }
+
                 .slider__nav {
                     margin-top: 32px;
                     display: flex;
                     justify-content: space-between;
                     gap: 32px;
+
                     .btnPrev {
                         min-width: 281px;
                         height: 72px;
@@ -593,11 +669,13 @@
                         vertical-align: middle;
                         transition: 0.3s ease;
                         font-family: var(--font-family-RegularHead);
+
                         .icon {
                             font-size: 20px;
                             left: 20px;
                         }
                     }
+
                     .btnNext {
                         width: 100% !important;
                         height: 72px;
@@ -614,11 +692,17 @@
                         letter-spacing: 0%;
                         vertical-align: middle;
                         font-family: var(--font-family-Medium);
+
                         .icon {
                             font-size: 20px;
                         }
+                        &:hover {
+                            border-color: var(--secondary-light-blue);
+                            background: var(--secondary-light-blue);
+                        }
                     }
                 }
+
                 .slider_bottom_nav {
                     width: 100%;
                     height: 7px;
@@ -626,11 +710,13 @@
                     gap: 8px;
                     margin-top: 32px;
                     padding: 0 53px;
+
                     .slider__nav_item2 {
                         width: 100%;
                         height: 100%;
                         border-radius: 999px;
                         background-color: var(--neutral-medium-gray-second);
+
                         &.active {
                             transition: 0.3s background-color ease;
                             background-color: var(--secondary-light-blue);
@@ -639,11 +725,13 @@
                 }
             }
         }
+
         .gratitudeHeader {
             min-width: 213px;
             display: flex;
             flex-direction: column;
             gap: 32px;
+
             h1 {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -654,6 +742,7 @@
                 vertical-align: middle;
                 color: var(--primary-dark-navy);
             }
+
             p {
                 font-family: var(--font-family-Light);
                 font-weight: 300;
@@ -665,11 +754,13 @@
                 vertical-align: middle;
                 color: var(--neutral-medium-gray);
             }
+
             hr {
                 height: 1px;
                 border: none;
                 background-color: var(--neutral-medium-gray-second);
             }
+
             hr:last-child {
                 display: none;
             }

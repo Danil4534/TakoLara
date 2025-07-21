@@ -1,14 +1,17 @@
 .bannerForPages {
     height: 420px !important;
+
     img {
         height: 420px !important;
         object-fit: fill !important;
     }
 }
+
 .droneBg {
     position: relative;
     width: 100%;
     height: 562px;
+
     img {
         width: 100%;
         height: 562px;
@@ -17,11 +20,13 @@
         border-radius: 16px;
         mix-blend-mode: Soft light;
     }
+
     .bannerContainer {
         position: absolute;
         bottom: 24px;
         width: 100%;
         padding: 0 16px;
+
         .bannerSubtitle {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -33,8 +38,10 @@
             color: var(--neutral-white);
             margin-top: 32px;
         }
+
         .bannerContent {
             width: 100%;
+
             h1 {
                 width: 100%;
                 font-family: var(--font-family-Light);
@@ -45,6 +52,7 @@
                 letter-spacing: 1.35%;
                 vertical-align: middle;
             }
+
             .bannerBtn {
                 width: 100% !important;
                 height: 56px;
@@ -66,10 +74,12 @@
                 color: var(--neutral-white);
                 transition: 0.3s ease;
                 position: relative;
+
                 .bannerBtnArrowIcon {
                     position: absolute;
                     right: 24px;
                 }
+
                 p {
                     position: absolute;
                     display: flex;
@@ -81,13 +91,16 @@
                     transform: translate(0, -50%);
                     transition: left 0.3s ease, transform 0.3s ease;
                 }
+
                 &:hover {
                     cursor: pointer;
                     background: var(--secondary-light-blue);
+
                     .bannerBtnArrowIcon {
                         display: none;
                     }
                 }
+
                 &:hover p {
                     left: 50%;
                     transform: translate(-50%, -50%);
@@ -103,6 +116,7 @@
         position: relative;
         width: 100%;
         height: 532px;
+
         img {
             width: 100%;
             height: 532px;
@@ -110,13 +124,16 @@
             border-radius: 16px;
             mix-blend-mode: Soft light;
         }
+
         .bannerContainer {
             position: absolute;
             bottom: 24px;
             width: 100%;
             padding: 0 16px;
+
             .bannerContent {
                 width: 100%;
+
                 h1 {
                     width: 100%;
                     font-family: var(--font-family-Light);
@@ -127,6 +144,7 @@
                     letter-spacing: 1.35%;
                     vertical-align: middle;
                 }
+
                 .bannerBtn {
                     width: 459px !important;
                     height: 56px;
@@ -157,6 +175,7 @@
         position: relative;
         width: 100%;
         height: 720px;
+
         img {
             width: 100%;
             height: 720px;
@@ -164,13 +183,16 @@
             border-radius: 16px;
             mix-blend-mode: Soft light;
         }
+
         .bannerContainer {
             position: absolute;
             bottom: 24px;
             width: 100%;
             padding: 0 16px;
+
             .bannerContent {
                 width: 100%;
+
                 h1 {
                     width: 789px;
                     font-family: var(--font-family-RegularHead);
@@ -179,6 +201,7 @@
                     letter-spacing: 1.2%;
                     vertical-align: middle;
                 }
+
                 .bannerBtn {
                     width: 554px !important;
                     height: 72px;
@@ -208,6 +231,7 @@
         position: relative;
         width: 100%;
         height: 920px;
+
         img {
             width: 100%;
             height: 920px;
@@ -215,14 +239,17 @@
             border-radius: 16px;
             mix-blend-mode: Soft light;
         }
+
         .bannerContainer {
             position: absolute;
             bottom: 48px;
             width: 100%;
             padding: 0 181px;
+
             .bannerContent {
                 width: 100%;
                 padding: 0px 24px;
+
                 h1 {
                     width: 789px;
                     font-family: var(--font-family-RegularHead);
@@ -231,6 +258,7 @@
                     letter-spacing: 1.2%;
                     vertical-align: middle;
                 }
+
                 .bannerSubtitle {
                     width: 789px;
                     font-family: var(--font-family-Light);
@@ -243,6 +271,7 @@
                     color: var(--neutral-white);
                     margin-top: 32px;
                 }
+
                 .bannerBtn {
                     width: 554px !important;
                     height: 72px;

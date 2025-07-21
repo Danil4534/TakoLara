@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 998;
     height: 56px;
+
     .headerContent {
         width: 100%;
         display: flex;
@@ -12,50 +13,64 @@
         padding: 8px 16px;
         align-items: center;
         justify-content: space-between;
+
         .buttonSelectOpen {
             display: none;
         }
+
         .buttonSelectClose {
             display: none;
         }
+
         .buttonSelectOpen.activeBtn {
             display: flex;
         }
+
         .buttonSelectClose.activeBtn {
             display: flex;
         }
+
         nav {
             display: none;
         }
+
         .headerBurgerContainer {
             display: flex;
             align-items: center;
             gap: 16px;
+
             .burger {
                 display: block;
+
                 &.disabled {
                     display: none;
                 }
             }
+
             .closeBurger {
                 display: none;
+
                 &.active {
                     display: block;
                 }
             }
+
             .Logo {
                 display: none;
                 cursor: pointer;
             }
+
             .mobileLogo {
                 display: block;
                 cursor: pointer;
             }
         }
+
         .headerBtns {
             display: flex;
             align-items: center;
             gap: 8px;
+
             .btnSupport {
                 height: 40px;
             }
@@ -70,6 +85,7 @@
         position: fixed;
         z-index: 999;
         height: 56px;
+
         .headerContent {
             width: 100%;
             display: flex;
@@ -78,48 +94,62 @@
             padding: 8px 16px;
             align-items: center;
             justify-content: space-between;
+
             .btnConnect {
                 display: none;
             }
+
             .buttonSelectOpen {
                 display: none;
             }
+
             .buttonSelectOpen.activeBtn {
                 display: flex;
             }
+
             .buttonSelectClose.activeBtn {
                 display: flex;
             }
+
             nav {
                 display: none;
             }
+
             .headerBurgerContainer {
                 display: flex;
                 align-items: center;
                 gap: 16px;
+
                 .burger {
                     display: block;
+
                     &.disabled {
                         display: none;
                     }
                 }
+
                 .closeBurger {
                     display: none;
+
                     &.active {
                         display: block;
                     }
                 }
+
                 .Logo {
                     display: none;
                 }
+
                 .mobileLogo {
                     display: block;
                 }
             }
+
             .headerBtns {
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
                 .btnSupport {
                     height: 40px;
                 }
@@ -127,6 +157,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1440px) {
     .header {
         .headerContent {
@@ -144,6 +175,7 @@
         position: fixed;
         z-index: 999;
         height: 56px;
+
         .headerContent {
             width: 100%;
             display: flex;
@@ -152,6 +184,7 @@
             padding: 16px 32px;
             align-items: center;
             justify-content: start;
+
             .buttonSelectOpen {
                 margin-left: 32px;
                 margin-right: 24px;
@@ -171,15 +204,18 @@
                 line-height: 120%;
                 transition: background 0.3s ease;
                 letter-spacing: 0%;
+
                 &:hover {
                     transition: background 0.3s ease;
                     background: var(--secondary-light-blue);
                     cursor: pointer;
                 }
             }
+
             .buttonSelectOpen.activeBtn {
                 display: flex;
             }
+
             .buttonSelectClose.activeBtn {
                 display: flex;
             }
@@ -203,21 +239,26 @@
                 line-height: 120%;
                 letter-spacing: 0%;
                 transition: background 0.3s ease;
+
                 &:hover {
                     transition: background 0.3s ease;
                     background: var(--secondary-light-blue);
                     cursor: pointer;
                 }
             }
+
             nav {
                 display: block;
                 margin-right: 61px;
+
                 ul {
                     display: flex;
                     gap: 24px;
+
                     li {
                         display: flex;
                         align-items: center;
+
                         a {
                             font-family: var(--font-family-Light);
                             font-weight: 300;
@@ -232,39 +273,50 @@
                     }
                 }
             }
+
             .headerBurgerContainer {
                 display: flex;
                 align-items: center;
                 gap: 16px;
+
                 .burger {
                     display: none;
+
                     &.disabled {
                         display: none;
                     }
                 }
+
                 .closeBurger {
                     display: none;
+
                     &.active {
                         display: block;
                     }
                 }
+
                 .Logo {
                     display: block;
                 }
+
                 .mobileLogo {
                     display: none;
                 }
             }
+
             .headerBtns {
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
                 .btnSupport {
                     height: 48px;
                 }
+
                 .btnConnect {
                     display: block;
                 }
+
                 .btnPreOrder {
                     .btnContent {
                         display: block;
@@ -274,6 +326,7 @@
         }
     }
 }
+
 @media screen and (min-width: 1920px) {
     .header {
         width: 100%;
@@ -281,6 +334,7 @@
         position: fixed;
         z-index: 999;
         height: 56px;
+
         .headerContent {
             width: 100%;
             display: flex;
@@ -308,6 +362,7 @@
                 line-height: 120%;
                 letter-spacing: 0%;
             }
+
             .buttonSelectClose {
                 display: none;
                 margin-left: 32px;
@@ -327,16 +382,20 @@
                 line-height: 120%;
                 letter-spacing: 0%;
             }
+
             nav {
                 width: 100%;
                 display: block;
                 margin-right: 61px;
+
                 ul {
                     display: flex;
                     gap: 24px;
+
                     li {
                         display: flex;
                         align-items: center;
+
                         a {
                             font-family: var(--font-family-Light);
                             font-weight: 300;
@@ -351,39 +410,50 @@
                     }
                 }
             }
+
             .headerBurgerContainer {
                 display: flex;
                 align-items: center;
                 gap: 16px;
+
                 .burger {
                     display: none;
+
                     &.disabled {
                         display: none;
                     }
                 }
+
                 .closeBurger {
                     display: none;
+
                     &.active {
                         display: block;
                     }
                 }
+
                 .Logo {
                     display: block;
                 }
+
                 .mobileLogo {
                     display: none;
                 }
             }
+
             .headerBtns {
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
                 .btnSupport {
                     height: 48px;
                 }
+
                 .btnConnect {
                     display: block;
                 }
+
                 .btnPreOrder {
                     .btnContent {
                         display: block;
