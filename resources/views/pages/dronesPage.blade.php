@@ -20,7 +20,7 @@
             @include ("components.banner", [
                 'content' => [
                     'banner' => "assets/dronesBg.svg",
-                    'class' => "droneBg",
+                    'class' => "droneBg dronesBg",
                     'bannerTitle' => 'Для дронів',
                     'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
                     "btnActive" => false,
@@ -45,7 +45,9 @@
 <footer>
     @include('components.footer')
 </footer>
+@include('modal.categoriesModal')
 @include('modal.contactModal')
-@include('modal.cartModal')
+@include('modal.preOrderModal')
 @include("modal.headerModal")
+@include('modal.successModal')
 </html>

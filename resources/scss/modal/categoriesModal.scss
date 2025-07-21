@@ -10,6 +10,14 @@
     height: 0;
     background-color: rgba(28, 47, 67, 0.3);
     transition: 0.3s ease;
+    &.active {
+        transition: 0.3s ease;
+        opacity: 1;
+        z-index: 998;
+        width: 100%;
+        height: 100vh;
+        visibility: visible;
+    }
     .categoriesModalContent {
         margin-top: 80px;
         width: 100%;
@@ -18,6 +26,7 @@
         padding: 32px 181px !important;
         background: #fff;
         transition: 0.3s ease;
+        position: relative;
         .categories {
             width: 100% !important;
             height: auto;
@@ -77,16 +86,10 @@
         }
         &.active {
             transition: 0.3s ease;
-            height: 100%;
+            height: 100vh;
+            opacity: 1;
             visibility: visible;
         }
-    }
-    &.active {
-        transition: 0.3s ease;
-        opacity: 1;
-        z-index: 998;
-        height: 100vh;
-        visibility: visible;
     }
 }
 
@@ -101,13 +104,14 @@
         width: 100%;
         height: 100%;
         background-color: rgba(28, 47, 67, 0.3);
-        transition: all 0.3s ease;
+        transition: 0.3s ease;
         .categoriesModalContent {
             margin-top: 80px;
             width: 100%;
             height: 0px;
             padding: 32px;
             background: #fff;
+            transition: 0.3s ease;
             .categories {
                 width: 100%;
                 height: auto;
@@ -194,7 +198,8 @@
                 }
             }
             &.active {
-                height: auto;
+                height: fit-content;
+                transition: 0.3s ease-in-out;
             }
         }
         &.active {

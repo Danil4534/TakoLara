@@ -48,7 +48,8 @@
 </body>
 <footer>
     @include('components.footer')
-</footer>@include('modal.categoriesModal')
+</footer>
+@include('modal.categoriesModal')
 @include('modal.contactModal')
 @include('modal.preOrderModal')
 @include("modal.headerModal")

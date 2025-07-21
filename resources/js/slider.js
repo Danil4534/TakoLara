@@ -1,5 +1,6 @@
+document.addEventListener('DOMContentLoaded',()=>{
 
-        const slider = document.getElementById("sliderContent");
+  const slider = document.getElementById("sliderContent");  if (!slider) return;
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
         const cards = slider.querySelectorAll(".slider__item");
@@ -47,3 +48,5 @@
                 });
                 updateActiveDot(currentPage);
                 updateButtons(); 
+})
+      
