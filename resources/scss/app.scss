@@ -28,7 +28,8 @@
 @use "./pages/medkitPage.scss";
 @use "./modal/categoriesModal.scss";
 @use "./pages/dronesPage.scss";
-:root  {
+@use "./pages/radioPage.scss";
+:root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: rgba(28, 47, 67, 1);

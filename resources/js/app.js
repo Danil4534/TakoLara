@@ -128,11 +128,7 @@ openPreOrderBtn.forEach(btn=>
                 }
             });
         }, options);
-
         document.querySelectorAll(".animateNumber").forEach(el => {
             observer.observe(el);
         });
-
-
-
     });

@@ -1,9 +1,10 @@
 .inputContainer {
     width: 100%;
     height: auto;
-
     border-radius: 8px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     label {
         font-family: var(--font-family-Regular);
         font-weight: 400;
@@ -15,36 +16,89 @@
     .fillCopyIcon {
         display: none;
     }
-    input {
+    .selectWrapper {
+        position: relative;
+        margin-top: 8px;
+
+        select {
+            width: 100%;
+            height: 48px;
+            padding: 0 40px 0 8px;
+            font-family: var(--font-family-Light) !important;
+            font-weight: 300;
+            font-size: 16px;
+            color: var(--neutral-medium-gray);
+            background: transparent;
+            border: 2px solid var(--neutral-medium-gray-second);
+            border-radius: 8px;
+            appearance: none;
+            outline: none;
+            cursor: pointer;
+            line-height: 120%;
+
+            &:hover {
+                border-color: var(--neutral-medium-gray);
+            }
+        }
+
+        .inputIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+
+            font-size: 18px;
+            color: rgba(28, 47, 67, 1);
+        }
+    }
+    .inputBox {
+        position: relative;
+        margin-top: 8px;
+        .copyIcon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+            font-size: 20px;
+        }
+        .btn {
+            &:hover {
+                cursor: pointer;
+                color: rgba(28, 47, 67, 1);
+            }
+        }
+    }
+    .success {
+        transition: 0.3s ease;
+        color: rgba(56, 142, 60, 1);
+        display: none;
+    }
+    .inputBox:has(.copyIcon:hover)input {
+        border-color: var(--neutral-medium-gray);
+    }
+    input,
+    select {
         cursor: default;
         width: 100%;
         border: 2px solid var(--neutral-medium-gray-second);
-        height: 100%;
+        height: 48px;
         background: transparent;
         border-radius: 8px;
         font-family: var(--font-family-Light) !important;
         padding: 0 8px;
         font-weight: 300;
-        font-style: Light;
-        caret-color: transparent;
         line-height: 120%;
         letter-spacing: 1.6%;
         outline: none;
-        margin-top: 8px;
-        color: var(--neutral-medium-gray);
 
+        color: rgba(28, 47, 67, 1);
         &:hover {
             border-color: var(--neutral-medium-gray);
-        }
-        .copyIcon {
-            position: absolute;
-            right: 12px;
-            top: 50%;
-            transform: translateY(-50%, -50%);
-            transition: 0.3s;
-            &:hover {
-                cursor: pointer;
-            }
         }
     }
 
@@ -54,23 +108,59 @@
         height: 100%;
         background: transparent;
         border-radius: 8px;
-        font-family: var(--font-family-Light);
+        font-family: var(--font-family-Light) !important;
         padding: 0 8px;
         font-weight: 300;
-        font-style: Light;
-        font-size: 12px;
         line-height: 120%;
         letter-spacing: 1.6%;
         outline: none;
         margin-top: 8px;
+        color: var(--neutral-medium-gray);
 
         &:hover {
             transition: 0.3s ease;
-            border: 2px solid var(--neutral-medium-gray);
+            border-color: var(--neutral-medium-gray);
+        }
+    }
+    .error {
+        margin-top: 8px !important;
+        width: 100%;
+        margin: 0;
+        font-family: var(--font-family-Regular);
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+        span {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: auto;
+            color: red;
+            height: 100%;
+            font-family: var(--font-family-Bold);
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0%;
+        }
+        i {
+            font-size: 24px;
+        }
+        h6 {
+            font-family: var(--font-family-Regular);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 120%;
+            letter-spacing: 1.4%;
+            color: rgba(28, 47, 67, 1);
         }
     }
 
-    i {
+    i[class="inputIcon"] {
         position: absolute;
         font-size: 20px;
         right: 2px;

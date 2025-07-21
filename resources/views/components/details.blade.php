@@ -26,27 +26,36 @@ $details = [
             Наближуй перемогу разом з нами
         </h1>
         <x-picture-tag src="{{ asset('assets/Qr_code.svg') }}" alt="Logo" :lazy="true" class="qr_code" />
-        <button>Задонатити ТА-КО</button>
+        <button onclick="window.location.href='{{ route('support.page') }}'">Задонатити ТА-КО</button>
     </div>
 </div>
 
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    const icons = document.querySelectorAll(".copyIcon")
-    icons.forEach(icon => icon.addEventListener('click', () => {
-        const value = icon.getAttribute('data-value');
-        navigator.clipboard.writeText(value).then(() => {
-            icon.classList.add("copied");
-            setTimeout(() => {
-                icon.classList.remove("copied")
-            }, 1000)
-
-        }).catch(err => {
-            console.log(err)
-        })
-
-    }))
-
-})
+    const icons = document.querySelectorAll(".copyIcon");
+    icons.forEach((icon) => {
+        icon.addEventListener('click', () => {
+            const value = icon.getAttribute('data-value');     
+            icon.style.display='none'
+            navigator.clipboard.writeText(value).then(() => {
+                let success = icon.parentElement.querySelector('.success');
+                if (!success) {
+                    success = document.createElement('span');
+                    success.classList.add('success');
+             
+                    icon.parentElement.appendChild(success);
+                }
+                success.style.display = 'block';
+           
+                setTimeout(() => {
+                    success.style.display = 'none';
+                    icon.style.display='block'
+                }, 2000);
+            }).catch(err => {
+                console.log("Помилка копіювання:", err);
+            });
+        });
+    });
+});
 </script>

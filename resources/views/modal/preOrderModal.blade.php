@@ -1,5 +1,6 @@
 @php
-$chooseProducts = session('chooseProducts')
+$chooseProducts = session('chooseProducts');
+
 @endphp
 
 
@@ -21,6 +22,7 @@ $chooseProducts = session('chooseProducts')
                 'text' => "Переглянути категорії",
                 'class' => "preOrderBtn",
                 'styles' => 'font-size: 28px',
+                'route'=>'checkout.page'
                 ]
                 ])
                 <div class="forSolders">
@@ -29,7 +31,7 @@ $chooseProducts = session('chooseProducts')
             </div>
             @else
             @foreach ($chooseProducts as $product )
-            <x-product-card :title="$product['title']" :details="$product['details']" />
+       <div></div>
             @endforeach
             @endif
         </div>
