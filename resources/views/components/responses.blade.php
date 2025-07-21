@@ -40,22 +40,11 @@ $sliderContent = [
         </div>
 
         <div class="slider__nav">
-            @include("ui.secondaryBtn", [
-            "content" => [
-            "text" => "Назад",
-            "class" => "btnPrev",
-            "id" => "prevBtn",
-            "iconLeft" => "ph ph-caret-left icon"
-            ]
-            ])
-            @include("ui.secondaryBtn", [
-            "content" => [
-            "text" => "Вперед",
-            "class" => "btnNext",
-            "id" => "nextBtn",
-            "iconRight" => "ph ph-caret-right icon"
-            ]
-            ])
+            <x-secondary-btn id="prevBtn" text="Назад" class="btnPrev" iconLeft="ph ph-caret-left icon"></x-secondary-btn>
+
+            <x-secondary-btn id="nextBtn" text="Вперед" class="btnNext" iconRight="ph ph-caret-right icon"></x-secondary-btn>
+
+
 
         </div>
         <div class="slider_bottom_nav">
@@ -64,9 +53,9 @@ $sliderContent = [
         @endfor
 
     </div>
-    </div>
-    </div>
+</div>
+</div>
 
-    <script>
-      
-                </script>
+<script>
+
+</script>

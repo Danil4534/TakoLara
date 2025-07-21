@@ -193,8 +193,7 @@ $chooseProducts = session('chooseProducts');
             <hr>
             <div class="btnSection">
                 <button class="btnConfirm" type="submit" id="contactBtnSubmit">Підтвердити</button>
-                @include('ui.secondaryBtn', ['content' => ['text' => 'Підтвердити та підтримати', 'class' =>
-                'btnCheckout']])
+                <x-secondary-btn text="Підтвердити та підтримати" class="btnCheckout"></x-secondary-btn>
             </div>
 
             <span>

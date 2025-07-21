@@ -1,53 +1,53 @@
 @php
-    $links = [
-        [
-            "text" => "Головна",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Про нас",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Як ми працюємо",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Партнери",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Відгуки",
-            "anchor" => ""
-        ],
-        [
-            "text" => "ЗМІ про нас",
-            "anchor" => ""
-        ],
+$links = [
+[
+"text" => "Головна",
+"anchor" => ""
+],
+[
+"text" => "Про нас",
+"anchor" => ""
+],
+[
+"text" => "Як ми працюємо",
+"anchor" => ""
+],
+[
+"text" => "Партнери",
+"anchor" => ""
+],
+[
+"text" => "Відгуки",
+"anchor" => ""
+],
+[
+"text" => "ЗМІ про нас",
+"anchor" => ""
+],
 
-    ];
-    $secondLinks = [
-        [
-            "text" => "Для зброї",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Медицина",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Для рацій",
-            "anchor" => ""
-        ],
-        [
-            "text" => "РЕБ / РЕР",
-            "anchor" => ""
-        ],
-        [
-            "text" => "Для дронів",
-            "anchor" => ""
-        ]
-    ]
+];
+$secondLinks = [
+[
+"text" => "Для зброї",
+"anchor" => ""
+],
+[
+"text" => "Медицина",
+"anchor" => ""
+],
+[
+"text" => "Для рацій",
+"anchor" => ""
+],
+[
+"text" => "РЕБ / РЕР",
+"anchor" => ""
+],
+[
+"text" => "Для дронів",
+"anchor" => ""
+]
+]
 
 @endphp
 
@@ -62,46 +62,46 @@
             </div>
             <div class="socialLinksBoxUp">
                 @include("components.social-links", [
-                    'content' => [
-                        "classIcon" => "icon"
-                    ]
+                'content' => [
+                "classIcon" => "icon"
+                ]
                 ])
-                    <button>
-                <i class="ph ph-envelope icon"></i>
-            example@mail.com
+                <button>
+                    <i class="ph ph-envelope icon"></i>
+                    example@mail.com
                 </button>
+            </div>
         </div>
-</div>
         <div class="linksWrapper">
-    <ul class="linksDesktop">
+            <ul class="linksDesktop">
                 @foreach ($links as $link)
-                    <li>
+                <li>
                     <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
-                        </li>
+                </li>
                 @endforeach
             </ul>
-    <ul class="linksDesktop">
+            <ul class="linksDesktop">
                 @foreach ($secondLinks as $link)
-                    <li>
+                <li>
                     <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
-                            </li>
+                </li>
                 @endforeach
-                            </ul>
-                                <div class="socialLinksBox">
-                                @include("components.social-links", [
-                                    'content' => [
-                                        "size" => "20px"
-                                    ]
-                                ])
+            </ul>
+            <div class="socialLinksBox">
+                @include("components.social-links", [
+                'content' => [
+                "size" => "20px"
+                ]
+                ])
                 <button>
-                <i class="ph ph-envelope"></i>
-        example@mail.com
-</button>
-</div>
-</div>
-</div>
-<div class="footerBottom">
-<hr />
-<p class="rights">© 2025 TAKO. All rights reserved</p>
-</div>
+                    <i class="ph ph-envelope"></i>
+                    example@mail.com
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <hr />
+        <p class="rights">© 2025 TAKO. All rights reserved</p>
+    </div>
 </div>

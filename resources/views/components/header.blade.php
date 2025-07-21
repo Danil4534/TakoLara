@@ -34,24 +34,10 @@ $links = [
                 @endforeach
             </ul>
         </nav>
+        <div class="headerBtns">
+            <x-secondary-btn id="btnConnect" text="Зв'язатися" class="btnConnect" modal="#contactModal"></x-secondary-btn>
+            <x-secondary-btn text="Підтримати" class="btnSupport" route="support.page"></x-secondary-btn>
 
-        <di class="headerBtns">
-            @include("ui.secondaryBtn", [
-            "content" => [
-            "id" => "btnConnect",
-            "text" => "Зв'язатися",
-            "class" => "btnConnect",
-            "modal" => "#contactModal"
-
-            ]
-            ])
-            @include("ui.secondaryBtn", [
-            "content" => [
-            "text" => "Підтримати",
-            "class" => "btnSupport",
-            "route" => "support.page"
-            ]
-            ])
             @include("ui.primaryBtn", [
             "content" => [
             "id" => 'btnPreOrder',
@@ -63,6 +49,6 @@ $links = [
 
             ]
             ])
-    </div>
+        </div>
     </div>
 </header>

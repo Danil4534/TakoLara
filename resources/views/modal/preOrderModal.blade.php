@@ -16,14 +16,7 @@ $chooseProducts = session('chooseProducts');
                 <p>Схоже що ваш кошик пустий</p>
             </div>
             <div class="preOrderBottomBox">
-                @include("ui.secondaryBtn", [
-                "content" => [
-                'text' => "Переглянути категорії",
-                'class' => "preOrderBtn",
-                'styles' => 'font-size: 28px',
-                'route'=>'home.page'
-                ]
-                ])
+                <x-secondary-btn id="btnConnect" text="Переглянути категорії" class="preOrderBtn" styles="font-size: 28px" route="home.page"></x-secondary-btn>
                 <div class="forSolders">
                     <p>🪖 Для військових — <span>безкоштовно</span></p>
                 </div>
@@ -63,14 +56,7 @@ $chooseProducts = session('chooseProducts');
                 @endforeach
             </div>
             <div class="preOrderBottomBox">
-                @include("ui.secondaryBtn", [
-                "content" => [
-                'text' => "Оформити",
-                'class' => "preOrderBtn",
-                'styles' => 'font-size: 28px',
-                'route'=>'checkout.page'
-                ]
-                ])
+                <x-secondary-btn id="btnConnect" text="Оформити" class="preOrderBtn" styles="font-size: 28px" route="checkout.page"></x-secondary-btn>
                 <div class="forSolders">
                     <p>🪖 Для військових — <span>безкоштовно</span></p>
                 </div>
