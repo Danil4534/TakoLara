@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalPreOrder = document.querySelector("#hidden_preOrder");
   const modalPreOrderContent = document.querySelector("#hidden_preOrder_content")
   const closeModalPreOrder= document.querySelector('#closePreOrderBtn');
-  const categoriesBtnOpen = document.querySelectorAll("#buttonSelectOpen")
-  const categoriesBtnClose = document.querySelectorAll("#buttonSelectClose")
-  const categoriesModal = document.querySelector('#categoriesModal')
-  const categoriesModalContent = document.querySelector('#categoriesModalContent')
+const categoriesBtnToggle = document.getElementById('buttonSelectToggle');
+const categoriesBtnToggleIcon = document.getElementById('toggleIcon');
+const categoriesModal = document.getElementById('categoriesModal');
+const categoriesModalContent = document.getElementById('categoriesModalContent');
+
   const successBtn = document.querySelector('#contactBtnSubmit')
   const successModal = document.querySelector('#successModal')
   const successModalContent = document.querySelector('#successModalContent')
@@ -30,27 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
   //   })
   // })
 
- categoriesBtnOpen.forEach((openBtn, index) => {
-  openBtn.addEventListener('click', () => {
-    openBtn.classList.remove('activeBtn')
-    openBtn.style.display="none"
-    const closeBtn = categoriesBtnClose[index];
-    closeBtn.classList.add('activeBtn')
+categoriesBtnToggle.addEventListener('click', () => {
+  if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {
+    categoriesBtnToggleIcon.classList.remove('ph-caret-down');
+    categoriesBtnToggleIcon.classList.add('ph-x');
     categoriesModal.classList.add("active");
-    categoriesModalContent.classList.add("active")
-  });
+    categoriesModalContent.classList.add("active");
+  } else {
+    categoriesBtnToggleIcon.classList.remove('ph-x');
+    categoriesBtnToggleIcon.classList.add('ph-caret-down');
+    categoriesModal.classList.remove("active");
+    categoriesModalContent.classList.remove("active");
+  }
 });
 
-categoriesBtnClose.forEach((closeBtn, index) => {
-  closeBtn.addEventListener('click', () => { 
-    closeBtn.classList.remove('activeBtn')
-    const openBtn = categoriesBtnOpen[index];
-openBtn.style.display="flex"
-    openBtn.classList.add('activeBtn')
-    categoriesModal.classList.remove("active");
-    categoriesModalContent.classList.remove("active")
-  });
-});
 
   const burgerBtn = document.querySelector("#burger");
   const headerModalNav = document.querySelector("#hidden_header_nav");

@@ -22,11 +22,8 @@ $links = [
                 <x-picture-tag src="{{ asset('assets/MobileLogo.svg') }}" alt="mobLogo" class="mobileLogo" />
             </div>
         </div>
-        <button class="buttonSelectOpen" id="buttonSelectOpen">
-            Вироби <i class="ph ph-caret-down" style="font-size: 20px ;"></i>
-        </button>
-        <button class="buttonSelectClose" id="buttonSelectClose">
-            Вироби <i class="ph ph-x" style="font-size: 20px ;"></i>
+        <button class="buttonSelectToggle" id="buttonSelectToggle">
+            Вироби <i class="ph ph-caret-down" id="toggleIcon" style="font-size: 20px;"></i>
         </button>
         <nav>
             <ul>
@@ -63,7 +60,7 @@ $links = [
             "class" => "btnPreOrder",
             "styles" => "font-size: 20px",
             "count" => $chooseProducts?count($chooseProducts):0
-            
+
             ]
             ])
     </div>

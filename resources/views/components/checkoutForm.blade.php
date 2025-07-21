@@ -60,7 +60,11 @@ $chooseProducts = session('chooseProducts');
                     </div>
                 </div>
 
-                <i class="ph ph-trash-simple trash"></i>
+                <form method="POST" action="{{ route('remove.from.cart') }}">
+                    @csrf
+                    <input type="hidden" name="index" value="{{ $loop->index }}">
+                    <button type="submit"> <i class="ph ph-trash-simple trash"></i></button>
+                </form>
             </div>
             @endforeach
         </div>
@@ -170,14 +174,18 @@ $chooseProducts = session('chooseProducts');
                             </div>
                         </div>
                     </div>
-                    <i class="ph ph-trash-simple trash"></i>
+                    <form method="POST" action="{{ route('remove.from.cart') }}">
+                        @csrf
+                        <input type="hidden" name="index" value="{{ $loop->index }}">
+                        <button type="submit"> <i class="ph ph-trash-simple trash"></i></button>
+                    </form>
                 </div>
                 @endforeach
             </div>
             <div class="priceData">
                 <hr>
                 <p>собівартість виробів:</p>
-                <h6>140,00<span>грн</span></h6>
+                <h6>0,00<span>грн</span></h6>
                 <div class="forSolders">
                     <p><span class="icon">🪖</span> Для військових — <span>безкоштовно</span></p>
                 </div>

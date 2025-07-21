@@ -1213,7 +1213,9 @@
                             border-right: 1px solid
                                 var(--neutral-medium-gray-second);
                             gap: 16px;
-
+                            button {
+                                width: 232px;
+                            }
                             .costCountUp {
                                 border-right: 1px solid
                                     var(--neutral-medium-gray-second);
