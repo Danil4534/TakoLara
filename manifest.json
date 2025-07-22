@@ -1,0 +1,49 @@
+{
+  "public/assets/Qr_Bg.svg": {
+    "file": "assets/Qr_Bg-DfUrUonj.svg",
+    "src": "public/assets/Qr_Bg.svg"
+  },
+  "public/fonts/e-Ukraine-Bold.otf": {
+    "file": "assets/e-Ukraine-Bold-5HODsI2h.otf",
+    "src": "public/fonts/e-Ukraine-Bold.otf"
+  },
+  "public/fonts/e-Ukraine-Light.otf": {
+    "file": "assets/e-Ukraine-Light-j3J9HTfd.otf",
+    "src": "public/fonts/e-Ukraine-Light.otf"
+  },
+  "public/fonts/e-Ukraine-Medium.otf": {
+    "file": "assets/e-Ukraine-Medium-DspvbVYB.otf",
+    "src": "public/fonts/e-Ukraine-Medium.otf"
+  },
+  "public/fonts/e-Ukraine-Regular.otf": {
+    "file": "assets/e-Ukraine-Regular-BJXaAJcm.otf",
+    "src": "public/fonts/e-Ukraine-Regular.otf"
+  },
+  "public/fonts/e-Ukraine-Thin.otf": {
+    "file": "assets/e-Ukraine-Thin-B3lhAPKv.otf",
+    "src": "public/fonts/e-Ukraine-Thin.otf"
+  },
+  "public/fonts/e-Ukraine-UltraLight.otf": {
+    "file": "assets/e-Ukraine-UltraLight-XtTU_qR5.otf",
+    "src": "public/fonts/e-Ukraine-UltraLight.otf"
+  },
+  "public/fonts/e-UkraineHead-Regular.otf": {
+    "file": "assets/e-UkraineHead-Regular-BStOKxBa.otf",
+    "src": "public/fonts/e-UkraineHead-Regular.otf"
+  },
+  "public/fonts/e-UkraineHead-Regular.woff2": {
+    "file": "assets/e-UkraineHead-Regular-B6NTZH7k.woff2",
+    "src": "public/fonts/e-UkraineHead-Regular.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CcgoqjT8.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/scss/app.scss": {
+    "file": "assets/app-BKDymL65.css",
+    "src": "resources/scss/app.scss",
+    "isEntry": true
+  }
+}

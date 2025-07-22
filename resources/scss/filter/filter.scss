@@ -1,0 +1,42 @@
+.radioLabel:has(input[type="radio"]:checked) input {
+    background-color: white;
+    box-shadow: inset 0 0 0 3px rgba(15, 94, 187, 1);
+}
+
+.radioLabel:has(input[type="radio"]:checked) {
+    background-color: rgba(15, 94, 187, 1);
+    color: white;
+}
+
+.radioLabel {
+    width: auto;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--neutral-light-gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    font-family: var(--font-family-Thin);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1.6%;
+    vertical-align: middle;
+    color: var(--neutral-medium-gray);
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid var(--neutral-medium-gray-second);
+}
+
+input[type="radio"]:checked {
+    border: 2px solid rgba(255, 215, 25, 1);
+}

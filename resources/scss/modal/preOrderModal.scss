@@ -1,0 +1,683 @@
+@mixin font-light {
+    font-family: var(--font-family-Light);
+    font-weight: 300;
+}
+
+.preOrder {
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s ease;
+    .header_preOrder_container {
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        padding: 32px 16px;
+        padding-bottom: 24px;
+        transition: 0.3s ease;
+        background-color: var(--neutral-white);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        #closePreOrderBtn {
+            position: absolute;
+            right: 24px;
+            top: 32px;
+            font-size: 32px;
+            color: var(--neutral-medium-gray);
+            &:hover {
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+        }
+        h1 {
+            font-family: var(--font-family-Light);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 22px;
+            line-height: 120%;
+            letter-spacing: 1.6%;
+            vertical-align: middle;
+            color: var(--primary-dark-navy);
+        }
+        .preOrderWrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .preOrderBottomBox {
+                width: 100%;
+                height: 144px;
+                padding: 24px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .forSolders {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background: rgba(246, 247, 249, 1);
+                    height: 32px;
+                    align-items: center;
+                    p {
+                        font-family: var(--font-family-Light);
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 12px;
+
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                        color: var(--neutral-medium-gray);
+                        span {
+                            color: var(--primary-dark-navy);
+                        }
+                    }
+                }
+            }
+        }
+
+        .preOrderModalContent {
+            width: 100%;
+            margin-top: 40px;
+            height: fit-content !important;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-direction: column;
+            gap: 24px;
+            .productCard {
+                width: 100%;
+                height: fit-content;
+                background: rgba(246, 247, 249, 1);
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                padding-bottom: 16px !important;
+                position: relative;
+                gap: 16px;
+                form {
+                    position: absolute;
+                    right: 8px;
+                    top: 8px;
+                    button {
+                        background: transparent;
+                        border: none;
+                    }
+                    .trash {
+                        font-size: 24px;
+                        color: red;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .productCardHeader {
+                    display: flex;
+                    gap: 16px;
+                    h3 {
+                        width: 172px !important;
+                        @include font-light;
+                        font-size: 14px;
+                        color: var(--primary-dark-navy);
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
+                }
+                .productCardBottom {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 8px;
+                    padding-top: 16px;
+                    .counter {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        width: 128px;
+                        input {
+                            width: 64px;
+                            height: 36px;
+                            border-radius: 8px;
+                            outline: none;
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+
+                            text-align: center;
+                            border: 1px solid rgba(208, 208, 208, 1);
+                        }
+                        i {
+                            font-size: 24px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .cost {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        text-align: end;
+                        font-family: var(--font-family-Light);
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 16px;
+                        line-height: 140%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                        span {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 12px;
+
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                        }
+                        p {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 12px;
+                            color: rgba(107, 107, 107, 1);
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                h3 {
+                    flex-wrap: wrap;
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 14px;
+                    color: rgba(28, 47, 67, 1);
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                }
+                img {
+                    width: 116px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(208, 208, 208, 1);
+                }
+            }
+            h2 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 16px;
+                width: 247px;
+                line-height: 140%;
+                letter-spacing: 1.6%;
+                text-align: center;
+                vertical-align: middle;
+                span {
+                    color: rgba(15, 94, 187, 1);
+                }
+            }
+            p {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 12px;
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                text-align: center;
+                vertical-align: middle;
+                color: var(--neutral-medium-gray);
+                margin-top: 8px;
+            }
+        }
+        .preOrderBtn {
+            width: 100% !important;
+            background-color: var(--primary-deep-blue);
+            color: var(--neutral-white);
+        }
+        .forSolders {
+        }
+        .nav_content_box {
+            width: 100%;
+            height: 100%;
+            padding: 24px;
+            background-color: rgba(246, 247, 249, 1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            h1 {
+                font-family: var(--font-family-Regular);
+                font-weight: 400;
+                font-size: 12px;
+                color: var(--neutral-medium-gray-second);
+                line-height: 120%;
+                letter-spacing: 1.4%;
+                text-transform: uppercase;
+                vertical-align: middle;
+                margin-bottom: 24px;
+            }
+            &:first-child {
+                height: 354px;
+                padding-right: 15px;
+            }
+            &:first-child a {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                height: 44px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid rgba(208, 208, 208, 0.2);
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 16px;
+                text-decoration: none;
+                line-height: 140%;
+                letter-spacing: 1.6%;
+                vertical-align: middle;
+                color: var(--primary-dark-navy);
+                &:last-child {
+                    border: none;
+                }
+                .iconLink {
+                    font-size: 32px;
+                }
+            }
+            &:nth-child(2) {
+                height: 232px;
+                padding: 16px 0px;
+                padding-right: 15px;
+                padding-left: 24px;
+                gap: 5px;
+            }
+            &:nth-child(2) a {
+                text-decoration: none;
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 14px;
+                padding-bottom: 17px;
+                border-bottom: 2px solid rgba(208, 208, 208, 0.2);
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                vertical-align: middle;
+                color: var(--neutral-medium-gray);
+                &:last-child {
+                    border: none;
+                }
+            }
+            &:last-child {
+                height: 168px;
+            }
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                .cardBtn {
+                    width: 100%;
+                    color: var(--neutral-white);
+                    background-color: var(--primary-deep-blue);
+                }
+            }
+        }
+        &.active {
+            width: 100%;
+            height: 100vh;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.active {
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        z-index: 999;
+        visibility: visible;
+        background-color: rgba(28, 47, 67, 0.5);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .preOrder {
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        position: fixed;
+        left: 0 !important;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        justify-content: end;
+        transition: 0.3s ease;
+        .header_preOrder_container {
+            width: 0px !important;
+            height: 100vh;
+            opacity: 0;
+            overflow: hidden;
+            padding: 32px 24px;
+            padding-bottom: 24px;
+            transition: 0.3s ease;
+            background-color: var(--neutral-white);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+            #closePreOrderBtn {
+                position: absolute;
+                right: 24px;
+                top: 32px;
+                font-size: 32px;
+                color: var(--neutral-medium-gray);
+            }
+            h1 {
+                font-family: var(--font-family-Light);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 24px;
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                vertical-align: middle;
+                color: var(--primary-dark-navy);
+            }
+            .preOrderWrapper {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .preOrderBottomBox {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .forSolders {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        background: rgba(246, 247, 249, 1);
+                        height: 40px;
+                        align-items: center;
+                        p {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 16px;
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                            color: var(--neutral-medium-gray);
+                            span {
+                                color: var(--primary-dark-navy);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .preOrderModalContent {
+                width: 100%;
+                margin-top: 40px;
+                height: 218px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                flex-direction: column;
+                .productCard {
+                    width: 100%;
+                    height: fit-content;
+                    background: rgba(246, 247, 249, 1);
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px;
+                    position: relative;
+                    gap: 16px;
+                    .productCardWrapper {
+                    }
+                    .productCardHeader {
+                        display: flex;
+                        gap: 16px;
+                    }
+                    .productCardBottom {
+                        display: flex;
+                        justify-content: space-between;
+                        .counter {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            width: 128px;
+                            input {
+                                width: 64px;
+                                height: 36px;
+                                border-radius: 8px;
+                                outline: none;
+                                font-family: var(--font-family-Light);
+                                font-weight: 300;
+                                font-style: Light;
+                                font-size: 14px;
+                                line-height: 120%;
+                                letter-spacing: 1.6%;
+                                vertical-align: middle;
+
+                                text-align: center;
+                                border: 1px solid rgba(208, 208, 208, 1);
+                            }
+                            i {
+                                font-size: 24px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .cost {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: end;
+                            text-align: end;
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 16px;
+                            line-height: 140%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                            span {
+                                font-family: var(--font-family-Light);
+                                font-weight: 300;
+                                font-style: Light;
+                                font-size: 12px;
+
+                                line-height: 120%;
+                                letter-spacing: 1.6%;
+                                vertical-align: middle;
+                            }
+                            p {
+                                font-family: var(--font-family-Light);
+                                font-weight: 300;
+                                font-style: Light;
+                                font-size: 12px;
+                                color: rgba(107, 107, 107, 1);
+                                line-height: 120%;
+                                letter-spacing: 1.6%;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .trash {
+                        position: absolute;
+                        right: 8px;
+                        top: 8px;
+                        font-size: 24px;
+                        color: red;
+                    }
+                    h3 {
+                        flex-wrap: wrap;
+                        font-family: var(--font-family-Light);
+                        font-weight: 300;
+                        font-style: Light;
+                        font-size: 14px;
+                        color: rgba(28, 47, 67, 1);
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
+                    img {
+                        width: 116px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(208, 208, 208, 1);
+                    }
+                }
+                h2 {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 22px;
+                    width: 351px;
+                    line-height: 140%;
+                    letter-spacing: 1.6%;
+                    text-align: center;
+                    vertical-align: middle;
+                    span {
+                        color: rgba(15, 94, 187, 1);
+                    }
+                }
+                p {
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 14px;
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    text-align: center;
+                    vertical-align: middle;
+                    color: var(--neutral-medium-gray);
+                    margin-top: 8px;
+                }
+            }
+            .preOrderBtn {
+                width: 100% !important;
+                background-color: var(--primary-deep-blue);
+                color: var(--neutral-white);
+                height: 56px;
+            }
+
+            .nav_content_box {
+                width: 100%;
+                height: 100%;
+                padding: 24px;
+                background-color: rgba(246, 247, 249, 1);
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                h1 {
+                    font-family: var(--font-family-Regular);
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: var(--neutral-medium-gray-second);
+                    line-height: 120%;
+                    letter-spacing: 1.4%;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                    margin-bottom: 24px;
+                }
+                &:first-child {
+                    height: 354px;
+                    padding-right: 15px;
+                }
+                &:first-child a {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 44px;
+                    padding-bottom: 12px;
+                    border-bottom: 2px solid rgba(208, 208, 208, 0.2);
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 16px;
+                    text-decoration: none;
+                    line-height: 140%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                    color: var(--primary-dark-navy);
+                    &:last-child {
+                        border: none;
+                    }
+                    .iconLink {
+                        font-size: 32px;
+                    }
+                }
+                &:nth-child(2) {
+                    height: 232px;
+                    padding: 16px 0px;
+                    padding-right: 15px;
+                    padding-left: 24px;
+                    gap: 5px;
+                }
+                &:nth-child(2) a {
+                    text-decoration: none;
+                    font-family: var(--font-family-Light);
+                    font-weight: 300;
+                    font-style: Light;
+                    font-size: 14px;
+                    padding-bottom: 17px;
+                    border-bottom: 2px solid rgba(208, 208, 208, 0.2);
+                    line-height: 120%;
+                    letter-spacing: 1.6%;
+                    vertical-align: middle;
+                    color: var(--neutral-medium-gray);
+                    &:last-child {
+                        border: none;
+                    }
+                }
+                &:last-child {
+                    height: 168px;
+                }
+                &:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                    .cardBtn {
+                        width: 100%;
+                        color: var(--neutral-white);
+                        background-color: var(--primary-deep-blue);
+                    }
+                }
+            }
+            &.active {
+                width: 492px !important;
+                height: 100vh;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &.active {
+            height: 100vh;
+            opacity: 1;
+            z-index: 999;
+            visibility: visible;
+            background-color: rgba(28, 47, 67, 0.5);
+        }
+    }
+}

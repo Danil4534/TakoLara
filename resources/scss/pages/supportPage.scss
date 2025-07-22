@@ -1,0 +1,67 @@
+.supportTitle {
+    font-family: var(--font-family-Light);
+    font-weight: 300;
+    font-style: Light;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 1.4%;
+    vertical-align: middle;
+    color: var(--primary-dark-navy);
+    width: 100%;
+    background: var(--neutral-white);
+    border-radius: 16px;
+    padding: 32px 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .supportTitle {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 36px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        vertical-align: middle;
+        color: var(--primary-dark-navy);
+        padding: 32px 24px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .supportTitle {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 36px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        vertical-align: middle;
+        color: var(--primary-dark-navy);
+        padding: 32px 24px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .supportTitle {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 56px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        vertical-align: middle;
+        color: var(--primary-dark-navy);
+        padding: 72px 32px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .supportTitle {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 56px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        vertical-align: middle;
+        color: var(--primary-dark-navy);
+        padding: 72px 181px;
+    }
+}

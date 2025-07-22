@@ -1,0 +1,41 @@
+.secondaryBtn {
+    width: 151px;
+    height: 48px;
+    border-radius: 999px;
+    gap: 10px;
+    border: 2px solid var(--primary-deep-blue);
+    font-family: var(--font-family-Bold);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background: none;
+    color: var(--primary-deep-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--neutral-white);
+        transition: background 0.3s ease;
+        background: var(--primary-deep-blue);
+    }
+}
+
+.btnConnect {
+    width: 141px;
+}
+
+@media (max-width: 1024px) {
+    .btnConnect {
+        display: none;
+    }
+
+    .btnSupport {
+        border: 2px solid var(--primary-dark-navy);
+        color: var(--primary-dark-navy);
+    }
+}

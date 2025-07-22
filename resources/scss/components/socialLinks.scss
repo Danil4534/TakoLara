@@ -1,0 +1,23 @@
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.socialLinks li {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--neutral-white);
+    background-color: var(--primary-deep-blue);
+    transition: background 0.3s ease;
+}
+
+.socialLinks li:hover {
+    transition: background 0.3s ease;
+    cursor: pointer;
+    background: var(--secondary-light-blue);
+}

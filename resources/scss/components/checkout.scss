@@ -1,0 +1,41 @@
+.checkoutBoxContainer {
+    background: var(--neutral-white);
+    border-radius: 16px;
+    padding: 32px 16px;
+
+    h1 {
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 1.4%;
+        vertical-align: middle;
+        color: var(--primary-dark-navy);
+    }
+}
+
+footer {
+    padding: 0 8px;
+
+    .footerCheckoutContainer {
+        width: 100%;
+        height: 56px;
+        padding: 19.5px 24px;
+        background: var(--primary-dark-navy);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+
+        p {
+            font-family: var(--font-family-Thin);
+
+            font-style: Light;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: var(--neutral-medium-gray-second);
+        }
+    }
+}
