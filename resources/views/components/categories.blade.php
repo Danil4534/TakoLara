@@ -17,7 +17,7 @@ $products = collect([
     <h1>{{ $content['title'] }}</h1>
     <hr />
     <ul
-        class="productCards {{ $content['class'] ?? "" }} {{ Route::currentRouteName() == 'weapon.page' ? "scrollCards" : "" }}">
+        class="productCards {{ $content['class'] ?? "" }} {{ Route::currentRouteName() !== 'home.page' ? "scrollCards" : "" }}">
         @foreach ($products as $product)
         <li class="productCard">
             <div class="productCardHeader">
