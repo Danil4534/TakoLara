@@ -82,7 +82,7 @@
                 width: 100%;
                 height: auto;
                 display: block;
-                border-radius: 12px; // по желанию
+                border-radius: 12px;
                 object-fit: cover;
             }
         }
@@ -92,14 +92,12 @@
             display: flex;
             justify-content: space-between;
             gap: 16px;
-
             .btnPrev {
                 min-width: 125px;
                 height: 48px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
                 position: relative;
                 font-weight: 700;
                 font-style: Bold;
