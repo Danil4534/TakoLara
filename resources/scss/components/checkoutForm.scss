@@ -37,18 +37,45 @@
             flex-direction: column;
             gap: 16px;
         }
-
+        .productCardWrapper {
+            .productCardHeader {
+                h3 {
+                    display: none;
+                }
+            }
+            .productCardBottom {
+                display: none !important;
+            }
+        }
         .productCard {
             width: 100%;
             height: fit-content;
             background: rgba(246, 247, 249, 1);
             border-radius: 8px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             padding: 8px;
             position: relative;
-            gap: 16px;
-
+            .productCardMobHeader {
+                display: flex !important;
+                gap: 16px;
+                h3 {
+                    width: 147px !important;
+                }
+            }
+            form {
+                position: absolute;
+                right: 8px;
+                top: 8px;
+                button {
+                    background: transparent;
+                    border: none;
+                }
+                .trash {
+                    font-size: 24px;
+                    color: var(--neutral-medium-gray) !important;
+                }
+            }
             .productCardHeader {
                 display: flex;
                 gap: 16px;
@@ -57,7 +84,7 @@
             .productCardBottom {
                 display: flex;
                 justify-content: space-between;
-
+                margin-top: 16px;
                 .counter {
                     display: flex;
                     align-items: center;
@@ -115,14 +142,6 @@
                         vertical-align: middle;
                     }
                 }
-            }
-
-            .trash {
-                position: absolute;
-                right: 8px;
-                top: 8px;
-                font-size: 24px;
-                color: var(--neutral-medium-gray) !important;
             }
 
             h3 {
@@ -389,13 +408,16 @@
                         }
                     }
                 }
-
-                .trash {
-                    position: absolute;
-                    right: 8px;
-                    top: 8px;
-                    font-size: 24px;
-                    color: red;
+                button {
+                    background-color: transparent;
+                    border: transparent;
+                    .trash {
+                        position: absolute;
+                        right: 8px;
+                        top: 8px;
+                        font-size: 24px;
+                        color: var(--neutral-medium-gray);
+                    }
                 }
 
                 h3 {
@@ -499,7 +521,6 @@
 
     .formContainer {
         margin-top: 8px;
-
         h1 {
             @include font-light;
             font-size: 28px;
@@ -509,16 +530,50 @@
             color: var(--primary-dark-navy);
             margin-bottom: 8px;
         }
-
         .productCard {
             height: 100%;
+            display: flex !important;
+            flex-direction: row !important;
+            h3 {
+                display: inline !important;
+            }
+            .productCardWrapper {
+                width: 100% !important;
+                height: auto !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-between !important;
+            }
+        }
+        .productCard {
+            height: 100%;
+            display: flex !important;
+            position: relative;
+
+            .productCardMobHeader {
+                gap: 16px;
+                h3 {
+                    width: 100% !important;
+                    display: none !important;
+                }
+            }
 
             .productCardWrapper {
                 width: 100% !important;
                 height: auto !important;
                 display: flex;
+                margin-left: 16px;
+                padding: 10px 0;
                 flex-direction: column !important;
                 justify-content: space-between !important;
+                .productCardHeader {
+                }
+                .productCardBottom {
+                    display: flex !important;
+                }
+            }
+            .productCardBottom {
+                display: none !important;
             }
         }
 
@@ -654,6 +709,7 @@
                 span {
                     @extend %font-light;
                     font-size: 12px;
+                    padding: 0 !important;
                     color: var(--neutral-medium-gray);
                     line-height: 120%;
                     letter-spacing: 1.6%;
@@ -732,7 +788,9 @@
                 height: 100%;
                 display: flex !important;
                 flex-direction: row !important;
-
+                h3 {
+                    display: inline !important;
+                }
                 .productCardWrapper {
                     width: 100% !important;
                     height: auto !important;
@@ -1310,12 +1368,23 @@
             display: flex;
             flex-direction: row !important;
             gap: 8px;
-
             .productCard {
                 height: 100%;
                 display: flex !important;
                 flex-direction: row !important;
-
+                #form {
+                    position: absolute;
+                    right: 8px;
+                    top: 8px;
+                    button {
+                        background: transparent;
+                        border: none;
+                    }
+                    .trash {
+                        font-size: 24px;
+                        color: var(--neutral-medium-gray) !important;
+                    }
+                }
                 img {
                     width: 124px !important;
                     height: 124px !important;
@@ -1329,6 +1398,11 @@
                     display: flex !important;
                     flex-direction: column !important;
                     justify-content: space-between !important;
+                    .productCardHeader {
+                        h3 {
+                            display: block;
+                        }
+                    }
                 }
             }
 

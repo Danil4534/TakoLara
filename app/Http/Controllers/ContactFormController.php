@@ -17,8 +17,8 @@ class ContactFormController extends Controller
             "phoneNumber" => "required|regex:/^\+380\d{9}$/",
             "email" => "required|email",
             "theme" => "required|string",
-   
-        ],[
+
+        ], [
             'name.required' => 'Ім’я обов’язкове',
             'phoneNumber.required' => 'Номер телефону обов’язковий',
             'phoneNumber.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX',
@@ -26,14 +26,17 @@ class ContactFormController extends Controller
             'email.email' => 'Невірний формат пошти',
             'theme.required' => 'Тема обов’язкова',
         ]);
-            
+
         $data = [
             "name" => $request->name,
             "email" => $request->email,
             "phoneNumber" => $request->phoneNumber,
             "theme" => $request->theme,
             "comment" => $request->comment
-        ]; 
-        return redirect()->back()->with("error","");
+
+        ];
+
+
+        return redirect()->back()->with("error", "");
     }
 }

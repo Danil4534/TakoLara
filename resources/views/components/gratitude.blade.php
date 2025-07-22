@@ -30,7 +30,7 @@ $sliderContent =[
                 @foreach ($sliderContent as $item )
                 <div class="slider__item2">
                     <div class="slider__info">
-                        {{ $item['content'] }}
+                        <x-picture-tag src="{{ asset('assets/sliderBg.svg') }}"></x-picture-tag>
                     </div>
                 </div>
                 @endforeach
@@ -59,11 +59,10 @@ $sliderContent =[
 
         const cardsPerPage = 2;
         const cardWidth = cards[0].offsetWidth;
-        const gap = 32;
+        const windowWidth = window.innerWidth;
+        const gap = (windowWidth <= 375) ? 16 : 32;
         const scrollStep = (cardWidth + gap) * cardsPerPage;
-
         let currentPage = 0;
-
 
         function updateActiveDot(index) {
             navDots.forEach(dot => dot.classList.remove("active"));
@@ -72,14 +71,11 @@ $sliderContent =[
             }
         }
 
-
         function updateButtons() {
             const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
             prevBtn.disabled = currentPage <= 0;
             nextBtn.disabled = currentPage >= maxPage;
         }
-
-
         prevBtn.addEventListener("click", () => {
             if (currentPage > 0) {
                 currentPage--;
@@ -91,8 +87,6 @@ $sliderContent =[
                 updateButtons();
             }
         });
-
-
         nextBtn.addEventListener("click", () => {
             const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
             if (currentPage < maxPage) {

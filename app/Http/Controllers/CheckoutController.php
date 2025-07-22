@@ -8,18 +8,20 @@ use Illuminate\Support\Facades\Validator;
 
 class CheckoutController extends Controller
 {
-    public function submit(Request $request){
+    public function submit(Request $request)
+    {
 
 
-        $request-> validate( [
+        $request->validate([
             'surname' => 'required|string|max:255',
             'firstname' => 'required|string|max:255',
             'middlename' => 'required|string|max:255',
             'phone' => 'required|regex:/^\+380\d{9}$/',
             'city' => 'required|string',
-            'contact_type' => 'required|in:0,1,2,3,4',
+            'department' => 'required',
             'contact_phone' => 'required|regex:/^\+380\d{9}$/',
         ], [
+            'department' => 'Номер відділення обовʼязковий',
             'surname.required' => 'Прізвище обовʼязкове.',
             'firstname.required' => "Імʼя обовʼязкове.",
             'middlename' => 'По батькові обов`язково',
@@ -33,6 +35,6 @@ class CheckoutController extends Controller
         ]);
 
         var_dump($request);
-         return redirect()->back()->with("error","");
+        // return redirect()->back()->with("error", "");
     }
 }

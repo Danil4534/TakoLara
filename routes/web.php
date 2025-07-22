@@ -19,3 +19,4 @@ Route::post('/addToCart', [ProductController::class, 'addToCart'])->name('addPro
 Route::post('/contactForm', [ContactFormController::class, 'submitContactDataPost'])->name('contactFormSubmit');
 Route::post('/checkout', [CheckoutController::class, 'submit'])->name('checkout.submit');
 Route::post('/removeFromCart', [ProductController::class, 'removeFromCart'])->name('remove.from.cart');
+Route::get('/page-list', [NavController::class, 'getPageList'])->name('page.list');

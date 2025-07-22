@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded',()=>{
         const nextBtn = document.getElementById("nextBtn");
         const cards = slider.querySelectorAll(".slider__item");
         const navDots = document.querySelectorAll(".slider__nav_item");
-        const cardsPerPage = 2;
-        const cardWidth = cards[0].offsetWidth;
-        const gap = 32;
+        const windowWidth = window.innerWidth;
+        const cardsPerPage =(windowWidth <= 375) ? 2 : 2;
+        const cardWidth = cards[0].offsetWidth;     
+        
+        const gap = (windowWidth <= 375) ? 16 : 32;
         const scrollStep = (cardWidth + gap) * cardsPerPage;
         let currentPage = 0;
         function updateActiveDot(index) {
@@ -16,6 +18,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         navDots[index].classList.add("active");
         }
         }
+
         function updateButtons() {
         const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
         prevBtn.disabled = currentPage <= 0; nextBtn.disabled=currentPage>= maxPage;
@@ -31,6 +34,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             updateButtons();
             }
             });
+
             nextBtn.addEventListener("click", () => {
             const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
             if ( currentPage < maxPage) { currentPage++; slider.scrollTo({ left: scrollStep * currentPage,

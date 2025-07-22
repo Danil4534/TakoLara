@@ -33,7 +33,7 @@ $sliderContent = [
             @foreach ($sliderContent as $item)
             <div class="slider__item">
                 <div class="slider__info">
-                    {{ $item['content'] }}
+                    <x-picture-tag src="{{ asset('assets/sliderBg.svg') }}"></x-picture-tag>
                 </div>
             </div>
             @endforeach
@@ -55,7 +55,3 @@ $sliderContent = [
     </div>
 </div>
 </div>
-
-<script>
-
-</script>

@@ -1,3 +1,8 @@
+@mixin font-light {
+    font-family: var(--font-family-Light);
+    font-weight: 300;
+}
+
 .preOrder {
     width: 100%;
     visibility: hidden;
@@ -95,15 +100,44 @@
                 display: flex;
                 flex-direction: column;
                 padding: 8px;
+                padding-bottom: 16px !important;
                 position: relative;
                 gap: 16px;
+                form {
+                    position: absolute;
+                    right: 8px;
+                    top: 8px;
+                    button {
+                        background: transparent;
+                        border: none;
+                    }
+                    .trash {
+                        font-size: 24px;
+                        color: red;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
                 .productCardHeader {
                     display: flex;
                     gap: 16px;
+                    h3 {
+                        width: 172px !important;
+                        @include font-light;
+                        font-size: 14px;
+                        color: var(--primary-dark-navy);
+                        line-height: 120%;
+                        letter-spacing: 1.6%;
+                        vertical-align: middle;
+                    }
                 }
                 .productCardBottom {
                     display: flex;
                     justify-content: space-between;
+                    padding: 0 8px;
+                    padding-top: 16px;
                     .counter {
                         display: flex;
                         align-items: center;
@@ -166,13 +200,7 @@
                         }
                     }
                 }
-                .trash {
-                    position: absolute;
-                    right: 8px;
-                    top: 8px;
-                    font-size: 24px;
-                    color: red;
-                }
+
                 h3 {
                     flex-wrap: wrap;
                     font-family: var(--font-family-Light);
