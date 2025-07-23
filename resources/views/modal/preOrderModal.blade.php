@@ -56,7 +56,7 @@ $chooseProducts = session('chooseProducts');
                 @endforeach
             </div>
             <div class="preOrderBottomBox">
-                <x-secondary-btn id="btnConnect" text="Оформити" class="preOrderBtn" styles="font-size: 28px" route="checkout.page"></x-secondary-btn>
+                <x-secondary-btn text="Оформити" class="preOrderBtn" styles="font-size: 28px" route="checkout.page"></x-secondary-btn>
                 <div class="forSolders">
                     <p>🪖 Для військових — <span>безкоштовно</span></p>
                 </div>
