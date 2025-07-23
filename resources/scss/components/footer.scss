@@ -639,13 +639,14 @@
 @media screen and (min-width: 1920px) {
     .footerContainer {
         width: 100%;
+        height: 455px;
         background: var(--primary-dark-navy);
         border-radius: 8px;
         padding: 72px 24px 32px;
 
         .footerContent {
             width: 100%;
-            height: auto;
+            height: 270px;
             display: flex;
             flex-direction: row;
             padding: 0 157px;
@@ -653,6 +654,11 @@
             .footerSloganWrapper {
                 display: flex;
                 justify-content: space-between;
+                .footerSlogan {
+                    h2 {
+                        font-size: 16px !important;
+                    }
+                }
             }
 
             .socialLinksBoxUp {
@@ -752,6 +758,9 @@
                 align-items: end;
                 flex-direction: column;
                 gap: 24px;
+                .socialLinks {
+                    font-size: 24px;
+                }
 
                 button {
                     width: 240px;
