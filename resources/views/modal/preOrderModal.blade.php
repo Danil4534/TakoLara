@@ -16,7 +16,7 @@ $chooseProducts = session('chooseProducts');
                 <p>Схоже що ваш кошик пустий</p>
             </div>
             <div class="preOrderBottomBox">
-                <x-secondary-btn id="btnConnect" text="Переглянути категорії" class="preOrderBtn" styles="font-size: 28px" route="home.page"></x-secondary-btn>
+                <x-secondary-btn text="Переглянути категорії" class="preOrderBtn" styles="font-size: 28px" route="home.page"></x-secondary-btn>
                 <div class="forSolders">
                     <p>🪖 Для військових — <span>безкоштовно</span></p>
                 </div>
