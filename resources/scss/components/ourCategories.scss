@@ -41,6 +41,12 @@
 
     ul {
         .productCard {
+            position: relative;
+            height: 406px;
+            button {
+                position: absolute;
+                bottom: 0;
+            }
             .productCardHeader {
                 width: 100%;
                 position: relative;
@@ -219,7 +225,7 @@
         }
 
         .productCard {
-            height: 420px;
+            height: 420px !important;
         }
 
         .cardContent {
@@ -335,7 +341,7 @@
         }
 
         .productCard {
-            height: 100%;
+            height: 420px !important;
         }
 
         .cardContent {
@@ -452,7 +458,7 @@
         }
 
         .productCard {
-            height: 100%;
+            height: 520px !important;
         }
 
         .cardContent {
