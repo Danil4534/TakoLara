@@ -28,7 +28,7 @@
         padding-top: 32px;
         border-radius: 16px;
 
-        &:first-child {
+        &:first-child:not(.formLeftSide > .userData) {
             margin-bottom: 8px;
         }
 
@@ -469,6 +469,17 @@
                 .btnCheckout {
                     width: 100%;
                     height: 48px;
+                    border-radius: 999px;
+                    background: transparent;
+                    border: 2px solid var(--primary-deep-blue);
+                    @include font-Bold();
+                    color: var(--primary-deep-blue);
+                    &:hover {
+                        transition: 0.3s ease;
+                        background: var(--primary-deep-blue);
+                        cursor: pointer;
+                        color: var(--neutral-white);
+                    }
                 }
             }
 
@@ -1581,7 +1592,7 @@
                     width: 327px;
                     display: flex;
                     flex-direction: column;
-                    gap: 24px;
+                    gap: 10px !important;
 
                     .btnConfirm {
                         width: 100%;
@@ -1596,11 +1607,28 @@
                         line-height: 120%;
                         letter-spacing: 0%;
                         vertical-align: middle;
+                        &:hover {
+                            transition: 0.3s ease;
+                            background: var(--secondary-light-blue);
+                            cursor: pointer;
+                            color: var(--neutral-white);
+                        }
                     }
 
                     .btnCheckout {
                         width: 100%;
                         height: 48px;
+                        border-radius: 999px;
+                        background: transparent;
+                        border: 2px solid var(--primary-deep-blue);
+                        @include font-Bold();
+                        color: var(--primary-deep-blue);
+                        &:hover {
+                            transition: 0.3s ease;
+                            background: var(--primary-deep-blue);
+                            cursor: pointer;
+                            color: var(--neutral-white);
+                        }
                     }
                 }
 

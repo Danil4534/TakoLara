@@ -32,30 +32,30 @@ $details = [
 
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const icons = document.querySelectorAll(".copyIcon");
-    icons.forEach((icon) => {
-        icon.addEventListener('click', () => {
-            const value = icon.getAttribute('data-value');     
-            icon.style.display='none'
-            navigator.clipboard.writeText(value).then(() => {
-                let success = icon.parentElement.querySelector('.success');
-                if (!success) {
-                    success = document.createElement('span');
-                    success.classList.add('success');
-             
-                    icon.parentElement.appendChild(success);
-                }
-                success.style.display = 'block';
-           
-                setTimeout(() => {
-                    success.style.display = 'none';
-                    icon.style.display='block'
-                }, 2000);
-            }).catch(err => {
-                console.log("Помилка копіювання:", err);
+    document.addEventListener('DOMContentLoaded', () => {
+        const icons = document.querySelectorAll(".copyIcon");
+        icons.forEach((icon) => {
+            icon.addEventListener('click', () => {
+                const value = icon.getAttribute('data-value');
+                icon.style.display = 'none'
+                navigator.clipboard.writeText(value).then(() => {
+                    let success = icon.parentElement.querySelector('.success');
+                    if (!success) {
+                        success = document.createElement('span');
+                        success.classList.add('success');
+
+                        icon.parentElement.appendChild(success);
+                    }
+                    success.style.display = 'block';
+
+                    setTimeout(() => {
+                        success.style.display = 'none';
+                        icon.style.display = 'block'
+                    }, 2000);
+                }).catch(err => {
+                    console.log("Помилка копіювання:", err);
+                });
             });
         });
     });
-});
 </script>

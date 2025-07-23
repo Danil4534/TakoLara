@@ -30,7 +30,8 @@
                 }
 
                 a {
-                    background: rgb(246, 247, 249);
+                    transition: 0.3s ease;
+                    background: transparent !important;
                     color: var(--secondary-light-blue);
                     border-bottom: 2px solid var(--secondary-light-blue);
                 }
@@ -130,6 +131,7 @@
                     }
 
                     a {
+                        transition: 0.3s ease;
                         background: rgb(246, 247, 249);
                         color: var(--secondary-light-blue);
                         border-bottom: 2px solid var(--secondary-light-blue);
@@ -543,7 +545,8 @@
                     }
 
                     a {
-                        background: rgb(246, 247, 249);
+                        transition: 0.3s ease;
+                        background: transparent;
                         color: var(--secondary-light-blue);
                         border-bottom: 2px solid var(--secondary-light-blue);
                     }
@@ -738,7 +741,7 @@
                     }
 
                     a {
-                        background: rgb(246, 247, 249);
+                        background: transparent !important;
                         color: var(--secondary-light-blue);
                         border-bottom: 2px solid var(--secondary-light-blue);
                     }

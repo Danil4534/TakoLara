@@ -118,7 +118,7 @@
                     background-color: var(--primary-deep-blue);
 
                     p {
-                        right: 30%;
+                        right: 0;
                         transform: translate(-50%, -50%);
                     }
                 }
@@ -244,8 +244,8 @@
                     gap: 16px;
 
                     .btnPrev {
-                        min-width: 125px;
-                        height: 48px;
+                        min-width: 147px;
+                        height: 56px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
@@ -267,8 +267,8 @@
                     }
 
                     .btnNext {
-                        width: 100% !important;
-                        height: 48px;
+                        width: 280px !important;
+                        height: 56px;
                         background-color: var(--primary-deep-blue);
                         color: var(--neutral-white);
                         display: flex;

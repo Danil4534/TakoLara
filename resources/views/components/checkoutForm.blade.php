@@ -138,8 +138,13 @@ $chooseProducts = session('chooseProducts');
 
             <hr>
             <div class="btnSection">
-                <button class="btnConfirm" type="submit" id="contactBtnSubmit">Підтвердити</button>
-                <x-secondary-btn text="Підтвердити та підтримати" class="btnCheckout"></x-secondary-btn>
+                <button class="btnConfirm" type="submit">
+                    Підтвердити
+                </button>
+
+                <button class="btnCheckout" id="btnRedirectSupportSuccess" type="submit">
+                    Підтвердити та підтримати
+                </button>
             </div>
 
             <span>

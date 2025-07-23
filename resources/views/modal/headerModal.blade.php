@@ -31,12 +31,12 @@ $products = [
 "anchor" => route('medkits.page')
 ],
 [
-"text" => "РЕБ / РЕБ",
-"anchor" => ""
+"text" => "Для рацій",
+"anchor" => route('radio.page')
 ],
 [
-"text" => "Для дронів",
-"anchor" => route('drones.page')
+"text" => "РЕБ / РЕР",
+"anchor" => route('reb.page')
 ],
 [
 "text" => "Для дронів",

@@ -34,7 +34,8 @@ class CheckoutController extends Controller
             'contact_type.in' => 'Невірний метод звʼязку.',
         ]);
 
-        var_dump($request);
-        // return redirect()->back()->with("error", "");
+        session(['chooseProducts' => []]);
+        if ($request->input())
+            return redirect()->route('success.page');
     }
 }

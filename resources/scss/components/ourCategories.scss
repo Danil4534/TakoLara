@@ -42,6 +42,7 @@
     ul {
         .productCard {
             position: relative;
+
             height: 406px;
             button {
                 position: absolute;
@@ -71,7 +72,7 @@
                 }
 
                 img {
-                    width: 327px;
+                    width: 100%;
                     object-fit: cover !important;
                     height: 172px !important;
                 }
@@ -439,7 +440,7 @@
             width: 100%;
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             column-gap: 32px;
             row-gap: 64px;
         }
@@ -451,18 +452,22 @@
             background-color: var(--neutral-medium-gray-second);
         }
 
-        ul .productCard .productCardHeader img {
-            object-fit: fill;
-            width: 100% !important;
-            height: 232px !important;
-        }
+        ul .productCard {
+            width: 320px !important;
+            height: 464px !important;
 
-        .productCard {
-            height: 520px !important;
+            .productCardHeader {
+                width: 320px !important;
+                img {
+                    object-fit: fill;
+                    width: 320px !important;
+                    height: 200px !important;
+                }
+            }
         }
 
         .cardContent {
-            width: 100%;
+            width: 320px;
             padding: 24px;
             padding-bottom: 33px;
 
@@ -470,7 +475,7 @@
                 font-family: var(--font-family-Light);
                 font-weight: 300;
                 font-style: Light;
-                font-size: 36px;
+                font-size: 28px;
                 line-height: 120%;
                 letter-spacing: 1.5%;
                 vertical-align: middle;
@@ -481,7 +486,7 @@
                 font-family: var(--font-family-Light);
                 font-weight: 300;
                 font-style: Light;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 140%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
@@ -493,8 +498,8 @@
 
         ul {
             .cardBtn {
-                width: 100%;
-                height: 72px;
+                width: 320px;
+                height: 56px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -556,7 +561,7 @@
             width: 100%;
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr) !important;
             column-gap: 32px;
             row-gap: 64px;
         }
@@ -567,11 +572,18 @@
             height: 1px;
             background-color: var(--neutral-medium-gray-second);
         }
-
-        ul .productCard .productCardHeader img {
-            object-fit: fill;
+        ul .productCard {
             width: 100% !important;
-            height: 232px !important;
+            height: 464px !important;
+
+            .productCardHeader {
+                width: 100% !important;
+                img {
+                    object-fit: fill;
+                    width: 100% !important;
+                    height: 200px !important;
+                }
+            }
         }
 
         .productCard {
@@ -587,7 +599,7 @@
                 font-family: var(--font-family-Light);
                 font-weight: 300;
                 font-style: Light;
-                font-size: 36px;
+                font-size: 28px;
                 line-height: 120%;
                 letter-spacing: 1.5%;
                 vertical-align: middle;
@@ -598,7 +610,7 @@
                 font-family: var(--font-family-Light);
                 font-weight: 300;
                 font-style: Light;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 140%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
@@ -611,7 +623,7 @@
         ul {
             .cardBtn {
                 width: 100%;
-                height: 72px;
+                height: 56px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;

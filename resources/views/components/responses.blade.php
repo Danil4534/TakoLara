@@ -38,14 +38,9 @@ $sliderContent = [
             </div>
             @endforeach
         </div>
-
         <div class="slider__nav">
             <x-secondary-btn id="prevBtn" text="Назад" class="btnPrev" iconLeft="ph ph-caret-left icon"></x-secondary-btn>
-
             <x-secondary-btn id="nextBtn" text="Вперед" class="btnNext" iconRight="ph ph-caret-right icon"></x-secondary-btn>
-
-
-
         </div>
         <div class="slider_bottom_nav">
             @for ($i = 0; $i < ceil(count($sliderContent) / 2); $i++) <div class="slider__nav_item">
