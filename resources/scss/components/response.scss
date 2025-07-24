@@ -138,11 +138,6 @@
                 &:hover {
                     border-color: var(--primary-deep-blue);
                     background-color: var(--primary-deep-blue);
-
-                    p {
-                        right: 30%;
-                        transform: translate(-50%, -50%);
-                    }
                 }
             }
 
@@ -170,12 +165,6 @@
                 &:hover {
                     border-color: var(--secondary-light-blue);
                     background-color: var(--secondary-light-blue);
-
-                    p {
-                        left: 50%;
-
-                        transform: translate(-50%, -50%);
-                    }
                 }
             }
         }
@@ -201,8 +190,6 @@
     }
 }
 
-/* Slider */
-
 .btnNext p {
     position: absolute;
     display: flex;
@@ -214,24 +201,9 @@
     transition: left 0.3s ease, transform 0.3s ease;
 }
 
-// .btnNext:hover {
-//     transition: 0.3s ease;
-//     border: 2px solid var(--secondary-light-blue);
-//     background-color: var(--secondary-light-blue);
-// }
-
-// .btnNext:hover p {
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
-
 .btnNext .icon {
     position: absolute;
     right: 24px;
-}
-
-.btnNext:hover .icon {
-    display: none;
 }
 
 .btnPrev p {
@@ -244,26 +216,10 @@
     transform: translate(-50%, -50%);
     transition: right 0.3s ease, transform 0.3s ease;
 }
-
-// .btnPrev:hover {
-//     transition: 0.3s ease;
-//     border: 2px solid var(--primary-deep-blue);
-//     background-color: var(--primary-deep-blue);
-// }
-
-// .btnPrev:hover p {
-//     right: 38%;
-//     transform: translate(-50%, -50%);
-// }
-
 .btnPrev .icon {
     position: absolute;
     left: 20px;
 }
-
-// .btnPrev:hover .icon {
-//     display: none;
-// }
 
 @media screen and (min-width: 768px) {
     .responsesContainer {
@@ -475,10 +431,6 @@
         right: 24px;
     }
 
-    .btnNext:hover .icon {
-        display: none;
-    }
-
     .btnPrev p {
         position: absolute;
         display: flex;
@@ -490,25 +442,10 @@
         transition: right 0.3s ease, transform 0.3s ease;
     }
 
-    // .btnPrev:hover {
-    //     transition: 0.3s ease;
-    //     border: 2px solid var(--primary-deep-blue);
-    //     background-color: var(--primary-deep-blue);
-    // }
-
-    // .btnPrev:hover p {
-    //     right: 38%;
-    //     transform: translate(-50%, -50%);
-    // }
-
     .btnPrev .icon {
         position: absolute;
         left: 20px;
     }
-
-    // .btnPrev:hover .icon {
-    //     display: none;
-    // }
 }
 
 @media screen and (min-width: 1024px) {
@@ -707,25 +644,9 @@
         transform: translate(0, -50%);
         transition: left 0.3s ease, transform 0.3s ease;
     }
-
-    // .btnNext:hover {
-    //     transition: 0.3s ease;
-    //     border: 2px solid var(--secondary-light-blue);
-    //     background-color: var(--secondary-light-blue);
-    // }
-
-    // .btnNext:hover p {
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    // }
-
     .btnNext .icon {
         position: absolute;
         right: 24px;
-    }
-
-    .btnNext:hover .icon {
-        display: none;
     }
 
     .btnPrev p {
@@ -739,25 +660,10 @@
         transition: right 0.3s ease, transform 0.3s ease;
     }
 
-    // .btnPrev:hover {
-    //     transition: 0.3s ease;
-    //     border: 2px solid var(--primary-deep-blue);
-    //     background-color: var(--primary-deep-blue);
-    // }
-
-    // .btnPrev:hover p {
-    //     right: 38%;
-    //     transform: translate(-50%, -50%);
-    // }
-
     .btnPrev .icon {
         position: absolute;
         left: 20px;
     }
-
-    // .btnPrev:hover .icon {
-    //     display: none;
-    // }
 }
 
 @media screen and (min-width: 1440px) {
@@ -960,10 +866,6 @@
     .btnNext .icon {
         position: absolute;
         right: 24px;
-    }
-
-    .btnNext:hover .icon {
-        display: none;
     }
 
     .btnPrev p {
@@ -1183,10 +1085,6 @@
     .btnNext .icon {
         position: absolute;
         right: 24px;
-    }
-
-    .btnNext:hover .icon {
-        display: none;
     }
 
     .btnPrev p {

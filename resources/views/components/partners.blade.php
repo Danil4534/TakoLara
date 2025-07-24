@@ -16,6 +16,7 @@
                 <i class="ph-bold ph-arrow-up-right"></i>
             </a>
         </li>
+
         <li class="partnersMob"><x-picture-tag src="{{ asset('assets/Alla_Zadniprovska.svg') }}" alt="logoUaItLab"
                 :lazy="true" />
             <a href="" class="link">Алла Заднепровська

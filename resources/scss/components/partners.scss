@@ -741,7 +741,7 @@
                     }
 
                     a {
-                        background: transparent !important;
+                        background: var(--neutral-white) !important;
                         color: var(--secondary-light-blue);
                         border-bottom: 2px solid var(--secondary-light-blue);
                     }

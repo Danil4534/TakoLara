@@ -66,18 +66,18 @@ $chooseProducts = session('chooseProducts');
             <div class="userData box">
                 <h6>Контакти замовника</h6>
                 <div class="inputsWrapper">
-                    @include("ui.input", ['content' => ["label" => "Прізвище", "placeholder" => "Введіть прізвище", "name" => "surname"]])
-                    @include("ui.input", ['content' => ["label" => "Ім'я", "placeholder" => "Введіть ім'я", "name" => "firstname"]])
-                    @include("ui.input", ['content' => ["label" => "По батькові", "placeholder" => "Введіть", "name" => "middlename"]])
-                    @include("ui.input", ['content' => ["label" => "Номер телефону", "placeholder" => "+380", "name" => "phone"]])
+                    @include("ui.input", ['content' => ["label" => "Прізвище", "placeholder" => "Введіть прізвище", "name" => "surname", "required"=>'true']])
+                    @include("ui.input", ['content' => ["label" => "Ім'я", "placeholder" => "Введіть ім'я", "name" => "firstname", "required"=>'true']])
+                    @include("ui.input", ['content' => ["label" => "По батькові", "placeholder" => "Введіть", "name" => "middlename", "required"=>'true']])
+                    @include("ui.input", ['content' => ["label" => "Номер телефону", "placeholder" => "+380", "name" => "phone", "required"=>'true']])
                 </div>
             </div>
 
             <div class="userData box">
                 <h6>Доставка</h6>
                 <div class="inputsWrapper">
-                    @include("ui.input", ['content' => ["label" => "Місто / Населений пункт", "placeholder" => "Введіть", "name" => "city", "icon" => "ph ph-magnifying-glass"]])
-                    @include("ui.input", ['content' => ["label" => "Номер відділення", "placeholder" => "Оберіть", "name" => "department", 'type' => 'select', 'options' => ['1' => 'Оберіть номер відділення НП', '2' => '557234', '3' => '557234']]])
+                    @include("ui.input", ['content' => ["label" => "Місто / Населений пункт", "placeholder" => "Введіть", "name" => "city", "icon" => "ph ph-magnifying-glass", "required"=>'true']])
+                    @include("ui.input", ['content' => ["label" => "Номер відділення", "placeholder" => "Оберіть", "name" => "department", 'type' => 'select', "required"=>'true', 'options' => ['1' => 'Оберіть номер відділення НП', '2' => '557234', '3' => '557234']]])
                 </div>
             </div>
 

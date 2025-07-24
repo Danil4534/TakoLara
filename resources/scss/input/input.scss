@@ -12,6 +12,9 @@
         line-height: 120%;
         letter-spacing: 1.4%;
         color: var(--neutral-medium-gray);
+        span {
+            color: red !important;
+        }
     }
     .fillCopyIcon {
         display: none;
@@ -95,7 +98,7 @@
         line-height: 120%;
         letter-spacing: 1.6%;
         outline: none;
-
+        text-overflow: ellipsis;
         color: rgba(28, 47, 67, 1);
         &:hover {
             border-color: var(--neutral-medium-gray);
@@ -116,7 +119,7 @@
         outline: none;
         margin-top: 8px;
         color: var(--neutral-medium-gray);
-
+        resize: none;
         &:hover {
             transition: 0.3s ease;
             border-color: var(--neutral-medium-gray);
@@ -143,7 +146,7 @@
             height: 100%;
             font-family: var(--font-family-Bold);
             font-style: Bold;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 120%;
             letter-spacing: 0%;
         }
@@ -157,6 +160,7 @@
             line-height: 120%;
             letter-spacing: 1.4%;
             color: rgba(28, 47, 67, 1);
+            color: red !important;
         }
     }
 

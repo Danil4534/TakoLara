@@ -14,7 +14,7 @@ $details = [
         <div class="detailsWrapper">
             @foreach ($details as $item)
             @include("ui.input", ["content" => ["label" => $item["label"], "value" => $item['value'], "icon" =>
-            "ph ph-copy-simple"]])
+            "ph ph-copy-simple" , "readonly"=>'readonly']])
             @endforeach
         </div>
     </div>

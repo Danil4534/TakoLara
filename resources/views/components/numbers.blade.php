@@ -11,9 +11,9 @@
         <div class="boxWrapper">
 
             <div class="boxUp">
-                <div class="yellowBox">
-                    <div class="blueBox"></div>
+                <div class="yellowBoxUp">
                 </div>
+                <div class="yellowBoxDown"></div>
             </div>
 
             <div class="boxUp">
@@ -25,7 +25,11 @@
                 </div>
                 <x-picture-tag src="{{ asset('assets/item.svg') }}" alt="Logo" :lazy="true" class="item" />
             </div>
-
+            <div class="boxUp">
+                <div class="yellowBoxUp">
+                </div>
+                <div class="yellowBoxDown"></div>
+            </div>
             <div class="boxUp">
                 <div class="boxContent">
                     <h1 class="animateNumber" data-value="432100">

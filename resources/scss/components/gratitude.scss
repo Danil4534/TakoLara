@@ -148,11 +148,6 @@
                 &:hover {
                     border-color: var(--secondary-light-blue);
                     background-color: var(--secondary-light-blue);
-
-                    p {
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
                 }
             }
         }

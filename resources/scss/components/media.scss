@@ -43,12 +43,6 @@
             object-fit: cover;
             transition: 0.3s ease;
 
-            &:hover {
-                transition: 0.3s ease;
-                transform: scale(1.2);
-                filter: blur(2px);
-            }
-
             button {
                 position: absolute;
                 top: 50%;
@@ -93,10 +87,23 @@
         }
     }
 }
-
-.mediaVideo:has(.videoPrev:hover) .videoInfo .videoTitle,
-.mediaVideo:has(.videoPrev:hover) .videoInfo .videoDate i,
-.mediaVideo:has(.videoPrev:hover) .videoInfo .videoDate p {
+.mediaVideo:hover {
+    color: var(--secondary-light-blue);
+}
+.mediaVideo:hover .videoPrev img {
+    transition: 0.3s ease;
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+.mediaVideo:hover .videoInfo .videoTitle {
+    transition: 0.3s ease;
+    color: var(--primary-deep-blue);
+    text-decoration: underline;
+}
+.mediaVideo:hover .videoInfo .videoDate i {
+    color: var(--secondary-light-blue);
+}
+.mediaVideo:hover .videoInfo .videoDate p {
     color: var(--secondary-light-blue);
 }
 
