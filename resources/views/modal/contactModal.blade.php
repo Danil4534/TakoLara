@@ -1,5 +1,5 @@
 <div id="contactModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" id="contactModalContent">
         <i class="ph ph-x close-btn" id="closeContactBtn"></i>
         <h4>Зв'язатися</h4>
         <p>Залиште своє запитання або повідомлення у формі нижче.</p>
@@ -13,7 +13,7 @@
                 "name" => "name"
                 ]
                 ])
-               
+
                 @include("ui.input", [
                 'content' => [
                 "label" => "Номер телефону",
@@ -36,11 +36,11 @@
             "placeholder" => "Оберіть тему",
             "name" => "theme",
             'type'=>'select',
-        'options' => [
+            'options' => [
             '1' => 'Опція 1',
             '2' => 'Опція 2',
             '3' => 'Опція 3',
-    ]
+            ]
             ]
             ])
             @include("ui.textarea", [

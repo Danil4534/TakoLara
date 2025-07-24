@@ -3,20 +3,24 @@ import './slider'
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");
-  const closeModalContact = document.querySelector("#closeContactBtn");
+  const closeModalContactBtn = document.querySelector("#closeContactBtn");
+  const modalContactContent = document.querySelector('#contactModalContent')
   const openPreOrderBtn = document.querySelectorAll("#btnPreOrder");
   const modalPreOrder = document.querySelector("#hidden_preOrder");
   const modalPreOrderContent = document.querySelector("#hidden_preOrder_content")
   const closeModalPreOrder= document.querySelector('#closePreOrderBtn');
-const categoriesBtnToggle = document.getElementById('buttonSelectToggle');
-const categoriesBtnToggleIcon = document.getElementById('toggleIcon');
-const categoriesModal = document.getElementById('categoriesModal');
-const categoriesModalContent = document.getElementById('categoriesModalContent');
-
+  const categoriesBtnToggle = document.getElementById('buttonSelectToggle');
+  const categoriesBtnToggleIcon = document.getElementById('toggleIcon');
+  const categoriesModal = document.getElementById('categoriesModal');
+  const categoriesModalContent = document.getElementById('categoriesModalContent');
   const successBtn = document.querySelector('#btnRedirectSupportSuccess')
   const successModal = document.querySelector('#successModal')
   const successModalContent = document.querySelector('#successModalContent')
   const successModalClose = document.querySelectorAll('#closeSuccessModal')
+  const burgerBtn = document.querySelector("#burger");
+  const headerModalNav = document.querySelector("#hidden_header_nav");
+  const headerContent = document.querySelector("#hidden_header_nav_content");
+  const headerModalNavClose = document.querySelector("#closeBurger");
 
   successBtn?.addEventListener('click', ()=>{
     successModal.classList.add('active')
@@ -45,12 +49,7 @@ categoriesBtnToggle.addEventListener('click', () => {
   }
 });
 
-
-  const burgerBtn = document.querySelector("#burger");
-  const headerModalNav = document.querySelector("#hidden_header_nav");
-  const headerContent = document.querySelector("#hidden_header_nav_content");
-  const headerModalNavClose = document.querySelector("#closeBurger");
-
+ 
 
 openPreOrderBtn.forEach(btn=>
   btn?.addEventListener("click",()=>{
@@ -66,7 +65,6 @@ openPreOrderBtn.forEach(btn=>
     headerModalNavClose?.classList.add("active");
   });
 
-
   headerModalNavClose?.addEventListener("click", () => {
     headerModalNavClose.classList.remove("active");
     burgerBtn.classList.remove("disabled");
@@ -81,13 +79,28 @@ openPreOrderBtn.forEach(btn=>
   });
 
 
-  closeModalContact?.addEventListener("click", () => {
+  closeModalContactBtn?.addEventListener("click", () => {
     modalContact?.classList.remove("active");
   });
 
   closeModalPreOrder?.addEventListener("click", ()=>{
      modalPreOrder?.classList.remove("active");    modalPreOrderContent?.classList.remove("active");
   })
+  modalPreOrder.addEventListener('click', ()=>{
+     modalPreOrder?.classList.remove("active");    
+     modalPreOrderContent?.classList.remove("active");
+  })
+  modalPreOrderContent.addEventListener('click', (e)=>{
+  e.stopPropagation()
+})
+  modalContact.addEventListener('click', ()=>{
+    modalContact.classList.remove('active')
+    modalContactContent.classList.remove('active')
+  })
+ modalContactContent.addEventListener('click',(e)=>{
+    e.stopPropagation()
+
+ })
 });
 
 

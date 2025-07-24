@@ -171,23 +171,13 @@
                     display: flex;
                     flex-direction: row;
                     gap: 32px;
-                    .inputContainer {
-                        label {
-                            font-family: var(--font-family-Regular);
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 120%;
-                            letter-spacing: 1.4%;
-                        }
-                        input {
-                            height: 48px;
-                            padding: 0 16px;
-                        }
-                    }
                 }
                 .inputContainer {
+                    select {
+                        height: 48px !important;
+                    }
                     input {
-                        height: 48px;
+                        height: 48px !important;
                         padding: 0 16px;
                         &::placeholder {
                             font-family: var(--font-family-Light);
@@ -297,19 +287,6 @@
                     display: flex;
                     flex-direction: row;
                     gap: 32px;
-                    .inputContainer {
-                        label {
-                            font-family: var(--font-family-Regular);
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 120%;
-                            letter-spacing: 1.4%;
-                        }
-                        input {
-                            height: 48px;
-                            padding: 0 16px;
-                        }
-                    }
                 }
                 .inputContainer {
                     input {
@@ -322,6 +299,9 @@
                             line-height: 120%;
                             letter-spacing: 1.6%;
                         }
+                    }
+                    select {
+                        height: 48px !important;
                     }
                     textarea {
                         padding: 16px;
@@ -431,13 +411,12 @@
                             line-height: 120%;
                             letter-spacing: 1.4%;
                         }
-                        input {
-                            height: 48px;
-                            padding: 0 16px;
-                        }
                     }
                 }
                 .inputContainer {
+                    select {
+                        height: 48px !important;
+                    }
                     input {
                         height: 48px !important;
                         padding: 0 16px;
