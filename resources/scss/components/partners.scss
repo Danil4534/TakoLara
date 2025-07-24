@@ -19,19 +19,22 @@
 
         li {
             width: 100%;
-
+            a {
+                font-weight: 500 !important;
+            }
             &:hover:not(li:first-child) {
                 transition: 0.3s ease;
                 background: rgb(246, 247, 249);
-
+                cursor: pointer !important;
                 img {
                     transition: 0.3s ease;
                     transform: scale(1.1);
                 }
 
                 a {
+                    font-weight: 500 !important;
                     transition: 0.3s ease;
-                    background: transparent !important;
+                    background: rgb(246, 247, 249) !important;
                     color: var(--secondary-light-blue);
                     border-bottom: 2px solid var(--secondary-light-blue);
                 }
@@ -154,7 +157,7 @@
                 a {
                     width: calc(100% - 24px);
                     height: 40px;
-                    background: var(--neutral-white);
+
                     position: absolute;
                     display: flex;
                     justify-content: space-between;
@@ -216,7 +219,7 @@
 
             li {
                 width: 100%;
-
+                font-weight: 500 !important;
                 hr {
                     margin-top: 24px;
                     width: 100%;
@@ -265,7 +268,7 @@
                         align-items: center;
                         justify-content: space-between;
                         text-decoration: none;
-                        font-family: var(--font-family-Light);
+                        font-family: var(--font-family-Medium) !important;
                         font-weight: 300;
                         font-style: Light;
                         font-size: 12px;
@@ -325,7 +328,7 @@
                         text-decoration: none;
                         bottom: 4px;
                         font-family: var(--font-family-Light);
-                        font-weight: 300;
+                        font-weight: 500px;
                         font-style: Light;
                         font-size: 12px;
                         line-height: 120%;
@@ -457,8 +460,8 @@
                     align-items: center;
                     text-decoration: none;
                     bottom: 4px;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
+                    font-family: var(--font-family-Medium);
+                    font-weight: 500;
                     font-style: Light;
                     font-size: 12px;
                     line-height: 120%;
@@ -538,7 +541,7 @@
                 &:hover:not(li:first-child) {
                     transition: 0.3s ease;
                     background: rgb(246, 247, 249);
-
+                    cursor: pointer !important;
                     img {
                         transition: 0.3s ease;
                         transform: scale(1.1);
@@ -546,7 +549,7 @@
 
                     a {
                         transition: 0.3s ease;
-                        background: transparent;
+                        background: rgb(246, 247, 249) !important;
                         color: var(--secondary-light-blue);
                         border-bottom: 2px solid var(--secondary-light-blue);
                     }
@@ -575,9 +578,9 @@
                         align-items: center;
                         text-decoration: none;
                         bottom: 16px !important;
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        font-family: var(--font-family-Medium);
+                        font-weight: 500;
+
                         font-size: 16px !important;
                         line-height: 120%;
                         letter-spacing: 1.6%;
@@ -649,8 +652,8 @@
                     align-items: center;
                     text-decoration: none;
                     bottom: 16px;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
+                    font-family: var(--font-family-Medium);
+                    font-weight: 500;
                     font-style: Light;
                     font-size: 16px;
                     line-height: 120%;
@@ -734,14 +737,15 @@
                 &:hover:not(li:first-child) {
                     transition: 0.3s ease;
                     background: rgb(246, 247, 249);
-
+                    cursor: pointer !important;
                     img {
                         transition: 0.3s ease;
                         transform: scale(1.1);
                     }
 
                     a {
-                        background: var(--neutral-white) !important;
+                        font-weight: 500 !important;
+                        background: rgb(246, 247, 249) !important;
                         color: var(--secondary-light-blue);
                         border-bottom: 2px solid var(--secondary-light-blue);
                     }
@@ -749,7 +753,7 @@
 
                 h1 {
                     font-weight: 300;
-                    font-style: Light;
+
                     font-size: 56px;
                     line-height: 120%;
                     letter-spacing: 1.25%;
@@ -770,9 +774,8 @@
                         align-items: center;
                         text-decoration: none;
                         bottom: 16px !important;
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        font-family: var(--font-family-Medium) !important;
+                        font-weight: 500;
                         font-size: 16px !important;
                         line-height: 120%;
                         letter-spacing: 1.6%;
@@ -844,7 +847,7 @@
                     align-items: center;
                     text-decoration: none;
                     bottom: 16px;
-                    font-family: var(--font-family-Light);
+                    font-family: var(--font-family-Medium);
                     font-weight: 300;
                     font-style: Light;
                     font-size: 16px;
