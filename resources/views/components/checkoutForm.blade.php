@@ -69,7 +69,7 @@ $chooseProducts = session('chooseProducts');
                     @include("ui.input", ['content' => ["label" => "Прізвище", "placeholder" => "Введіть прізвище", "name" => "surname", "required"=>'true']])
                     @include("ui.input", ['content' => ["label" => "Ім'я", "placeholder" => "Введіть ім'я", "name" => "firstname", "required"=>'true']])
                     @include("ui.input", ['content' => ["label" => "По батькові", "placeholder" => "Введіть", "name" => "middlename", "required"=>'true']])
-                    @include("ui.input", ['content' => ["label" => "Номер телефону", "placeholder" => "+380", "name" => "phone", "required"=>'true']])
+                    @include("ui.input", ['content' => ["label" => "Номер телефону", "placeholder" => "+380", "name" => "phoneNumber", "required"=>'true']])
                 </div>
             </div>
 

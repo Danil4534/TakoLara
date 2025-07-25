@@ -38,7 +38,11 @@
             outline: none;
             cursor: pointer;
             line-height: 120%;
-
+            option {
+                appearance: none;
+                border-radius: 20px;
+                background: var(--neutral-white);
+            }
             &:hover {
                 border-color: var(--neutral-medium-gray);
             }

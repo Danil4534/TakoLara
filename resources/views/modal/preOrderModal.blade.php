@@ -23,36 +23,8 @@ $chooseProducts = session('chooseProducts');
             </div>
             @else
             <div class="preOrderModalContent">
-                @foreach ((array) $chooseProducts as $product )
-                <div class="productCard">
-                    <div class="productCardWrapper">
-                        <div class="productCardHeader">
-                            <x-picture-tag src="{{ asset($product['img'] ?? '') }}" lazy="true"></x-picture-tag>
-                            <h3>{{ $product['title'] ?? '' }}</h3>
-                        </div>
-                        <div class="productCardBottom">
-                            <div class="counter" data-product-id="{{ $loop->index }}">
-                                <i class="ph ph-minus decrement"></i>
-                                <input type="text" class="count-input" value="{{ $product['cartCount'] ?? 1 }}" min="1">
-                                <i class="ph ph-plus increment"></i>
-                            </div>
-                            <div class="cost">
-                                <h3>
-                                    {{ $product['cost'] ?? '' }},00<span>грн</span>
-                                </h3>
-                                <p>
-                                    собівартість за од.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <form method="POST" action="{{ route('remove.from.cart') }}">
-                        @csrf
-                        <input type="hidden" name="index" value="{{ $loop->index }}">
-                        <button type="submit"> <i class="ph ph-trash-simple trash"></i></button>
-                    </form>
-
-                </div>
+                @foreach ((array) $chooseProducts as $index=>$product )
+                <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
                 @endforeach
             </div>
             <div class="preOrderBottomBox">

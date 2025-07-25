@@ -10,7 +10,8 @@
                 'content' => [
                 "label" => "Ім'я",
                 "placeholder" => "Введіть ім'я",
-                "name" => "name"
+                "name" => "name",
+                "required"=>'true'
                 ]
                 ])
 
@@ -18,7 +19,9 @@
                 'content' => [
                 "label" => "Номер телефону",
                 "placeholder" => "+380",
-                "name" => "phoneNumber"
+                'value'=> "+380",
+                "name" => "phoneNumber",
+                "required"=>'true'
                 ]
                 ])
             </div>
@@ -27,7 +30,7 @@
             "label" => "Пошта",
             "placeholder" => "Введіть пошту",
             "name" => "email",
-            "type" => "email"
+            "type" => "email","required"=>'true'
             ]
             ])
             @include("ui.input", [
@@ -36,6 +39,7 @@
             "placeholder" => "Оберіть тему",
             "name" => "theme",
             'type'=>'select',
+            "required"=>'true',
             'options' => [
             '1' => 'Опція 1',
             '2' => 'Опція 2',

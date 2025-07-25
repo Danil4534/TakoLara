@@ -100,9 +100,14 @@
                 display: flex;
                 flex-direction: column;
                 padding: 8px;
-                padding-bottom: 16px !important;
                 position: relative;
-                gap: 16px;
+                .productCardMobHeader {
+                    display: flex !important;
+                    gap: 16px;
+                    h3 {
+                        width: 147px !important;
+                    }
+                }
                 form {
                     position: absolute;
                     right: 8px;
@@ -113,85 +118,68 @@
                     }
                     .trash {
                         font-size: 24px;
-                        color: red;
-
-                        &:hover {
-                            cursor: pointer;
-                        }
+                        color: var(--neutral-medium-gray) !important;
                     }
                 }
                 .productCardHeader {
                     display: flex;
                     gap: 16px;
-                    h3 {
-                        width: 172px !important;
-                        @include font-light;
-                        font-size: 14px;
-                        color: var(--primary-dark-navy);
-                        line-height: 120%;
-                        letter-spacing: 1.6%;
-                        vertical-align: middle;
-                    }
                 }
+
                 .productCardBottom {
                     display: flex;
                     justify-content: space-between;
-                    padding: 0 8px;
-                    padding-top: 16px;
+                    margin-top: 16px;
                     .counter {
                         display: flex;
                         align-items: center;
                         gap: 8px;
                         width: 128px;
+
                         input {
                             width: 64px;
                             height: 36px;
                             border-radius: 8px;
                             outline: none;
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
+                            @include font-light;
                             font-size: 14px;
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
-
                             text-align: center;
                             border: 1px solid rgba(208, 208, 208, 1);
                         }
+
                         i {
                             font-size: 24px;
+
                             &:hover {
                                 cursor: pointer;
                             }
                         }
                     }
+
                     .cost {
                         display: flex;
                         flex-direction: column;
                         justify-content: end;
                         text-align: end;
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 16px;
                         line-height: 140%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
-                        span {
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
-                            font-size: 12px;
 
+                        span {
+                            @include font-light;
+                            font-size: 12px;
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
                         }
+
                         p {
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
+                            @include font-light;
                             font-size: 12px;
                             color: rgba(107, 107, 107, 1);
                             line-height: 120%;
@@ -203,15 +191,14 @@
 
                 h3 {
                     flex-wrap: wrap;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 14px;
                     color: rgba(28, 47, 67, 1);
                     line-height: 120%;
                     letter-spacing: 1.6%;
                     vertical-align: middle;
                 }
+
                 img {
                     width: 116px;
                     border-radius: 8px;

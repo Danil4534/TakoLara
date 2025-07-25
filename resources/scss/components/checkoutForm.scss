@@ -197,12 +197,6 @@
                 display: none;
             }
 
-            .priceData {
-                hr {
-                    display: none;
-                }
-            }
-
             .inputsWrapper {
                 display: grid;
                 gap: 24px !important;
@@ -267,7 +261,9 @@
 
             .priceData {
                 width: 100%;
-
+                hr {
+                    display: none;
+                }
                 p {
                     font-family: var(--font-family-Light);
                     font-style: Light;
@@ -548,52 +544,6 @@
             color: var(--primary-dark-navy);
             margin-bottom: 8px;
         }
-        .productCard {
-            height: 100%;
-            display: flex !important;
-            flex-direction: row !important;
-            h3 {
-                display: inline !important;
-            }
-            .productCardWrapper {
-                width: 100% !important;
-                height: auto !important;
-                display: flex !important;
-                flex-direction: column !important;
-                justify-content: space-between !important;
-            }
-        }
-        .productCard {
-            height: 100%;
-            display: flex !important;
-            position: relative;
-
-            .productCardMobHeader {
-                gap: 16px;
-                h3 {
-                    width: 100% !important;
-                    display: none !important;
-                }
-            }
-
-            .productCardWrapper {
-                width: 100% !important;
-                height: auto !important;
-                display: flex;
-                margin-left: 16px;
-                padding: 10px 0;
-                flex-direction: column !important;
-                justify-content: space-between !important;
-                .productCardHeader {
-                }
-                .productCardBottom {
-                    display: flex !important;
-                }
-            }
-            .productCardBottom {
-                display: none !important;
-            }
-        }
 
         .box {
             padding: 16px;
@@ -804,22 +754,6 @@
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
-            }
-
-            .productCard {
-                height: 100%;
-                display: flex !important;
-                flex-direction: row !important;
-                h3 {
-                    display: inline !important;
-                }
-                .productCardWrapper {
-                    width: 100% !important;
-                    height: auto !important;
-                    display: flex !important;
-                    flex-direction: column !important;
-                    justify-content: space-between !important;
-                }
             }
 
             .box {
@@ -1091,7 +1025,7 @@
             gap: 8px;
 
             .formLeftSide {
-                min-width: fit-content !important;
+                width: 100% !important;
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
@@ -1429,7 +1363,7 @@
             }
 
             .formLeftSide {
-                width: calc(100% - 645px);
+                width: calc(100% - 645px) !important;
                 display: flex;
                 flex-direction: column;
                 gap: 8px;

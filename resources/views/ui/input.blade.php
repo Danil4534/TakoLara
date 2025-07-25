@@ -35,3 +35,26 @@
     </div>
     @enderror
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const phoneInput = document.querySelector('input[name="phoneNumber"]');
+        const prefix = '+380';
+
+        if (phoneInput && !phoneInput.value.startsWith(prefix)) {
+            phoneInput.value = prefix;
+        }
+
+        phoneInput.addEventListener('input', function() {
+            if (!this.value.startsWith(prefix)) {
+                this.value = prefix;
+            }
+        });
+
+        phoneInput.addEventListener('keydown', function(e) {
+            if (this.selectionStart < prefix.length && ['Backspace', 'Delete'].includes(e.key)) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
