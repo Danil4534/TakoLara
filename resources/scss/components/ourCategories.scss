@@ -9,14 +9,13 @@
     gap: 32;
 
     h1 {
-        font-weight: 300;
-        font-style: Light;
+        font-family: var(--font-family-RegularHead) !important;
+
         font-size: 36px;
         line-height: 120%;
         letter-spacing: 1.35%;
         vertical-align: middle;
         color: var(--primary-dark-navy);
-        font-family: var(--font-family-Light) !important;
     }
 
     .productCards {
@@ -236,7 +235,7 @@
             letter-spacing: 1.35%;
             vertical-align: middle;
             color: var(--primary-dark-navy);
-            font-family: var(--font-family-Light) !important;
+            font-family: var(--font-family-RegularHead) !important;
         }
 
         .productCards {
@@ -346,13 +345,12 @@
 
         h1 {
             font-weight: 300;
-            font-style: Light;
             font-size: 36px;
             line-height: 120%;
             letter-spacing: 1.35%;
             vertical-align: middle;
             color: var(--primary-dark-navy);
-            font-family: var(--font-family-Light) !important;
+            font-family: var(--font-family-RegularHead) !important;
         }
 
         .productCards {
@@ -463,13 +461,12 @@
 
         h1 {
             font-weight: 300;
-            font-style: Light;
             font-size: 56px;
             line-height: 120%;
             letter-spacing: 1.35%;
             vertical-align: middle;
             color: var(--primary-dark-navy);
-            font-family: var(--font-family-Light) !important;
+            font-family: var(--font-family-RegularHead) !important;
         }
 
         .productCards {
@@ -590,7 +587,7 @@
             letter-spacing: 1.35%;
             vertical-align: middle;
             color: var(--primary-dark-navy);
-            font-family: var(--font-family-Light) !important;
+            font-family: var(--font-family-RegularHead) !important;
         }
 
         .productCards {

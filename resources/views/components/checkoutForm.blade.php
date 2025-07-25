@@ -89,7 +89,8 @@ $chooseProducts = session('chooseProducts');
                 "label" => "Номер телефону",
                 "placeholder" => "+380 ",
                 "name" => "contact_phone",
-                "id" => "contactPhoneInput", "required"=>'true'
+                "id" => "contactPhoneInput",
+                "required"=>'true'
                 ]
                 ])
             </div>

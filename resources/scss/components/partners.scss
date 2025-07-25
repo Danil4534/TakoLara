@@ -21,7 +21,9 @@
             width: 100%;
             a {
                 font-weight: 500 !important;
+                transition: 0.3s ease;
             }
+            transition: 0.3s ease;
             &:hover:not(li:first-child) {
                 transition: 0.3s ease;
                 background: rgb(246, 247, 249);
