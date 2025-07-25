@@ -311,6 +311,11 @@
             .footerSloganWrapper {
                 display: flex;
                 justify-content: space-between;
+                .footerSlogan {
+                    h2 {
+                        min-width: 286px;
+                    }
+                }
             }
 
             .socialLinksBoxUp {
@@ -480,6 +485,11 @@
             .footerSloganWrapper {
                 display: flex;
                 justify-content: space-between;
+                .footerSlogan {
+                    h2 {
+                        font-size: 16px;
+                    }
+                }
             }
 
             .socialLinksBoxUp {
@@ -577,7 +587,13 @@
                 margin-left: 72px;
                 flex-direction: column;
                 gap: 24px;
-
+                .socialLinks {
+                    li {
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
                 button {
                     width: 100%;
                     height: 48px;
@@ -586,6 +602,7 @@
                     background: transparent;
                     border: 2px solid var(--neutral-white);
                     display: flex;
+                    justify-content: space-between;
                     font-family: var(--font-family-Light);
                     font-weight: 300;
                     font-style: Light;
@@ -599,7 +616,7 @@
                     color: var(--neutral-white);
 
                     i {
-                        font-size: 24px;
+                        font-size: 20px;
                     }
                 }
             }

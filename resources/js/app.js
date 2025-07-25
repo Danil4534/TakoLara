@@ -13,27 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const categoriesBtnToggleIcon = document.getElementById('toggleIcon');
   const categoriesModal = document.getElementById('categoriesModal');
   const categoriesModalContent = document.getElementById('categoriesModalContent');
-  const successBtn = document.querySelector('#btnRedirectSupportSuccess')
-  const successModal = document.querySelector('#successModal')
-  const successModalContent = document.querySelector('#successModalContent')
-  const successModalClose = document.querySelectorAll('#closeSuccessModal')
+
   const burgerBtn = document.querySelector("#burger");
   const headerModalNav = document.querySelector("#hidden_header_nav");
   const headerContent = document.querySelector("#hidden_header_nav_content");
   const headerModalNavClose = document.querySelector("#closeBurger");
 
-  successBtn?.addEventListener('click', ()=>{
-    successModal.classList.add('active')
-    successModalContent.classList.add('active')
-    modalContact.classList.remove('active')
-  })
-  successModalClose.forEach((element)=>{
-    element.addEventListener('click',()=>{
-    successModal.classList.remove('active')
-    successModalContent.classList.remove('active')
-    modalContact.classList.remove('active')
-    })
-  })
+
 
 categoriesBtnToggle.addEventListener('click', () => {
   if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {

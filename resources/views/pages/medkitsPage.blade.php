@@ -39,7 +39,7 @@
             @include('components.products')
         </section>
         <section>
-            @include('components.categories', ['content' => ["title" => "Iнші категорії"]])
+            @include('components.categories', ['content' => ["title" => "Iнші Категорії"]])
         </section>
         <section>
             @include('components.details')

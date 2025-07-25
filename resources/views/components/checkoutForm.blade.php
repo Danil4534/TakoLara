@@ -93,6 +93,7 @@ $chooseProducts = session('chooseProducts');
                 "required"=>'true'
                 ]
                 ])
+
             </div>
         </div>
 
@@ -139,11 +140,11 @@ $chooseProducts = session('chooseProducts');
 
             <hr>
             <div class="btnSection">
-                <button class="btnConfirm" type="submit">
+                <button class="btnConfirm" type="submit" name="action" value="confirm">
                     Підтвердити
                 </button>
 
-                <button class="btnCheckout" id="btnRedirectSupportSuccess" type="submit">
+                <button class="btnCheckout" id="btnRedirectSupportSuccess" type="submit" name="action" value="support">
                     Підтвердити та підтримати
                 </button>
             </div>
@@ -192,14 +193,12 @@ $chooseProducts = session('chooseProducts');
 
         function updateTotalPrice() {
             let total = 0;
-
             productCards.forEach(card => {
                 const cost = parseFloat(card.dataset.cost || '0');
                 const quantityInput = card.querySelector('.count-input');
                 const quantity = parseInt(quantityInput.value || '1');
                 total += cost * quantity;
             });
-
             totalPriceElement.innerHTML = `${formatPrice(total)}<span>грн</span>`;
         }
 
