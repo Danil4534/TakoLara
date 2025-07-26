@@ -19,6 +19,7 @@
         "vite": "^6.2.4"
     },
     "dependencies": {
-        "@phosphor-icons/web": "^2.1.2"
+        "@phosphor-icons/web": "^2.1.2",
+        "swiper": "^11.2.10"
     }
 }
