@@ -1,13 +1,13 @@
 @php
 $sliderContent = [
-['img' => "", "content" => "1"],
-['img' => "", "content" => "2"],
-['img' => "", "content" => "3"],
-['img' => "", "content" => "4"],
-['img' => "", "content" => "1"],
-['img' => "", "content" => "2"],
-['img' => "", "content" => "3"],
-['img' => "", "content" => "4"],
+['img' => "", "content" => "1",'type'=>"picture"],
+['img' => "", "content" => "2",'type'=>"video"],
+['img' => "", "content" => "3",'type'=>"picture"],
+['img' => "", "content" => "4",'type'=>"video"],
+['img' => "", "content" => "1",'type'=>"picture"],
+['img' => "", "content" => "2",'type'=>"video"],
+['img' => "", "content" => "3",'type'=>"picture"],
+['img' => "", "content" => "4", 'type'=>"video"],
 ];
 @endphp
 
@@ -45,7 +45,18 @@ $sliderContent = [
         <div class="swiper-wrapper">
             @foreach ($sliderContent as $item)
             <div class="swiper-slide">
-                <x-picture-tag src="{{ asset('assets/sliderBg.svg') }}"></x-picture-tag>
+                <div class="slide">
+                    @if($item['type']=== 'picture')
+                    <div class="slide_hover_block photo">
+                        <button><span>Переглянути</span> <i class="ph ph-eye"></i></button>
+                    </div>
+                    @else
+                    <div class="slide_hover_block video">
+                        <button><i class="ph ph-play"></i></button>
+                    </div>
+                    @endif
+                    <x-picture-tag src="{{ asset('assets/sliderBg.svg') }}"></x-picture-tag>
+                </div>
             </div>
             @endforeach
         </div>
@@ -60,28 +71,3 @@ $sliderContent = [
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const windowWidth = window.innerWidth;
-
-
-        new Swiper('.responseSlider', {
-            slidesPerView: windowWidth <= 376 ? windowWidth <= 768 ? 3 : 4 : 4,
-            spaceBetween: windowWidth <= 375 ? 16 : 32,
-            slidesPerGroup: 2,
-            loop: true,
-            keyboard: {
-                enabled: true
-            },
-            pagination: {
-                el: ".slider_bottom_nav",
-                clickable: true,
-
-            },
-            navigation: {
-                nextEl: "#nextBtn",
-                prevEl: "#prevBtn",
-            }
-        });
-    });
-</script>
