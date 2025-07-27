@@ -1,0 +1,109 @@
+@media screen and (max-width: 375px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .backgroundBanner {
+        height: 420px !important;
+        // background-image: url("/public/assets/drone.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        img {
+            width: 100%;
+            object-fit: cover !important;
+            height: 420px;
+        }
+    }
+}
+@media screen and (min-width: 375px) {
+    .bannerPicture {
+        display: none;
+    }
+    .backgroundBanner {
+        min-height: 562px;
+        background-image: url("/public/assets/drone.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        img {
+            width: 100% !important;
+            object-fit: cover !important;
+            height: 420px;
+            mix-blend-mode: Soft light;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .backgroundBanner {
+        min-width: 100% !important;
+        height: 532px;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        img {
+            min-width: 100% !important;
+            object-fit: cover !important;
+            height: 100%;
+            mix-blend-mode: Soft light;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .backgroundBanner {
+        width: 100%;
+        height: 532px !important;
+        // background-image: url("/public/assets/drone.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        img {
+            width: 100%;
+            object-fit: cover !important;
+            height: 100%;
+            mix-blend-mode: Soft light;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .backgroundBanner {
+        width: 100%;
+        height: 720px !important;
+        background-image: url("/public/assets/drone.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        img {
+            width: 100%;
+            object-fit: cover !important;
+            height: 100%;
+            mix-blend-mode: Soft light;
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .backgroundBanner {
+        width: 100%;
+        height: 920px !important;
+        background-image: url("/public/assets/drone.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        img {
+            width: 100%;
+            object-fit: cover !important;
+            height: 100%;
+            mix-blend-mode: Soft light;
+        }
+    }
+}

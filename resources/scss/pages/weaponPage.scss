@@ -1,8 +1,57 @@
-.weaponBg {
-    height: 420px !important;
+@media screen and (min-width: 375px) {
+    .bannerPicture {
+        display: none !important;
+    }
 
-    img {
-        object-fit: cover !important;
-        height: 420px;
+    .weaponBg {
+        background-image: url("/public/assets/weaponMob_375.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .weaponBg {
+        background-position: center;
+        background-size: auto !important;
+        background-image: url("/public/assets/weaponBanner_768.svg") !important;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .weaponBg {
+        width: 100%;
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .weaponBg {
+        width: 100%;
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .weaponBg {
+        width: 100%;
+
+        background-position: center;
+        background-image: url("/public/assets/weaponBanner_1024.svg") !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 16px;
     }
 }

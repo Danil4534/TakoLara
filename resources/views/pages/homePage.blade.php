@@ -25,7 +25,7 @@
             @include('components.banner', [
             'content' => [
             'banner' => "assets/drone.svg",
-            'class' => "droneBg",
+            'class' => "backgroundBanner",
             'bannerTitle' => 'Технології у тилу - сила на передовій',
             'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "btnActive" => true,

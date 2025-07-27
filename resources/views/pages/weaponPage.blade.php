@@ -22,7 +22,7 @@
             @include ("components.banner", [
             'content' => [
             'banner' => "assets/weaponBanner.svg",
-            'class' => "droneBg weaponBg",
+            'class' => "backgroundBanner weaponBg",
             'bannerTitle' => 'Для зброї',
             'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",

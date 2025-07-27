@@ -22,7 +22,7 @@
             @include ("components.banner", [
             'content' => [
             'banner' => "assets/radiosetBg.svg",
-            'class' => "droneBg radioBg",
+            'class' => "backgroundBanner radioBg",
             'bannerTitle' => 'Для рацій',
             'subtitle' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "btnActive" => false,
