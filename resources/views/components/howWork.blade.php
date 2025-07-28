@@ -1,34 +1,34 @@
 @php
 
 $mapContent =[
-['icon'=>"ph ph-binoculars", "text"=>"Ознайомитеся з пропозиціями"],
-['icon'=>"ph ph-package", "text"=>"Додайте в передзамовлення"],
-['icon'=>"ph ph-note-pencil", "text"=>"Заповніть форму"],
-['icon'=>"ph ph-truck", "text"=>"Отримати посилку на НП"],
-['icon'=>"ph ph-note-pencil", "text"=>"Задонатити (якщо/коли буде можливість)"],
+['icon'=>"ph-fill ph-binoculars", "text"=>"Ознайомитеся з пропозиціями"],
+['icon'=>"ph-fill ph-package", "text"=>"Додайте в передзамовлення"],
+['icon'=>"ph-fill ph-note-pencil", "text"=>"Заповніть форму"],
+['icon'=>"ph-fill ph-truck", "text"=>"Отримати посилку на НП"],
+['icon'=>"ph-fill ph-note-pencil", "text"=>"Задонатити (якщо/коли буде можливість)"],
 ];
 
 
 $content=[
-['icon'=>"ph ph-binoculars",
+['icon'=>"ph-fill ph-binoculars",
 "title"=>'Ознайомитись з пропозиціями',
 'subtitle'=>'Перегляньте наш каталог деталей для дронів і зброї, щоб знайти потрібні компоненти. Ми регулярно оновлюємо асортимент відповідно до актуальних потреб фронту.',],
 
-['icon'=>"ph ph-package",
+['icon'=>"ph-fill ph-package",
 "title"=>'Додайте в передзамовлення',
 'subtitle'=>'Залиште заявку на передзамовлення і ми повідомимо вас, щойно товар буде доступний до відправки.',],
 
-['icon'=>"ph ph-note-pencil",
+['icon'=>"ph-fill ph-note-pencil",
 "title"=>'Заповніть форму',
 'subtitle'=>'Залиште заявку на передзамовлення і ми повідомимо вас, щойно товар буде доступний до відправки.',],
 
 
 
-['icon'=>"ph ph-truck",
+['icon'=>"ph-fill ph-truck",
 "title"=>'Отримати посилку на НП',
 'subtitle'=>'Перевірте посилку – перед відходом відкрийте та переконайтеся, що все на місці.',],
 
-['icon'=>"ph ph-note-pencil",
+['icon'=>"ph-fill ph-note-pencil",
 "title"=>'Задонатити',
 'subtitle'=>'Оберіть спосіб донату – банківський переказ, PayPal, Patreon, криптовалюта або інші варіанти, які пропонує автор/проєкт.',],
 
@@ -51,13 +51,15 @@ $content=[
                 </p>
             </div>
 
-            @foreach ( $mapContent as $item )
-            <div class="mapItem">
-                <i class="{{ $item['icon'] }}"></i>
-                <p>{{$item['text'] }}</p>
+            <div class="howWorkVector">
+                @foreach ( $mapContent as $item )
+                <div class="mapItem">
+                    <i class="{{ $item['icon'] }}"></i>
+                    <p>{{$item['text'] }}</p>
+                </div>
+                @endforeach
+                <div class="howWorkMapMoveItem"></div>
             </div>
-            @endforeach
-            <div class="howWorkMapMoveItem"></div>
         </div>
         <div class="sliderWrapper">
             <div class="swiper howWorkSlider">
