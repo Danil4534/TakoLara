@@ -1,7 +1,8 @@
 import './bootstrap';
 import './responseSlider';
 import './gratitudeSlider';
-import './animationForNumbers'
+import './animationForNumbers';
+import './productSlider';
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");

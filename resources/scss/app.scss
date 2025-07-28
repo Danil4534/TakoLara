@@ -30,7 +30,8 @@
 @use "./pages/dronesPage.scss";
 @use "./pages/radioPage.scss";
 @use "./pages/homePage.scss";
-:root {
+@use "./components/productCard.scss";
+:root  {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: rgba(28, 47, 67, 1);

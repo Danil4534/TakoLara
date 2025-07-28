@@ -1,28 +1,8 @@
-@media screen and (max-width: 375px) {
-    .bannerPicture {
-        display: none !important;
-    }
-
-    .backgroundBanner {
-        height: 420px !important;
-        // background-image: url("/public/assets/drone.svg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 8px;
-        img {
-            width: 100%;
-            object-fit: cover !important;
-            height: 420px;
-        }
-    }
-}
 @media screen and (min-width: 375px) {
     .bannerPicture {
         display: none;
     }
     .backgroundBanner {
-        min-height: 562px;
         background-image: url("/public/assets/drone.svg");
         background-position: center;
         background-size: cover;
@@ -40,7 +20,6 @@
 @media screen and (min-width: 768px) {
     .backgroundBanner {
         min-width: 100% !important;
-        height: 532px;
 
         background-position: center;
         background-size: cover;

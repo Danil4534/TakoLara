@@ -1,12 +1,34 @@
+ @php
+
+
+ @endphp
+
  <li class="card">
      <div class="productContent">
          <div class="slider">
-             <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
-             <div class="slider_bottom">
-                 <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
-                 <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
-                 <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+             <div class="swiper productSlider">
+                 <div class="swiper-wrapper">
+                     @foreach ($product['img'] as $picture)
+                     <div class="swiper-slide">
+                         <x-picture-tag src="{{ asset($picture) }}"></x-picture-tag>
+                     </div>
+                     @endforeach
+                 </div>
+                 <div class="swiper-button-next"></div>
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-scrollbar"></div>
              </div>
+             <div class="productPictures">
+
+
+                 <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                 <div class="slider_bottom">
+                     <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                     <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                     <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
+                 </div>
+             </div>
+
          </div>
          <div class="productDataWrapper">
              <div class="productData">
