@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     @if (!app()->runningUnitTests())
-    @vite(['resources/scss/app.scss', 'resources/js/app.js', 'resources/js/productSlider.js'])
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     @endif
 </head>
 
