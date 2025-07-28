@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {   document.querySelector('.howWorkSlider') &&
     new Swiper('.howWorkSlider', {
         slidesPerView: 1,
         slidesPerGroup: 1,

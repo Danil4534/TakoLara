@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('.gratitudeSlider')&&
     new Swiper('.gratitudeSlider', {
         slidesPerView: 2, 
         slidesPerGroup: 2,

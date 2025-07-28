@@ -16,7 +16,7 @@ $chooseProducts = session('chooseProducts');
             @foreach ((array) $chooseProducts as $product )
             <div class="productCard" data-cost="{{ $product['cost'] ?? 0 }}" data-quantity="{{ $product['quantity'] ?? 0 }}">
                 <div class="productCardMobHeader">
-                    <x-picture-tag src="{{ asset($product['img'] ?? '') }}" lazy="true"></x-picture-tag>
+                    <x-picture-tag src="{{ asset($product['img'][0] ?? '') }}" lazy="true"></x-picture-tag>
                     <h3>{{ $product['title'] ?? '' }}</h3>
                 </div>
                 <div class="productCardWrapper">
@@ -102,7 +102,7 @@ $chooseProducts = session('chooseProducts');
             <div class="productBox">
                 @foreach ((array) $chooseProducts as $product )
                 <div class="productCard" data-cost="{{ $product['cost'] ?? 0 }}" data-quantity="{{ $product['quantity'] ?? 1 }}">
-                    <x-picture-tag src="{{ asset($product['img'] ?? '') }}" lazy="true"></x-picture-tag>
+                    <x-picture-tag src="{{ asset($product['img'][0] ?? '') }}" lazy="true"></x-picture-tag>
                     <div class="productCardWrapper">
                         <div class="productCardHeader">
                             <h3>{{ $product['title'] ?? '' }}</h3>
@@ -122,7 +122,6 @@ $chooseProducts = session('chooseProducts');
                     <form method="POST" action="{{ route('remove.from.cart') }}" id="form">
                         @csrf
                         <input type="hidden" name="index" value="{{ $loop->index }}">
-
                         <button type="submit"><i class="ph ph-trash-simple trash"></i></button>
                     </form>
                 </div>

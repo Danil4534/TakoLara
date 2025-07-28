@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('.responseSlider') &&
     new Swiper('.responseSlider', {
         slidesPerView: 2, 
         slidesPerGroup: 2,

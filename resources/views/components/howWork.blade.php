@@ -42,7 +42,6 @@ $content=[
     <hr>
 
     <div class="howWorkContent">
-
         <div class="howWorkMap">
             <div class="howWorkMapTitle">
                 <h1>Розробка та тестування</h1>
