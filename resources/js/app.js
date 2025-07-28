@@ -3,6 +3,7 @@ import './responseSlider';
 import './gratitudeSlider';
 import './animationForNumbers';
 import './productSlider';
+import './howWorksSlider'
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");

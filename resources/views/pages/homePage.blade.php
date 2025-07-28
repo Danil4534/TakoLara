@@ -42,6 +42,9 @@
         <section id="">
             @include("components.numbers")
         </section>
+        <section>
+            @include('components.howWork')
+        </section>
         <section id="ourProducts">
             @include("components.categories", ['content' => ['title' => "Наші вироби"]])
         </section>

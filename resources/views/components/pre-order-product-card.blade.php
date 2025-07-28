@@ -1,6 +1,6 @@
 <div class="productCard">
     <div class="productCardMobHeader">
-        <x-picture-tag src="{{ asset($preOrderProduct['img'] ?? '') }}" :lazy="true"></x-picture-tag>
+        <x-picture-tag src="{{ asset($preOrderProduct['img'][0] ?? '') }}" :lazy="true"></x-picture-tag>
         <h3>{{ $preOrderProduct['title'] ?? '' }}</h3>
     </div>
     <div class="productCardWrapper">
