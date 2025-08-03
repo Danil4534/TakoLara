@@ -8,51 +8,68 @@
         background-image: url("/public/assets/weaponMob_375.svg") !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain !important;
+        background-size: cover !important;
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .weaponBg {
+        width: 100%;
+        height: 320px !important;
+        background-image: url("/public/assets/weaponBanner_768.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
         border-radius: 8px;
     }
 }
 
-// @media screen and (min-width: 768px) {
-//     .weaponBg {
-//         background-position: center;
-//         background-size: auto !important;
-//         background-image: url("/public/assets/weaponBanner_768.svg") !important;
-//         background-repeat: no-repeat;
-//         border-radius: 8px;
-//     }
-// }
+@media screen and (min-width: 1024px) {
+    .bannerPicture {
+        display: none !important;
+    }
 
-// @media screen and (min-width: 1024px) {
-//     .weaponBg {
-//         width: 100%;
+    .weaponBg {
+        width: 100%;
+        max-height: 320px !important;
+        background-image: url("/public/assets/weaponBanner_1024.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+        .bannerSubtitle {
+            max-width: 100% !important;
+            margin-top: 24px !important;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .bannerPicture {
+        display: none !important;
+    }
 
-//         background-position: center;
-//         background-size: contain;
-//         background-repeat: no-repeat;
-//         border-radius: 16px;
-//     }
-// }
-
-// @media screen and (min-width: 1440px) {
-//     .weaponBg {
-//         width: 100%;
-
-//         background-position: center;
-//         background-size: contain;
-//         background-repeat: no-repeat;
-//         border-radius: 16px;
-//     }
-// }
-
-// @media screen and (min-width: 1920px) {
-//     .weaponBg {
-//         width: 100%;
-//         height: 420px !important;
-//         background-position: center;
-//         background-image: url("/public/assets/weaponBanner_1024.svg") !important;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         border-radius: 16px;
-//     }
-// }
+    .weaponBg {
+        width: 100%;
+        max-height: 420px !important;
+        background-image: url("/public/assets/weaponBanner_1024.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+        .bannerContainer {
+            .bannerContent {
+                h1 {
+                    font-size: 56px !important;
+                }
+                .bannerSubtitle {
+                    max-width: 789px !important;
+                    margin-top: 24px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,101 @@
-.dronesBg {
-    height: 420px !important;
-    img {
-        object-fit: cover !important;
-        height: 420px;
+@media screen and (min-width: 375px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .dronesBg {
+        width: 100%;
+        background-image: url("/public/assets/dronesBg.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .dronesBg {
+        width: 100%;
+        height: 320px !important;
+        background-image: url("/public/assets/dronesBg.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .dronesBg {
+        width: 100%;
+        max-height: 320px !important;
+        background-image: url("/public/assets/dronesBg.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+        .bannerSubtitle {
+            max-width: 100% !important;
+            margin-top: 24px !important;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .dronesBg {
+        width: 100%;
+        max-height: 420px !important;
+        background-image: url("/public/assets/dronesBg.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+        .bannerContainer {
+            .bannerContent {
+                h1 {
+                    font-size: 56px !important;
+                }
+                .bannerSubtitle {
+                    max-width: 789px !important;
+                    margin-top: 24px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .bannerPicture {
+        display: none !important;
+    }
+
+    .dronesBg {
+        width: 100%;
+        min-height: 420px !important;
+        background-image: url("/public/assets/dronesBg.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover !important;
+        border-radius: 8px;
+        .bannerContainer {
+            .bannerContent {
+                h1 {
+                    font-size: 56px !important;
+                }
+                .bannerSubtitle {
+                    max-width: 789px !important;
+                    margin-top: 24px !important;
+                }
+            }
+        }
     }
 }
