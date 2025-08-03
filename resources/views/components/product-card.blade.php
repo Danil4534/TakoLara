@@ -14,8 +14,6 @@
                 <div class="swiper-scrollbar"></div>
             </div>
             <div class="productPictures">
-
-
                 <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
                 <div class="slider_bottom">
                     <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
