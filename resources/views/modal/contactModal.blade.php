@@ -20,7 +20,7 @@
                 "label" => "Номер телефону",
                 "placeholder" => "+380",
                 'value'=> "+380",
-                "name" => "phoneNumber",
+                "name" => "phoneNum",
                 "required"=>'true'
                 ]
                 ])

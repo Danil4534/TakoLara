@@ -1,26 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-        document.querySelector('.productSlider') &&
-    new Swiper('.productSlider', {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 16,
-        loop: true,
-        keyboard: {
-            enabled: true
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            type: 'bullets',      
-            clickable: true      
-        },
-
-        scrollbar:{
-            el:'.swiper-scrollbar',
-                    draggable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-    });
+    const slider = document.querySelector('.productSlider');
+    if (slider && !slider.classList.contains('swiper-initialized')) {
+        new Swiper('.productSlider', {
+            slidesPerView: 'auto',
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+      
+            keyboard: { enabled: true },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-product",
+                prevEl: ".swiper-button-prev-product"
+            },
+        });
+    }
 });

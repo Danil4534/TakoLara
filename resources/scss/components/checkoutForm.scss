@@ -508,8 +508,7 @@
             }
 
             .inputContainer {
-                input,
-                select {
+                input {
                     height: 40px !important;
                 }
             }
@@ -521,8 +520,10 @@
     input,
     select {
         padding: 0 16px !important;
-        font-size: 14px !important;
         height: 40px !important;
+    }
+    select {
+        font-size: 14px;
     }
 }
 

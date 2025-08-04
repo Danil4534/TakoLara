@@ -4,13 +4,13 @@
             <div class="swiper productSlider">
                 <div class="swiper-wrapper">
                     @foreach ($product['img'] as $picture)
-                    <div class="swiper-slide">
+                    <div class="swiper-slide productSlide">
                         <x-picture-tag src="{{ asset($picture) }}"></x-picture-tag>
                     </div>
                     @endforeach
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class=".swiper-button-next-product"></div>
+                <div class=".swiper-button-prev-product"></div>
                 <div class="swiper-scrollbar"></div>
             </div>
             <div class="productPictures">

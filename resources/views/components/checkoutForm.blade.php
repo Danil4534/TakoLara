@@ -40,7 +40,7 @@ $chooseProducts = session('chooseProducts');
                 <div class="productCardBottom">
                     <div class="counter" data-product-id="{{ $loop->index }}">
                         <i class="ph ph-minus decrement"></i>
-                        <input type="text" class="count-input" value="{{ $product['quantity'] ?? 0 }}" min="1">
+                        <input type="text" class="count-input" value="{{ $product['quantity'] ?? 1 }}" min="1">
                         <i class="ph ph-plus increment"></i>
                     </div>
                     <div class="cost">
@@ -69,7 +69,7 @@ $chooseProducts = session('chooseProducts');
                     @include("ui.input", ['content' => ["label" => "Прізвище", "placeholder" => "Введіть прізвище", "name" => "surname", "required"=>'true']])
                     @include("ui.input", ['content' => ["label" => "Ім'я", "placeholder" => "Введіть ім'я", "name" => "firstname", "required"=>'true']])
                     @include("ui.input", ['content' => ["label" => "По батькові", "placeholder" => "Введіть", "name" => "middlename", "required"=>'true']])
-                    @include("ui.input", ['content' => ["label" => "Номер телефону", "placeholder" => "+380", "name" => "phoneNumber", "required"=>'true']])
+                    @include("ui.input", ['content' => ["label" => "Номер телефону", "placeholder" => "+380", "name" => "phoneNum", "required"=>'true']])
                 </div>
             </div>
 
@@ -100,31 +100,10 @@ $chooseProducts = session('chooseProducts');
         <div class="userData box">
             <h6 class="title">Передзамовлення</h6>
             <div class="productBox">
-                @foreach ((array) $chooseProducts as $product )
-                <div class="productCard" data-cost="{{ $product['cost'] ?? 0 }}" data-quantity="{{ $product['quantity'] ?? 1 }}">
-                    <x-picture-tag src="{{ asset($product['img'][0] ?? '') }}" lazy="true"></x-picture-tag>
-                    <div class="productCardWrapper">
-                        <div class="productCardHeader">
-                            <h3>{{ $product['title'] ?? '' }}</h3>
-                        </div>
-                        <div class="productCardBottom">
-                            <div class="counter" data-product-id="{{ $loop->index }}">
-                                <i class="ph ph-minus decrement"></i>
-                                <input type="text" class="count-input" value="{{ $product['quantity'] ?? 1 }}" min="1">
-                                <i class="ph ph-plus increment"></i>
-                            </div>
-                            <div class="cost">
-                                <h3>{{ $product['cost'] ?? '' }},00<span>грн</span></h3>
-                                <p>собівартість за од.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <form method="POST" action="{{ route('remove.from.cart') }}" id="form">
-                        @csrf
-                        <input type="hidden" name="index" value="{{ $loop->index }}">
-                        <button type="submit"><i class="ph ph-trash-simple trash"></i></button>
-                    </form>
-                </div>
+                @foreach ((array) $chooseProducts as $index=>$product )
+                <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
+                <input type="hidden" name="products[{{ $loop->index }}][title]" value="{{ $product['title'] }}">
+                <input type="hidden" name="products[{{ $loop->index }}][cost]" value="{{ $product['cost'] }}">
                 @endforeach
             </div>
 

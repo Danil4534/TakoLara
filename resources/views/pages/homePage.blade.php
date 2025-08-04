@@ -72,4 +72,35 @@
 @include("modal.headerModal")
 @include('modal.successModal')
 
+
 </html>
+
+@if(session('show_success_modal')===true)
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const successModal = document.querySelector('#successModal');
+        const successModalContent = document.querySelector('#successModalContent');
+        const successModalClose = document.querySelectorAll('#closeSuccessModal');
+
+        if (successModal && successModalContent) {
+            successModal.classList.add('active');
+            successModalContent.classList.add('active');
+        }
+        successModal.addEventListener('click', () => {
+            successModal.classList.remove('active');
+            successModalContent.classList.remove('active');
+        })
+        successModalContent.addEventListener('click', (e) => {
+            e.stopPropagation()
+
+        })
+        successModalClose.forEach((element) => {
+            element.addEventListener('click', (e) => {
+
+                successModal.classList.remove('active');
+                successModalContent.classList.remove('active');
+            });
+        });
+    });
+</script>
+@endif

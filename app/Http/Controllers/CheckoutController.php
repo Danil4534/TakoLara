@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 
 class CheckoutController extends Controller
 {
-    public function submit(Request $request)
+    public function checkoutForm(Request $request)
     {
 
 
@@ -16,17 +16,17 @@ class CheckoutController extends Controller
             'surname' => 'required|string|max:255',
             'firstname' => 'required|string|max:255',
             'middlename' => 'required|string|max:255',
-            'phone' => 'required|regex:/^\+380\d{9}$/',
+            'phoneNum' => 'required|regex:/^\+380\d{9}$/',
             'city' => 'required|string',
-            'department' => 'required',
+            'department' => 'required|min:2',
             'contact_phone' => 'required|regex:/^\+380\d{9}$/',
         ], [
             'department' => 'Номер відділення обовʼязковий',
             'surname.required' => 'Прізвище обовʼязкове.',
             'firstname.required' => "Імʼя обовʼязкове.",
             'middlename' => 'По батькові обов`язково',
-            'phone.required' => 'Номер телефону обовʼязковий.',
-            'phone.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX.',
+            'phoneNum.required' => 'Номер телефону обовʼязковий.',
+            'phoneNum.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX.',
             'contact_phone.required' => 'Номер для звʼязку обовʼязковий.',
             'contact_phone.regex' => 'Номер має бути у форматі +380XXXXXXXXX.',
             'city.required' => 'Місто обовʼязкове.',
@@ -35,10 +35,12 @@ class CheckoutController extends Controller
         ]);
 
         session(['chooseProducts' => []]);
+        var_dump($request);
         if ($request->input('action') === "support") {
             session()->flash('show_success_modal', true);
             return redirect()->route('support.page');
         }
-        return redirect()->route('success.page');
+
+        return redirect()->route('home.page');
     }
 }

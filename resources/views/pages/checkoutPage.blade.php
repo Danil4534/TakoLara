@@ -29,6 +29,7 @@
             © 2025 TAKO. All rights reserved
         </p>
     </div>
+
 </footer>
 @include('modal.categoriesModal')
 @include('modal.contactModal')

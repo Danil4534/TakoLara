@@ -12,16 +12,20 @@ class ContactFormController extends Controller
 
     public function submitContactDataPost(Request $request)
     {
+
+
         $request->validate([
             'name' => 'required|string|max:255',
-            "phoneNumber" => "required|regex:/^\+380\d{9}$/",
+            "phoneNum" => "required|regex:/^\+380\d{9}$/",
             "email" => "required|email",
-            "theme" => "required|string",
+            "theme" => "required|min:2",
+
 
         ], [
             'name.required' => 'Ім’я обов’язкове',
-            'phoneNumber.required' => 'Номер телефону обов’язковий',
-            'phoneNumber.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX',
+            'theme' => "Тема обов'язкова",
+            'phoneNum.required' => 'Номер телефону обов’язковий',
+            'phoneNum.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX',
             'email.required' => 'Пошта обов’язкова',
             'email.email' => 'Невірний формат пошти',
             'theme.required' => 'Тема обов’язкова',
@@ -30,13 +34,16 @@ class ContactFormController extends Controller
         $data = [
             "name" => $request->name,
             "email" => $request->email,
-            "phoneNumber" => $request->phoneNumber,
+            "phoneNum" => $request->phoneNumber,
             "theme" => $request->theme,
             "comment" => $request->comment
-
         ];
 
-
+        dd($request->all());
+        if ($request->input('action') === "success") {
+            session()->flash('show_success_modal', true);
+            return redirect()->back();
+        }
         return redirect()->back()->with("error", "");
     }
 }

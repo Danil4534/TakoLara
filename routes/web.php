@@ -17,6 +17,6 @@ Route::get('/reb', [NavController::class, 'getRebPage'])->name('reb.page');
 Route::get('/success', [NavController::class, 'getSuccessPage'])->name('success.page');
 Route::post('/addToCart', [ProductController::class, 'addToCart'])->name('addProduct.to.cart');
 Route::post('/contactForm', [ContactFormController::class, 'submitContactDataPost'])->name('contactFormSubmit');
-Route::post('/checkout', [CheckoutController::class, 'submit'])->name('checkout.submit');
+Route::post('/checkout', [CheckoutController::class, 'checkoutForm'])->name('checkout.submit');
 Route::post('/removeFromCart', [ProductController::class, 'removeFromCart'])->name('remove.from.cart');
 Route::get('/page-list', [NavController::class, 'getPageList'])->name('page.list');
