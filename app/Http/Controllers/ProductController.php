@@ -18,6 +18,7 @@ class ProductController extends Controller
 
     public function removeFromCart(Request $request)
     {
+
         $index = $request->input('index');
         $cart = session()->get('chooseProducts', []);
         unset($cart[$index]);

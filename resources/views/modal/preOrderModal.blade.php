@@ -1,6 +1,5 @@
 @php
 $chooseProducts = session('chooseProducts');
-
 @endphp
 
 

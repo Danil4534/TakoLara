@@ -39,7 +39,7 @@ class ContactFormController extends Controller
             "comment" => $request->comment
         ];
 
-        dd($request->all());
+
         if ($request->input('action') === "success") {
             session()->flash('show_success_modal', true);
             return redirect()->back();

@@ -1,6 +1,7 @@
 @mixin font-light {
     font-family: var(--font-family-Light);
     font-weight: 300;
+    font-style: Light;
 }
 
 .preOrder {
@@ -41,9 +42,7 @@
         }
 
         h1 {
-            font-family: var(--font-family-Light);
-            font-weight: 300;
-            font-style: Light;
+            @include font-light;
             font-size: 22px;
             line-height: 120%;
             letter-spacing: 1.6%;
@@ -89,9 +88,7 @@
                     gap: 16px;
 
                     h3 {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 14px;
 
                         line-height: 120%;
@@ -119,6 +116,9 @@
                         .increment {
                             font-size: 24px;
                             color: rgba(28, 47, 67, 1);
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
 
                         .count-input {
@@ -140,7 +140,7 @@
                         color: rgba(28, 47, 67, 1);
 
                         span {
-                            font-family: var(--font-family-Light);
+                            @include font-light;
                             font-size: 12px;
                             leading-trim: NONE;
                             line-height: 120%;
@@ -162,9 +162,7 @@
             }
 
             h2 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 16px;
                 width: 247px;
                 line-height: 140%;
@@ -178,9 +176,7 @@
             }
 
             p {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 12px;
                 line-height: 120%;
                 letter-spacing: 1.6%;
@@ -218,9 +214,7 @@
                 align-items: center;
 
                 p {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 12px;
 
                     line-height: 120%;
@@ -281,9 +275,7 @@
                 height: 44px;
                 padding-bottom: 12px;
                 border-bottom: 2px solid rgba(208, 208, 208, 0.2);
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 16px;
                 text-decoration: none;
                 line-height: 140%;
@@ -310,9 +302,7 @@
 
             &:nth-child(2) a {
                 text-decoration: none;
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 14px;
                 padding-bottom: 17px;
                 border-bottom: 2px solid rgba(208, 208, 208, 0.2);
@@ -408,9 +398,7 @@
             }
 
             h1 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 22px;
                 line-height: 120%;
                 letter-spacing: 1.6%;
@@ -437,6 +425,7 @@
                     flex-direction: row;
                     gap: 16px;
                     padding: 8px;
+
                     position: relative;
 
                     form {
@@ -460,11 +449,9 @@
                         gap: 16px;
 
                         h3 {
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
+                            @include font-light;
                             font-size: 14px;
-
+                            height: 100%;
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
@@ -474,12 +461,14 @@
                             width: 100%;
                             display: flex;
                             flex-direction: column;
+                            justify-content: center;
                             gap: 24px;
                             padding: 16px 0;
                         }
 
                         .cardCounter {
                             width: 100% !important;
+                            height: 100%;
                             display: flex;
                             justify-content: space-between;
 
@@ -492,6 +481,9 @@
                                 .increment {
                                     font-size: 24px;
                                     color: rgba(28, 47, 67, 1);
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
                                 }
 
                                 .count-input {
@@ -564,7 +556,7 @@
                             color: rgba(28, 47, 67, 1);
 
                             span {
-                                font-family: var(--font-family-Light);
+                                @include font-light;
                                 font-size: 12px;
                                 leading-trim: NONE;
                                 line-height: 120%;
@@ -586,9 +578,7 @@
                 }
 
                 h2 {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 16px;
                     width: 247px;
                     line-height: 140%;
@@ -602,9 +592,7 @@
                 }
 
                 p {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 12px;
                     line-height: 120%;
                     letter-spacing: 1.6%;
@@ -644,9 +632,7 @@
                     padding: 9px 12px;
 
                     p {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 16px;
 
                         line-height: 120%;
@@ -708,9 +694,7 @@
                     height: 44px;
                     padding-bottom: 12px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 16px;
                     text-decoration: none;
                     line-height: 140%;
@@ -737,9 +721,7 @@
 
                 &:nth-child(2) a {
                     text-decoration: none;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 14px;
                     padding-bottom: 17px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
@@ -836,9 +818,7 @@
             }
 
             h1 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 22px;
                 line-height: 120%;
                 letter-spacing: 1.6%;
@@ -892,11 +872,8 @@
                         gap: 16px;
 
                         h3 {
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
+                            @include font-light;
                             font-size: 14px;
-
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
@@ -945,7 +922,7 @@
                                 color: rgba(28, 47, 67, 1);
 
                                 span {
-                                    font-family: var(--font-family-Light);
+                                    @include font-light;
                                     font-size: 12px;
                                     leading-trim: NONE;
                                     line-height: 120%;
@@ -996,7 +973,7 @@
                             color: rgba(28, 47, 67, 1);
 
                             span {
-                                font-family: var(--font-family-Light);
+                                @include font-light;
                                 font-size: 12px;
                                 leading-trim: NONE;
                                 line-height: 120%;
@@ -1019,9 +996,7 @@
                 }
 
                 h2 {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 16px;
                     width: 247px;
                     line-height: 140%;
@@ -1035,9 +1010,7 @@
                 }
 
                 p {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 12px;
                     line-height: 120%;
                     letter-spacing: 1.6%;
@@ -1074,16 +1047,12 @@
                     height: 40px;
 
                     p {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 16px;
-
                         line-height: 120%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                         color: var(--neutral-medium-gray);
-
                         span {
                             color: var(--primary-dark-navy);
                         }
@@ -1137,9 +1106,7 @@
                     height: 44px;
                     padding-bottom: 12px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 16px;
                     text-decoration: none;
                     line-height: 140%;
@@ -1166,9 +1133,7 @@
 
                 &:nth-child(2) a {
                     text-decoration: none;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 14px;
                     padding-bottom: 17px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
@@ -1265,9 +1230,7 @@
             }
 
             h1 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
+                @include font-light;
                 font-size: 22px;
                 line-height: 120%;
                 letter-spacing: 1.6%;
@@ -1283,7 +1246,7 @@
                 justify-content: end;
                 align-items: center;
                 flex-direction: column;
-                gap: 24px;
+                gap: 8px;
 
                 .productCard {
                     width: 100%;
@@ -1321,9 +1284,7 @@
                         gap: 16px;
 
                         h3 {
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
+                            @include font-light;
                             font-size: 14px;
 
                             line-height: 120%;
@@ -1447,11 +1408,9 @@
                 }
 
                 h2 {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
-                    font-size: 16px;
-                    width: 247px;
+                    @include font-light;
+                    font-size: 22px;
+                    width: 351px;
                     line-height: 140%;
                     letter-spacing: 1.6%;
                     text-align: center;
@@ -1463,10 +1422,8 @@
                 }
 
                 p {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
-                    font-size: 12px;
+                    @include font-light;
+                    font-size: 14px;
                     line-height: 120%;
                     letter-spacing: 1.6%;
                     text-align: center;
@@ -1502,9 +1459,7 @@
                     height: 40px;
 
                     p {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 16px;
 
                         line-height: 120%;
@@ -1519,7 +1474,7 @@
                 }
 
                 .preOrderBtn {
-                    width: 375px !important;
+                    width: 373px !important;
                     background-color: var(--primary-deep-blue);
                     color: var(--neutral-white);
                     height: 72px !important;
@@ -1565,9 +1520,7 @@
                     height: 44px;
                     padding-bottom: 12px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 16px;
                     text-decoration: none;
                     line-height: 140%;
@@ -1594,9 +1547,7 @@
 
                 &:nth-child(2) a {
                     text-decoration: none;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 14px;
                     padding-bottom: 17px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
@@ -1670,7 +1621,7 @@
             width: 0px;
             height: 100vh;
             overflow: hidden;
-            padding: 32px 16px;
+            padding: 51px 40px;
             padding-bottom: 24px;
             transition: 0.3s ease;
             background-color: var(--neutral-white);
@@ -1681,9 +1632,9 @@
 
             #closePreOrderBtn {
                 position: absolute;
-                right: 24px;
-                top: 32px;
-                font-size: 32px;
+                right: 40px;
+                top: 48px;
+                font-size: 40px;
                 color: var(--neutral-medium-gray);
 
                 &:hover {
@@ -1693,10 +1644,8 @@
             }
 
             h1 {
-                font-family: var(--font-family-Light);
-                font-weight: 300;
-                font-style: Light;
-                font-size: 22px;
+                @include font-light;
+                font-size: 28px;
                 line-height: 120%;
                 letter-spacing: 1.6%;
                 vertical-align: middle;
@@ -1711,7 +1660,7 @@
                 justify-content: end;
                 align-items: center;
                 flex-direction: column;
-                gap: 24px;
+                gap: 0px;
 
                 .productCard {
                     width: 100%;
@@ -1722,6 +1671,7 @@
                     flex-direction: row;
                     gap: 16px;
                     padding: 8px;
+                    padding-right: 16px;
                     position: relative;
 
                     img {
@@ -1730,7 +1680,8 @@
 
                     form {
                         position: absolute;
-                        right: 8px;
+                        top: 24px;
+                        right: 16px;
 
                         button {
                             background: transparent;
@@ -1749,11 +1700,8 @@
                         gap: 16px;
 
                         h3 {
-                            font-family: var(--font-family-Light);
-                            font-weight: 300;
-                            font-style: Light;
+                            @include font-light;
                             font-size: 14px;
-
                             line-height: 120%;
                             letter-spacing: 1.6%;
                             vertical-align: middle;
@@ -1832,6 +1780,9 @@
                             .increment {
                                 font-size: 24px;
                                 color: rgba(28, 47, 67, 1);
+                                &:hover {
+                                    cursor: pointer;
+                                }
                             }
 
                             .count-input {
@@ -1875,11 +1826,9 @@
                 }
 
                 h2 {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
-                    font-size: 16px;
-                    width: 247px;
+                    @include font-light;
+                    font-size: 22px;
+                    width: 351px;
                     line-height: 140%;
                     letter-spacing: 1.6%;
                     text-align: center;
@@ -1891,10 +1840,8 @@
                 }
 
                 p {
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
-                    font-size: 12px;
+                    @include font-light;
+                    font-size: 14px;
                     line-height: 120%;
                     letter-spacing: 1.6%;
                     text-align: center;
@@ -1930,16 +1877,12 @@
                     height: 40px;
 
                     p {
-                        font-family: var(--font-family-Light);
-                        font-weight: 300;
-                        font-style: Light;
+                        @include font-light;
                         font-size: 16px;
-
                         line-height: 120%;
                         letter-spacing: 1.6%;
                         vertical-align: middle;
                         color: var(--neutral-medium-gray);
-
                         span {
                             color: var(--primary-dark-navy);
                         }
@@ -1993,9 +1936,7 @@
                     height: 44px;
                     padding-bottom: 12px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 16px;
                     text-decoration: none;
                     line-height: 140%;
@@ -2022,9 +1963,7 @@
 
                 &:nth-child(2) a {
                     text-decoration: none;
-                    font-family: var(--font-family-Light);
-                    font-weight: 300;
-                    font-style: Light;
+                    @include font-light;
                     font-size: 14px;
                     padding-bottom: 17px;
                     border-bottom: 2px solid rgba(208, 208, 208, 0.2);

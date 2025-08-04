@@ -7,59 +7,18 @@ $typeOfContact = [
 ['id' => 4, 'title' => 'Signal', 'active' => false],
 ];
 $chooseProducts = session('chooseProducts');
+
 @endphp
 
 <div class="formContainer">
     <div class="box">
         <h1 class="checkoutTitle">Оформити замовлення</h1>
         <div class="productBox">
-            @foreach ((array) $chooseProducts as $product )
-            <div class="productCard" data-cost="{{ $product['cost'] ?? 0 }}" data-quantity="{{ $product['quantity'] ?? 0 }}">
-                <div class="productCardMobHeader">
-                    <x-picture-tag src="{{ asset($product['img'][0] ?? '') }}" lazy="true"></x-picture-tag>
-                    <h3>{{ $product['title'] ?? '' }}</h3>
-                </div>
-                <div class="productCardWrapper">
-                    <div class="productCardHeader">
-                        <h3>{{ $product['title'] ?? '' }}</h3>
-                    </div>
-                    <div class="productCardBottom">
-                        <div class="counter" data-product-id="{{ $loop->index }}">
-                            <i class="ph ph-minus decrement"></i>
-                            <input type="text" class="count-input" value="{{ $product['quantity'] ?? 0 }}" min="1">
-                            <i class="ph ph-plus increment"></i>
-                        </div>
-                        <div class="cost">
-                            <h3>
-                                {{ $product['cost'] ?? '' }},00<span>грн</span>
-                            </h3>
-                            <p>собівартість за од.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="productCardBottom">
-                    <div class="counter" data-product-id="{{ $loop->index }}">
-                        <i class="ph ph-minus decrement"></i>
-                        <input type="text" class="count-input" value="{{ $product['quantity'] ?? 1 }}" min="1">
-                        <i class="ph ph-plus increment"></i>
-                    </div>
-                    <div class="cost">
-                        <h3>
-                            {{ $product['cost'] ?? '' }},00<span>грн</span>
-                        </h3>
-                        <p>собівартість за од.</p>
-                    </div>
-                </div>
-                <form method="POST" action="{{ route('remove.from.cart') }}">
-                    @csrf
-                    <input type="hidden" name="index" value="{{ $loop->index }}">
-                    <button type="submit"><i class="ph ph-trash-simple trash"></i></button>
-                </form>
-            </div>
+            @foreach ((array) $chooseProducts as $index=>$product )
+            <x-pre-order-product-card :preOrderProduct="$product" :index="$index" />
             @endforeach
         </div>
     </div>
-
     <form action="{{ route('checkout.submit') }}" class="checkoutForm" method="POST">
         @csrf
         <div class="formLeftSide">
@@ -101,9 +60,7 @@ $chooseProducts = session('chooseProducts');
             <h6 class="title">Передзамовлення</h6>
             <div class="productBox">
                 @foreach ((array) $chooseProducts as $index=>$product )
-                <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
-                <input type="hidden" name="products[{{ $loop->index }}][title]" value="{{ $product['title'] }}">
-                <input type="hidden" name="products[{{ $loop->index }}][cost]" value="{{ $product['cost'] }}">
+                <x-pre-order-product-card :preOrderProduct="$product" :index="$index" />
                 @endforeach
             </div>
 
@@ -126,7 +83,6 @@ $chooseProducts = session('chooseProducts');
                     Підтвердити та підтримати
                 </button>
             </div>
-
             <span>
                 Залиште заявку — ми зв’яжемось із вами для уточнення деталей і підтвердження замовлення.
                 <br />Жодної передоплати до підтвердження. Все просто і чесно.
@@ -204,5 +160,7 @@ $chooseProducts = session('chooseProducts');
                 updateTotalPrice();
             });
         });
+
+        updateTotalPrice();
     });
 </script>

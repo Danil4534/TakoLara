@@ -1,4 +1,4 @@
-<div class="productCard">
+<div class="productCard" data-cost="{{ $preOrderProduct['cost'] ?? 0 }}">
     <div class="productCardMob">
         <div class="productCardMobHeader">
             <x-picture-tag src="{{ asset($preOrderProduct['img'][0] ?? '') }}"></x-picture-tag>
@@ -21,9 +21,9 @@
         </div>
         <div class="cardBottom">
             <div class="counter" data-product-id="{{ $index }}">
-                <i class="ph ph-minus decrement"></i>
+                <i class="ph ph-minus decrement" id="decrement"></i>
                 <input type="text" class="count-input" value="{{ $preOrderProduct['quantity'] ?? 1 }}" min="{{1}}">
-                <i class="ph ph-plus increment"></i>
+                <i class="ph ph-plus increment" id="increment"></i>
             </div>
             <div class="cost">
                 <h4>
