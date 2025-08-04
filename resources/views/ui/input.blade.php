@@ -24,7 +24,7 @@
             placeholder="{{ $content['placeholder'] ?? '' }}"
             @if(!empty($content['readonly'])) readonly @endif>
         <i class="{{ $content['icon'] ?? '' }} copyIcon inputIcon btn" data-value="{{ $content['value'] ?? '' }}"></i>
-        <i class="ph-fill ph-check-fat copyIcon inputIcon success" data-value="{{ $content['value'] ?? '' }}"></i>
+        <i class="ph-fill ph-check-fat inputIcon success"></i>
     </div>
     @endif
 

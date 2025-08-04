@@ -81,6 +81,10 @@
         }
     }
     .success {
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translate(-50%, -50%);
         transition: 0.3s ease;
         color: rgba(56, 142, 60, 1);
         display: none;
