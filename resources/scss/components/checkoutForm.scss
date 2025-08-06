@@ -5,7 +5,7 @@
 }
 
 @mixin font-bold {
-    font-family: var(--font-family-bold);
+    font-family: var(--font-family-Bold);
     font-style: bold;
 }
 
@@ -432,7 +432,7 @@
                     border: none;
                     background: var(--primary-deep-blue);
                     color: var(--neutral-white);
-                    font-family: var(--font-family-bold);
+                    font-family: var(--font-family-Bold);
                     font-style: bold;
                     font-size: 14px;
                     line-height: 120%;
@@ -940,7 +940,7 @@
                         border: none;
                         background: var(--primary-deep-blue);
                         color: var(--neutral-white);
-                        font-family: var(--font-family-bold);
+                        font-family: var(--font-family-Bold);
                         font-style: bold;
                         font-size: 14px;
                         line-height: 120%;
@@ -1217,7 +1217,7 @@
                         border: none;
                         background: var(--primary-deep-blue);
                         color: var(--neutral-white);
-                        font-family: var(--font-family-bold);
+                        font-family: var(--font-family-Bold);
                         font-style: bold;
                         font-size: 14px;
                         line-height: 120%;
