@@ -42,6 +42,9 @@
             @include('components.categories', ['content' => ["title" => "Iнші Категорії"]])
         </section>
         <section>
+            @include('components.howWork')
+        </section>
+        <section>
             @include('components.details')
 
         </section>
