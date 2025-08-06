@@ -37,5 +37,9 @@
     .btnSupport {
         border: 2px solid var(--primary-dark-navy);
         color: var(--primary-dark-navy);
+        &:hover {
+            background: var(--primary-dark-navy);
+            color: #fff;
+        }
     }
 }

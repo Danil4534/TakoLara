@@ -73,20 +73,22 @@ $secondLinks = [
             </div>
         </div>
         <div class="linksWrapper">
-            <ul class="linksDesktop">
-                @foreach ($links as $link)
-                <li>
-                    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
-                </li>
-                @endforeach
-            </ul>
-            <ul class="linksDesktop">
-                @foreach ($secondLinks as $link)
-                <li>
-                    <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
-                </li>
-                @endforeach
-            </ul>
+            <div class="linksWrapperContent">
+                <ul class="linksDesktop">
+                    @foreach ($links as $link)
+                    <li>
+                        <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
+                    </li>
+                    @endforeach
+                </ul>
+                <ul class="linksDesktop">
+                    @foreach ($secondLinks as $link)
+                    <li>
+                        <a href={{ $link['anchor'] }}>{{ $link['text'] }}</a>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
             <div class="socialLinksBox">
                 @include("components.social-links", [
                 'content' => [

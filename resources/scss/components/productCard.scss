@@ -1,6 +1,59 @@
 @media screen and (max-width: 430px) {
     .productSlider {
+        width: 100%;
         display: flex !important;
+        position: relative;
+        .swiper-button-prev-product {
+            position: absolute;
+            top: 50%;
+            left: 8px;
+            transform: translateY(-50%);
+            z-index: 999;
+            width: 40px !important;
+            height: 40px !important;
+            border: 2px solid var(--primary-deep-blue);
+            border-radius: 999px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-deep-blue);
+            i {
+                font-size: 20px;
+            }
+            &:hover {
+                i {
+                    color: #fff;
+                }
+                background: var(--primary-deep-blue);
+            }
+        }
+
+        .swiper-button-next-product {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            z-index: 999;
+            width: 40px !important;
+            height: 40px !important;
+            border: 2px solid var(--primary-deep-blue);
+            border-radius: 999px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                font-size: 20px;
+                color: var(--primary-deep-blue);
+            }
+            &:hover {
+                i {
+                    color: #fff;
+                }
+                background: var(--primary-deep-blue);
+            }
+        }
     }
     .productPictures {
         display: none;
@@ -8,28 +61,9 @@
     .productSlide {
         width: 100%;
         flex: 0 0 auto;
-    }
-    .swiper-button-next {
-        width: 40px !important;
-        height: 40px !important;
-        border: 2px solid var(--primary-deep-blue);
-        border-radius: 999px;
-        &::after {
-            font-size: 20px !important;
-            color: var(--primary-deep-blue);
-        }
+        position: relative;
     }
 
-    .swiper-button-prev {
-        width: 40px !important;
-        height: 40px !important;
-        border: 2px solid var(--primary-deep-blue);
-        border-radius: 999px;
-        &::after {
-            font-size: 20px !important;
-            color: var(--primary-deep-blue);
-        }
-    }
     .swiper-scrollbar {
         height: 7px !important;
         margin-bottom: 8px;

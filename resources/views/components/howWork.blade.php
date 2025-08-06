@@ -72,7 +72,7 @@ $content=[
                     @endforeach
                 </div>
             </div>
-            <button onclick="window.location.href='{{ route('home.page') }}'">Переглянути категорії <i class="ph ph-arrow-up-right"></i></button>
+            <button class="howWorkSliderBtn" onclick="window.location.href='{{ route('home.page') }}'">Переглянути категорії <i class="ph ph-arrow-up-right"></i></button>
             <div class="swiper-pagination-progressBar"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

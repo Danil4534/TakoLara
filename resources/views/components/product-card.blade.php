@@ -9,9 +9,9 @@
                     </div>
                     @endforeach
                 </div>
-                <div class=".swiper-button-next-product"></div>
-                <div class=".swiper-button-prev-product"></div>
                 <div class="swiper-scrollbar"></div>
+                <div class="swiper-button-prev-product" id="swiper-button-prev-product"> <i class="ph ph-caret-left"></i></div>
+                <div class="swiper-button-next-product" id="swiper-button-next-product"><i class="ph ph-caret-right"></i></div>
             </div>
             <div class="productPictures">
                 <x-picture-tag src="{{ asset('assets/product.svg') }}" alt="Logo" :lazy="true" class="Logo" />
