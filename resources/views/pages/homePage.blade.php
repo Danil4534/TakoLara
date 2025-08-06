@@ -22,6 +22,8 @@
     @include("components.header")
     <main>
         <section>
+
+
             @include('components.banner', [
             'content' => [
             'banner' => "assets/drone.svg",
@@ -64,7 +66,36 @@
     <footer>
         @include('components.footer')
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>@dump(session('show_success_modal_cont'))
+    @if(session('show_success_modal_cont'))
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const successModal = document.querySelector('#successModal');
+            const successModalContent = document.querySelector('#successModalContent');
+            const successModalClose = document.querySelectorAll('#closeSuccessModal');
+            if (successModal && successModalContent) {
+                successModal.classList.add('active');
+                successModalContent.classList.add('active');
+            }
+
+            successModal.addEventListener('click', () => {
+                successModal.classList.remove('active');
+                successModalContent.classList.remove('active');
+            });
+
+            successModalContent.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            successModalClose.forEach((element) => {
+                element.addEventListener('click', () => {
+                    successModal.classList.remove('active');
+                    successModalContent.classList.remove('active');
+                });
+            });
+        });
+    </script>
+    @endif
 </body>
 @include('modal.categoriesModal')
 @include('modal.contactModal')
@@ -72,35 +103,4 @@
 @include("modal.headerModal")
 @include('modal.successModal')
 
-
 </html>
-
-@if(session('show_success_modal')===true)
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const successModal = document.querySelector('#successModal');
-        const successModalContent = document.querySelector('#successModalContent');
-        const successModalClose = document.querySelectorAll('#closeSuccessModal');
-
-        if (successModal && successModalContent) {
-            successModal.classList.add('active');
-            successModalContent.classList.add('active');
-        }
-        successModal.addEventListener('click', () => {
-            successModal.classList.remove('active');
-            successModalContent.classList.remove('active');
-        })
-        successModalContent.addEventListener('click', (e) => {
-            e.stopPropagation()
-
-        })
-        successModalClose.forEach((element) => {
-            element.addEventListener('click', (e) => {
-
-                successModal.classList.remove('active');
-                successModalContent.classList.remove('active');
-            });
-        });
-    });
-</script>
-@endif

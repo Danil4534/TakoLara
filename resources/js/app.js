@@ -22,10 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerModalNav = document.querySelector("#hidden_header_nav");
   const headerContent = document.querySelector("#hidden_header_nav_content");
   const headerModalNavClose = document.querySelector("#closeBurger");
+  const contactForm = document.querySelector('.contactForm')
+  function resetContactForm(){
+    contactForm.reset()
+  }
 
 
 
-categoriesBtnToggle.addEventListener('click', () => {
+  categoriesBtnToggle.addEventListener('click', () => {
   if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {
     categoriesBtnToggleIcon.classList.remove('ph-caret-down');
     categoriesBtnToggleIcon.classList.add('ph-x');
@@ -85,13 +89,15 @@ openPreOrderBtn.forEach(btn=>
 })
   modalContact.addEventListener('click', ()=>{
     modalContact.classList.remove('active')
-    modalContactContent.classList.remove('active')
+    modalContactContent.classList.remove('active');
+    resetContactForm()
   })
  modalContactContent.addEventListener('click',(e)=>{
     e.stopPropagation()
 
  })
 });
+
 
 
 

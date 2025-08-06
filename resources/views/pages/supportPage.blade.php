@@ -38,7 +38,7 @@
 
 </html>
 
-@if(session('show_success_modal'))
+@if(session('show_success_modal_cont'))
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const successModal = document.querySelector('#successModal');

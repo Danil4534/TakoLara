@@ -54,7 +54,7 @@
             "name" => "comment"
             ]
             ])
-            <button id="contactBtnSubmit" type="submit">Надіслати</button>
+            <button id="contactBtnSubmit" type="submit" name="action" value="success">Надіслати</button>
         </form>
     </div>
 </div>

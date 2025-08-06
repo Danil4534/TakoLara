@@ -18,10 +18,10 @@ class CheckoutController extends Controller
             'middlename' => 'required|string|max:255',
             'phoneNum' => 'required|regex:/^\+380\d{9}$/',
             'city' => 'required|string',
-            'department' => 'required|min:2',
+            'department' => 'required',
             'contact_phone' => 'required|regex:/^\+380\d{9}$/',
         ], [
-            'department' => 'Номер відділення обовʼязковий',
+            'department.required' => 'Номер відділення обовʼязковий',
             'surname.required' => 'Прізвище обовʼязкове.',
             'firstname.required' => "Імʼя обовʼязкове.",
             'middlename' => 'По батькові обов`язково',
@@ -35,12 +35,12 @@ class CheckoutController extends Controller
         ]);
 
         session(['chooseProducts' => []]);
-        var_dump($request);
+        @dump(session()->all());
         if ($request->input('action') === "support") {
-            session()->flash('show_success_modal', true);
-            return redirect()->route('support.page');
+            session()->flash('show_success_modal_cont', true);
+            return redirect()->route('support.page')->with('success', '');
         }
 
-        return redirect()->route('home.page');
+        return redirect()->route('success.page')->with('success');
     }
 }
