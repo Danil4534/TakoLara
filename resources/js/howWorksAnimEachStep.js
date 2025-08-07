@@ -1,35 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
     const steps = document.querySelectorAll('.mapItem');
-   if (steps){
+    const movingItem = document.querySelector('.howWorkMapMoveItem');
 
-       const stepCount = steps?.length;
-       let current = 0;
-       
-       const screenWidth = window.innerWidth;
-       const totalCycleTime = screenWidth < 768 ? 5000 : 5000;
-       const intervalDuration = totalCycleTime / stepCount;
-       
-       setInterval(() => {
-           steps.forEach(el => el.classList.remove('activeStep')); 
-           const el = steps[current];
-           if(el){
-               el.classList.add('activeStep');
-               current = (current + 1) % stepCount;
-           }
-       }, intervalDuration);
-       
-       
-       const observer = new IntersectionObserver((entries) => {
-           entries.forEach(entry => {
-               if (entry.isIntersecting) {
-                   entry.target.classList.remove('activeStep');
-               }
-           });
-       }, {
-           root: document.querySelector('.howWorkVector'),
-           threshold: 1
-       });
-       
-       steps.forEach(item => observer.observe(item));
-}
+    if (steps && movingItem) {
+        function checkOverlap(el1, el2) {
+            const rect1 = el1.getBoundingClientRect();
+            const rect2 = el2.getBoundingClientRect();
+            return !(
+                rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom
+            );
+        }
+        setInterval(() => {
+            steps.forEach(step => {
+                if (checkOverlap(step, movingItem)) {
+                    step.classList.add('activeStep');
+                } else {
+                    step.classList.remove('activeStep');
+                }
+            });
+        }, 100); 
+    }
 });
