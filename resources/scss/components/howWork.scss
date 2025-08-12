@@ -6,7 +6,7 @@
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 64px 16px;
+        padding: 64px 0px;
         .container {
             display: flex;
             flex-direction: column;
@@ -128,6 +128,8 @@
                     position: relative;
                 }
                 .howWorkMapTitle {
+                    display: flex;
+                    justify-content: start;
                     display: block !important;
                 }
                 h1 {
@@ -294,12 +296,15 @@
     .howWorkContainer {
         display: flex;
         flex-direction: column;
-        gap: 32px;
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 64px 24px;
+        padding: 64px 0px;
         .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 24px;
+            max-width: 1542px;
             display: flex;
             flex-direction: column;
             gap: 32px;
@@ -557,14 +562,14 @@
         flex-direction: column;
         gap: 32px;
         width: 100%;
-
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 64px 24px;
+        padding: 64px 0px;
         .container {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 24px;
+            max-width: 1542px;
         }
         h1 {
             font-family: var(--font-family-Light);
@@ -588,7 +593,10 @@
             flex-direction: row-reverse;
             gap: 32px;
             .howWorkMap {
-                width: 576px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 background: rgba(246, 247, 249, 1);
                 height: 480px !important;
                 padding: 40px;
@@ -850,11 +858,11 @@
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 64px 24px;
+        padding: 64px 0px;
         .container {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
+            max-width: 1542px;
+            width: 100%;
+            margin: 0 auto;
         }
         h1 {
             font-family: var(--font-family-RegularHead);
@@ -973,7 +981,9 @@
                 }
 
                 .howWorkMapTitle {
-                    display: block !important;
+                    width: 100%;
+                    display: flex !important;
+                    flex-direction: column;
                 }
                 h1 {
                     font-family: var(--font-family-Light);
@@ -1131,11 +1141,12 @@
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 132px 181px;
+        padding: 132px 0;
         .container {
             display: flex;
             flex-direction: column;
             gap: 32px;
+            padding: 0;
         }
         h1 {
             font-family: var(--font-family-RegularHead);
@@ -1253,9 +1264,6 @@
                     }
                 }
 
-                .howWorkMapTitle {
-                    display: block !important;
-                }
                 h1 {
                     font-family: var(--font-family-Light);
                     font-weight: 300;
@@ -1418,7 +1426,7 @@
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
-        padding: 64px 16px;
+        padding: 64px 0px;
         align-items: center;
         .container {
             display: flex;

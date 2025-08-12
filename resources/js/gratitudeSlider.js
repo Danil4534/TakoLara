@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.gratitudeSlider')&&
     new Swiper('.gratitudeSlider', {
-        slidesPerView: 2, 
+        slidesPerView: 'auto', 
         slidesPerGroup: 2,
         spaceBetween: 16,
         loop: true,
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 spaceBetween: 32
             },
             1920: {
-                slidesPerView: 4,
+                slidesPerGroup: 2,
                 spaceBetween: 32
             }
         }

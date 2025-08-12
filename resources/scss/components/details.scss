@@ -3,14 +3,16 @@
     height: 100%;
     background: var(--neutral-white);
     border-radius: 8px;
-    padding: 16px;
     display: flex;
     flex-direction: column-reverse;
     gap: 32px;
     .container {
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 32px;
+        padding: 16px;
     }
     .rightSideDetails {
         width: 100%;
@@ -85,7 +87,6 @@
 
 .detailsContainer .rightSideDetails button :hover {
     cursor: pointer;
-    background: var();
 }
 
 .leftSideDetails .detailsWrapper {
@@ -150,11 +151,17 @@
         height: 100%;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 24px;
+
         display: flex;
         flex-direction: column;
         gap: 54px;
-
+        .container {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 24px;
+        }
         .rightSideDetails {
             width: 100%;
             height: 372px;
@@ -256,15 +263,16 @@
         height: 100%;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 24px;
+
         display: flex;
         flex-direction: column;
         gap: 54px;
         .container {
-            max-width: 1542px;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: 64px;
+            padding: 48px 24px 32px;
         }
         .rightSideDetails {
             width: 100%;
@@ -367,7 +375,6 @@
         height: 100%;
         background: var(--neutral-white);
         border-radius: 8px;
-
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -378,9 +385,10 @@
             display: flex;
             flex-direction: row;
             gap: 88px;
+            padding: 32px 24px;
         }
         .rightSideDetails {
-            width: 725px !important;
+            width: 900px;
             height: 485px;
             border-radius: 8px;
             background-image: url("../../public/assets/Qr_Bg.svg");
@@ -487,6 +495,7 @@
             display: flex;
             flex-direction: row !important;
             gap: 56px;
+            padding: 32px 0px;
             .rightSideDetails {
                 min-width: 900px !important;
                 height: 485px;
@@ -583,14 +592,13 @@
         background: var(--neutral-white);
         border-radius: 8px;
         padding: 0px;
-        display: flex;
-        flex-direction: row !important;
-        justify-content: center;
         gap: 56px;
         .container {
+            padding: 32px 0px;
             max-width: 1542px;
             display: flex;
             gap: 56px;
+            margin: 0 auto;
         }
     }
 }

@@ -3,11 +3,15 @@
     height: auto;
     background: var(--neutral-white);
     border-radius: 8px;
-    padding: 64px 16px;
+
     display: flex;
     flex-direction: column;
     gap: 32;
-
+    .container {
+        max-width: 1542px;
+        margin: 0 auto;
+        padding: 64px 16px;
+    }
     h1 {
         font-weight: 300;
         font-size: 36px;
@@ -41,6 +45,7 @@
     }
 
     ul {
+        width: 100%;
         .productCard {
             position: relative;
             flex: 0 0 100%;
@@ -222,11 +227,15 @@
         height: auto;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 64px 24px;
+
         display: flex;
         flex-direction: column;
         gap: 32;
-
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
         h1 {
             font-weight: 300;
             font-style: Light;
@@ -338,11 +347,15 @@
         height: auto;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 64px 24px;
+
         display: flex;
         flex-direction: column;
         gap: 32;
-
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
         h1 {
             font-weight: 300;
             font-size: 36px;
@@ -357,7 +370,7 @@
             width: 100%;
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             column-gap: 32px;
             row-gap: 40px;
         }
@@ -454,13 +467,14 @@
         height: auto;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 132px 24px;
+
         display: flex;
         flex-direction: column;
         gap: 32;
         .container {
             max-width: 1542px;
             margin: 0 auto;
+            padding: 132px 0px;
         }
         h1 {
             font-weight: 300;
@@ -577,13 +591,13 @@
         height: auto;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 132px 181px;
         display: flex;
         flex-direction: column;
         gap: 32;
         .container {
             max-width: 1542px;
             margin: 0 auto;
+            padding: 132px 0px;
         }
         h1 {
             font-weight: 300;
@@ -704,13 +718,16 @@
         height: auto;
         background: var(--neutral-white);
         border-radius: 8px;
-        padding: 132px 181px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 32;
         .container {
+            width: 100%;
             max-width: 1542px;
+            margin: 0 auto;
+            padding: 132px 0px;
         }
     }
 }

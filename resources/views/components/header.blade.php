@@ -2,7 +2,7 @@
 $chooseProducts = session('chooseProducts');
 $links = [
 ['title' => "Про нас", "anchor" => "#about"],
-['title' => "Як ми працюємо", "anchor" => "#about"],
+['title' => "Як ми працюємо", "anchor" => "#howWorks"],
 ['title' => "Партнери", "anchor" => "#partners"],
 ['title' => "Відгуки", "anchor" => "#responses"],
 ];

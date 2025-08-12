@@ -44,7 +44,7 @@
         <section id="">
             @include("components.numbers")
         </section>
-        <section>
+        <section id="howWorks">
             @include('components.howWork')
         </section>
         <section id="ourProducts">

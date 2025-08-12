@@ -39,10 +39,8 @@ $content=[
 
 <div class="howWorkContainer">
     <div class="container">
-
         <h1>Як ми працюємо?</h1>
         <hr>
-
         <div class="howWorkContent">
             <div class="howWorkMap">
                 <div class="howWorkMapTitle">
