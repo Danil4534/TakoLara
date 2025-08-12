@@ -10,21 +10,24 @@ $products = [
 
 <div id="categoriesModal" class="categoriesModal">
     <div class="categoriesModalContent" id="categoriesModalContent">
-        <ul class="categories">
-            @foreach ($products as $product)
-            <li class="category">
-                <div class="cardHeader">
-                    <div class="leftSideUpBox">
-                        <span></span>
+        <div class="container">
+
+            <ul class="categories">
+                @foreach ($products as $product)
+                <li class="category">
+                    <div class="cardHeader">
+                        <div class="leftSideUpBox">
+                            <span></span>
+                        </div>
+                        <x-picture-tag src="{{ $product['picture'] }}" />
                     </div>
-                    <x-picture-tag src="{{ $product['picture'] }}" />
-                </div>
-                <div class="cardContent">
-                    <button onclick="window.location.href='{{ route($product['route']) }}'">{{ $product['title'] }}<i
-                            class="ph ph-arrow-up-right"></i></button>
-                </div>
-            </li>
-            @endforeach
-        </ul>
+                    <div class="cardContent">
+                        <button onclick="window.location.href='{{ route($product['route']) }}'">{{ $product['title'] }}<i
+                                class="ph ph-arrow-up-right"></i></button>
+                    </div>
+                </li>
+                @endforeach
+            </ul>
+        </div>
     </div>
 </div>

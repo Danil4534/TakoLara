@@ -28,7 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-
+categoriesModal.addEventListener('click', ()=>{  
+    if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {
+    categoriesBtnToggleIcon.classList.remove('ph-caret-down');
+    categoriesBtnToggleIcon.classList.add('ph-x');
+    categoriesModal.classList.add("active");
+    categoriesModalContent.classList.add("active");
+  } else {
+    categoriesBtnToggleIcon.classList.remove('ph-x');
+    categoriesBtnToggleIcon.classList.add('ph-caret-down');
+    categoriesModal.classList.remove("active");
+  }
+})
+categoriesModalContent.addEventListener('click', (e)=>{
+  e.stopPropagation()
+})  
   categoriesBtnToggle.addEventListener('click', () => {
   if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {
     categoriesBtnToggleIcon.classList.remove('ph-caret-down');

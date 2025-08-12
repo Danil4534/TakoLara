@@ -1016,7 +1016,10 @@
         padding: 64px 16px;
         border-radius: 8px;
         gap: 24px;
-
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
+        }
         .filtersContainer {
             width: 100%;
             height: auto;
@@ -1250,6 +1253,22 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    .productsContainer {
+        width: 100%;
+        background: var(--neutral-white);
+        height: auto;
+        padding: 140px 181px;
+        border-radius: 8px;
+        gap: 24px;
+
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
         }
     }
 }

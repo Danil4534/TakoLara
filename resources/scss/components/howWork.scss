@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     .howWorkContainer {
         display: flex;
         flex-direction: column;
@@ -7,6 +7,11 @@
         background: var(--neutral-white);
         border-radius: 16px;
         padding: 64px 16px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
         h1 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -156,6 +161,7 @@
                     margin: 0;
                     .swiper-wrapper {
                         width: 100%;
+
                         .swiper-slide {
                             width: 100% !important;
                             height: fit-content !important;
@@ -200,7 +206,7 @@
                     top: auto;
                     left: 24px;
                     bottom: 24px;
-                    width: 279px;
+                    width: calc(100% - 48px);
                     height: 7px;
                     border-radius: 6px !important;
                     overflow: hidden;
@@ -209,48 +215,50 @@
                         border-radius: 6px !important;
                     }
                 }
-                .swiper-button-next {
-                    position: absolute !important;
+                .navigation {
+                    position: absolute;
                     top: 24px;
                     right: 24px;
-                    width: 40px;
-                    height: 40px;
-                    border: 2px solid var(--primary-deep-blue);
-                    border-radius: 999px;
-                    margin: 0;
-                    &::after {
-                        font-size: 20px;
-                    }
-                    &:hover {
-                        transition: background 0.3s ease;
-                        background: var(--primary-deep-blue);
-                        color: #fff;
-                    }
-                }
-                .swiper-button-prev {
-                    position: absolute !important;
-                    left: 207px !important;
-                    top: 24px;
-                    width: 40px;
-                    height: 40px;
-                    margin: 0;
+                    display: flex;
 
-                    border: 2px solid var(--primary-deep-blue);
-                    border-radius: 999px;
-                    &::after {
-                        font-size: 20px;
+                    .swiper-button-next {
+                        width: 40px;
+                        height: 40px;
+                        border: 2px solid var(--primary-deep-blue);
+                        border-radius: 999px;
+                        margin: 0;
+
+                        &::after {
+                            font-size: 20px;
+                        }
+                        &:hover {
+                            transition: background 0.3s ease;
+                            background: var(--primary-deep-blue);
+                            color: #fff;
+                        }
                     }
-                    &:hover {
-                        transition: background 0.3s ease;
-                        background: var(--primary-deep-blue);
-                        color: #fff;
+                    .swiper-button-prev {
+                        width: 40px;
+                        height: 40px;
+                        margin: 0;
+
+                        border: 2px solid var(--primary-deep-blue);
+                        border-radius: 999px;
+                        &::after {
+                            font-size: 20px;
+                        }
+                        &:hover {
+                            transition: background 0.3s ease;
+                            background: var(--primary-deep-blue);
+                            color: #fff;
+                        }
                     }
                 }
                 .howWorkSliderBtn {
                     position: absolute;
                     bottom: 47px;
                     height: 56px;
-                    width: 279px;
+                    width: calc(100% - 48px);
                     border: none;
                     border-radius: 999px;
                     background: var(--primary-deep-blue);
@@ -282,7 +290,6 @@
         }
     }
 }
-
 @media screen and (min-width: 768px) {
     .howWorkContainer {
         display: flex;
@@ -292,6 +299,11 @@
         background: var(--neutral-white);
         border-radius: 16px;
         padding: 64px 24px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
         h1 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -549,6 +561,11 @@
         background: var(--neutral-white);
         border-radius: 16px;
         padding: 64px 24px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
         h1 {
             font-family: var(--font-family-Light);
             font-weight: 300;
@@ -561,7 +578,7 @@
         hr {
             border: none;
             height: 1px;
-            background: var(--neutral-medium-gray);
+            background: var(--neutral-medium-gray-second);
         }
         .howWorkContent {
             padding: 0px;
@@ -834,6 +851,11 @@
         background: var(--neutral-white);
         border-radius: 16px;
         padding: 64px 24px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
         h1 {
             font-family: var(--font-family-RegularHead);
             font-weight: 300;
@@ -1105,11 +1127,16 @@
     .howWorkContainer {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+
         width: 100%;
         background: var(--neutral-white);
         border-radius: 16px;
         padding: 132px 181px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
         h1 {
             font-family: var(--font-family-RegularHead);
             font-weight: 300;
@@ -1382,6 +1409,26 @@
         }
     }
 }
+
+@media screen and (min-width: 1921px) {
+    .howWorkContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        background: var(--neutral-white);
+        border-radius: 16px;
+        padding: 64px 16px;
+        align-items: center;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            max-width: 1542px;
+        }
+    }
+}
+
 @keyframes anim {
     0% {
     }

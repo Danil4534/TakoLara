@@ -403,3 +403,13 @@
         }
     }
 }
+
+@media screen and (min-width: 1921px) {
+    .categoriesModalContent {
+        display: flex;
+        justify-content: center;
+        .container {
+            max-width: 1542px;
+        }
+    }
+}

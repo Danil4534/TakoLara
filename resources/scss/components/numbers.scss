@@ -649,7 +649,10 @@
         padding: 64px 24px;
         display: flex;
         flex-direction: column;
-
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
+        }
         hr {
             width: 100%;
             border: none;
@@ -973,7 +976,10 @@
         padding: 132px 24px;
         display: flex;
         flex-direction: column;
-
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
+        }
         hr {
             width: 100%;
             border: none;
@@ -1302,7 +1308,10 @@
         padding: 132px 181px;
         display: flex;
         flex-direction: column;
-
+        .container {
+            max-width: 1542px;
+            margin: 0 auto;
+        }
         hr {
             width: 100%;
             border: none;
@@ -1627,6 +1636,21 @@
             i {
                 font-size: 24px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .numbersContainer {
+        width: 100%;
+        background: var(--neutral-white);
+        border-radius: 16px;
+        padding: 64px 16px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .container {
+            max-width: 1542px;
         }
     }
 }

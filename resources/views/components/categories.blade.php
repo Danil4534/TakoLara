@@ -14,26 +14,28 @@ $products = collect([
 
 
 <div class="ourProductsContainer">
-    <h1>{{ $content['title'] }}</h1>
-    <hr />
-    <ul
-        class="productCards {{ $content['class'] ?? "" }} {{ Route::currentRouteName() !== 'home.page' ? "scrollCards" : "" }}">
-        @foreach ($products as $product)
-        <li class="productCard">
-            <div class="productCardHeader">
-                <div class="leftSideUpBox">
-                    <span></span>
+    <div class="container">
+        <h1>{{ $content['title'] }}</h1>
+        <hr />
+        <ul
+            class="productCards {{ $content['class'] ?? "" }} {{ Route::currentRouteName() !== 'home.page' ? "scrollCards" : "" }}">
+            @foreach ($products as $product)
+            <li class="productCard">
+                <div class="productCardHeader">
+                    <div class="leftSideUpBox">
+                        <span></span>
+                    </div>
+                    <x-picture-tag src="{{ $product['picture'] }}" />
                 </div>
-                <x-picture-tag src="{{ $product['picture'] }}" />
-            </div>
-            <div class="cardContent">
-                <h4>{{ $product['title'] }}</h4>
-                <p>{{ $product['subtitle'] }}</p>
-            </div>
-            <x-secondary-btn text="Переглянути" class="cardBtn" route="{{$product['route']}}" iconRight="ph-bold ph-arrow-up-right icon" styles="font-size: 28px"></x-secondary-btn>
-        </li>
-        @endforeach
-    </ul>
+                <div class="cardContent">
+                    <h4>{{ $product['title'] }}</h4>
+                    <p>{{ $product['subtitle'] }}</p>
+                </div>
+                <x-secondary-btn text="Переглянути" class="cardBtn" route="{{$product['route']}}" iconRight="ph-bold ph-arrow-up-right icon" styles="font-size: 28px"></x-secondary-btn>
+            </li>
+            @endforeach
+        </ul>
+    </div>
 
 
 </div>

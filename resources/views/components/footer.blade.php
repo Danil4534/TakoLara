@@ -53,6 +53,7 @@ $secondLinks = [
 
 
 <div class="footerContainer">
+
     <div class="footerContent">
         <div class="footerSloganWrapper">
             <div class="footerSlogan">
@@ -103,7 +104,8 @@ $secondLinks = [
         </div>
     </div>
     <div class="footerBottom">
-        <hr />
+
         <p class="rights">© 2025 TAKO. All rights reserved</p>
     </div>
+
 </div>

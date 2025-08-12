@@ -28,45 +28,48 @@ $sliderContent = [
 </style>
 
 <div class="responsesContainer">
-    <div class="responsesHeader">
-        <h1>Відгуки про все</h1>
-        <hr />
-        <div class="subtitle">
-            <p>
-                Слідкуйте за нами у Facebook та Instagram, щоб бути в курсі всіх
-                оновлень, бачити нашу діяльність у дії та разом наближати перемогу!
-                💙💛
-            </p>
-            @include('components.social-links', ['content' => ['class' => "socialLinkStyles"]])
-        </div>
-    </div>
+    <div class="container">
 
-    <div class="swiper responseSlider">
-        <div class="swiper-wrapper">
-            @foreach ($sliderContent as $item)
-            <div class="swiper-slide">
-                <div class="slide">
-                    @if($item['type']=== 'picture')
-                    <div class="slide_hover_block photo">
-                        <button><span>Переглянути</span> <i class="ph ph-eye"></i></button>
-                    </div>
-                    @else
-                    <div class="slide_hover_block video">
-                        <button><i class="ph ph-play"></i></button>
-                    </div>
-                    @endif
-                    <x-picture-tag src="{{ asset('assets/sliderBg.svg') }}"></x-picture-tag>
-                </div>
+        <div class="responsesHeader">
+            <h1>Відгуки про все</h1>
+            <hr />
+            <div class="subtitle">
+                <p>
+                    Слідкуйте за нами у Facebook та Instagram, щоб бути в курсі всіх
+                    оновлень, бачити нашу діяльність у дії та разом наближати перемогу!
+                    💙💛
+                </p>
+                @include('components.social-links', ['content' => ['class' => "socialLinkStyles"]])
             </div>
-            @endforeach
         </div>
 
-        <div class="slider__nav">
-            <x-secondary-btn id="prevBtn" text="Назад" class="btnPrev" iconLeft="ph ph-caret-left icon" />
-            <x-secondary-btn id="nextBtn" text="Вперед" class="btnNext" iconRight="ph ph-caret-right icon" />
-        </div>
+        <div class="swiper responseSlider">
+            <div class="swiper-wrapper">
+                @foreach ($sliderContent as $item)
+                <div class="swiper-slide">
+                    <div class="slide">
+                        @if($item['type']=== 'picture')
+                        <div class="slide_hover_block photo">
+                            <button><span>Переглянути</span> <i class="ph ph-eye"></i></button>
+                        </div>
+                        @else
+                        <div class="slide_hover_block video">
+                            <button><i class="ph ph-play"></i></button>
+                        </div>
+                        @endif
+                        <x-picture-tag src="{{ asset('assets/sliderBg.svg') }}"></x-picture-tag>
+                    </div>
+                </div>
+                @endforeach
+            </div>
 
-        <div class="slider_bottom_nav"></div>
+            <div class="slider__nav">
+                <x-secondary-btn id="prevBtn" text="Назад" class="btnPrev" iconLeft="ph ph-caret-left icon" />
+                <x-secondary-btn id="nextBtn" text="Вперед" class="btnNext" iconRight="ph ph-caret-right icon" />
+            </div>
+
+            <div class="slider_bottom_nav"></div>
+        </div>
     </div>
 </div>
 

@@ -1540,7 +1540,6 @@
 @media screen and (min-width: 1920px) {
     .formContainer {
         margin-top: 8px;
-
         h1 {
             @include font-light;
             font-size: 56px !important;
@@ -1852,6 +1851,23 @@
     .inputContainer {
         input {
             height: 40px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .formContainer {
+        width: 100%;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            width: 100%;
+            max-width: 1542px;
+            height: calc(100vh - 160px);
         }
     }
 }

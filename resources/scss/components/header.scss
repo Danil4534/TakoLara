@@ -69,11 +69,12 @@
         position: fixed;
         z-index: 999;
         height: 56px;
+        background: #fff;
 
         .headerContent {
             width: 100%;
             display: flex;
-            background-color: rgba(246, 247, 249, 1);
+
             border-bottom: 1px solid var(--neutral-light-grey);
             padding: 8px 16px;
             align-items: center;
@@ -128,6 +129,7 @@
 
 @media screen and (max-width: 1439px) {
     .header {
+        background: #fff;
         .headerContent {
             .buttonSelectToggle {
                 display: none !important;
@@ -142,17 +144,15 @@
         padding: 0;
         position: fixed;
         z-index: 999;
-        height: 56px;
+        height: 80px;
+        background: #fff;
 
         .headerContent {
-            width: 100%;
             display: flex;
-            background-color: rgba(246, 247, 249, 1);
             border-bottom: 1px solid var(--neutral-light-grey);
             padding: 16px 32px;
-            align-items: center;
-            justify-content: start;
-
+            max-width: 1543px;
+            margin: 0 auto;
             .buttonSelectToggle {
                 margin-left: 32px;
                 margin-right: 24px;
@@ -266,15 +266,153 @@
         padding: 0;
         position: fixed;
         z-index: 999;
-        height: 56px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background: #fff;
 
         .headerContent {
-            width: 100%;
-            display: flex;
-            background-color: rgba(246, 247, 249, 1);
+            max-width: 1542px;
+            margin: 0 auto;
+
             border-bottom: 1px solid var(--neutral-light-grey);
-            padding: 16px 189px;
-            align-items: center;
+            padding: 0;
+            .buttonSelect {
+                margin-left: 32px;
+                margin-right: 24px;
+                display: none;
+                min-width: 136px !important;
+                height: 48px !important;
+                border-radius: 999px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                background-color: rgba(15, 94, 187, 1);
+                font-family: var(--font-family-Bold);
+                color: var(--neutral-white);
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+            }
+
+            .buttonSelectClose {
+                display: none;
+                margin-left: 32px;
+                margin-right: 24px;
+                width: 136px !important;
+                height: 48px !important;
+                border-radius: 999px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                background-color: rgba(15, 94, 187, 1);
+                font-family: var(--font-family-Bold);
+                color: var(--neutral-white);
+                font-style: Bold;
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: 0%;
+            }
+
+            nav {
+                width: 100%;
+                display: block;
+                margin-right: 61px;
+
+                ul {
+                    display: flex;
+                    gap: 24px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        a {
+                            font-family: var(--font-family-Light);
+                            font-weight: 300;
+                            font-style: Light;
+                            font-size: 14px;
+                            text-decoration: none;
+                            color: var(--primary-dark-navy);
+                            line-height: 120%;
+                            letter-spacing: 1.6%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .headerBurgerContainer {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .burger {
+                    display: none;
+
+                    &.disabled {
+                        display: none;
+                    }
+                }
+
+                .closeBurger {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+
+                .Logo {
+                    display: block;
+                }
+
+                .mobileLogo {
+                    display: none;
+                }
+            }
+
+            .headerBtns {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .btnSupport {
+                    height: 48px;
+                }
+
+                .btnConnect {
+                    display: block;
+                }
+
+                .btnPreOrder {
+                    .btnContent {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1921px) {
+    .header {
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        z-index: 999;
+        height: 80px;
+        background: #fff;
+        border-bottom: 1px solid var(--neutral-light-grey);
+        display: flex;
+        align-items: center;
+        .headerContent {
+            margin: 0 auto;
+            max-width: 1542px;
+            background: none !important;
+            padding: 0px;
 
             .buttonSelect {
                 margin-left: 32px;

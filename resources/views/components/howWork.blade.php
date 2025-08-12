@@ -38,46 +38,51 @@ $content=[
 
 
 <div class="howWorkContainer">
-    <h1>Як ми працюємо?</h1>
-    <hr>
+    <div class="container">
 
-    <div class="howWorkContent">
-        <div class="howWorkMap">
-            <div class="howWorkMapTitle">
-                <h1>Розробка та тестування</h1>
-                <p>
-                    Створюємо прототипи, випробовуємо їх у реальних умовах і вдосконалюємо до ідеального стану.
-                </p>
-            </div>
+        <h1>Як ми працюємо?</h1>
+        <hr>
 
-            <div class="howWorkVector">
-                @foreach ( $mapContent as $item )
-                <div class="mapItem">
-                    <i class="{{ $item['icon'] }}"></i>
-                    <p>{{$item['text'] }}</p>
+        <div class="howWorkContent">
+            <div class="howWorkMap">
+                <div class="howWorkMapTitle">
+                    <h1>Розробка та тестування</h1>
+                    <p>
+                        Створюємо прототипи, випробовуємо їх у реальних умовах і вдосконалюємо до ідеального стану.
+                    </p>
                 </div>
-                @endforeach
-                <div class="howWorkMapMoveItem"></div>
-            </div>
-        </div>
-        <div class="sliderWrapper">
-            <div class="swiper howWorkSlider">
-                <div class="swiper-wrapper">
-                    @foreach ($content as $slide)
-                    <div class="swiper-slide">
-                        <i class="{{ $slide['icon'] }}"></i>
-                        <h2>{{ $slide['title'] }}</h2>
-                        <p>{{ $slide['subtitle'] }}</p>
+
+                <div class="howWorkVector">
+                    @foreach ( $mapContent as $item )
+                    <div class="mapItem">
+                        <i class="{{ $item['icon'] }}"></i>
+                        <p>{{$item['text'] }}</p>
                     </div>
                     @endforeach
+                    <div class="howWorkMapMoveItem"></div>
                 </div>
             </div>
-            <button class="howWorkSliderBtn" onclick="window.location.href='{{ route('home.page') }}'">Переглянути категорії <i class="ph ph-arrow-up-right"></i></button>
-            <div class="swiper-pagination-progressBar"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
+            <div class="sliderWrapper">
+                <div class="swiper howWorkSlider">
+                    <div class="swiper-wrapper">
+                        @foreach ($content as $slide)
+                        <div class="swiper-slide">
+                            <i class="{{ $slide['icon'] }}"></i>
+                            <h2>{{ $slide['title'] }}</h2>
+                            <p>{{ $slide['subtitle'] }}</p>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <button class="howWorkSliderBtn" onclick="window.location.href='{{ route('home.page') }}'">Переглянути категорії <i class="ph ph-arrow-up-right"></i></button>
+                <div class="swiper-pagination-progressBar"></div>
+                <div class="navigation">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
 
+        </div>
     </div>
 
 

@@ -35,7 +35,6 @@ class CheckoutController extends Controller
         ]);
 
         session(['chooseProducts' => []]);
-        @dump(session()->all());
         if ($request->input('action') === "support") {
             session()->flash('show_success_modal_cont', true);
             return redirect()->route('support.page')->with('success', '');

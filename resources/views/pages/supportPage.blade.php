@@ -18,8 +18,12 @@
 <body>
     @include("components.header")
     <main>
-        <section class="box">
-            <h1 class="supportTitle">Підтримати</h1>
+        <section>
+            <div class="containerWrapper">
+                <div class="container">
+                    <h1 class="supportTitle">Підтримати</h1>
+                </div>
+            </div>
         </section>
         <section>
             @include("components.details")

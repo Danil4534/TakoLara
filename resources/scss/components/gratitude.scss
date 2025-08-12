@@ -6,7 +6,11 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
     .gratitudeHeader {
         display: flex;
         flex-direction: column;
@@ -254,6 +258,11 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
         .gratitudeHeader {
             :nth-child(2) {
                 display: flex;
@@ -514,7 +523,11 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
-
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
         .gratitudeHeader {
             :nth-child(2) {
                 display: flex;
@@ -732,10 +745,12 @@
         background-color: var(--neutral-white);
         border-radius: 16px;
         padding: 132px 24px;
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
 
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
         .gratitudeHeader {
             :nth-child(2) {
                 display: flex;
@@ -1130,6 +1145,24 @@
             hr:last-child {
                 display: none;
             }
+        }
+    }
+}
+@media screen and (min-width: 1921px) {
+    .gratitudeContainer {
+        width: 100%;
+        background-color: var(--neutral-white);
+        border-radius: 16px;
+        padding: 132px 181px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+        .container {
+            max-width: 1542px;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
         }
     }
 }
