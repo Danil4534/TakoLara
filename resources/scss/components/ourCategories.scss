@@ -3,13 +3,11 @@
     height: auto;
     background: var(--neutral-white);
     border-radius: 8px;
-
     display: flex;
     flex-direction: column;
     gap: 32;
     .container {
         max-width: 1542px;
-        margin: 0 auto;
         padding: 64px 16px;
     }
     h1 {

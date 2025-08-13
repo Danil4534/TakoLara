@@ -32,7 +32,8 @@
 @use "./pages/homePage.scss";
 @use "./components/productCard.scss";
 @use "./pages/rebPage.scss";
-:root  {
+@use "./modal/previewModal.scss";
+:root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: rgba(28, 47, 67, 1);

@@ -102,5 +102,6 @@
 @include('modal.preOrderModal')
 @include("modal.headerModal")
 @include('modal.successModal')
+@include('modal.previewModal')
 
 </html>

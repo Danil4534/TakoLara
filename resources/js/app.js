@@ -5,6 +5,7 @@ import './animationForNumbers';
 import './productSlider';
 import './howWorksSlider';
 import './howWorksAnimEachStep';
+import "./previewModal";
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");
