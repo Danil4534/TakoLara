@@ -4,13 +4,15 @@
             <div class="swiper productSlider">
                 <div class="swiper-wrapper">
                     @foreach ($product['img'] as $picture)
-                    <div class="swiper-slide productSlide previewTrigger" data-img="{{ asset($picture ) }}">
+                    <div class="swiper-slide productSlide previewTrigger"
+                        data-imgs='@json($product["img"] ?? [])'
+                        data-current="{{ $loop->index }}">
                         <x-picture-tag src="{{ asset($picture) }}"></x-picture-tag>
                     </div>
                     @endforeach
                 </div>
                 <div class="swiper-scrollbar"></div>
-                <div class="swiper-button-prev-product" id="swiper-button-prev-product"> <i class="ph ph-caret-left"></i></div>
+                <div class="swiper-button-prev-product" id="swiper-button-prev-product"><i class="ph ph-caret-left"></i></div>
                 <div class="swiper-button-next-product" id="swiper-button-next-product"><i class="ph ph-caret-right"></i></div>
                 <div class="swiper-pagination"></div>
             </div>

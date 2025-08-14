@@ -28,7 +28,7 @@
         hr {
             border: none;
             height: 1px;
-            background: var(--neutral-medium-gray);
+            background: var(--neutral-medium-gray-second);
         }
         .howWorkContent {
             padding: 0px;
@@ -164,6 +164,9 @@
                 .howWorkSlider {
                     width: 100%;
                     margin: 0;
+                    .swiper {
+                        margin: 0px !important;
+                    }
                     .swiper-wrapper {
                         width: 100%;
 
@@ -413,6 +416,9 @@
                     );
                     animation: anim 5s linear infinite;
                 }
+            }
+            .swiper {
+                margin: 0px !important;
             }
             .sliderWrapper {
                 width: 100% !important;

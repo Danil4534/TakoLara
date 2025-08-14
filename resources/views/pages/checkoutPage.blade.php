@@ -18,7 +18,7 @@
     @include("components.header")
     <main class="checkout__main">
         <section>
-            @include("components.checkoutForm")
+            @include("components.checkoutForm", ['products' => $products])
         </section>
     </main>
 </body>

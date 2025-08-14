@@ -6,7 +6,7 @@ $typeOfContact = [
 ['id' => 3, 'title' => 'Whatsup', 'active' => false],
 ['id' => 4, 'title' => 'Signal', 'active' => false],
 ];
-$chooseProducts = session('chooseProducts');
+$chooseProducts = $products;
 
 @endphp
 

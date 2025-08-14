@@ -1,13 +1,13 @@
 @php
 $sliderContent = [
-['img' => "sliderBg.svg", "content" => "1",'type'=>"picture"],
-['img' => "sliderBg.svg", "content" => "2",'type'=>"video"],
-['img' => "sliderBg.svg", "content" => "3",'type'=>"picture"],
-['img' => "sliderBg.svg", "content" => "4",'type'=>"video"],
-['img' => "sliderBg.svg", "content" => "1",'type'=>"picture"],
-['img' => "sliderBg.svg", "content" => "2",'type'=>"video"],
-['img' => "sliderBg.svg", "content" => "3",'type'=>"picture"],
-['img' => "sliderBg.svg", "content" => "4", 'type'=>"video"],
+['img' => "assets/sliderBg.svg", "content" => "1",'type'=>"picture"],
+['img' => "assets/sliderBg.svg", "content" => "2",'type'=>"video"],
+['img' => "assets/sliderBg.svg", "content" => "3",'type'=>"picture"],
+['img' => "assets/sliderBg.svg", "content" => "4",'type'=>"video"],
+['img' => "assets/sliderBg.svg", "content" => "1",'type'=>"picture"],
+['img' => "assets/sliderBg.svg", "content" => "2",'type'=>"video"],
+['img' => "assets/sliderBg.svg", "content" => "3",'type'=>"picture"],
+['img' => "assets/sliderBg.svg", "content" => "4", 'type'=>"video"],
 ];
 @endphp
 
@@ -50,7 +50,7 @@ $sliderContent = [
                     <div class="slide">
                         @if($item['type']=== 'picture')
                         <div class="slide_hover_block photo">
-                            <button class="previewTrigger" data-img="{{ asset('assets/' . $item['img'] ) }}">
+                            <button class="previewTrigger" data-current="{{ $loop->index }}" data-imgs='@json($item["img"] ?? [])'>
                                 <span>Переглянути</span>
                                 <i class="ph ph-eye"></i>
                             </button>

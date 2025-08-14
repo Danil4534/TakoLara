@@ -20,3 +20,4 @@ Route::post('/contactForm', [ContactFormController::class, 'submitContactDataPos
 Route::post('/checkout', [CheckoutController::class, 'checkoutForm'])->name('checkout.submit');
 Route::post('/removeFromCart', [ProductController::class, 'removeFromCart'])->name('remove.from.cart');
 Route::get('/page-list', [NavController::class, 'getPageList'])->name('page.list');
+Route::post('/checkoutprod', [CheckoutController::class, 'getChooseProductsWithCount'])->name('getChooseProductsWithCount');

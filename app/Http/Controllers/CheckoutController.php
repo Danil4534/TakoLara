@@ -11,7 +11,6 @@ class CheckoutController extends Controller
     public function checkoutForm(Request $request)
     {
 
-
         $request->validate([
             'surname' => 'required|string|max:255',
             'firstname' => 'required|string|max:255',
@@ -43,5 +42,11 @@ class CheckoutController extends Controller
         }
 
         return redirect()->route('success.page')->with('success');
+    }
+    public function getChooseProductsWithCount(Request $request)
+    {
+
+        $products = $request->input('products');
+        return view('pages.checkoutPage', compact('products'));
     }
 }
