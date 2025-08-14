@@ -49,7 +49,6 @@ $content=[
                         Створюємо прототипи, випробовуємо їх у реальних умовах і вдосконалюємо до ідеального стану.
                     </p>
                 </div>
-
                 <div class="howWorkVector">
                     @foreach ( $mapContent as $item )
                     <div class="mapItem">
@@ -74,10 +73,8 @@ $content=[
                 </div>
                 <button class="howWorkSliderBtn" onclick="window.location.href='{{ route('home.page') }}'">Переглянути категорії <i class="ph ph-arrow-up-right"></i></button>
                 <div class="swiper-pagination-progressBar"></div>
-                <div class="navigation">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
         </div>

@@ -8,9 +8,12 @@
         border-radius: 16px;
         padding: 64px 0px;
         .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 16px;
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 24px;
         }
         h1 {
             font-family: var(--font-family-Light);
@@ -217,44 +220,34 @@
                         border-radius: 6px !important;
                     }
                 }
-                .navigation {
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid var(--primary-deep-blue);
+                    border-radius: 999px;
+                    margin: 0;
                     position: absolute;
                     top: 24px;
-                    right: 24px;
-                    display: flex;
-
-                    .swiper-button-next {
-                        width: 40px;
-                        height: 40px;
-                        border: 2px solid var(--primary-deep-blue);
-                        border-radius: 999px;
-                        margin: 0;
-
-                        &::after {
-                            font-size: 20px;
-                        }
-                        &:hover {
-                            transition: background 0.3s ease;
-                            background: var(--primary-deep-blue);
-                            color: #fff;
-                        }
+                    left: auto !important;
+                    outline: none;
+                    &::after {
+                        font-size: 20px;
                     }
-                    .swiper-button-prev {
-                        width: 40px;
-                        height: 40px;
-                        margin: 0;
-
-                        border: 2px solid var(--primary-deep-blue);
-                        border-radius: 999px;
-                        &::after {
-                            font-size: 20px;
-                        }
-                        &:hover {
-                            transition: background 0.3s ease;
-                            background: var(--primary-deep-blue);
-                            color: #fff;
-                        }
+                    &:hover {
+                        transition: background 0.3s ease;
+                        background: var(--primary-deep-blue);
+                        color: #fff;
                     }
+                }
+
+                .swiper-button-next {
+                    right: 24px !important;
+                }
+
+                .swiper-button-prev {
+                    right: calc(24px + 40px + 16px) !important;
                 }
                 .howWorkSliderBtn {
                     position: absolute;
@@ -321,7 +314,7 @@
         hr {
             border: none;
             height: 1px;
-            background: var(--neutral-medium-gray);
+            background: var(--neutral-medium-gray-second);
         }
         .howWorkContent {
             padding: 24px;
@@ -485,6 +478,7 @@
                     top: auto;
                     width: 40px;
                     height: 40px;
+
                     border: 2px solid var(--primary-deep-blue);
                     border-radius: 999px;
                     margin: 0;
@@ -501,13 +495,13 @@
                 .swiper-button-prev {
                     position: absolute !important;
                     bottom: 35px !important;
-                    left: 530px;
-
+                    right: calc(24px + 40px + 20px);
+                    left: auto !important;
                     top: auto;
                     width: 40px;
                     height: 40px;
                     margin: 0;
-                    right: 0;
+
                     border: 2px solid var(--primary-deep-blue);
                     border-radius: 999px;
                     transition: background 0.3s ease;

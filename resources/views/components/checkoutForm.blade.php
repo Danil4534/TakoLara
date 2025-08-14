@@ -36,8 +36,8 @@ $chooseProducts = session('chooseProducts');
                 <div class="userData box">
                     <h6>Доставка</h6>
                     <div class="inputsWrapper">
-                        @include("ui.input", ['content' => ["label" => "Місто / Населений пункт", "placeholder" => "Введіть", "name" => "city", "icon" => "ph ph-magnifying-glass", "required"=>'true']])
-                        @include("ui.input", ['content' => ["label" => "Номер відділення", "placeholder" => "Оберіть", "name" => "department", 'type' => 'select', "required"=>'true', 'options' => ['1' => 'Оберіть номер відділення НП', '2' => '557234', '3' => '557234']]])
+                        @include("ui.input", ['content' => ["label" => "Місто / Населений пункт", "placeholder" => "Введіть", "name" => "city", 'type' => 'select', "icon" => "ph ph-magnifying-glass", "required"=>'true','options' => [ '1'=>'Київ', '2'=>'Миколаїв','3'=>'Вінниця', '4'=>"Харків"]]])
+                        @include("ui.input", ['content' => ["label" => "Номер відділення", "placeholder" => "Оберіть номер відділення НП", "name" => "department", 'type' => 'select', "required"=>'true', 'options' => [ '1' => '557234', '2' => '557234']]])
                     </div>
                 </div>
 

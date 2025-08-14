@@ -10,7 +10,9 @@ class CheckoutController extends Controller
 {
     public function checkoutForm(Request $request)
     {
+        @dump($request->all());
 
+        @dd();
 
         $request->validate([
             'surname' => 'required|string|max:255',
@@ -33,6 +35,8 @@ class CheckoutController extends Controller
             'contact_type.required' => 'Оберіть метод звʼязку.',
             'contact_type.in' => 'Невірний метод звʼязку.',
         ]);
+
+
 
         session(['chooseProducts' => []]);
         if ($request->input('action') === "support") {
