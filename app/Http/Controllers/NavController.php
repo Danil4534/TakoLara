@@ -10,7 +10,7 @@ class NavController extends Controller
 
     public $products = [
         [
-            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg", "assets/product.svg"],
+            "img" => ["assets/product.svg",  "assets/product.svg", "assets/product.svg"],
             "title" => "Пристрій швидкого спорядження набоїв",
             "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
             "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при
@@ -24,22 +24,7 @@ class NavController extends Controller
             "quantity" => 1
         ],
         [
-            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg", "assets/product.svg"],
-            "title" => "Пристрій швидкого спорядження набоїв",
-            "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
-            "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при
-низькій/високій температурі) ",
-            "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на
-зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами
-різних виробників'],
-            "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
-            "cost" => 10,
-            "count" => "1 345",
-            "quantity" => 1
-        ],
-
-        [
-            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg", "assets/product.svg"],
+            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg"],
             "title" => "Пристрій швидкого спорядження набоїв",
             "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
             "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при
@@ -54,7 +39,7 @@ class NavController extends Controller
         ],
 
         [
-            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg", "assets/product.svg"],
+            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg"],
             "title" => "Пристрій швидкого спорядження набоїв",
             "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
             "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при
@@ -69,7 +54,7 @@ class NavController extends Controller
         ],
 
         [
-            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg", "assets/product.svg"],
+            "img" => ["assets/product.svg",  "assets/product.svg", "assets/product.svg"],
             "title" => "Пристрій швидкого спорядження набоїв",
             "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
             "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при
@@ -84,7 +69,22 @@ class NavController extends Controller
         ],
 
         [
-            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg", "assets/product.svg"],
+            "img" => ["assets/product.svg", "assets/product.svg", "assets/product.svg"],
+            "title" => "Пристрій швидкого спорядження набоїв",
+            "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
+            "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при
+низькій/високій температурі) ",
+            "details" => ['Всі металеві компоненти – з нержавіючої сталі', 'Механізм кріплення повністю співпадає з оригінальним на
+зброї ', 'Є можливість кріплення до спорядження ', 'Повністю сумісний як з армійськими так і з цивільними магазинами
+різних виробників'],
+            "benefits" => ["Зручніше в темряві", "Зручніше на морозі", "Швидше споряджання", "Менше зусиль при заряджанні"],
+            "cost" => 10,
+            "count" => "1 345",
+            "quantity" => 1
+        ],
+
+        [
+            "img" => ["assets/product.svg",  "assets/product.svg", "assets/product.svg"],
             "title" => "Пристрій швидкого спорядження набоїв",
             "characteristics" => ["AK", "Калібр — 5,45", "Калібр — 7,62", "Вага — 56 гр"],
             "subtitle" => "Портативний та легкий пристрій. Може використовуватись за несприятливих погодних умов (в дощ/сніг, при

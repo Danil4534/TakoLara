@@ -14,12 +14,13 @@ class ContactFormController extends Controller
     {
 
 
-        @dd($request->all());
+        // @dump(session()->all());
+        // @dd($request->all());
         $request->validate([
             'name' => 'required|string|max:255',
             "phoneNum" => "required|regex:/^\+380\d{9}$/",
             "email" => "required|email",
-            "theme" => "required|numeric|min:0",
+            "theme" => "required",
 
 
         ], [
@@ -28,7 +29,7 @@ class ContactFormController extends Controller
             'phoneNum.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX',
             'email.required' => 'Пошта обов’язкова',
             'email.email' => 'Невірний формат пошти',
-            'theme.min' => 'Тема обов’язкова',
+            'theme.required' => 'Тема обов’язкова',
 
         ]);
 
@@ -42,7 +43,7 @@ class ContactFormController extends Controller
 
         if ($request->input('action') === "success") {
             session()->flash('show_success_modal_cont', $data);
-            return redirect()->back()->with('success', '');
+            return redirect()->back();
         }
     }
 }

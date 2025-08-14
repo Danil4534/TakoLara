@@ -54,7 +54,15 @@
     .customSelect {
         position: relative;
         width: 100%;
-        font-family: inherit;
+        font-family: var(--font-family-Light);
+        font-weight: 300;
+        font-style: Light;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 120%;
+        letter-spacing: 1.6%;
+        color: #6B6B6B;
+
     }
 
     .customSelect__box {
@@ -65,8 +73,10 @@
 
     .customSelect__search {
         width: 100%;
-        padding: 8px 8px 8px 8px;
+        padding: 8px 32px 8px 8px;
         box-sizing: border-box;
+        text-align: left;
+
     }
 
     .customSelect__box .inputIcon {
@@ -113,7 +123,7 @@
             const searchInput = select.querySelector('.customSelect__search');
             const dropdown = select.querySelector('.customSelect__dropdown');
             const options = dropdown.querySelectorAll('.customSelect__option');
-            const hiddenInput = select.nextElementSibling; // Находим скрытое поле сразу после блока
+            const hiddenInput = select.nextElementSibling;
 
             searchInput.addEventListener('focus', () => {
                 dropdown.style.display = 'block';
@@ -128,8 +138,8 @@
 
             options.forEach(opt => {
                 opt.addEventListener('click', () => {
-                    searchInput.value = opt.textContent;
-                    hiddenInput.value = opt.dataset.value;
+                    searchInput.value = opt.textContent.trim();
+                    hiddenInput.value = opt.dataset.value.trim();
                     dropdown.style.display = 'none';
                 });
             });

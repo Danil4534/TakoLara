@@ -2,50 +2,50 @@
 $links = [
 [
 "text" => "Головна",
-"anchor" => ""
+"anchor" => "/"
 ],
 [
 "text" => "Про нас",
-"anchor" => ""
+"anchor" => "#about"
 ],
 [
 "text" => "Як ми працюємо",
-"anchor" => ""
+"anchor" => "#howWorks"
 ],
 [
 "text" => "Партнери",
-"anchor" => ""
+"anchor" => "#partners"
 ],
 [
 "text" => "Відгуки",
-"anchor" => ""
+"anchor" => "#responses"
 ],
 [
 "text" => "ЗМІ про нас",
-"anchor" => ""
+"anchor" => "#media"
 ],
 
 ];
 $secondLinks = [
 [
 "text" => "Для зброї",
-"anchor" => ""
+"anchor" => "/weapon"
 ],
 [
 "text" => "Медицина",
-"anchor" => ""
+"anchor" => "/medkits"
 ],
 [
 "text" => "Для рацій",
-"anchor" => ""
+"anchor" => "/radioset"
 ],
 [
 "text" => "РЕБ / РЕР",
-"anchor" => ""
+"anchor" => "/reb"
 ],
 [
 "text" => "Для дронів",
-"anchor" => ""
+"anchor" => "/drones"
 ]
 ]
 

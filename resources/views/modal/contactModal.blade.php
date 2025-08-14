@@ -36,7 +36,7 @@
             @include("ui.input", [
             'content' => [
             "label" => "Тема",
-            "placeholder" => "Оберіть тему",
+            "placeholder" =>"Оберіть тему",
             "name" => "theme",
             'type'=>'select',
             "required"=>'true',

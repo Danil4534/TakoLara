@@ -10,9 +10,7 @@ class CheckoutController extends Controller
 {
     public function checkoutForm(Request $request)
     {
-        @dump($request->all());
 
-        @dd();
 
         $request->validate([
             'surname' => 'required|string|max:255',

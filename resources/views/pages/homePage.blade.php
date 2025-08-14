@@ -20,10 +20,12 @@
 
 <body>
     @include("components.header")
+
+
     <main>
         <section>
 
-
+            <!-- @dump(session()->all()); -->
             @include('components.banner', [
             'content' => [
             'banner' => "assets/drone.svg",
@@ -56,7 +58,7 @@
         <section>
             @include("components.gratitude")
         </section>
-        <section>
+        <section id="media">
             @include('components.media')
         </section>
         <section>

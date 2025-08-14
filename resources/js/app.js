@@ -84,6 +84,7 @@ openPreOrderBtn.forEach(btn=>
   contactBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       modalContact?.classList.add("active");
+       resetContactForm()
     });
   });
 
