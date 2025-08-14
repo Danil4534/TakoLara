@@ -17,6 +17,7 @@ class SecondaryBtn extends Component
     public $iconLeft;
     public $iconRight;
     public $styles;
+    public $type;
     public function __construct(
         string $id = '',
         string $text = '',
@@ -25,7 +26,8 @@ class SecondaryBtn extends Component
         string $route = '',
         string $styles = '',
         string $iconLeft = '',
-        string $iconRight = ''
+        string $iconRight = '',
+        string $type = ''
     ) {
         $this->id = $id;
         $this->text = $text;
@@ -35,6 +37,7 @@ class SecondaryBtn extends Component
         $this->styles = $styles;
         $this->iconLeft = $iconLeft;
         $this->iconRight = $iconRight;
+        $this->type = $type;
     }
 
     /**

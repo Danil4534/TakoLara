@@ -12,21 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 previewImage.src = imgSrc;
             }
             previewModalContainer.classList.add('active');
-            previewModalBody.classList.add('active');
+            previewModalBody?.classList.add('active');
         });
     });
 
-    previewModalBody.addEventListener('click', e => e.stopPropagation());
+    previewModalBody?.addEventListener('click', e => e.stopPropagation());
 
-    previewModalCloseBtn.addEventListener('click', () => {
+    previewModalCloseBtn?.addEventListener('click', () => {
         previewModalContainer.classList.remove('active');
-        previewModalBody.classList.remove('active');
+        previewModalBody?.classList.remove('active');
         previewImage.src = '';
     });
 
-    previewModalContainer.addEventListener('click', () => {
+    previewModalContainer?.addEventListener('click', () => {
         previewModalContainer.classList.remove('active');
-        previewModalBody.classList.remove('active');
+        previewModalBody?.classList.remove('active');
         previewImage.src = '';
     });
 });

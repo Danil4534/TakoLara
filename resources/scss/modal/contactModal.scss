@@ -92,6 +92,9 @@
             vertical-align: middle;
             margin-top: 32px;
             color: var(--neutral-white);
+            &:disabled {
+                background-color: #d0d0d0;
+            }
             &:hover {
                 transition: background 0.3s ease;
                 cursor: pointer;

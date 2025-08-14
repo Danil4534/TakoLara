@@ -26,7 +26,7 @@ class ContactFormController extends Controller
         ], [
             'name.required' => 'Ім’я обов’язкове',
             'phoneNum.required' => 'Номер телефону обов’язковий',
-            'phoneNum.regex' => 'Номер телефону має бути у форматі +380XXXXXXXXX',
+            'phoneNum.regex' => 'Невірний формат номеру телефону',
             'email.required' => 'Пошта обов’язкова',
             'email.email' => 'Невірний формат пошти',
             'theme.required' => 'Тема обов’язкова',

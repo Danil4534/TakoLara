@@ -7,7 +7,7 @@
                 <div class="cardCounter">
                     <div class="counter" data-product-id="{{ $index }}">
                         <i class="ph ph-minus decrement"></i>
-                        <input type="text" class="count-input" value="{{ $preOrderProduct['quantity'] ?? 1 }}" min="{{1}}">
+                        <input type="text" name="chooseCount" class="count-input" value="{{ $preOrderProduct['quantity'] ?? 1 }}" min="{{1}}">
                         <i class="ph ph-plus increment"></i>
                     </div>
                     <div class="cost">
@@ -22,7 +22,7 @@
         <div class="cardBottom">
             <div class="counter" data-product-id="{{ $index }}">
                 <i class="ph ph-minus decrement" id="decrement"></i>
-                <input type="text" class="count-input" value="{{ $preOrderProduct['quantity'] ?? 1 }}" min="{{1}}">
+                <input type="text" name="chooseCount" class="count-input" value="{{ $preOrderProduct['quantity'] ?? 1 }}" min="{{1}}">
                 <i class="ph ph-plus increment" id="increment"></i>
             </div>
             <div class="cost">
@@ -38,5 +38,4 @@
         <input type="hidden" name="index" value="{{ $index }}">
         <button type="submit"> <i class="ph ph-trash-simple trash"></i></button>
     </form>
-
 </div>

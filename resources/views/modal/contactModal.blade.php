@@ -54,7 +54,25 @@
             "name" => "comment"
             ]
             ])
-            <button id="contactBtnSubmit" type="submit" name="action" value="success">Надіслати</button>
+            <button id="contactBtnSubmit" disabled type="submit" name="action" value="success">Надіслати</button>
         </form>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector(".contactForm");
+        const submitBtn = document.getElementById("contactBtnSubmit");
+        const checkForm = () => {
+            const requiredFields = form.querySelectorAll("[required]");
+            let allFilled = true;
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    allFilled = false;
+                }
+            });
+            submitBtn.disabled = !allFilled;
+        };
+        checkForm();
+        form.addEventListener("input", checkForm);
+    });
+</script>

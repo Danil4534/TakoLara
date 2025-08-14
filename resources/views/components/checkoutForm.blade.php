@@ -15,7 +15,7 @@ $chooseProducts = session('chooseProducts');
         <div class="box">
             <h1 class="checkoutTitle">Оформити замовлення</h1>
             <div class="productBox">
-                @foreach ((array) $chooseProducts as $index=>$product )
+                @foreach ( $chooseProducts as $index=>$product )
                 <x-pre-order-product-card :preOrderProduct="$product" :index="$index" />
                 @endforeach
             </div>
@@ -37,7 +37,7 @@ $chooseProducts = session('chooseProducts');
                     <h6>Доставка</h6>
                     <div class="inputsWrapper">
                         @include("ui.input", ['content' => ["label" => "Місто / Населений пункт", "placeholder" => "Введіть", "name" => "city", 'type' => 'select', "icon" => "ph ph-magnifying-glass", "required"=>'true','options' => [ '1'=>'Київ', '2'=>'Миколаїв','3'=>'Вінниця', '4'=>"Харків"]]])
-                        @include("ui.input", ['content' => ["label" => "Номер відділення", "placeholder" => "Оберіть номер відділення НП", "name" => "department", 'type' => 'select', "required"=>'true', 'options' => [ '1' => '557234', '2' => '557234']]])
+                        @include("ui.input", ['content' => ["label" => "Номер відділення", "placeholder" =>"Оберіть номер відділення НП", "name" => "department", 'type' => 'select', "required"=>'true', 'options' => [ '1' => '557234', '2' => '557234']]])
                     </div>
                 </div>
 
@@ -76,11 +76,11 @@ $chooseProducts = session('chooseProducts');
 
                 <hr>
                 <div class="btnSection">
-                    <button class="btnConfirm" type="submit" name="action" value="confirm">
+                    <button class="btnConfirm" type="submit" name="action" value="confirm" disabled>
                         Підтвердити
                     </button>
 
-                    <button class="btnCheckout" id="btnRedirectSupportSuccess" type="submit" name="action" value="support">
+                    <button class="btnCheckout" id="btnRedirectSupportSuccess" type="submit" name="action" value="support" disabled>
                         Підтвердити та підтримати
                     </button>
                 </div>
@@ -95,6 +95,8 @@ $chooseProducts = session('chooseProducts');
 
 <script>
     const contactOptions = ["Номер телефону", "Viber", "Telegram", "Whatsup", "Signal"];
+
+
 
     function handleMethodToConnect(selectedIndex) {
         const labels = document.querySelectorAll('.radioLabel');
@@ -164,5 +166,24 @@ $chooseProducts = session('chooseProducts');
         });
 
         updateTotalPrice();
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector(".checkoutForm");
+        const submitBtn = document.querySelector(".btnConfirm");
+        const checkForm = () => {
+            const requiredFields = form.querySelectorAll("[required]");
+            let allFilled = true;
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    allFilled = false;
+                }
+            });
+            submitBtn.disabled = !allFilled;
+        };
+        checkForm();
+        form.addEventListener("input", checkForm);
     });
 </script>

@@ -9,8 +9,8 @@
         <div class="customSelect__box">
             <input type="text"
                 class="customSelect__search"
-                placeholder={{ $content['placeholder'] }}
-                autocomplete="off">
+                placeholder="{{ $content['placeholder'] }}"
+                autocomplete="off" required>
             <i class="{{ $content['icon'] ?? 'ph ph-caret-down' }} inputIcon"></i>
         </div>
 
