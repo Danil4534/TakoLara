@@ -12,10 +12,6 @@ class ContactFormController extends Controller
 
     public function submitContactDataPost(Request $request)
     {
-
-
-        // @dump(session()->all());
-        // @dd($request->all());
         $request->validate([
             'name' => 'required|string|max:255',
             "phoneNum" => "required|regex:/^\+380\d{9}$/",

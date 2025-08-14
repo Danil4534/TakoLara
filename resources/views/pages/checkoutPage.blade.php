@@ -16,12 +16,11 @@
 
 <body>
     @include("components.header")
-    <main>
+    <main class="checkout__main">
         <section>
             @include("components.checkoutForm")
         </section>
     </main>
-
 </body>
 <footer>
     <div class="footerCheckoutContainer">

@@ -110,6 +110,14 @@ main {
     min-height: 100vh;
     background-color: var(--neutral-light-gray);
 }
+.checkout__main {
+    padding: 80px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 100vh;
+    background-color: var(--neutral-light-gray);
+}
 
 footer {
     width: 100%;
@@ -119,6 +127,19 @@ footer {
 
 @media (max-width: 1024px) {
     main {
+        min-height: fit-content;
+        padding-top: 56px !important;
+    }
+}
+@media (max-width: 1440px) {
+    main {
+        min-height: fit-content;
+        padding-top: 56px;
+    }
+}
+@media (min-width: 1920px) {
+    main {
+        min-height: fit-content;
         padding-top: 56px;
     }
 }
