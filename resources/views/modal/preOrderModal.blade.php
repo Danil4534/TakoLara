@@ -21,17 +21,15 @@ $chooseProducts = session('chooseProducts');
                 </div>
             </div>
             @else
-
-            @csrf
-            <div class="preOrderModalContent">
-                @foreach ((array) $chooseProducts as $index=>$product )
-                <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
-                @endforeach
-            </div>
             <form action="{{ route('getChooseProductsWithCount') }}" method="POST" id="preOrderForm">
                 @csrf
+                <div class="preOrderModalContent">
+                    @foreach ((array) $chooseProducts as $index=>$product )
+                    <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
+                    @endforeach
+                </div>
                 <div class="preOrderBottomBox">
-                    <x-secondary-btn text="Оформити" class="preOrderBtn" styles="font-size: 28px" type="submit"></x-secondary-btn>
+                    <x-secondary-btn text="Оформити" class="preOrderBtn" value="order" name="action" styles="font-size: 28px" type="submit"></x-secondary-btn>
                     <div class="forSolders">
                         <p>🪖 Для військових — <span>безкоштовно</span></p>
                     </div>

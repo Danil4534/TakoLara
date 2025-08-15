@@ -47,16 +47,15 @@
             padding: 8px;
             position: relative;
 
-            form {
+            .removeBtn {
                 position: absolute;
+                top: 8px;
                 right: 8px;
-
-                button {
-                    background: transparent;
-                    border: none;
-                    font-size: 24px;
-                    color: red;
-                }
+                background: transparent;
+                border: none;
+                font-size: 24px;
+                color: #6b6b6b;
+                cursor: pointer;
             }
             .productCardMob {
                 width: 100%;

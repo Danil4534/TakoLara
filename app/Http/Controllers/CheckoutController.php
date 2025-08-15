@@ -46,7 +46,21 @@ class CheckoutController extends Controller
     public function getChooseProductsWithCount(Request $request)
     {
 
-        $products = $request->input('products');
-        return view('pages.checkoutPage', compact('products'));
+        $action = $request->input('action');
+        $products = $request->input('products', []);
+
+        if (str_starts_with($action, 'remove_')) {
+            $index = (int) str_replace('remove_', '', $action);
+            unset($products[$index]);
+            session(['chooseProducts' => $products]);
+            return back();
+        }
+
+        if ($action === 'order') {
+            session(['chooseProducts' => []]);
+            return view('pages.checkoutPage', compact('products'));
+        }
+
+        return back();
     }
 }

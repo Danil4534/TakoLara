@@ -14,6 +14,7 @@
     @endif
 </head>
 
+
 <body>
     @include("components.header")
     <main class="checkout__main">

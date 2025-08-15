@@ -1,6 +1,6 @@
-<button id="{{ $id ?? '' }}" type="{{ $type }}" @if(!empty($route))
+<button id="{{ $id ?? '' }}" type="{{ $type ??'' }}" @if(!empty($route))
     onclick="window.location.href='{{ route($route) }}'" @endif
-    class="secondaryBtn {{ $class ?? '' }}">
+    class="secondaryBtn {{ $class ?? '' }}" name="{{ $name??"" }}" value="{{ $value ??'' }}">
     @if (!empty($iconLeft))
     <i class="{{ $iconLeft }}" style="{{ $styles ?? '' }}"></i>
     @endif

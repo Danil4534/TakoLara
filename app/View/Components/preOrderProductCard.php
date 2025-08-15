@@ -13,10 +13,12 @@ class preOrderProductCard extends Component
      */
     public $preOrderProduct;
     public $index;
-    public function __construct($preOrderProduct, $index = null)
+    public $id;
+    public function __construct($preOrderProduct, $index = null, $id = '')
     {
         $this->preOrderProduct = $preOrderProduct;
         $this->index = $index;
+        $this->id = $id;
     }
 
     /**

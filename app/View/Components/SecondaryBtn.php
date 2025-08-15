@@ -18,7 +18,11 @@ class SecondaryBtn extends Component
     public $iconRight;
     public $styles;
     public $type;
+    public $name;
+    public $value;
     public function __construct(
+        string $name = '',
+        string $value = '',
         string $id = '',
         string $text = '',
         string $class = '',
@@ -38,6 +42,8 @@ class SecondaryBtn extends Component
         $this->iconLeft = $iconLeft;
         $this->iconRight = $iconRight;
         $this->type = $type;
+        $this->name = $name;
+        $this->value = $value;
     }
 
     /**

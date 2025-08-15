@@ -6,7 +6,7 @@ $typeOfContact = [
 ['id' => 3, 'title' => 'Whatsup', 'active' => false],
 ['id' => 4, 'title' => 'Signal', 'active' => false],
 ];
-$chooseProducts = $products;
+
 
 @endphp
 
@@ -15,8 +15,8 @@ $chooseProducts = $products;
         <div class="box">
             <h1 class="checkoutTitle">Оформити замовлення</h1>
             <div class="productBox">
-                @foreach ( $chooseProducts as $index=>$product )
-                <x-pre-order-product-card :preOrderProduct="$product" :index="$index" />
+                @foreach ( $products as $index=>$product )
+                <x-pre-order-product-card :preOrderProduct="$product" :index="$index" id="checkoutProductCardMobile" />
                 @endforeach
             </div>
         </div>
@@ -60,11 +60,10 @@ $chooseProducts = $products;
             <div class="userData box">
                 <h6 class="title">Передзамовлення</h6>
                 <div class="productBox">
-                    @foreach ((array) $chooseProducts as $index=>$product )
-                    <x-pre-order-product-card :preOrderProduct="$product" :index="$index" />
+                    @foreach ((array) $products as $index=>$product )
+                    <x-pre-order-product-card :preOrderProduct="$product" :index="$index" id="checkoutProductCard" />
                     @endforeach
                 </div>
-
                 <div class="priceData">
                     <hr>
                     <p>собівартість виробів:</p>
@@ -96,8 +95,6 @@ $chooseProducts = $products;
 <script>
     const contactOptions = ["Номер телефону", "Viber", "Telegram", "Whatsup", "Signal"];
 
-
-
     function handleMethodToConnect(selectedIndex) {
         const labels = document.querySelectorAll('.radioLabel');
         const phoneInputLabel = document.querySelector('label[for="contactPhoneInput"]');
@@ -122,27 +119,38 @@ $chooseProducts = $products;
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const productCards = document.querySelectorAll('.productCard');
+        const desktopCards = document.querySelectorAll('#checkoutProductCard');
+        const mobileCards = document.querySelectorAll('#checkoutProductCardMobile');
         const totalPriceElement = document.getElementById('totalPrice');
 
         function formatPrice(value) {
             return value.toFixed(2).replace('.', ',');
         }
 
-        function updateTotalPrice() {
+        function calcSum(cards) {
             let total = 0;
-            productCards.forEach(card => {
-                const cost = parseFloat(card.dataset.cost || '0');
-                const quantityInput = card.querySelector('.count-input');
-                const quantity = parseInt(quantityInput.value || '1');
-                total += cost * quantity;
+            cards.forEach(card => {
+                if (card.offsetParent !== null) {
+                    const cost = parseFloat(card.dataset.cost || '0');
+                    const quantityInput = card.querySelector('.count-input');
+                    const quantity = parseInt(quantityInput?.value || '1');
+                    total += cost * quantity;
+                }
             });
-            totalPriceElement.innerHTML = `${formatPrice(total)}<span>грн</span>`;
+            return total;
         }
 
-        updateTotalPrice();
+        function updateTotalPrice() {
+            let sum = 0;
+            if ([...desktopCards].some(card => card.offsetParent !== null)) {
+                sum = calcSum(desktopCards);
+            } else {
+                sum = calcSum(mobileCards);
+            }
+            totalPriceElement.innerHTML = `${formatPrice(sum)}<span>грн</span>`;
+        }
 
-        productCards.forEach(card => {
+        [...desktopCards, ...mobileCards].forEach(card => {
             const decrementBtn = card.querySelector('.decrement');
             const incrementBtn = card.querySelector('.increment');
             const input = card.querySelector('.count-input');
@@ -153,14 +161,14 @@ $chooseProducts = $products;
             });
 
             decrementBtn?.addEventListener('click', () => {
-                const newVal = Math.max(1, parseInt(input.value) - 1);
-                input.value = newVal;
+                input.value = Math.max(1, parseInt(input.value) - 1);
                 updateTotalPrice();
             });
 
             input?.addEventListener('input', () => {
-                const val = parseInt(input.value);
-                if (!val || val < 1) input.value = 1;
+                if (!parseInt(input.value) || parseInt(input.value) < 1) {
+                    input.value = 1;
+                }
                 updateTotalPrice();
             });
         });
