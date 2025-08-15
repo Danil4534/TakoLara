@@ -10,7 +10,6 @@ $typeOfContact = [
 
 @endphp
 
-@dump(session()->all())
 
 <div class="formContainer">
     <div class="container">
