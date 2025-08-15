@@ -33,14 +33,11 @@ class CheckoutController extends Controller
             'contact_type.in' => 'Невірний метод звʼязку.',
         ]);
 
-
-
         session(['chooseProducts' => []]);
         if ($request->input('action') === "support") {
             session()->flash('show_success_modal_cont', true);
             return redirect()->route('support.page')->with('success', '');
         }
-
         return redirect()->route('success.page')->with('success');
     }
     public function getChooseProductsWithCount(Request $request)

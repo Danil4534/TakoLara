@@ -17,7 +17,7 @@ $typeOfContact = [
             <h1 class="checkoutTitle">Оформити замовлення</h1>
             <div class="productBox">
                 @foreach ( $products as $index=>$product )
-                <x-pre-order-product-card :preOrderProduct="$product" :index="$index" id="checkoutProductCardMobile" />
+                <x-pre-order-product-card :preOrderProduct="$product" :index="$index" id="checkoutProductCard" />
                 @endforeach
             </div>
         </div>
@@ -108,7 +108,15 @@ $typeOfContact = [
                 input.checked = true;
                 label.classList.add('active');
 
-                if (phoneInputLabel) phoneInputLabel.innerText = contactOptions[selectedIndex];
+                if (phoneInputLabel) {
+                    const requiredSpan = phoneInputLabel.querySelector('span');
+                    phoneInputLabel.firstChild.textContent = contactOptions[selectedIndex] + ' ';
+                    if (!requiredSpan) {
+                        const span = document.createElement('span');
+                        span.textContent = '*';
+                        phoneInputLabel.appendChild(span);
+                    }
+                }
                 if (phoneInput) {
                     phoneInput.placeholder = contactOptions[selectedIndex] === "Номер телефону" ? "+380 " : contactOptions[selectedIndex];
                 }

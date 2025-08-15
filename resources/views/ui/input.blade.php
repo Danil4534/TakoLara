@@ -1,7 +1,7 @@
 <div class="inputContainer">
     <label for="{{ $content['id']??"" }}" id="labelInput">
         {{ $content['label'] ?? '' }}
-        <span>{{ (!empty($content['required']) && $content['required'] === 'true') ? '*' : '' }}</span>
+        <span>*</span>
     </label>
 
     @if(($content['type'] ?? 'text') === 'select')
