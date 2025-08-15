@@ -98,6 +98,17 @@
         });
     </script>
     @endif
+    @if ($errors->any())
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modalContact = document.querySelector("#contactModal");
+            if (modalContact) {
+                modalContact.classList.add("active");
+                resetContactForm?.();
+            }
+        });
+    </script>
+    @endif
 </body>
 @include('modal.categoriesModal')
 @include('modal.contactModal')

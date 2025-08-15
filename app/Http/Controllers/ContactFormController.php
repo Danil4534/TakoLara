@@ -39,7 +39,7 @@ class ContactFormController extends Controller
 
         if ($request->input('action') === "success") {
             session()->flash('show_success_modal_cont', $data);
-            return redirect()->back();
+            return redirect()->route('home.page')->with('show_success_modal_cont', true);
         }
     }
 }
