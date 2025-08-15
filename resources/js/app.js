@@ -6,6 +6,7 @@ import './productSlider';
 import './howWorksSlider';
 import './howWorksAnimEachStep';
 import "./previewModal";
+import "./cart";
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");
@@ -27,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function resetContactForm(){
     contactForm.reset()
   }
-
-
 categoriesModal.addEventListener('click', ()=>{  
     if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {
     categoriesBtnToggleIcon.classList.remove('ph-caret-down');
