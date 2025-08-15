@@ -46,6 +46,9 @@
             gap: 16px;
             padding: 8px;
             position: relative;
+            img {
+                height: 116px;
+            }
 
             .removeBtn {
                 position: absolute;
@@ -1432,7 +1435,10 @@
                     gap: 16px;
                     padding: 8px;
                     position: relative;
-
+                    img {
+                        width: 124px !important;
+                        height: 124px;
+                    }
                     form {
                         position: absolute;
                         right: 8px;
