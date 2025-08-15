@@ -10,6 +10,8 @@ $typeOfContact = [
 
 @endphp
 
+@dump(session()->all())
+
 <div class="formContainer">
     <div class="container">
         <div class="box">
@@ -24,6 +26,7 @@ $typeOfContact = [
             @csrf
             <div class="formLeftSide">
                 <div class="userData box">
+
                     <h6>Контакти замовника</h6>
                     <div class="inputsWrapper">
                         @include("ui.input", ['content' => ["label" => "Прізвище", "placeholder" => "Введіть прізвище", "name" => "surname", "required"=>'true']])
@@ -181,6 +184,7 @@ $typeOfContact = [
     document.addEventListener("DOMContentLoaded", () => {
         const form = document.querySelector(".checkoutForm");
         const submitBtn = document.querySelector(".btnConfirm");
+        const submitBtnSupport = document.querySelector(".btnCheckout");
         const checkForm = () => {
             const requiredFields = form.querySelectorAll("[required]");
             let allFilled = true;
@@ -190,6 +194,7 @@ $typeOfContact = [
                 }
             });
             submitBtn.disabled = !allFilled;
+            submitBtnSupport.disabled = !allFilled
         };
         checkForm();
         form.addEventListener("input", checkForm);

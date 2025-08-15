@@ -7,7 +7,8 @@ import './howWorksSlider';
 import './howWorksAnimEachStep';
 import "./previewModal";
 document.addEventListener("DOMContentLoaded", function () {
-  
+  const contactBtns = document.querySelectorAll("#btnConnect");
+  const modalContact = document.querySelector("#contactModal");
   const closeModalContactBtn = document.querySelector("#closeContactBtn");
   const modalContactContent = document.querySelector('#contactModalContent')
   const openPreOrderBtn = document.querySelectorAll("#btnPreOrder");

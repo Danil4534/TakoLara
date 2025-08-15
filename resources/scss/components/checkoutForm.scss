@@ -446,6 +446,9 @@
                         cursor: pointer;
                         background: var(--secondary-light-blue);
                     }
+                    &:disabled {
+                        background: #d0d0d0;
+                    }
                 }
 
                 .btnCheckout {
@@ -462,6 +465,10 @@
                         background: var(--primary-deep-blue);
                         cursor: pointer;
                         color: var(--neutral-white);
+                    }
+                    &:disabled {
+                        color: #d0d0d0;
+                        border-color: #d0d0d0;
                     }
                 }
             }

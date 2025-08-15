@@ -25,7 +25,6 @@
     <main>
         <section>
 
-            <!-- @dump(session()->all()); -->
             @include('components.banner', [
             'content' => [
             'banner' => "assets/drone.svg",
