@@ -135,27 +135,3 @@ $typeOfContact = [
         });
     }
 </script>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const form = document.querySelector(".checkoutForm");
-        const submitBtn = document.querySelector(".btnConfirm");
-        const submitBtnSupport = document.querySelector(".btnCheckout");
-
-        const checkForm = () => {
-            const requiredFields = form.querySelectorAll("[required]");
-            let allFilled = true;
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    allFilled = false;
-                }
-            });
-            submitBtn.disabled = !allFilled;
-            submitBtnSupport.disabled = !allFilled;
-        };
-
-        checkForm();
-        form.addEventListener("input", checkForm);
-    });
-</script>

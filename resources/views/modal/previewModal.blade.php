@@ -7,7 +7,6 @@
                 </div>
                 <div class="swiper-button-next"><i class="ph ph-caret-right"></i></div>
                 <div class="swiper-button-prev"><i class="ph ph-caret-left"></i></div>
-
             </div>
         </div>
     </div>

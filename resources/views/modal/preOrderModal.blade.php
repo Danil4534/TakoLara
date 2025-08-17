@@ -24,9 +24,11 @@ $chooseProducts = session('chooseProducts');
             <form action="{{ route('getChooseProductsWithCount') }}" method="POST" id="preOrderForm">
                 @csrf
                 <div class="preOrderModalContent">
-                    @foreach ((array) $chooseProducts as $index=>$product )
-                    <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
-                    @endforeach
+                    <div class="preOrderModalContentWrapper">
+                        @foreach ((array) $chooseProducts as $index=>$product )
+                        <x-pre-order-product-card :preOrderProduct="$product" :index="$index"></x-pre-order-product-card>
+                        @endforeach
+                    </div>
                 </div>
                 <div class="preOrderBottomBox">
                     <x-secondary-btn text="Оформити" class="preOrderBtn" value="order" name="action" styles="font-size: 28px" type="submit"></x-secondary-btn>

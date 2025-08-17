@@ -33,7 +33,7 @@ $sliderContent = [
                         <div class="slide">
                             @if($item['type'] === 'picture')
                             <div class="slide_hover_block photo">
-                                <button class="previewTrigger" data-current="{{ $loop->index }}" data-imgs='@json($item["img"] ?? [])'>
+                                <button class="previewTrigger" data-current="{{ $loop->index }}" data-imgs='@json(array_column($sliderContent, "img"))'>
                                     <span>Переглянути</span>
                                     <i class="ph ph-eye"></i>
                                 </button>

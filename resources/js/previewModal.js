@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const previewModalCloseBtn = document.querySelector('#closePreviewModal');
     const swiperWrapper = document.querySelector('#previewSwiperWrapper');
     let swiperInstance;
-
     previewTriggers.forEach(trigger => {
         trigger.addEventListener('click', () => {
             let imgs = [];

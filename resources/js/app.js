@@ -7,6 +7,8 @@ import './howWorksSlider';
 import './howWorksAnimEachStep';
 import "./previewModal";
 import "./cart";
+import "./checkForm";
+
 document.addEventListener("DOMContentLoaded", function () {
   const contactBtns = document.querySelectorAll("#btnConnect");
   const modalContact = document.querySelector("#contactModal");
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerContent = document.querySelector("#hidden_header_nav_content");
   const headerModalNavClose = document.querySelector("#closeBurger");
   const contactForm = document.querySelector('.contactForm')
+  const header = document.querySelector("header");
   function resetContactForm(){
     contactForm.reset()
   }
@@ -45,6 +48,7 @@ categoriesModalContent.addEventListener('click', (e)=>{
 })  
   categoriesBtnToggle.addEventListener('click', () => {
   if (categoriesBtnToggleIcon.classList.contains('ph-caret-down')) {
+    header.style.zIndex = "999";
     categoriesBtnToggleIcon.classList.remove('ph-caret-down');
     categoriesBtnToggleIcon.classList.add('ph-x');
     categoriesModal.classList.add("active");
