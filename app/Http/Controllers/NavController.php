@@ -103,9 +103,10 @@ class NavController extends Controller
     {
         return view("pages.homePage");
     }
-    public function getCheckout()
+    public function getCheckout(Request $request)
     {
-        return view("pages.checkoutPage");
+        $products = session('products');
+        return view("pages.checkoutPage", compact('products'));
     }
 
     public function getWeaponPage()
