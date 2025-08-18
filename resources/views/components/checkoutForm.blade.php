@@ -11,7 +11,7 @@ $typeOfContact = [
 <div class="formContainer">
     <div class="container">
         <h1 class="title box">Оформити замовлення</h1>
-        @dump(session()->all());
+
 
         <form action="{{ route('checkout.submit') }}" class="checkoutForm" method="POST">
             @csrf

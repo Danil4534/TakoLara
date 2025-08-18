@@ -31,13 +31,14 @@ class CheckoutController extends Controller
             'city.required' => 'Місто обовʼязкове.',
         ]);
 
+
         if ($validator->fails()) {
 
 
             return redirect()
                 ->route('checkout.page')
                 ->withErrors($validator)
-                ->with('products', session('products'));
+                ->with('products', $request->input('products'));
         }
 
         session(['chooseProducts' => []]);
@@ -58,11 +59,12 @@ class CheckoutController extends Controller
         if (str_starts_with($action, 'remove_')) {
             $index = (int) str_replace('remove_', '', $action);
             unset($products[$index]);
-            session(['chooseProducts' => $products]);
+            session(['products' => $products]);
             return back();
         }
 
         if ($action === 'order') {
+            session(['products' => $products]);
             session(['chooseProducts' => []]);
             return redirect()->route('checkout.page')->with('products', $products);
         }
