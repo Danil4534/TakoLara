@@ -51,14 +51,14 @@ $chooseProducts = session('chooseProducts');
 
             incrementBtns.forEach(btn => {
                 btn.addEventListener("click", () => {
-                    inputs.forEach(input => input.value = parseInt(input.value) + 1);
+                    inputs.forEach(input => input.value = +input.value + 1);
                 });
             });
 
             decrementBtns.forEach(btn => {
                 btn.addEventListener("click", () => {
                     inputs.forEach(input => {
-                        let value = parseInt(input.value);
+                        let value = +input.value;
                         if (value > 1) input.value = value - 1;
                     });
                 });
