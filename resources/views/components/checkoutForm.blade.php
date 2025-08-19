@@ -128,7 +128,6 @@ $typeOfContact = [
                         phoneInputLabel.appendChild(span);
                     }
                 }
-
                 if (phoneInput) {
                     phoneInput.placeholder = contactOptions[selectedIndex] === "Номер телефону" ? "+380 " : contactOptions[selectedIndex];
                 }

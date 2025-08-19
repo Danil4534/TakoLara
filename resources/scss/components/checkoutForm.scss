@@ -144,6 +144,9 @@
                             font-size: 24px;
                             color: rgba(28, 47, 67, 1);
                             cursor: pointer;
+                            &.disabled {
+                                color: #e0e0e0;
+                            }
                         }
 
                         .count-input {

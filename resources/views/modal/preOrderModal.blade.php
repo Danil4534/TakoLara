@@ -48,10 +48,20 @@ $chooseProducts = session('chooseProducts');
             const decrementBtns = card.querySelectorAll(".decrement");
             const incrementBtns = card.querySelectorAll(".increment");
             const inputs = card.querySelectorAll(".count-input");
+            inputs.forEach(input => {
+                if (input.value <= 1) {
+                    decrementBtns.forEach(btn => btn.classList.add('disabled'))
+                } else {
+                    decrementBtns.forEach(btn => btn.classList.remove('disabled'))
+                }
+            })
 
             incrementBtns.forEach(btn => {
                 btn.addEventListener("click", () => {
-                    inputs.forEach(input => input.value = +input.value + 1);
+                    inputs.forEach((input) => {
+                        input.value = +input.value + 1;
+                        decrementBtns.forEach(btn => btn.classList.remove('disabled'))
+                    });
                 });
             });
 
@@ -59,7 +69,12 @@ $chooseProducts = session('chooseProducts');
                 btn.addEventListener("click", () => {
                     inputs.forEach(input => {
                         let value = +input.value;
-                        if (value > 1) input.value = value - 1;
+                        if (value > 1) {
+                            input.value = value - 1
+                        } else {
+                            decrementBtns.forEach(btn => btn.classList.add('disabled'))
+                        };
+
                     });
                 });
             });

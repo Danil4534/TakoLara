@@ -4,7 +4,7 @@
   : '';
   @endphp
 
-  <div class="productCard" data-cost="{{ $preOrderProduct['cost']  }}" id="{{ $id ??'' }}">
+  <div class="productCard" data-cost="{{ $preOrderProduct['cost']  }}" id="{{ $id ??'' }}" data-id="{{ $index }}">
       <input type="hidden" name="products[{{ $index }}][id]" value="{{ $preOrderProduct['id'] ?? $index }}">
       <input type="hidden" name="products[{{ $index }}][title]" value="{{ $preOrderProduct['title'] ?? '' }}">
       <input type="hidden" name="products[{{ $index }}][cost]" value="{{ $preOrderProduct['cost'] ?? 0 }}">

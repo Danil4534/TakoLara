@@ -2,7 +2,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         const totalPriceElements = document.querySelectorAll('#totalPrice');
         const cards = document.querySelectorAll('.productCard');
-
         function formatPrice(value) {
             return value.toFixed(2).replace('.', ',');
         }
@@ -19,14 +18,15 @@
         }
         function updateTotalPrice() {
             const sum = calcSum();
-        
             totalPriceElements.forEach((element) => element.innerHTML = `${formatPrice(sum)}<span>грн</span>`);
         }
         cards.forEach(card => {
             const decrementBtn = card.querySelector('.decrement');
             const incrementBtn = card.querySelector('.increment');
+            
            
             incrementBtn?.addEventListener('click', () => {
+                 
                 updateTotalPrice();
             });
             decrementBtn?.addEventListener('click', () => {
