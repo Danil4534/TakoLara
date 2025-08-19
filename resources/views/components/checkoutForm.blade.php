@@ -70,7 +70,8 @@ $typeOfContact = [
                 </div>
             </div>
             <div class="userData box" id="orderSummary">
-                <h6 class="title">Передзамовлення</h6>
+                <h6 class="title hidden">Передзамовлення</h6>
+                <h1 class="title">Оформити замовлення</h1>
                 <div class="productBox">
                     @foreach ((array) $products as $index => $product)
                     <x-pre-order-product-card :preOrderProduct="$product" :index="$index" id="checkoutProductCard" />
