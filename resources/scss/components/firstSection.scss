@@ -1,0 +1,92 @@
+.first__container {
+    width: 100%;
+    margin: 0 auto;
+    .firstSection__body {
+        width: 100%;
+        padding: 72px 16px;
+        border-radius: 16px;
+        background: var(--neutral-white);
+        h2 {
+            font-family: var(--font-family-RegularHead);
+            font-weight: 300;
+            font-style: Light;
+            font-size: 32px;
+            leading-trim: NONE;
+            line-height: 120%;
+            letter-spacing: 1.25%;
+            vertical-align: middle;
+            color: #1c2f43;
+            margin-bottom: 24px;
+        }
+        p {
+            font-family: var(--font-family-Light);
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 1.6%;
+            text-align: justify;
+            vertical-align: middle;
+            color: #6b6b6b;
+        }
+        hr {
+            height: 1px;
+            background: #d0d0d0;
+            border: none;
+            margin: 32px 0;
+        }
+        .firstSection__pictureContent {
+            width: 100%;
+            background-image: url("/public/assets/articleFirst.svg");
+            height: 327px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .first__container {
+        width: 100%;
+        margin: 0 auto;
+        .firstSection__body {
+            width: 100%;
+            padding: 72px 24px;
+            border-radius: 16px;
+            background: var(--neutral-white);
+            h2 {
+                font-family: var(--font-family-RegularHead);
+                font-weight: 300;
+                font-style: Light;
+                font-size: 40px;
+                leading-trim: NONE;
+                line-height: 120%;
+                letter-spacing: 1.25%;
+                vertical-align: middle;
+                color: #1c2f43;
+                margin-bottom: 24px;
+            }
+            p {
+                font-family: var(--font-family-Light);
+                font-size: 16px;
+                line-height: 120%;
+                letter-spacing: 1.6%;
+                text-align: justify;
+                vertical-align: middle;
+                color: #6b6b6b;
+            }
+            hr {
+                height: 1px;
+                background: #d0d0d0;
+                border: none;
+                margin: 32px 0;
+            }
+            .picture {
+                width: 100%;
+                object-fit: contain;
+                height: 396px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

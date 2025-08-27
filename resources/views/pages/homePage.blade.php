@@ -24,7 +24,6 @@
 
     <main>
         <section>
-
             @include('components.banner', [
             'content' => [
             'banner' => "assets/drone.svg",

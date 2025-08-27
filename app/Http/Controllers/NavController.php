@@ -155,4 +155,8 @@ class NavController extends Controller
     {
         return view("pages.pageList");
     }
+    public function getTextPage()
+    {
+        return view('pages.articlePage');
+    }
 }
