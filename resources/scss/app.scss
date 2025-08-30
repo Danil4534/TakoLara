@@ -33,7 +33,9 @@
 @use "./components/productCard.scss";
 @use "./pages/rebPage.scss";
 @use "./modal/previewModal.scss";
+@use "./components/statistic.scss";
 @use "./components/firstSection.scss";
+@use "./components/articleList.scss";
 :root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;

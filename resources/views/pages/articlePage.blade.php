@@ -25,8 +25,15 @@
             @include('components.textPageFirstSection')
         </section>
         <section>
+            @include('components.statistic')
+        </section>
+        <section>
+            @include('components.articleList')
+        </section>
+        <section>
             @include('components.details')
         </section>
+
     </main>
 
 
