@@ -39,7 +39,7 @@
 @use "./components/table.scss";
 @use "./components/secondSectionText.scss";
 @use "./components/thirdSection.scss";
-:root  {
+:root {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: rgba(28, 47, 67, 1);
@@ -134,18 +134,18 @@ footer {
 @media (max-width: 1024px) {
     main {
         min-height: fit-content;
-        padding-top: 56px !important;
+        padding-top: 64px !important;
     }
 }
 @media (max-width: 1440px) {
     main {
         min-height: fit-content;
-        padding-top: 56px;
+        padding-top: 88px;
     }
 }
 @media (min-width: 1920px) {
     main {
         min-height: fit-content;
-        padding-top: 56px;
+        padding-top: 88px;
     }
 }
