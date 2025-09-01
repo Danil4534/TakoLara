@@ -36,7 +36,10 @@
 @use "./components/statistic.scss";
 @use "./components/firstSection.scss";
 @use "./components/articleList.scss";
-:root {
+@use "./components/table.scss";
+@use "./components/secondSectionText.scss";
+@use "./components/thirdSection.scss";
+:root  {
     --primary-deep-blue: #0f5ebb;
     --primary-golden-yellow: #ffd719;
     --primary-dark-navy: rgba(28, 47, 67, 1);

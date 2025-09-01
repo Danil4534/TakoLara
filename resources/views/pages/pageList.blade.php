@@ -250,6 +250,7 @@
                     <li><a href="/support" target="_blank">Support</a></li>
                     <li><a href="/success" target="_blank">Success</a></li>
                     <li><a href="/checkout" target="_blank">Checkout</a></li>
+                    <li><a href="/textPage" target="_blank">Text Page</a></li>
                     <li>
                         <p>Categories:</p>
                         <ul class="sublist">

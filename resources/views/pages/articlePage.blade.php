@@ -31,6 +31,15 @@
             @include('components.articleList')
         </section>
         <section>
+            @include('components.table')
+        </section>
+        <section>
+            @include('components.secondSectionTextPage')
+        </section>
+        <section>
+            @include('components.thirdSection')
+        </section>
+        <section>
             @include('components.details')
         </section>
 

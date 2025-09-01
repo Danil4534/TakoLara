@@ -150,6 +150,7 @@
         border-radius: 16px;
         .articleList__body {
             max-width: 1542px;
+            margin: 0 auto;
             ul {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
